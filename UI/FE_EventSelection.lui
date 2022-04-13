@@ -1,0 +1,496 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.curSelection = 0
+L0_1.posOffset = 0
+L0_1.EventSet = "unset"
+L0_1.EventsetInitialized = 0
+L0_1.numEvents = 0
+L0_1.event = ""
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Preview_Icon = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Title = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.FE_Arrow1_L = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.FE_Arrow1_R = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.CursorOptions = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = PlaceMenuInWorld
+  L2_2 = A0_2.instance
+  L3_2 = "EventSelection"
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Preview_Icon
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Preview_Icon
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Preview_Icon
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Preview_Icon
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Preview_Icon.icon1"
+  L5_2 = "cr_01_gk_event_preview"
+  L6_2 = 945.725
+  L7_2 = 758.9
+  L8_2 = 256.05
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Title
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Title
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Title
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Title.text1"
+  L5_2 = "STR_EVENT_SELECTION"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1724.35
+  L9_2 = 62.75
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text1"
+  L5_2 = "STR_SCROLL"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1232.75
+  L9_2 = 1004.2
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text3"
+  L5_2 = "STR_BACK"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1370.75
+  L9_2 = 1004.2
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text5 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text5
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text5"
+  L5_2 = "STR_SELECT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1565.85
+  L9_2 = 1004.1
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.FE_Arrow1_L
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.FE_Arrow1_L
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.FE_Arrow1_L
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.FE_Arrow1_L
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "FE_Arrow1_L.icon1"
+  L5_2 = "fe_arrow_1_3D"
+  L6_2 = 316
+  L7_2 = 721
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.FE_Arrow1_R
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.FE_Arrow1_R
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.FE_Arrow1_R
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.FE_Arrow1_R
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "FE_Arrow1_R.icon1"
+  L5_2 = "fe_arrow_1_3D"
+  L6_2 = 1324
+  L7_2 = 721
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.CursorOptions
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.event_name = L2_2
+  L1_2 = A0_2.CursorOptions
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.CursorOptions
+  L3_2 = L3_2.event_name
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.CursorOptions
+  L1_2 = L1_2.event_name
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "CursorOptions.event_name"
+  L5_2 = "STR_DYN_CREDITS_1"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1391.15
+  L9_2 = 221.4
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.CursorOptions
+  L2_2 = L2_2.event_name
+  L1_2.event_name = L2_2
+  A0_2.EventsetInitialized = 0
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+  A0_2.EventsetInitialized = 0
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+  L1_2 = FE_JoinGamePrompt
+  if L1_2 ~= nil then
+    L1_2 = FE_JoinGamePrompt
+    L1_2 = L1_2.instance
+    if L1_2 ~= nil then
+      L1_2 = EndMenu
+      L2_2 = FE_JoinGamePrompt
+      L2_2 = L2_2.instance
+      L1_2(L2_2)
+    end
+  end
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L2_2 = GetNumEventsInEventSet
+  L3_2 = A0_2.EventSet
+  L4_2 = GetNumPlayers
+  L4_2 = L4_2()
+  L4_2 = L4_2 == 2
+  L2_2 = L2_2(L3_2, L4_2)
+  A0_2.numEvents = L2_2
+  if A1_2 < 0 then
+    L2_2 = A0_2.numEvents
+    A1_2 = L2_2 - 1
+  else
+    L2_2 = A0_2.numEvents
+    L2_2 = L2_2 - 1
+    if A1_2 > L2_2 then
+      A1_2 = 0
+    end
+  end
+  A0_2.curSelection = A1_2
+  L2_2 = GetEventIDFromEventSet
+  L3_2 = A0_2.EventSet
+  L4_2 = A0_2.curSelection
+  L4_2 = L4_2 + 1
+  L5_2 = 1
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  A0_2.event = L2_2
+  L2_2 = LoadEventSelectImageFromStream
+  L3_2 = A0_2.event
+  L4_2 = "_event_preview"
+  L3_2 = L3_2 .. L4_2
+  L2_2(L3_2)
+  L2_2 = ApplyEventSelectImageToIcon
+  L3_2 = A0_2.event
+  L4_2 = "_event_preview"
+  L3_2 = L3_2 .. L4_2
+  L4_2 = "FE_EventSelection"
+  L5_2 = "Preview_Icon.icon1"
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = A0_2.Shortcuts
+  L2_2 = L2_2.event_name
+  L3_2 = L2_2
+  L2_2 = L2_2.SetValue
+  L4_2 = GetLocalizedString
+  L5_2 = "EventInfo"
+  L6_2 = GetEventFromEventSet
+  L7_2 = A0_2.EventSet
+  L8_2 = A0_2.curSelection
+  L8_2 = L8_2 + 1
+  L9_2 = 1
+  L6_2, L7_2, L8_2, L9_2 = L6_2(L7_2, L8_2, L9_2)
+  L4_2, L5_2, L6_2, L7_2, L8_2, L9_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+end
+L0_1.UpdateSelection = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = InputKey
+  L3_2 = "RIGHT"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventLeft_Right
+    L2_2(L3_2)
+    L3_2 = A0_2
+    L2_2 = A0_2.UpdateSelection
+    L4_2 = A0_2.curSelection
+    L4_2 = L4_2 + 1
+    L2_2(L3_2, L4_2)
+  end
+  L2_2 = InputKey
+  L3_2 = "LEFT"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventLeft_Right
+    L2_2(L3_2)
+    L3_2 = A0_2
+    L2_2 = A0_2.UpdateSelection
+    L4_2 = A0_2.curSelection
+    L4_2 = L4_2 - 1
+    L2_2(L3_2, L4_2)
+  end
+  L2_2 = InputKey
+  L3_2 = "OK"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = A0_2.event
+    if L2_2 ~= "Not found" then
+      L2_2 = GetNumPlayers
+      L2_2 = L2_2()
+      L3_2 = GetNumControllersAssigned
+      L3_2 = L3_2()
+      if L2_2 <= L3_2 then
+        L2_2 = PlayUISound
+        L3_2 = UISoundEventSelect_Continue
+        L2_2(L3_2)
+        L2_2 = DVDMenu_Play
+        L3_2 = "FrontEndCamera"
+        L4_2 = "Anim\\FECam10"
+        L2_2(L3_2, L4_2)
+        L2_2 = RaiseMenu
+        L3_2 = "FE_DifficultyMenu"
+        L2_2(L3_2)
+        L2_2 = FE_DifficultyMenu
+        L3_2 = FE_DifficultyMenu
+        L3_2 = L3_2.OnOk_Arcade
+        L2_2.OnOk = L3_2
+        L2_2 = FE_DifficultyMenu
+        L3_2 = FE_DifficultyMenu
+        L3_2 = L3_2.OnCancel_Arcade
+        L2_2.OnCancel = L3_2
+        L2_2 = FE_DifficultyMenu
+        L3_2 = GetStoryEventIDFromEventSet
+        L4_2 = A0_2.EventSet
+        L5_2 = A0_2.curSelection
+        L5_2 = L5_2 + 1
+        L6_2 = 1
+        L3_2 = L3_2(L4_2, L5_2, L6_2)
+        L2_2.EventToLaunch = L3_2
+        L2_2 = FE_DifficultyMenu
+        L3_2 = A0_2.EventSet
+        L2_2.EventSet = L3_2
+        L2_2 = PlayMenuAnimation
+        L3_2 = A0_2.instance
+        L4_2 = "outro"
+        L2_2(L3_2, L4_2)
+        A0_2.EventsetInitialized = 0
+      else
+        L2_2 = PlayUISound
+        L3_2 = UISoundEventBadInput
+        L2_2(L3_2)
+      end
+    end
+  end
+  L2_2 = InputKey
+  L3_2 = "CANCEL"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBack2
+    L2_2(L3_2)
+    L2_2 = DVDMenu_Play
+    L3_2 = "FrontEndCamera"
+    L4_2 = "Anim\\FECam09R"
+    L2_2(L3_2, L4_2)
+    L2_2 = RaiseMenu
+    L3_2 = "FE_ArcadeModeMenu"
+    L2_2(L3_2)
+    L3_2 = A0_2
+    L2_2 = A0_2.EndUI
+    L2_2(L3_2)
+    A0_2.EventsetInitialized = 0
+    A0_2.EventSet = "unset"
+  end
+end
+L0_1.OnKeyDown = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.EventsetInitialized
+  if L2_2 == 0 then
+    L2_2 = A0_2.EventSet
+    if L2_2 ~= "unset" then
+      L2_2 = DebugPrint
+      L3_2 = "EventSet Initialized!"
+      L2_2(L3_2)
+      L3_2 = A0_2
+      L2_2 = A0_2.UpdateSelection
+      L4_2 = A0_2.curSelection
+      L2_2(L3_2, L4_2)
+      A0_2.EventsetInitialized = 1
+    end
+  end
+  L2_2 = A0_2.EventsetInitialized
+  if L2_2 == 1 then
+    L2_2 = GetNumPlayers
+    L2_2 = L2_2()
+    L3_2 = GetNumControllersAssigned
+    L3_2 = L3_2()
+    if L2_2 > L3_2 then
+      L2_2 = FE_JoinGamePrompt
+      if L2_2 == nil then
+        L2_2 = AddOverlay
+        L3_2 = "FE_JoinGamePrompt"
+        L2_2(L3_2)
+        L2_2 = StartLayer
+        L3_2 = FE_JoinGamePrompt
+        L3_2 = L3_2.instance
+        L2_2(L3_2)
+      end
+    else
+      L2_2 = FE_JoinGamePrompt
+      if L2_2 ~= nil then
+        L2_2 = FE_JoinGamePrompt
+        L2_2 = L2_2.instance
+        if L2_2 ~= nil then
+          L2_2 = EndMenu
+          L3_2 = FE_JoinGamePrompt
+          L3_2 = L3_2.instance
+          L2_2(L3_2)
+        end
+      end
+    end
+  end
+end
+L0_1.Tick = L1_1
+FE_EventSelection = L0_1

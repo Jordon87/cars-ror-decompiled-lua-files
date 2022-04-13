@@ -1,0 +1,2328 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.curPlayer = 1
+L0_1.curConfigSet = 0
+L0_1.originalConfigSet = 0
+L0_1.changeControlsDisabled = 1
+L0_1.state = 0
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.LEFT = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Controls = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Sixaxis_Jump = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Sixaxis_Steer_1 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_180 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_180_Up = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_90 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_90_Left = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Arrows = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Cursor = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Title = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Menu = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Checkers2 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Checkers3 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Checkers1 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.BankBar_Yellow = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.BankBar_Red = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Dim_Layer_BG = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = Split
+  L2_2 = getvar
+  L3_2 = "CurrentActivity"
+  L2_2 = L2_2(L3_2)
+  L3_2 = "\\"
+  L1_2 = L1_2(L2_2, L3_2)
+  L2_2 = #L1_2
+  L2_2 = L1_2[L2_2]
+  if L2_2 == "FE_FrontEnd" or L2_2 == "FE_Docs" or L2_2 == "FE_Luigis" or L2_2 == "FE_Ramones" then
+    A0_2.changeControlsDisabled = 0
+  end
+  L3_2 = GetPlayerInputEnabled
+  L4_2 = 0
+  L3_2 = L3_2(L4_2)
+  if L3_2 == 1 then
+    A0_2.curPlayer = 1
+  else
+    A0_2.curPlayer = 2
+  end
+  L3_2 = DebugPrint
+  L4_2 = "On player "
+  L5_2 = A0_2.curPlayer
+  L4_2 = L4_2 .. L5_2
+  L3_2(L4_2)
+  L3_2 = GetControllerConfig
+  L4_2 = A0_2.curPlayer
+  L3_2 = L3_2(L4_2)
+  A0_2.curConfigSet = L3_2
+  L3_2 = A0_2.LEFT
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text1 = L4_2
+  L3_2 = A0_2.LEFT
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.LEFT
+  L5_2 = L5_2.text1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.LEFT
+  L3_2 = L3_2.text1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "LEFT.text1"
+  L7_2 = "STR_LEFT"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 643.6
+  L11_2 = 168.6
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.LEFT
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text3 = L4_2
+  L3_2 = A0_2.LEFT
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.LEFT
+  L5_2 = L5_2.text3
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.LEFT
+  L3_2 = L3_2.text3
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "LEFT.text3"
+  L7_2 = "STR_LEFT"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 913.55
+  L11_2 = 168.6
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text1 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text1"
+  L7_2 = "STR_GAS"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1067.05
+  L11_2 = 366.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text3 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text3
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text3
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text3"
+  L7_2 = "STR_INTERACT"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1294.75
+  L11_2 = 366.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text5 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text5
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text5
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text5"
+  L7_2 = "STR_BRAKE"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1067.05
+  L11_2 = 416.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text7 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text7
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text7
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text7"
+  L7_2 = "STR_180_TURN"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1294.8
+  L11_2 = 416.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text9 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text9
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text9
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text9"
+  L7_2 = "STR_DRIFT"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1067.05
+  L11_2 = 466.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text11 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text11
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text11
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text11"
+  L7_2 = "STR_FREE_LOOK"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1294.8
+  L11_2 = 466.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text13 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text13
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text13
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text13"
+  L7_2 = "STR_TURBO_BOOST"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1067.05
+  L11_2 = 516.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text15 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text15
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text15
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text15"
+  L7_2 = "STR_LOOK_BACK"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1294.8
+  L11_2 = 516.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text17 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text17
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text17
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text17"
+  L7_2 = "STR_TILT"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1067.05
+  L11_2 = 566.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text19 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text19
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text19
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text19"
+  L7_2 = "STR_CHANGE_CAM"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1294.8
+  L11_2 = 566.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text21 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text21
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text21
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text21"
+  L7_2 = "STR_HAND_BRAKE"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1067.05
+  L11_2 = 616.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text23 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text23
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text23
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text23"
+  L7_2 = "STR_START"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1294.8
+  L11_2 = 616.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text25 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text25
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text25
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text25"
+  L7_2 = "STR_STEER"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1142.1
+  L11_2 = 306.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Controls
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text27 = L4_2
+  L3_2 = A0_2.Controls
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Controls
+  L5_2 = L5_2.text27
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text27
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Controls.text27"
+  L7_2 = "STR_JUMP"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1387.1
+  L11_2 = 306.25
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Sixaxis_Jump
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Sixaxis_Jump
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Sixaxis_Jump
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Sixaxis_Jump
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Sixaxis_Jump.icon1"
+  L7_2 = "X360_control_013"
+  L8_2 = 661
+  L9_2 = 276.425
+  L10_2 = 128
+  L11_2 = 127.95
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Sixaxis_Steer_1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Sixaxis_Steer_1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Sixaxis_Steer_1
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Sixaxis_Steer_1
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Sixaxis_Steer_1.icon1"
+  L7_2 = "X360_control_008"
+  L8_2 = 408
+  L9_2 = 271
+  L10_2 = 128
+  L11_2 = 128
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Rotate_180
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Rotate_180
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Rotate_180
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Rotate_180
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Rotate_180.icon1"
+  L7_2 = "X360_control_007"
+  L8_2 = 661
+  L9_2 = 257
+  L10_2 = 128
+  L11_2 = 128
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Rotate_180_Up
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Rotate_180_Up
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Rotate_180_Up
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Rotate_180_Up
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Rotate_180_Up.icon1"
+  L7_2 = "X360_control_007"
+  L8_2 = 661
+  L9_2 = 257
+  L10_2 = 128
+  L11_2 = 128
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Rotate_90
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Rotate_90
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Rotate_90
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Rotate_90
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Rotate_90.icon1"
+  L7_2 = "X360_control_005"
+  L8_2 = 391.45
+  L9_2 = 257
+  L10_2 = 128
+  L11_2 = 128
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Rotate_90_Left
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Rotate_90_Left
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Rotate_90_Left
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Rotate_90_Left
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Rotate_90_Left.icon1"
+  L7_2 = "X360_control_005"
+  L8_2 = 391.45
+  L9_2 = 257
+  L10_2 = 128
+  L11_2 = 128
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Arrows
+  L4_2 = UIContainer
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.HUD_Bubble_R = L4_2
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_R
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_R
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Arrows
+  L5_2 = L5_2.HUD_Bubble_R
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_R
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Arrows.HUD_Bubble_R.icon1"
+  L7_2 = "component_hud_bubble_2"
+  L8_2 = 1212.95
+  L9_2 = 591.05
+  L10_2 = 64
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_R
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon2 = L4_2
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_R
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Arrows
+  L5_2 = L5_2.HUD_Bubble_R
+  L5_2 = L5_2.icon2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_R
+  L3_2 = L3_2.icon2
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Arrows.HUD_Bubble_R.icon2"
+  L7_2 = "component_hud_minigame_02"
+  L8_2 = 1199.7
+  L9_2 = 574.45
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Arrows
+  L4_2 = UIContainer
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.HUD_Bubble_L = L4_2
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_L
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_L
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Arrows
+  L5_2 = L5_2.HUD_Bubble_L
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_L
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Arrows.HUD_Bubble_L.icon1"
+  L7_2 = "component_hud_bubble_2"
+  L8_2 = 712.95
+  L9_2 = 591.05
+  L10_2 = 64
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_L
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon2 = L4_2
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_L
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Arrows
+  L5_2 = L5_2.HUD_Bubble_L
+  L5_2 = L5_2.icon2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Arrows
+  L3_2 = L3_2.HUD_Bubble_L
+  L3_2 = L3_2.icon2
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Arrows.HUD_Bubble_L.icon2"
+  L7_2 = "component_hud_minigame_02"
+  L8_2 = 693.6
+  L9_2 = 574.45
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Buttons
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text1 = L4_2
+  L3_2 = A0_2.Buttons
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Buttons
+  L5_2 = L5_2.text1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Buttons.text1"
+  L7_2 = "STR_SCROLL"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 2315.45
+  L11_2 = 673.7
+  L12_2 = "right"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Buttons
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.CancelPrompt = L4_2
+  L3_2 = A0_2.Buttons
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Buttons
+  L5_2 = L5_2.CancelPrompt
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.CancelPrompt
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Buttons.CancelPrompt"
+  L7_2 = "STR_DYN_CREDITS_1"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 2585.45
+  L11_2 = 673.7
+  L12_2 = "right"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Buttons
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text5 = L4_2
+  L3_2 = A0_2.Buttons
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Buttons
+  L5_2 = L5_2.text5
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text5
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Buttons.text5"
+  L7_2 = "STR_SELECT"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 2840.35
+  L11_2 = 673.7
+  L12_2 = "right"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Cursor
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.config_name = L4_2
+  L3_2 = A0_2.Cursor
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Cursor
+  L5_2 = L5_2.config_name
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Cursor
+  L3_2 = L3_2.config_name
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Cursor.config_name"
+  L7_2 = "STR_DYN_CREDITS_9"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 963.4
+  L11_2 = 521.85
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Cursor
+  L4_2 = UIContainer
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.Dim_Grid_1 = L4_2
+  L3_2 = A0_2.Cursor
+  L3_2 = L3_2.Dim_Grid_1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Cursor
+  L3_2 = L3_2.Dim_Grid_1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Cursor
+  L5_2 = L5_2.Dim_Grid_1
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Cursor
+  L3_2 = L3_2.Dim_Grid_1
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Cursor.Dim_Grid_1.icon1"
+  L7_2 = "component_bankgradient"
+  L8_2 = 969.5
+  L9_2 = 527.65
+  L10_2 = 8
+  L11_2 = 8
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Title
+  L4_2 = UIText
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.text1 = L4_2
+  L3_2 = A0_2.Title
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Title
+  L5_2 = L5_2.text1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Title
+  L3_2 = L3_2.text1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Title.text1"
+  L7_2 = "STR_DRIVINGCONTROLS"
+  L8_2 = "COMMONUI"
+  L9_2 = "18_BodegaSans-Medium"
+  L10_2 = 1466.1
+  L11_2 = 623.5
+  L12_2 = "left"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L4_2 = UIContainer
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.FrameMenu = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon1"
+  L7_2 = "component_frame_01"
+  L8_2 = 1192.05
+  L9_2 = 633.2
+  L10_2 = 128
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon2 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon2
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon2"
+  L7_2 = "component_frame_02"
+  L8_2 = 1128.05
+  L9_2 = 1017.9
+  L10_2 = 64
+  L11_2 = 416
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon3 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon3
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon3
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon3"
+  L7_2 = "component_frame_03"
+  L8_2 = 1192.05
+  L9_2 = 1082.2
+  L10_2 = 128
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon4 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon4
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon4
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon4"
+  L7_2 = "component_frame_04"
+  L8_2 = 1833.5
+  L9_2 = 1082.2
+  L10_2 = 641.9
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon5 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon5
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon5
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon5"
+  L7_2 = "component_frame_05"
+  L8_2 = 1833.525
+  L9_2 = 633.2
+  L10_2 = 641.95
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon6 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon6
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon6
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon6"
+  L7_2 = "component_frame_01"
+  L8_2 = 1962.05
+  L9_2 = 633.2
+  L10_2 = 128
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon7 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon7
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon7
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon7"
+  L7_2 = "component_frame_02"
+  L8_2 = 1962.05
+  L9_2 = 1017.9
+  L10_2 = 64
+  L11_2 = 416
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon8 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.FrameMenu
+  L5_2 = L5_2.icon8
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.FrameMenu
+  L3_2 = L3_2.icon8
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.FrameMenu.icon8"
+  L7_2 = "component_frame_03"
+  L8_2 = 1962.05
+  L9_2 = 1082.2
+  L10_2 = 128
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Menu
+  L4_2 = UIContainer
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.Dim_Layer = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.Dim_Layer
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.Dim_Layer
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Menu
+  L5_2 = L5_2.Dim_Layer
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Menu
+  L3_2 = L3_2.Dim_Layer
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Menu.Dim_Layer.icon1"
+  L7_2 = "component_frame_color"
+  L8_2 = 1066.35
+  L9_2 = 573.35
+  L10_2 = 8
+  L11_2 = 8
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers2
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Checkers2
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers2
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers2
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers2.icon1"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 107.1
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers2
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon2 = L4_2
+  L3_2 = A0_2.Checkers2
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers2
+  L5_2 = L5_2.icon2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers2
+  L3_2 = L3_2.icon2
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers2.icon2"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 107.1
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers3
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Checkers3
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers3
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers3
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers3.icon1"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 555.1
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers3
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon2 = L4_2
+  L3_2 = A0_2.Checkers3
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers3
+  L5_2 = L5_2.icon2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers3
+  L3_2 = L3_2.icon2
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers3.icon2"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 555.1
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon1"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 363.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon2 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon2
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon2"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 395.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon3 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon3
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon3
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon3"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 427.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon4 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon4
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon4
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon4"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 459.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon5 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon5
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon5
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon5"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 491.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon6 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon6
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon6
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon6"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 523.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon7 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon7
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon7
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon7"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 555.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon8 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon8
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon8
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon8"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 587.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon9 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon9
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon9
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon9"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 619.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon10 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon10
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon10
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon10"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 363.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon11 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon11
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon11
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon11"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 395.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon12 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon12
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon12
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon12"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 427.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon13 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon13
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon13
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon13"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 459.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon14 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon14
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon14
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon14"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 491.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon15 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon15
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon15
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon15"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 523.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon16 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon16
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon16
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon16"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 555.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon17 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon17
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon17
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon17"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 587.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon18 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon18
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon18
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon18"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 619.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon19 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon19
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon19
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon19"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 331.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon20 = L4_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L5_2 = L5_2.icon20
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L3_2 = L3_2.icon20
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon20"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 331.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon21"
+  L5_2 = UIIcon
+  L6_2 = L5_2
+  L5_2 = L5_2.New
+  L5_2 = L5_2(L6_2)
+  L3_2[L4_2] = L5_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L6_2 = "icon21"
+  L5_2 = L5_2[L6_2]
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon21"
+  L3_2 = L3_2[L4_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon21"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 651.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon22"
+  L5_2 = UIIcon
+  L6_2 = L5_2
+  L5_2 = L5_2.New
+  L5_2 = L5_2(L6_2)
+  L3_2[L4_2] = L5_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L6_2 = "icon22"
+  L5_2 = L5_2[L6_2]
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon22"
+  L3_2 = L3_2[L4_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon22"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 651.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon23"
+  L5_2 = UIIcon
+  L6_2 = L5_2
+  L5_2 = L5_2.New
+  L5_2 = L5_2(L6_2)
+  L3_2[L4_2] = L5_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L6_2 = "icon23"
+  L5_2 = L5_2[L6_2]
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon23"
+  L3_2 = L3_2[L4_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon23"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 683.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon24"
+  L5_2 = UIIcon
+  L6_2 = L5_2
+  L5_2 = L5_2.New
+  L5_2 = L5_2(L6_2)
+  L3_2[L4_2] = L5_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L6_2 = "icon24"
+  L5_2 = L5_2[L6_2]
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon24"
+  L3_2 = L3_2[L4_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon24"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 683.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon25"
+  L5_2 = UIIcon
+  L6_2 = L5_2
+  L5_2 = L5_2.New
+  L5_2 = L5_2(L6_2)
+  L3_2[L4_2] = L5_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L6_2 = "icon25"
+  L5_2 = L5_2[L6_2]
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon25"
+  L3_2 = L3_2[L4_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon25"
+  L7_2 = "component_frame_checker"
+  L8_2 = 648
+  L9_2 = 715.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon26"
+  L5_2 = UIIcon
+  L6_2 = L5_2
+  L5_2 = L5_2.New
+  L5_2 = L5_2(L6_2)
+  L3_2[L4_2] = L5_2
+  L3_2 = A0_2.Checkers1
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = A0_2.Checkers1
+  L6_2 = "icon26"
+  L5_2 = L5_2[L6_2]
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Checkers1
+  L4_2 = "icon26"
+  L3_2 = L3_2[L4_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Checkers1.icon26"
+  L7_2 = "component_frame_checker"
+  L8_2 = 1468
+  L9_2 = 715.05
+  L10_2 = 32
+  L11_2 = 32
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = "BankBar_Yellow"
+  L3_2 = A0_2[L3_2]
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = "BankBar_Yellow"
+  L3_2 = A0_2[L3_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = "BankBar_Yellow"
+  L5_2 = A0_2[L5_2]
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = "BankBar_Yellow"
+  L3_2 = A0_2[L3_2]
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "BankBar_Yellow.icon1"
+  L7_2 = "component_bankgradient"
+  L8_2 = 3640.35
+  L9_2 = 621
+  L10_2 = 1536
+  L11_2 = 4
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = "BankBar_Red"
+  L3_2 = A0_2[L3_2]
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = "BankBar_Red"
+  L3_2 = A0_2[L3_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = "BankBar_Red"
+  L5_2 = A0_2[L5_2]
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = "BankBar_Red"
+  L3_2 = A0_2[L3_2]
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "BankBar_Red.icon1"
+  L7_2 = "component_bankbar"
+  L8_2 = 2174.1
+  L9_2 = 711
+  L10_2 = 1536
+  L11_2 = 64
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = "Dim_Layer_BG"
+  L3_2 = A0_2[L3_2]
+  L4_2 = UIIcon
+  L5_2 = L4_2
+  L4_2 = L4_2.New
+  L4_2 = L4_2(L5_2)
+  L3_2.icon1 = L4_2
+  L3_2 = "Dim_Layer_BG"
+  L3_2 = A0_2[L3_2]
+  L4_2 = L3_2
+  L3_2 = L3_2.Insert
+  L5_2 = "Dim_Layer_BG"
+  L5_2 = A0_2[L5_2]
+  L5_2 = L5_2.icon1
+  L3_2(L4_2, L5_2)
+  L3_2 = "Dim_Layer_BG"
+  L3_2 = A0_2[L3_2]
+  L3_2 = L3_2.icon1
+  L4_2 = L3_2
+  L3_2 = L3_2.Create
+  L5_2 = A0_2.instance
+  L6_2 = "Dim_Layer_BG.icon1"
+  L7_2 = "component_frame_color"
+  L8_2 = 648
+  L9_2 = 378
+  L10_2 = 8
+  L11_2 = 8
+  L12_2 = "center"
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L3_2 = "Shortcuts"
+  L3_2 = A0_2[L3_2]
+  L4_2 = A0_2.Buttons
+  L4_2 = L4_2.CancelPrompt
+  L3_2.CancelPrompt = L4_2
+  L3_2 = "Shortcuts"
+  L3_2 = A0_2[L3_2]
+  L4_2 = A0_2.Cursor
+  L4_2 = L4_2.config_name
+  L3_2.config_name = L4_2
+end
+L0_1.Create = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  if A1_2 == "intro" then
+    L2_2 = A0_2.Shortcuts
+    L2_2 = L2_2.CancelPrompt
+    L3_2 = L2_2
+    L2_2 = L2_2.SetValue
+    L4_2 = GetLocalizedString
+    L5_2 = "COMMONUI"
+    L6_2 = "STR_CANCEL"
+    L4_2, L5_2, L6_2 = L4_2(L5_2, L6_2)
+    L2_2(L3_2, L4_2, L5_2, L6_2)
+  end
+end
+L0_1.OnAnimationPlayed = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+  L1_2 = LoopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Main"
+  L1_2(L2_2, L3_2)
+  L1_2 = GetControllerConfig
+  L2_2 = A0_2.curPlayer
+  L1_2 = L1_2(L2_2)
+  A0_2.originalConfigSet = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2.SwitchConfigSet
+  L3_2 = A0_2.originalConfigSet
+  L1_2(L2_2, L3_2)
+  A0_2.state = 1
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.state
+  if L2_2 == 1 then
+    L2_2 = GetMenuAnimationState
+    L3_2 = A0_2.instance
+    L4_2 = "intro"
+    L2_2 = L2_2(L3_2, L4_2)
+    if L2_2 == 0 then
+      A0_2.state = 0
+      L2_2 = A0_2.changeControlsDisabled
+      if L2_2 == 0 then
+        L2_2 = PlayMenuAnimation
+        L3_2 = A0_2.instance
+        L4_2 = "arrows"
+        L2_2(L3_2, L4_2)
+      end
+    end
+  end
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = StopMenuAnimation
+  L3_2 = A0_2.instance
+  L4_2 = "config"
+  L5_2 = A0_2.curConfigSet
+  L4_2 = L4_2 .. L5_2
+  L2_2(L3_2, L4_2)
+  if A1_2 <= 0 then
+    A1_2 = 2
+  elseif 2 < A1_2 then
+    A1_2 = 1
+  end
+  A0_2.curConfigSet = A1_2
+  L2_2 = BindControllerConfigStrings
+  L3_2 = A0_2.curConfigSet
+  L2_2(L3_2)
+  L2_2 = A0_2.Shortcuts
+  L2_2 = L2_2.config_name
+  L3_2 = L2_2
+  L2_2 = L2_2.SetValue
+  L4_2 = GetLocalizedString
+  L5_2 = "COMMONUI"
+  L6_2 = "STR_CONFIG_"
+  L7_2 = A0_2.curConfigSet
+  L6_2 = L6_2 .. L7_2
+  L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2, L6_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = LoopMenuAnimation
+  L3_2 = A0_2.instance
+  L4_2 = "config"
+  L5_2 = A0_2.curConfigSet
+  L4_2 = L4_2 .. L5_2
+  L2_2(L3_2, L4_2)
+end
+L0_1.SwitchConfigSet = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = InputKey
+  L3_2 = "OK"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = A0_2.changeControlsDisabled
+    if L2_2 == 0 then
+      L2_2 = GetPlatform
+      L2_2 = L2_2()
+      if L2_2 == "x360" then
+        L2_2 = A0_2.curConfigSet
+        if L2_2 == 2 then
+          L2_2 = IsWheelController
+          L3_2 = A0_2.curPlayer
+          L2_2 = L2_2(L3_2)
+          if L2_2 == false then
+            L2_2 = PlayUISound
+            L3_2 = UISoundEventBadInput
+            L2_2(L3_2)
+        end
+      end
+      else
+        L2_2 = GetPlatform
+        L2_2 = L2_2()
+        if L2_2 == "x360" then
+          L2_2 = A0_2.curConfigSet
+          if L2_2 == 1 then
+            L2_2 = IsWheelController
+            L3_2 = A0_2.curPlayer
+            L2_2 = L2_2(L3_2)
+            if L2_2 == true then
+              L2_2 = PlayUISound
+              L3_2 = UISoundEventBadInput
+              L2_2(L3_2)
+          end
+        end
+        else
+          L2_2 = SetControllerConfig
+          L3_2 = A0_2.curPlayer
+          L4_2 = A0_2.curConfigSet
+          L2_2(L3_2, L4_2)
+          L2_2 = PlayUISound
+          L3_2 = UISoundEventSelect_Continue
+          L2_2(L3_2)
+          L2_2 = EndMenu
+          L3_2 = A0_2.instance
+          L2_2(L3_2)
+        end
+      end
+    else
+      L2_2 = PlayUISound
+      L3_2 = UISoundEventSelect_Continue
+      L2_2(L3_2)
+      L2_2 = EndMenu
+      L3_2 = A0_2.instance
+      L2_2(L3_2)
+    end
+  end
+  L2_2 = InputKey
+  L3_2 = "CANCEL"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = SetControllerConfig
+    L3_2 = A0_2.curPlayer
+    L4_2 = A0_2.originalConfigSet
+    L2_2(L3_2, L4_2)
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBack2
+    L2_2(L3_2)
+    L2_2 = EndMenu
+    L3_2 = A0_2.instance
+    L2_2(L3_2)
+  end
+  L2_2 = A0_2.changeControlsDisabled
+  if L2_2 == 0 then
+    L2_2 = InputKey
+    L3_2 = "LEFT"
+    L2_2 = L2_2(L3_2)
+    if A1_2 == L2_2 then
+      L2_2 = PlayUISound
+      L3_2 = UISoundEventLeft_Right
+      L2_2(L3_2)
+      L3_2 = A0_2
+      L2_2 = A0_2.SwitchConfigSet
+      L4_2 = A0_2.curConfigSet
+      L4_2 = L4_2 - 1
+      L2_2(L3_2, L4_2)
+    else
+      L2_2 = InputKey
+      L3_2 = "RIGHT"
+      L2_2 = L2_2(L3_2)
+      if A1_2 == L2_2 then
+        L2_2 = PlayUISound
+        L3_2 = UISoundEventLeft_Right
+        L2_2(L3_2)
+        L3_2 = A0_2
+        L2_2 = A0_2.SwitchConfigSet
+        L4_2 = A0_2.curConfigSet
+        L4_2 = L4_2 + 1
+        L2_2(L3_2, L4_2)
+      end
+    end
+  end
+end
+L0_1.OnKeyDown = L1_1
+IG_ControlSettings_x360 = L0_1

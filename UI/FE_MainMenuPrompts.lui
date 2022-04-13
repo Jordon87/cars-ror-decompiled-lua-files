@@ -1,0 +1,102 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.mode = 0
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = PlaceMenuInWorld
+  L2_2 = A0_2.instance
+  L3_2 = "MainMenuPrompts"
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text1"
+  L5_2 = "STR_SELECT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 373.6
+  L9_2 = 71.95
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text3"
+  L5_2 = "STR_SCROLL"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 446.6
+  L9_2 = 72.15
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+  L1_2 = EndMenu
+  L2_2 = A0_2.instance
+  L1_2(L2_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.OnKeyDown = L1_1
+FE_MainMenuPrompts = L0_1

@@ -1,0 +1,590 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.curPrompt = ""
+L0_1.lastAnim = ""
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Wiimote8 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Wiimote7 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Wiimote6 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Wiimote5 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Wiimote4 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Wiimote3 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Wiimote2 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Arrow_Twist = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Arrow_Direction = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Arrow_Rotate = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Arrow_Thrust = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = A0_2.Wiimote8
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Wiimote8
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Wiimote8
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Wiimote8
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Wiimote8.icon1"
+  L5_2 = "wii_control_008"
+  L6_2 = 1570.8
+  L7_2 = 570.95
+  L8_2 = 128
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Wiimote7
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Wiimote7
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Wiimote7
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Wiimote7
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Wiimote7.icon1"
+  L5_2 = "wii_control_007"
+  L6_2 = 1509.55
+  L7_2 = 706.5
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Wiimote6
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Wiimote6
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Wiimote6
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Wiimote6
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Wiimote6.icon1"
+  L5_2 = "wii_control_006"
+  L6_2 = 1509.55
+  L7_2 = 706.5
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Wiimote5
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Wiimote5
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Wiimote5
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Wiimote5
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Wiimote5.icon1"
+  L5_2 = "wii_control_005"
+  L6_2 = 1545.25
+  L7_2 = 677.15
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Wiimote4
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Wiimote4
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Wiimote4
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Wiimote4
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Wiimote4.icon1"
+  L5_2 = "wii_control_004"
+  L6_2 = 1602.1
+  L7_2 = 706
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Wiimote3
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Wiimote3
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Wiimote3
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Wiimote3
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Wiimote3.icon1"
+  L5_2 = "wii_control_003"
+  L6_2 = 1552.1
+  L7_2 = 706
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Wiimote2
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Wiimote2
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Wiimote2
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Wiimote2
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Wiimote2.icon1"
+  L5_2 = "wii_control_002"
+  L6_2 = 1563.5
+  L7_2 = 667.6
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Arrow_Twist
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Arrow_Twist
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Arrow_Twist
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Arrow_Twist
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Arrow_Twist.icon1"
+  L5_2 = "hud_gestures_arrow_04"
+  L6_2 = 1572.1
+  L7_2 = 563.95
+  L8_2 = 128
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Arrow_Direction
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Arrow_Direction
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Arrow_Direction
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Arrow_Direction
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Arrow_Direction.icon1"
+  L5_2 = "hud_gestures_arrow_01"
+  L6_2 = 1476.6
+  L7_2 = 665.4
+  L8_2 = 32
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Arrow_Rotate
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Arrow_Rotate
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Arrow_Rotate
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Arrow_Rotate
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Arrow_Rotate.icon1"
+  L5_2 = "hud_gestures_arrow_05"
+  L6_2 = 1571.6
+  L7_2 = 665.4
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Arrow_Thrust
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Arrow_Thrust
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Arrow_Thrust
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Arrow_Thrust
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Arrow_Thrust.icon1"
+  L5_2 = "hud_gestures_arrow_03"
+  L6_2 = 1571.6
+  L7_2 = 665.4
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = LoopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L2_2 = A0_2
+  L1_2 = A0_2.StopAllAnims
+  L1_2(L2_2)
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  if A1_2 == "Intro" then
+    L2_2 = A0_2.lastAnim
+    if L2_2 ~= "" then
+      L2_2 = LoopMenuAnimation
+      L3_2 = A0_2.instance
+      L4_2 = A0_2.lastAnim
+      L2_2(L3_2, L4_2)
+    end
+  end
+end
+L0_1.OnAnimationPlayed = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  A0_2.lastAnim = ""
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Up"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Down"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Left"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Right"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Shake"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "TwistRight"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "TwistLeft"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Thrust"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "CounterClockwise"
+  L1_2(L2_2, L3_2)
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "Clockwise"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StopAllAnims = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = GetCurrentGesturePrompt
+  L2_2 = L2_2()
+  tempPrompt = L2_2
+  L2_2 = tempPrompt
+  L3_2 = A0_2.curPrompt
+  if L2_2 ~= L3_2 then
+    L2_2 = tempPrompt
+    A0_2.curPrompt = L2_2
+    L2_2 = A0_2.curPrompt
+    if L2_2 ~= "" then
+      L2_2 = A0_2.curPrompt
+      if L2_2 ~= "None" then
+        goto lbl_19
+      end
+    end
+    L3_2 = A0_2
+    L2_2 = A0_2.StopAllAnims
+    L2_2(L3_2)
+    goto lbl_142
+    ::lbl_19::
+    L2_2 = A0_2.curPrompt
+    if L2_2 == "FlickUp" then
+      L3_2 = A0_2
+      L2_2 = A0_2.StopAllAnims
+      L2_2(L3_2)
+      A0_2.lastAnim = "Up"
+      L2_2 = LoopMenuAnimation
+      L3_2 = A0_2.instance
+      L4_2 = "Up"
+      L2_2(L3_2, L4_2)
+    else
+      L2_2 = A0_2.curPrompt
+      if L2_2 == "FlickDown" then
+        L3_2 = A0_2
+        L2_2 = A0_2.StopAllAnims
+        L2_2(L3_2)
+        A0_2.lastAnim = "Down"
+        L2_2 = LoopMenuAnimation
+        L3_2 = A0_2.instance
+        L4_2 = "Down"
+        L2_2(L3_2, L4_2)
+      else
+        L2_2 = A0_2.curPrompt
+        if L2_2 == "FlickLeft" then
+          L3_2 = A0_2
+          L2_2 = A0_2.StopAllAnims
+          L2_2(L3_2)
+          A0_2.lastAnim = "Left"
+          L2_2 = LoopMenuAnimation
+          L3_2 = A0_2.instance
+          L4_2 = "Left"
+          L2_2(L3_2, L4_2)
+        else
+          L2_2 = A0_2.curPrompt
+          if L2_2 == "FlickRight" then
+            L3_2 = A0_2
+            L2_2 = A0_2.StopAllAnims
+            L2_2(L3_2)
+            A0_2.lastAnim = "Right"
+            L2_2 = LoopMenuAnimation
+            L3_2 = A0_2.instance
+            L4_2 = "Right"
+            L2_2(L3_2, L4_2)
+          else
+            L2_2 = A0_2.curPrompt
+            if L2_2 == "Shake" then
+              L3_2 = A0_2
+              L2_2 = A0_2.StopAllAnims
+              L2_2(L3_2)
+              A0_2.lastAnim = "Shake"
+              L2_2 = LoopMenuAnimation
+              L3_2 = A0_2.instance
+              L4_2 = "Shake"
+              L2_2(L3_2, L4_2)
+            else
+              L2_2 = A0_2.curPrompt
+              if L2_2 == "TwistRight" then
+                L3_2 = A0_2
+                L2_2 = A0_2.StopAllAnims
+                L2_2(L3_2)
+                A0_2.lastAnim = "TwistRight"
+                L2_2 = LoopMenuAnimation
+                L3_2 = A0_2.instance
+                L4_2 = "TwistRight"
+                L2_2(L3_2, L4_2)
+              else
+                L2_2 = A0_2.curPrompt
+                if L2_2 == "TwistLeft" then
+                  L3_2 = A0_2
+                  L2_2 = A0_2.StopAllAnims
+                  L2_2(L3_2)
+                  A0_2.lastAnim = "TwistLeft"
+                  L2_2 = LoopMenuAnimation
+                  L3_2 = A0_2.instance
+                  L4_2 = "TwistLeft"
+                  L2_2(L3_2, L4_2)
+                else
+                  L2_2 = A0_2.curPrompt
+                  if L2_2 == "Thrust" then
+                    L3_2 = A0_2
+                    L2_2 = A0_2.StopAllAnims
+                    L2_2(L3_2)
+                    A0_2.lastAnim = "Thrust"
+                    L2_2 = LoopMenuAnimation
+                    L3_2 = A0_2.instance
+                    L4_2 = "Thrust"
+                    L2_2(L3_2, L4_2)
+                  else
+                    L2_2 = A0_2.curPrompt
+                    if L2_2 == "RotateCounterClockwise" then
+                      L3_2 = A0_2
+                      L2_2 = A0_2.StopAllAnims
+                      L2_2(L3_2)
+                      A0_2.lastAnim = "CounterClockwise"
+                      L2_2 = LoopMenuAnimation
+                      L3_2 = A0_2.instance
+                      L4_2 = "CounterClockwise"
+                      L2_2(L3_2, L4_2)
+                    else
+                      L2_2 = A0_2.curPrompt
+                      if L2_2 == "RotateClockwise" then
+                        L3_2 = A0_2
+                        L2_2 = A0_2.StopAllAnims
+                        L2_2(L3_2)
+                        A0_2.lastAnim = "Clockwise"
+                        L2_2 = LoopMenuAnimation
+                        L3_2 = A0_2.instance
+                        L4_2 = "Clockwise"
+                        L2_2(L3_2, L4_2)
+                      else
+                        L2_2 = A0_2.curPrompt
+                        if L2_2 ~= "SlashLeftToRight" then
+                          L2_2 = A0_2.curPrompt
+                          if L2_2 ~= "SlashRightToLeft" then
+                            goto lbl_142
+                          end
+                        end
+                        L3_2 = A0_2
+                        L2_2 = A0_2.StopAllAnims
+                        L2_2(L3_2)
+                        A0_2.lastAnim = "Clockwise"
+                        L2_2 = LoopMenuAnimation
+                        L3_2 = A0_2.instance
+                        L4_2 = "Clockwise"
+                        L2_2(L3_2, L4_2)
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  ::lbl_142::
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.OnKeyDown = L1_1
+HUD_Gestures_Wii_2 = L0_1

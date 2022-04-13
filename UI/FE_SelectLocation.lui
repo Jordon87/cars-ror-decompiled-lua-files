@@ -1,0 +1,676 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
+function L0_1()
+  local L0_2, L1_2, L2_2
+  L0_2 = StoryEvent_GetStatus
+  L1_2 = "StoryEvent_CS_01"
+  L0_2 = L0_2(L1_2)
+  L1_2 = StoryEventStatus
+  L2_2 = "CutsceneFinished"
+  L1_2 = L1_2(L2_2)
+  if L0_2 >= L1_2 then
+    L0_2 = "CR_01_EX"
+    return L0_2
+  else
+    L0_2 = "CS_01"
+    return L0_2
+  end
+end
+GetIntroEvent = L0_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.curSelection = 1
+L1_1 = {}
+L2_1 = GetIntroEvent
+L2_1 = L2_1()
+L3_1 = "CR_03_EX"
+L4_1 = "CR_04_EX"
+L5_1 = "CR_05_EX"
+L6_1 = "RS_EX"
+L7_1 = "TF_EX"
+L8_1 = "OV_EX"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L0_1.PosChoices = L1_1
+L1_1 = {}
+L2_1 = "player1start"
+L3_1 = "player1start"
+L4_1 = "player1start"
+L5_1 = "player1start"
+L6_1 = "player1start"
+L7_1 = "player1start2"
+L8_1 = "player1start3"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L0_1.PosStartPos = L1_1
+L1_1 = {}
+L2_1 = "STR_CR_01_EX_TITLE"
+L3_1 = "STR_CR_03_EX_TITLE"
+L4_1 = "STR_CR_04_EX_TITLE"
+L5_1 = "STR_CR_05_EX_TITLE"
+L6_1 = "STR_RS_EX_TITLE"
+L7_1 = "STR_TF_EX_TITLE"
+L8_1 = "STR_OV_EX_TITLE"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L0_1.PosNames = L1_1
+L1_1 = {}
+L2_1 = "CR_01_EX"
+L3_1 = "CR_03_EX"
+L4_1 = "CR_04_EX"
+L5_1 = "CR_05_EX"
+L6_1 = "HUB_EX"
+L7_1 = "TF_EX"
+L8_1 = "OV_EX"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L0_1.PosPreviewImages = L1_1
+L1_1 = {}
+L0_1.PreviewImage = L1_1
+L1_1 = {}
+L0_1.HubChoices = L1_1
+L1_1 = {}
+L0_1.HubStartPos = L1_1
+L1_1 = {}
+L0_1.HubNames = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Preview_Icon = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Title = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.FE_Arrow_3_R = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.FE_Arrow_3_L = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Labels = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.CursorOptions = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = PlaceMenuInWorld
+  L2_2 = A0_2.instance
+  L3_2 = "SelectLocation"
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Preview_Icon
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Preview_Icon
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Preview_Icon
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Preview_Icon
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Preview_Icon.icon1"
+  L5_2 = "cr_01_gk_event_preview"
+  L6_2 = 684.875
+  L7_2 = 470.1
+  L8_2 = 256.05
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Title
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.name_location = L2_2
+  L1_2 = A0_2.Title
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Title
+  L3_2 = L3_2.name_location
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title
+  L1_2 = L1_2.name_location
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Title.name_location"
+  L5_2 = "STR_DYN_CREDITS_1"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1020.4
+  L9_2 = 219.45
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text1"
+  L5_2 = "STR_SCROLL"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 784.6
+  L9_2 = 555.75
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text3"
+  L5_2 = "STR_BACK"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 755.85
+  L9_2 = 556.25
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text5 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text5
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text5"
+  L5_2 = "STR_SELECT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 709
+  L9_2 = 556
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.FE_Arrow_3_R
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.FE_Arrow_3_R
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.FE_Arrow_3_R
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.FE_Arrow_3_R
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "FE_Arrow_3_R.icon1"
+  L5_2 = "fe_arrow_3_3D"
+  L6_2 = 716
+  L7_2 = 472
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.FE_Arrow_3_L
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.FE_Arrow_3_L
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.FE_Arrow_3_L
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.FE_Arrow_3_L
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "FE_Arrow_3_L.icon1"
+  L5_2 = "fe_arrow_3_3D"
+  L6_2 = 266
+  L7_2 = 470.95
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Labels
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Labels
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Labels
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Labels
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Labels.text1"
+  L5_2 = "STR_COMPLETED"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1072.45
+  L9_2 = 211.55
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Labels
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.stat1 = L2_2
+  L1_2 = A0_2.Labels
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Labels
+  L3_2 = L3_2.stat1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Labels
+  L1_2 = L1_2.stat1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Labels.stat1"
+  L5_2 = "STR_DYN_CREDITS_2"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1072.45
+  L9_2 = 165.2
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Labels
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.stat2 = L2_2
+  L1_2 = A0_2.Labels
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Labels
+  L3_2 = L3_2.stat2
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Labels
+  L1_2 = L1_2.stat2
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Labels.stat2"
+  L5_2 = "STR_DYN_CREDITS_3"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1072.45
+  L9_2 = 227.2
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.CursorOptions
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.CursorOptions
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.CursorOptions
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.CursorOptions
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "CursorOptions.text1"
+  L5_2 = "STR_SELECT_LOCATION"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 810.65
+  L9_2 = 525.35
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.Title
+  L2_2 = L2_2.name_location
+  L1_2.name_location = L2_2
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.Labels
+  L2_2 = L2_2.stat1
+  L1_2.stat1 = L2_2
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.Labels
+  L2_2 = L2_2.stat2
+  L1_2.stat2 = L2_2
+  L1_2 = SetGameMode
+  L2_2 = "Story"
+  L1_2(L2_2)
+  L2_2 = A0_2
+  L1_2 = A0_2.UpdateUnlockedHubs
+  L1_2(L2_2)
+  L1_2 = A0_2.Shortcuts
+  L1_2 = L1_2.stat1
+  L2_2 = L1_2
+  L1_2 = L1_2.SetValue
+  L3_2 = ""
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Shortcuts
+  L1_2 = L1_2.stat2
+  L2_2 = L1_2
+  L1_2 = L1_2.SetValue
+  L3_2 = ""
+  L1_2(L2_2, L3_2)
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  L1_2 = GetCurExploreHub
+  L1_2 = L1_2()
+  L2_2 = -1
+  L3_2 = {}
+  A0_2.HubChoices = L3_2
+  L3_2 = {}
+  A0_2.HubStartPos = L3_2
+  L3_2 = {}
+  A0_2.HubNames = L3_2
+  L3_2 = {}
+  A0_2.PreviewImage = L3_2
+  L3_2 = 1
+  L4_2 = ipairs
+  L5_2 = A0_2.PosChoices
+  L4_2, L5_2, L6_2 = L4_2(L5_2)
+  for L7_2, L8_2 in L4_2, L5_2, L6_2 do
+    L9_2 = A0_2.PosChoices
+    L9_2 = L9_2[L7_2]
+    L10_2 = GetPlatform
+    L10_2 = L10_2()
+    if L10_2 ~= "ps2" and (L9_2 == "RS_EX" or L9_2 == "TF_EX" or L9_2 == "OV_EX") then
+      L9_2 = "HUB_EX"
+    end
+    L10_2 = "StoryEvent_"
+    L11_2 = L9_2
+    L10_2 = L10_2 .. L11_2
+    L11_2 = StoryEvent_GetStatus
+    L12_2 = L10_2
+    L11_2 = L11_2(L12_2)
+    L12_2 = StoryEventStatus
+    L13_2 = "Locked"
+    L12_2 = L12_2(L13_2)
+    if L11_2 > L12_2 then
+      L11_2 = A0_2.HubChoices
+      L11_2[L3_2] = L9_2
+      L11_2 = A0_2.HubStartPos
+      L12_2 = A0_2.PosStartPos
+      L12_2 = L12_2[L7_2]
+      L11_2[L3_2] = L12_2
+      L11_2 = A0_2.HubNames
+      L12_2 = A0_2.PosNames
+      L12_2 = L12_2[L7_2]
+      L11_2[L3_2] = L12_2
+      L11_2 = A0_2.PreviewImage
+      L12_2 = A0_2.PosPreviewImages
+      L12_2 = L12_2[L7_2]
+      L11_2[L3_2] = L12_2
+      L3_2 = L3_2 + 1
+    end
+    if L1_2 == L10_2 then
+      L2_2 = L7_2
+    end
+  end
+  L5_2 = A0_2
+  L4_2 = A0_2.UpdateSelection
+  L6_2 = L2_2
+  L4_2(L5_2, L6_2)
+end
+L0_1.UpdateUnlockedHubs = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2
+  L3_2 = PlayMenuAnimation
+  L4_2 = A0_2.instance
+  L5_2 = "GiveBonus"
+  L3_2(L4_2, L5_2)
+end
+L0_1.GiveBonus = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+end
+L0_1.SetRacerPosition = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+  L2_2 = A0_2
+  L1_2 = A0_2.UpdateUnlockedHubs
+  L1_2(L2_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = A0_2.HubChoices
+  L2_2 = #L2_2
+  if L2_2 == 0 then
+    return
+  end
+  L2_2 = A0_2.HubChoices
+  L2_2 = #L2_2
+  if A1_2 > L2_2 then
+    A1_2 = 1
+  elseif A1_2 < 1 then
+    L2_2 = A0_2.HubChoices
+    A1_2 = #L2_2
+  end
+  A0_2.curSelection = A1_2
+  L2_2 = GetLocalizedString
+  L3_2 = "EventInfo"
+  L4_2 = A0_2.HubNames
+  L4_2 = L4_2[A1_2]
+  L2_2 = L2_2(L3_2, L4_2)
+  L3_2 = A0_2.Shortcuts
+  L3_2 = L3_2.name_location
+  L4_2 = L3_2
+  L3_2 = L3_2.SetValue
+  L5_2 = L2_2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Shortcuts
+  L3_2 = L3_2.stat1
+  L4_2 = L3_2
+  L3_2 = L3_2.SetValue
+  L5_2 = ""
+  L6_2 = GetProfileStat
+  L7_2 = "StoryCompletionPercent"
+  L6_2 = L6_2(L7_2)
+  L7_2 = "%"
+  L5_2 = L5_2 .. L6_2 .. L7_2
+  L3_2(L4_2, L5_2)
+  L3_2 = A0_2.Shortcuts
+  L3_2 = L3_2.stat2
+  L4_2 = L3_2
+  L3_2 = L3_2.SetValue
+  L5_2 = ""
+  L3_2(L4_2, L5_2)
+  L3_2 = LoadEventSelectImageFromStream
+  L4_2 = A0_2.PreviewImage
+  L5_2 = A0_2.curSelection
+  L4_2 = L4_2[L5_2]
+  L5_2 = "_event_preview"
+  L4_2 = L4_2 .. L5_2
+  L3_2(L4_2)
+  L3_2 = ApplyEventSelectImageToIcon
+  L4_2 = A0_2.PreviewImage
+  L5_2 = A0_2.curSelection
+  L4_2 = L4_2[L5_2]
+  L5_2 = "_event_preview"
+  L4_2 = L4_2 .. L5_2
+  L5_2 = "FE_SelectLocation"
+  L6_2 = "Preview_Icon.icon1"
+  L3_2(L4_2, L5_2, L6_2)
+end
+L0_1.UpdateSelection = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = InputKey
+  L3_2 = "LEFT"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventLeft_Right
+    L2_2(L3_2)
+    L3_2 = A0_2
+    L2_2 = A0_2.UpdateSelection
+    L4_2 = A0_2.curSelection
+    L4_2 = L4_2 + 1
+    L2_2(L3_2, L4_2)
+  end
+  L2_2 = InputKey
+  L3_2 = "RIGHT"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventLeft_Right
+    L2_2(L3_2)
+    L3_2 = A0_2
+    L2_2 = A0_2.UpdateSelection
+    L4_2 = A0_2.curSelection
+    L4_2 = L4_2 - 1
+    L2_2(L3_2, L4_2)
+  end
+  L2_2 = InputKey
+  L3_2 = "OK"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventSelect_Continue
+    L2_2(L3_2)
+    L2_2 = ApplyProfileSettings
+    L2_2()
+    L2_2 = SetStartPosition
+    L3_2 = A0_2.HubStartPos
+    L4_2 = A0_2.curSelection
+    L3_2 = L3_2[L4_2]
+    L2_2(L3_2)
+    L2_2 = SwitchActivity
+    L3_2 = A0_2.HubChoices
+    L4_2 = A0_2.curSelection
+    L3_2 = L3_2[L4_2]
+    L4_2 = A0_2.HubStartPos
+    L5_2 = A0_2.curSelection
+    L4_2 = L4_2[L5_2]
+    L2_2(L3_2, L4_2)
+  end
+  L2_2 = InputKey
+  L3_2 = "CANCEL"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBack2
+    L2_2(L3_2)
+    L2_2 = PlayCameraAnimation
+    L3_2 = "FrontEndCamera"
+    L4_2 = "Anim\\FECam03R"
+    L2_2(L3_2, L4_2)
+    L2_2 = RaiseMenu
+    L3_2 = "FE_MainMenu"
+    L2_2(L3_2)
+  end
+end
+L0_1.OnKeyDown = L1_1
+FE_SelectLocation = L0_1

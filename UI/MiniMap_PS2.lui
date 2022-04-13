@@ -1,0 +1,504 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.HUD_MiniMap = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Minimap_Mask = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Minimap_Mask
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Minimap_Mask
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Minimap_Mask
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Minimap_Mask
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Minimap_Mask.icon1"
+  L5_2 = "minimap_mask"
+  L6_2 = 261.8
+  L7_2 = 1180.8
+  L8_2 = 256
+  L9_2 = 256
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.HUD_MiniMapFrame = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.HUD_MiniMapFrame
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.HUD_MiniMapFrame
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.HUD_MiniMapFrame
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.HUD_MiniMapFrame
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.HUD_MiniMapFrame.icon1"
+  L5_2 = "hud_minimap"
+  L6_2 = 133.8
+  L7_2 = 1180.8
+  L8_2 = 128
+  L9_2 = 256
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.HUD_MiniMapFrame
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon2 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.HUD_MiniMapFrame
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.HUD_MiniMapFrame
+  L3_2 = L3_2.icon2
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.HUD_MiniMapFrame
+  L1_2 = L1_2.icon2
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.HUD_MiniMapFrame.icon2"
+  L5_2 = "hud_minimap"
+  L6_2 = 261.8
+  L7_2 = 1180.8
+  L8_2 = 128
+  L9_2 = 256
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_1
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_1
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_1
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_1
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_1.icon1"
+  L5_2 = "minimap_1"
+  L6_2 = 7.15
+  L7_2 = 926.15
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_2 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_2
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_2
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_2
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_2
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_2.icon1"
+  L5_2 = "minimap_2"
+  L6_2 = 135.1
+  L7_2 = 926.1
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_3 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_3
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_3
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_3
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_3
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_3.icon1"
+  L5_2 = "minimap_3"
+  L6_2 = 263.15
+  L7_2 = 926.1
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_4 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_4
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_4
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_4
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_4
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_4.icon1"
+  L5_2 = "minimap_4"
+  L6_2 = 7.1
+  L7_2 = 1054.1
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_5 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_5
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_5
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_5
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_5
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_5.icon1"
+  L5_2 = "minimap_5"
+  L6_2 = 135.1
+  L7_2 = 1054.1
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_6 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_6
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_6
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_6
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_6
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_6.icon1"
+  L5_2 = "minimap_6"
+  L6_2 = 263.1
+  L7_2 = 1054.1
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_7 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_7
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_7
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_7
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_7
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_7.icon1"
+  L5_2 = "minimap_7"
+  L6_2 = 7.1
+  L7_2 = 1182.1
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_8 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_8
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_8
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_8
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_8
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_8.icon1"
+  L5_2 = "minimap_8"
+  L6_2 = 135.1
+  L7_2 = 1182.15
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Map_9 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_9
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_9
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Map_9
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Map_9
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Map_9.icon1"
+  L5_2 = "minimap_9"
+  L6_2 = 263.1
+  L7_2 = 1182.1
+  L8_2 = 129.3
+  L9_2 = 129.3
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.Minimap_Mask_BIG = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Minimap_Mask_BIG
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Minimap_Mask_BIG
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_MiniMap
+  L3_2 = L3_2.Minimap_Mask_BIG
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_MiniMap
+  L1_2 = L1_2.Minimap_Mask_BIG
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_MiniMap.Minimap_Mask_BIG.icon1"
+  L5_2 = "minimap_mask_ps2"
+  L6_2 = 693
+  L7_2 = 1612
+  L8_2 = 695.6
+  L9_2 = 695.6
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L0_1.Create = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2
+  L3_2 = PlayMenuAnimation
+  L4_2 = A0_2.instance
+  L5_2 = "GiveBonus"
+  L3_2(L4_2, L5_2)
+end
+L0_1.GiveBonus = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+end
+L0_1.SetRacerPosition = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.OnKeyDown = L1_1
+MiniMap_PS2 = L0_1

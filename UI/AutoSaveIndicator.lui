@@ -1,0 +1,123 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.state = 0
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Autosave_Icon = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.load_icon_frame = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = A0_2.Autosave_Icon
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Autosave_Icon
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Autosave_Icon
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Autosave_Icon
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Autosave_Icon.icon1"
+  L5_2 = "load_icon_1"
+  L6_2 = 1440
+  L7_2 = 630
+  L8_2 = 64
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.load_icon_frame
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.load_icon_frame
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.load_icon_frame
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.load_icon_frame
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "load_icon_frame.icon1"
+  L5_2 = "icon_map_yellow_trc"
+  L6_2 = 1438.8
+  L7_2 = 630
+  L8_2 = 64
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = LoopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "main"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  A0_2.state = 3
+  L1_2 = StopMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "main"
+  L1_2(L2_2, L3_2)
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "main"
+  L1_2(L2_2, L3_2)
+end
+L0_1.Finished = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.state
+  if L2_2 == 3 then
+    L2_2 = GetMenuAnimationState
+    L3_2 = A0_2.instance
+    L4_2 = "main"
+    L2_2 = L2_2(L3_2, L4_2)
+    if L2_2 == 0 then
+      A0_2.state = 0
+      L2_2 = EndMenu
+      L3_2 = A0_2.instance
+      L2_2(L3_2)
+    end
+  end
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.OnKeyDown = L1_1
+AutoSaveIndicator = L0_1

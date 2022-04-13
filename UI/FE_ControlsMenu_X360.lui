@@ -1,0 +1,1014 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.curPlayer = 1
+L0_1.curConfigSet = 0
+L0_1.originalConfigSet = 0
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Title = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Direction = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Controls = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Sixaxis_Jump = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_180_Up = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_180 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.X360_Wheel_Steer = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_90_Left = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Rotate_90 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Config_Select = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.FE_Arrow_2_R = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.FE_Arrow_2_L = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = PlaceMenuInWorld
+  L2_2 = A0_2.instance
+  L3_2 = "ControlsMenu"
+  L1_2(L2_2, L3_2)
+  L1_2 = GetControllerConfig
+  L2_2 = A0_2.curPlayer
+  L1_2 = L1_2(L2_2)
+  A0_2.curConfigSet = L1_2
+  L1_2 = A0_2.Title
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Title
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Title
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Title.text1"
+  L5_2 = "STR_CONTROLS"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1008.3
+  L9_2 = 87.95
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Direction
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Direction
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Direction
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Direction
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Direction.text1"
+  L5_2 = "STR_LEFT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 487
+  L9_2 = 212.8
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Direction
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Direction
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Direction
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Direction
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Direction.text3"
+  L5_2 = "STR_LEFT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 893
+  L9_2 = 212.8
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text1"
+  L5_2 = "STR_SCROLL"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 746.15
+  L9_2 = 711.55
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text3"
+  L5_2 = "STR_BACK"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 886.35
+  L9_2 = 711.55
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text5 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text5
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text5"
+  L5_2 = "STR_SELECT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1034.35
+  L9_2 = 711.55
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text1"
+  L5_2 = "STR_GAS"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1077.05
+  L9_2 = 428.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text3"
+  L5_2 = "STR_INTERACT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1439.35
+  L9_2 = 428.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text5 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text5
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text5"
+  L5_2 = "STR_BRAKE"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1077.05
+  L9_2 = 483.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text7 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text7
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text7
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text7"
+  L5_2 = "STR_180_TURN"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1439.45
+  L9_2 = 483.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text9 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text9
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text9
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text9"
+  L5_2 = "STR_DRIFT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1077.1
+  L9_2 = 538.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.FreeLook = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.FreeLook
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.FreeLook
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.FreeLook"
+  L5_2 = "STR_FREE_LOOK"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1439.45
+  L9_2 = 703.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text13 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text13
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text13
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text13"
+  L5_2 = "STR_TURBO_BOOST"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1076.9
+  L9_2 = 593.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text15 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text15
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text15
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text15"
+  L5_2 = "STR_LOOK_BACK"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1439.45
+  L9_2 = 593.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text17 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text17
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text17
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text17"
+  L5_2 = "STR_TILT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1077.05
+  L9_2 = 648.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text19 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text19
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text19
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text19"
+  L5_2 = "STR_CHANGE_CAM"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1439.45
+  L9_2 = 648.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text21 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text21
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text21
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text21"
+  L5_2 = "STR_HAND_BRAKE"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1077.1
+  L9_2 = 703.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text23 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text23
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text23
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text23"
+  L5_2 = "STR_START"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1439.45
+  L9_2 = 538.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text25 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text25
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text25
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text25"
+  L5_2 = "STR_STEER"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1077.3
+  L9_2 = 368.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Controls
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text27 = L2_2
+  L1_2 = A0_2.Controls
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Controls
+  L3_2 = L3_2.text27
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Controls
+  L1_2 = L1_2.text27
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Controls.text27"
+  L5_2 = "STR_JUMP"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1494.4
+  L9_2 = 368.1
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Sixaxis_Jump
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Sixaxis_Jump
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Sixaxis_Jump
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Sixaxis_Jump
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Sixaxis_Jump.icon1"
+  L5_2 = "X360_control_013_3D"
+  L6_2 = 461
+  L7_2 = 294
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Rotate_180_Up
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Rotate_180_Up
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Rotate_180_Up
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Rotate_180_Up
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Rotate_180_Up.icon1"
+  L5_2 = "X360_control_007_3D"
+  L6_2 = 461
+  L7_2 = 287
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Rotate_180
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Rotate_180
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Rotate_180
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Rotate_180
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Rotate_180.icon1"
+  L5_2 = "X360_control_007_3D"
+  L6_2 = 461
+  L7_2 = 287
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.X360_Wheel_Steer
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.X360_Wheel_Steer
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.X360_Wheel_Steer
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.X360_Wheel_Steer
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "X360_Wheel_Steer.icon1"
+  L5_2 = "X360_control_008_3D"
+  L6_2 = 57
+  L7_2 = 302
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Rotate_90_Left
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Rotate_90_Left
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Rotate_90_Left
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Rotate_90_Left
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Rotate_90_Left.icon1"
+  L5_2 = "X360_control_005_3D"
+  L6_2 = 51.5
+  L7_2 = 287
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Rotate_90
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Rotate_90
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Rotate_90
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Rotate_90
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Rotate_90.icon1"
+  L5_2 = "X360_control_005_3D"
+  L6_2 = 51.45
+  L7_2 = 287
+  L8_2 = 128
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Config_Select
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.ConfigSet = L2_2
+  L1_2 = A0_2.Config_Select
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Config_Select
+  L3_2 = L3_2.ConfigSet
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Config_Select
+  L1_2 = L1_2.ConfigSet
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Config_Select.ConfigSet"
+  L5_2 = "STR_DYN_CREDITS_1"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 999.7
+  L9_2 = 658.5
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.FE_Arrow_2_R
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.FE_Arrow_2_R
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.FE_Arrow_2_R
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.FE_Arrow_2_R
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "FE_Arrow_2_R.icon1"
+  L5_2 = "fe_arrow_2_3D"
+  L6_2 = 764.8
+  L7_2 = 756.4
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.FE_Arrow_2_L
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.FE_Arrow_2_L
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.FE_Arrow_2_L
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.FE_Arrow_2_L
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "FE_Arrow_2_L.icon1"
+  L5_2 = "fe_arrow_2_3D"
+  L6_2 = 243.2
+  L7_2 = 756.4
+  L8_2 = 64
+  L9_2 = 128
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.Controls
+  L2_2 = L2_2.FreeLook
+  L1_2.FreeLook = L2_2
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.Config_Select
+  L2_2 = L2_2.ConfigSet
+  L1_2.ConfigSet = L2_2
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+  L1_2 = GetControllerConfig
+  L2_2 = A0_2.curPlayer
+  L1_2 = L1_2(L2_2)
+  A0_2.originalConfigSet = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2.SwitchConfigSet
+  L3_2 = A0_2.originalConfigSet
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = StopMenuAnimation
+  L3_2 = A0_2.instance
+  L4_2 = "ConfigSet"
+  L5_2 = A0_2.curConfigSet
+  L4_2 = L4_2 .. L5_2
+  L2_2(L3_2, L4_2)
+  if A1_2 <= 0 then
+    A1_2 = 2
+  elseif 2 < A1_2 then
+    A1_2 = 1
+  end
+  A0_2.curConfigSet = A1_2
+  L2_2 = BindControllerConfigStrings
+  L3_2 = A0_2.curConfigSet
+  L2_2(L3_2)
+  L2_2 = A0_2.Shortcuts
+  L2_2 = L2_2.ConfigSet
+  L3_2 = L2_2
+  L2_2 = L2_2.SetValue
+  L4_2 = GetLocalizedString
+  L5_2 = "COMMONUI"
+  L6_2 = "STR_CONFIG_"
+  L7_2 = A0_2.curConfigSet
+  L6_2 = L6_2 .. L7_2
+  L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2, L6_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = LoopMenuAnimation
+  L3_2 = A0_2.instance
+  L4_2 = "ConfigSet"
+  L5_2 = A0_2.curConfigSet
+  L4_2 = L4_2 .. L5_2
+  L2_2(L3_2, L4_2)
+  if A1_2 == 2 then
+    L2_2 = A0_2.Shortcuts
+    L2_2 = L2_2.FreeLook
+    L3_2 = L2_2
+    L2_2 = L2_2.SetValue
+    L4_2 = ""
+    L2_2(L3_2, L4_2)
+  else
+    L2_2 = A0_2.Shortcuts
+    L2_2 = L2_2.FreeLook
+    L3_2 = L2_2
+    L2_2 = L2_2.SetValue
+    L4_2 = GetLocalizedString
+    L5_2 = "COMMONUI"
+    L6_2 = "STR_FREE_LOOK"
+    L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2, L6_2)
+    L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  end
+end
+L0_1.SwitchConfigSet = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = InputKey
+  L3_2 = "OK"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = GetPlatform
+    L2_2 = L2_2()
+    if L2_2 == "x360" then
+      L2_2 = A0_2.curConfigSet
+      if L2_2 == 2 then
+        L2_2 = IsWheelController
+        L3_2 = A0_2.curPlayer
+        L2_2 = L2_2(L3_2)
+        if L2_2 == false then
+          L2_2 = PlayUISound
+          L3_2 = UISoundEventBadInput
+          L2_2(L3_2)
+      end
+    end
+    else
+      L2_2 = GetPlatform
+      L2_2 = L2_2()
+      if L2_2 == "x360" then
+        L2_2 = A0_2.curConfigSet
+        if L2_2 == 1 then
+          L2_2 = IsWheelController
+          L3_2 = A0_2.curPlayer
+          L2_2 = L2_2(L3_2)
+          if L2_2 == true then
+            L2_2 = PlayUISound
+            L3_2 = UISoundEventBadInput
+            L2_2(L3_2)
+        end
+      end
+      else
+        L2_2 = SetControllerConfig
+        L3_2 = A0_2.curPlayer
+        L4_2 = A0_2.curConfigSet
+        L2_2(L3_2, L4_2)
+        L2_2 = PlayUISound
+        L3_2 = UISoundEventSelect_Continue
+        L2_2(L3_2)
+        L2_2 = PlayCameraAnimation
+        L3_2 = "FrontEndCamera"
+        L4_2 = "Anim\\FECam08R"
+        L2_2(L3_2, L4_2)
+        L2_2 = RaiseMenu
+        L3_2 = "FE_Options"
+        L2_2(L3_2)
+        L2_2 = EndMenu
+        L3_2 = A0_2.instance
+        L2_2(L3_2)
+      end
+    end
+  end
+  L2_2 = InputKey
+  L3_2 = "CANCEL"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = SetControllerConfig
+    L3_2 = A0_2.curPlayer
+    L4_2 = A0_2.originalConfigSet
+    L2_2(L3_2, L4_2)
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBack2
+    L2_2(L3_2)
+    L2_2 = PlayCameraAnimation
+    L3_2 = "FrontEndCamera"
+    L4_2 = "Anim\\FECam08R"
+    L2_2(L3_2, L4_2)
+    L2_2 = RaiseMenu
+    L3_2 = "FE_Options"
+    L2_2(L3_2)
+    L2_2 = EndMenu
+    L3_2 = A0_2.instance
+    L2_2(L3_2)
+  end
+  L2_2 = InputKey
+  L3_2 = "LEFT"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventLeft_Right
+    L2_2(L3_2)
+    L3_2 = A0_2
+    L2_2 = A0_2.SwitchConfigSet
+    L4_2 = A0_2.curConfigSet
+    L4_2 = L4_2 - 1
+    L2_2(L3_2, L4_2)
+  else
+    L2_2 = InputKey
+    L3_2 = "RIGHT"
+    L2_2 = L2_2(L3_2)
+    if A1_2 == L2_2 then
+      L2_2 = PlayUISound
+      L3_2 = UISoundEventLeft_Right
+      L2_2(L3_2)
+      L3_2 = A0_2
+      L2_2 = A0_2.SwitchConfigSet
+      L4_2 = A0_2.curConfigSet
+      L4_2 = L4_2 + 1
+      L2_2(L3_2, L4_2)
+    end
+  end
+end
+L0_1.OnKeyDown = L1_1
+FE_ControlsMenu_x360 = L0_1

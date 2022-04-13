@@ -1,0 +1,598 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1, L34_1, L35_1, L36_1, L37_1, L38_1
+L0_1 = {}
+L0_1.instance = 0
+L0_1.callback = 0
+L1_1 = {}
+L2_1 = 1
+L3_1 = 1
+L4_1 = 1
+L5_1 = 1
+L6_1 = 1
+L7_1 = 1
+L8_1 = 1
+L9_1 = 1
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L1_1[8] = L9_1
+L0_1.curText = L1_1
+L0_1.maxText = 8
+L0_1.curPos = 1
+L0_1.life = 0
+L0_1.cursorData = 1
+L0_1.outputText = "        "
+L1_1 = {}
+L2_1 = " "
+L3_1 = "A"
+L4_1 = "B"
+L5_1 = "C"
+L6_1 = "D"
+L7_1 = "E"
+L8_1 = "F"
+L9_1 = "G"
+L10_1 = "H"
+L11_1 = "I"
+L12_1 = "J"
+L13_1 = "K"
+L14_1 = "L"
+L15_1 = "M"
+L16_1 = "N"
+L17_1 = "O"
+L18_1 = "P"
+L19_1 = "Q"
+L20_1 = "R"
+L21_1 = "S"
+L22_1 = "T"
+L23_1 = "U"
+L24_1 = "V"
+L25_1 = "W"
+L26_1 = "X"
+L27_1 = "Y"
+L28_1 = "Z"
+L29_1 = "0"
+L30_1 = "1"
+L31_1 = "2"
+L32_1 = "3"
+L33_1 = "4"
+L34_1 = "5"
+L35_1 = "6"
+L36_1 = "7"
+L37_1 = "8"
+L38_1 = "9"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L1_1[8] = L9_1
+L1_1[9] = L10_1
+L1_1[10] = L11_1
+L1_1[11] = L12_1
+L1_1[12] = L13_1
+L1_1[13] = L14_1
+L1_1[14] = L15_1
+L1_1[15] = L16_1
+L1_1[16] = L17_1
+L1_1[17] = L18_1
+L1_1[18] = L19_1
+L1_1[19] = L20_1
+L1_1[20] = L21_1
+L1_1[21] = L22_1
+L1_1[22] = L23_1
+L1_1[23] = L24_1
+L1_1[24] = L25_1
+L1_1[25] = L26_1
+L1_1[26] = L27_1
+L1_1[27] = L28_1
+L1_1[28] = L29_1
+L1_1[29] = L30_1
+L1_1[30] = L31_1
+L1_1[31] = L32_1
+L1_1[32] = L33_1
+L1_1[33] = L34_1
+L1_1[34] = L35_1
+L1_1[35] = L36_1
+L1_1[36] = L37_1
+L1_1[37] = L38_1
+L0_1.EntryPosibilities = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Title2 = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.TextBox = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.TextCursor = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = PlaceMenuInWorld
+  L2_2 = A0_2.instance
+  L3_2 = "EditProfileMenu"
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title2
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Title2
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Title2
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title2
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Title2.text1"
+  L5_2 = "STR_MENUTITLE_ENTERNAME"
+  L6_2 = "CARSFRONTENDUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 321.3
+  L9_2 = -10.05
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.TextBox
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.TextCursor = L2_2
+  L1_2 = A0_2.TextBox
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.TextBox
+  L3_2 = L3_2.TextCursor
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.TextBox
+  L1_2 = L1_2.TextCursor
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "TextBox.TextCursor"
+  L5_2 = "STR_DYN_CREDITS_10"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_ProfileFont_3D"
+  L8_2 = 1225.55
+  L9_2 = 48
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.TextCursor
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.TextField = L2_2
+  L1_2 = A0_2.TextCursor
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.TextCursor
+  L3_2 = L3_2.TextField
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.TextCursor
+  L1_2 = L1_2.TextField
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "TextCursor.TextField"
+  L5_2 = "STR_DYN_CREDITS_11"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_ProfileFont_3D"
+  L8_2 = 1225.55
+  L9_2 = 47.75
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text1"
+  L5_2 = "STR_SELECT"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 282.95
+  L9_2 = 16.95
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text3"
+  L5_2 = "STR_BACK"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 278.7
+  L9_2 = 17.7
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text5 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text5
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text5"
+  L5_2 = "STR_SCROLL"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 272.95
+  L9_2 = 18.35
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.TextBox
+  L2_2 = L2_2.TextCursor
+  L1_2.TextCursor = L2_2
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.TextCursor
+  L2_2 = L2_2.TextField
+  L1_2.TextField = L2_2
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+  L1_2 = EndMenu
+  L2_2 = A0_2.instance
+  L1_2(L2_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = A0_2.life
+  L3_2 = A1_2 * 4
+  L2_2 = L2_2 + L3_2
+  A0_2.life = L2_2
+  L2_2 = A0_2.life
+  L2_2 = L2_2 % 2
+  if 1 < L2_2 then
+    L2_2 = A0_2.cursorData
+    if L2_2 ~= 1 then
+      L2_2 = ""
+      L3_2 = 1
+      L4_2 = A0_2.curPos
+      L4_2 = L4_2 - 1
+      L5_2 = 1
+      for L6_2 = L3_2, L4_2, L5_2 do
+        L7_2 = L2_2
+        L8_2 = " "
+        L2_2 = L7_2 .. L8_2
+      end
+      L3_2 = A0_2.Shortcuts
+      L3_2 = L3_2.TextCursor
+      L4_2 = L3_2
+      L3_2 = L3_2.SetValue
+      L5_2 = L2_2
+      L6_2 = "_"
+      L5_2 = L5_2 .. L6_2
+      L3_2(L4_2, L5_2)
+      A0_2.cursorData = 1
+  end
+  else
+    L2_2 = A0_2.life
+    L2_2 = L2_2 % 2
+    if L2_2 < 1 then
+      L2_2 = A0_2.cursorData
+      if L2_2 ~= 2 then
+        L2_2 = A0_2.Shortcuts
+        L2_2 = L2_2.TextCursor
+        L3_2 = L2_2
+        L2_2 = L2_2.SetValue
+        L4_2 = ""
+        L2_2(L3_2, L4_2)
+        A0_2.cursorData = 2
+      end
+    end
+  end
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  A0_2.outputText = ""
+  L1_2 = ipairs
+  L2_2 = A0_2.curText
+  L1_2, L2_2, L3_2 = L1_2(L2_2)
+  for L4_2, L5_2 in L1_2, L2_2, L3_2 do
+    L6_2 = A0_2.outputText
+    L7_2 = A0_2.EntryPosibilities
+    L7_2 = L7_2[L5_2]
+    L6_2 = L6_2 .. L7_2
+    A0_2.outputText = L6_2
+  end
+  L1_2 = A0_2.Shortcuts
+  L1_2 = L1_2.TextField
+  L2_2 = L1_2
+  L1_2 = L1_2.SetValue
+  L3_2 = A0_2.outputText
+  L1_2(L2_2, L3_2)
+end
+L0_1.UpdateText = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2
+  if A1_2 < 1 then
+    A1_2 = 1
+  else
+    L2_2 = A0_2.maxText
+    if A1_2 > L2_2 then
+      A1_2 = A0_2.maxText
+    end
+  end
+  A0_2.curPos = A1_2
+end
+L0_1.ChangePos = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2.curText
+  L3_2 = A0_2.curPos
+  L4_2 = A0_2.curText
+  L5_2 = A0_2.curPos
+  L4_2 = L4_2[L5_2]
+  L4_2 = L4_2 + A1_2
+  L2_2[L3_2] = L4_2
+  L2_2 = A0_2.curText
+  L3_2 = A0_2.curPos
+  L2_2 = L2_2[L3_2]
+  L3_2 = A0_2.EntryPosibilities
+  L3_2 = #L3_2
+  if L2_2 > L3_2 then
+    L2_2 = A0_2.curText
+    L3_2 = A0_2.curPos
+    L2_2[L3_2] = 1
+  else
+    L2_2 = A0_2.curText
+    L3_2 = A0_2.curPos
+    L2_2 = L2_2[L3_2]
+    if L2_2 < 1 then
+      L2_2 = A0_2.curText
+      L3_2 = A0_2.curPos
+      L4_2 = A0_2.EntryPosibilities
+      L4_2 = #L4_2
+      L2_2[L3_2] = L4_2
+    end
+  end
+  L3_2 = A0_2
+  L2_2 = A0_2.UpdateText
+  L2_2(L3_2)
+end
+L0_1.ChangeLetter = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L2_2 = InputKey
+  L3_2 = "UP"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventUP_DOWN
+    L2_2(L3_2)
+    L3_2 = A0_2
+    L2_2 = A0_2.ChangeLetter
+    L4_2 = -1
+    L2_2(L3_2, L4_2)
+  else
+    L2_2 = InputKey
+    L3_2 = "DOWN"
+    L2_2 = L2_2(L3_2)
+    if A1_2 == L2_2 then
+      L2_2 = PlayUISound
+      L3_2 = UISoundEventUP_DOWN
+      L2_2(L3_2)
+      L3_2 = A0_2
+      L2_2 = A0_2.ChangeLetter
+      L4_2 = 1
+      L2_2(L3_2, L4_2)
+    else
+      L2_2 = InputKey
+      L3_2 = "LEFT"
+      L2_2 = L2_2(L3_2)
+      if A1_2 == L2_2 then
+        L2_2 = PlayUISound
+        L3_2 = UISoundEventLeft_Right
+        L2_2(L3_2)
+        L3_2 = A0_2
+        L2_2 = A0_2.ChangePos
+        L4_2 = A0_2.curPos
+        L4_2 = L4_2 - 1
+        L2_2(L3_2, L4_2)
+      else
+        L2_2 = InputKey
+        L3_2 = "RIGHT"
+        L2_2 = L2_2(L3_2)
+        if A1_2 == L2_2 then
+          L2_2 = PlayUISound
+          L3_2 = UISoundEventLeft_Right
+          L2_2(L3_2)
+          L3_2 = A0_2
+          L2_2 = A0_2.ChangePos
+          L4_2 = A0_2.curPos
+          L4_2 = L4_2 + 1
+          L2_2(L3_2, L4_2)
+        else
+          L2_2 = InputKey
+          L3_2 = "OK"
+          L2_2 = L2_2(L3_2)
+          if A1_2 == L2_2 then
+            L2_2 = A0_2.callback
+            if L2_2 == 0 then
+              L2_2 = DebugPrint
+              L3_2 = "Error: whatever called InputTextPrompt didn't set it's callback, so theres no way for me to provide the text the user input..."
+              L2_2(L3_2)
+            else
+              L2_2 = IsNameAcceptable
+              L3_2 = A0_2.outputText
+              L2_2 = L2_2(L3_2)
+              if L2_2 == 1 then
+                L2_2 = A0_2.outputText
+                if L2_2 ~= "        " then
+                  L2_2 = A0_2.callback
+                  L3_2 = L2_2
+                  L2_2 = L2_2.ReceiveTextResult
+                  L4_2 = A0_2.outputText
+                  L5_2 = 1
+                  L2_2(L3_2, L4_2, L5_2)
+                  L3_2 = A0_2
+                  L2_2 = A0_2.EndUI
+                  L2_2(L3_2)
+              end
+              else
+                A0_2.curPos = 1
+                A0_2.outputText = "        "
+                L2_2 = A0_2.Shortcuts
+                L2_2 = L2_2.TextField
+                L3_2 = L2_2
+                L2_2 = L2_2.SetValue
+                L4_2 = A0_2.outputText
+                L2_2(L3_2, L4_2)
+                L2_2 = {}
+                L3_2 = 1
+                L4_2 = 1
+                L5_2 = 1
+                L6_2 = 1
+                L7_2 = 1
+                L8_2 = 1
+                L9_2 = 1
+                L10_2 = 1
+                L2_2[1] = L3_2
+                L2_2[2] = L4_2
+                L2_2[3] = L5_2
+                L2_2[4] = L6_2
+                L2_2[5] = L7_2
+                L2_2[6] = L8_2
+                L2_2[7] = L9_2
+                L2_2[8] = L10_2
+                A0_2.curText = L2_2
+                L2_2 = RaiseMenu
+                L3_2 = "Popup"
+                L2_2(L3_2)
+                L2_2 = Popup
+                L3_2 = L2_2
+                L2_2 = L2_2.RaisePopup
+                L4_2 = GetLocalizedString
+                L5_2 = "TRC"
+                L6_2 = "STR_NEW_WARNING"
+                L4_2 = L4_2(L5_2, L6_2)
+                L5_2 = GetLocalizedString
+                L6_2 = "TRC"
+                L7_2 = "STR_NEW_TITLE_INVALID_NAME"
+                L5_2 = L5_2(L6_2, L7_2)
+                L6_2 = nil
+                L7_2 = GetLocalizedString
+                L8_2 = "COMMONUI"
+                L9_2 = "STR_SELECT"
+                L7_2, L8_2, L9_2, L10_2 = L7_2(L8_2, L9_2)
+                L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+              end
+            end
+            L2_2 = PlayUISound
+            L3_2 = UISoundEventSelect_Continue
+            L2_2(L3_2)
+          else
+            L2_2 = InputKey
+            L3_2 = "CANCEL"
+            L2_2 = L2_2(L3_2)
+            if A1_2 == L2_2 then
+              L2_2 = A0_2.callback
+              if L2_2 == 0 then
+                L2_2 = DebugPrint
+                L3_2 = "Error: whatever called InputTextPrompt didn't set it's callback, so theres no way for me to provide the text the user input..."
+                L2_2(L3_2)
+              else
+                L2_2 = A0_2.callback
+                L3_2 = L2_2
+                L2_2 = L2_2.ReceiveTextResult
+                L4_2 = A0_2.outputText
+                L5_2 = 0
+                L2_2(L3_2, L4_2, L5_2)
+              end
+              L2_2 = PlayUISound
+              L3_2 = UISoundEventMenu_Out
+              L2_2(L3_2)
+              L3_2 = A0_2
+              L2_2 = A0_2.EndUI
+              L2_2(L3_2)
+            end
+          end
+        end
+      end
+    end
+  end
+end
+L0_1.OnKeyDown = L1_1
+InputTextPrompt = L0_1

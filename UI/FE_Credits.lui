@@ -1,0 +1,377 @@
+local L0_1, L1_1, L2_1
+L0_1 = IncludeScript
+L1_1 = "C\\Script\\Credits"
+L0_1(L1_1)
+L0_1 = {}
+L0_1.instance = 0
+L0_1.xPos = 687
+L0_1.numCredits = 12
+L0_1.creditsIndex = 1
+L1_1 = {}
+L0_1.creditsPos = L1_1
+L0_1.creditsUpperLimit = 810
+L0_1.creditsFadeDistance = 75
+L0_1.creditsSpeed = 50
+L0_1.creditsLowerLimit = 330
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Title = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Dim_Layer_BG = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = PlaceMenuInWorld
+  L2_2 = A0_2.instance
+  L3_2 = "CreditsMenu"
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Title
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Title
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Title.text1"
+  L5_2 = "STR_CREDITS"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1724.25
+  L9_2 = 60.75
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text1"
+  L5_2 = "STR_BACK"
+  L6_2 = "COMMONUI"
+  L7_2 = "FE_GarageGothicBlack_3D"
+  L8_2 = 1554.2
+  L9_2 = 1004.2
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Dim_Layer_BG
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.Dim_Layer_BG
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Dim_Layer_BG
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Dim_Layer_BG
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Dim_Layer_BG.icon1"
+  L5_2 = "component_frame_color_3D"
+  L6_2 = 707.45
+  L7_2 = 566.25
+  L8_2 = 9.4
+  L9_2 = 8
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Shortcuts
+  L2_2 = {}
+  L1_2.credits = L2_2
+  L1_2 = 1
+  L2_2 = A0_2.numCredits
+  L3_2 = 1
+  for L4_2 = L1_2, L2_2, L3_2 do
+    L5_2 = A0_2.Shortcuts
+    L5_2 = L5_2.credits
+    L6_2 = UIText
+    L7_2 = L6_2
+    L6_2 = L6_2.New
+    L6_2 = L6_2(L7_2)
+    L5_2[L4_2] = L6_2
+    L5_2 = A0_2.Shortcuts
+    L5_2 = L5_2.credits
+    L5_2 = L5_2[L4_2]
+    L6_2 = L5_2
+    L5_2 = L5_2.Create
+    L7_2 = A0_2.instance
+    L8_2 = "Credits.text"
+    L9_2 = L4_2
+    L8_2 = L8_2 .. L9_2
+    L9_2 = "STR_DYN_CREDITS_"
+    L10_2 = L4_2
+    L9_2 = L9_2 .. L10_2
+    L10_2 = "COMMONUI"
+    L11_2 = "FE_GarageGothicBlack_3D"
+    L12_2 = 600
+    L13_2 = L4_2 * 52
+    L13_2 = 320 + L13_2
+    L14_2 = "center"
+    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+    L5_2 = A0_2.creditsPos
+    L6_2 = L4_2 * 52
+    L6_2 = 320 + L6_2
+    L5_2[L4_2] = L6_2
+    L5_2 = A0_2.Shortcuts
+    L5_2 = L5_2.credits
+    L5_2 = L5_2[L4_2]
+    L6_2 = L5_2
+    L5_2 = L5_2.SetValue
+    L7_2 = ""
+    L5_2(L6_2, L7_2)
+    L5_2 = SetComponentValue
+    L6_2 = A0_2.Shortcuts
+    L6_2 = L6_2.credits
+    L6_2 = L6_2[L4_2]
+    L6_2 = L6_2.instance
+    L7_2 = "h"
+    L8_2 = 1.9
+    L5_2(L6_2, L7_2, L8_2)
+  end
+  L1_2 = SetTickFrequency
+  L2_2 = A0_2.instance
+  L3_2 = 0
+  L1_2(L2_2, L3_2)
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+  L1_2 = 1
+  L2_2 = A0_2.numCredits
+  L3_2 = 1
+  for L4_2 = L1_2, L2_2, L3_2 do
+    L5_2 = SetComponentValue
+    L6_2 = A0_2.Shortcuts
+    L6_2 = L6_2.credits
+    L6_2 = L6_2[L4_2]
+    L6_2 = L6_2.instance
+    L7_2 = "color"
+    L8_2 = 0
+    L5_2(L6_2, L7_2, L8_2)
+  end
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2.creditsPos
+  L3_2 = A0_2.creditsUpperLimit
+  L4_2 = A0_2.creditsFadeDistance
+  L3_2 = L3_2 + L4_2
+  L2_2[A1_2] = L3_2
+  L2_2 = A0_2.Shortcuts
+  L2_2 = L2_2.credits
+  L2_2 = L2_2[A1_2]
+  L3_2 = L2_2
+  L2_2 = L2_2.SetPosition
+  L4_2 = A0_2.xPos
+  L5_2 = A0_2.creditsPos
+  L5_2 = L5_2[A1_2]
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = SetComponentValue
+  L3_2 = A0_2.Shortcuts
+  L3_2 = L3_2.credits
+  L3_2 = L3_2[A1_2]
+  L3_2 = L3_2.instance
+  L4_2 = "color"
+  L5_2 = 0
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = A0_2.Shortcuts
+  L2_2 = L2_2.credits
+  L2_2 = L2_2[A1_2]
+  L3_2 = L2_2
+  L2_2 = L2_2.SetValue
+  L4_2 = CreditsListing
+  L5_2 = A0_2.creditsIndex
+  L4_2 = L4_2[L5_2]
+  L2_2(L3_2, L4_2)
+  L2_2 = A0_2.creditsIndex
+  L2_2 = L2_2 + 1
+  A0_2.creditsIndex = L2_2
+  L2_2 = A0_2.creditsIndex
+  L3_2 = CreditsListing
+  L3_2 = #L3_2
+  if L2_2 > L3_2 then
+    A0_2.creditsIndex = 1
+  end
+end
+L0_1.RespawnCredit = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L2_2 = 1
+  L3_2 = A0_2.numCredits
+  L4_2 = 1
+  for L5_2 = L2_2, L3_2, L4_2 do
+    L6_2 = A0_2.creditsPos
+    L7_2 = A0_2.creditsPos
+    L7_2 = L7_2[L5_2]
+    L8_2 = A0_2.creditsSpeed
+    L8_2 = L8_2 * A1_2
+    L7_2 = L7_2 - L8_2
+    L6_2[L5_2] = L7_2
+    L6_2 = A0_2.creditsPos
+    L6_2 = L6_2[L5_2]
+    L7_2 = A0_2.creditsLowerLimit
+    if L6_2 < L7_2 then
+      L6_2 = A0_2.creditsLowerLimit
+      L7_2 = A0_2.creditsPos
+      L7_2 = L7_2[L5_2]
+      L6_2 = L6_2 - L7_2
+      L7_2 = A0_2.creditsFadeDistance
+      L6_2 = L6_2 / L7_2
+      L6_2 = 1 - L6_2
+      L7_2 = SetComponentValue
+      L8_2 = A0_2.Shortcuts
+      L8_2 = L8_2.credits
+      L8_2 = L8_2[L5_2]
+      L8_2 = L8_2.instance
+      L9_2 = "color"
+      L10_2 = L6_2
+      L7_2(L8_2, L9_2, L10_2)
+      L7_2 = A0_2.creditsPos
+      L7_2 = L7_2[L5_2]
+      L8_2 = A0_2.creditsLowerLimit
+      L9_2 = A0_2.creditsFadeDistance
+      L8_2 = L8_2 - L9_2
+      if L7_2 <= L8_2 then
+        L8_2 = A0_2
+        L7_2 = A0_2.RespawnCredit
+        L9_2 = L5_2
+        L7_2(L8_2, L9_2)
+      end
+    else
+      L6_2 = A0_2.creditsPos
+      L6_2 = L6_2[L5_2]
+      L7_2 = A0_2.creditsUpperLimit
+      if L6_2 > L7_2 then
+        L6_2 = A0_2.creditsPos
+        L6_2 = L6_2[L5_2]
+        L7_2 = A0_2.creditsUpperLimit
+        L6_2 = L6_2 - L7_2
+        L7_2 = A0_2.creditsFadeDistance
+        L6_2 = L6_2 / L7_2
+        L6_2 = 1 - L6_2
+        L7_2 = SetComponentValue
+        L8_2 = A0_2.Shortcuts
+        L8_2 = L8_2.credits
+        L8_2 = L8_2[L5_2]
+        L8_2 = L8_2.instance
+        L9_2 = "color"
+        L10_2 = L6_2
+        L7_2(L8_2, L9_2, L10_2)
+      else
+        L6_2 = SetComponentValue
+        L7_2 = A0_2.Shortcuts
+        L7_2 = L7_2.credits
+        L7_2 = L7_2[L5_2]
+        L7_2 = L7_2.instance
+        L8_2 = "color"
+        L9_2 = 1
+        L6_2(L7_2, L8_2, L9_2)
+      end
+    end
+    L6_2 = A0_2.Shortcuts
+    L6_2 = L6_2.credits
+    L6_2 = L6_2[L5_2]
+    L7_2 = L6_2
+    L6_2 = L6_2.SetPosition
+    L8_2 = A0_2.xPos
+    L9_2 = A0_2.creditsPos
+    L9_2 = L9_2[L5_2]
+    L6_2(L7_2, L8_2, L9_2)
+  end
+  L2_2 = A0_2.creditsSpeed
+  if 50 < L2_2 then
+    L2_2 = A0_2.creditsSpeed
+    L3_2 = A0_2.creditsSpeed
+    L3_2 = L3_2 - 50
+    L4_2 = A1_2 / 10
+    L3_2 = L3_2 * L4_2
+    L2_2 = L2_2 - L3_2
+    A0_2.creditsSpeed = L2_2
+  end
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = InputKey
+  L3_2 = "DOWN"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    A0_2.creditsSpeed = 150
+  end
+  L2_2 = InputKey
+  L3_2 = "CANCEL"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBack2
+    L2_2(L3_2)
+    L2_2 = EndMenu
+    L3_2 = A0_2.instance
+    L2_2(L3_2)
+    L2_2 = PlayCameraAnimation
+    L3_2 = "FrontEndCamera"
+    L4_2 = "Anim\\FECam07R"
+    L2_2(L3_2, L4_2)
+    L2_2 = RaiseMenu
+    L3_2 = "FE_Options"
+    L2_2(L3_2)
+  end
+end
+L0_1.OnKeyDown = L1_1
+FE_Credits = L0_1

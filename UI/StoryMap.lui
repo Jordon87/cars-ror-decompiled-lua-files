@@ -1,0 +1,427 @@
+StoryMap = {
+	instance = 0, 
+	MenuState = 0,
+   Counter = 0,
+   AllowInput = true,
+	curJoinPoint = 1,
+	curJoinPointPos = {x=0,y=0},
+	curJoinPointOrig = {x=0,y=0},
+	curMapOffset = {x=640,y=0},
+	desiredMapOffset = {x=640,y=0},
+	baseMapOffset = {x=0,y=0},	
+	baseMapScale = {x=0.3,y=0.3},
+	mapReferencePoints = {{x=0,y=0},{x=0,y=0}},
+	curJoinPointList = {},
+   
+		Autosave_Icon = UIContainer:New(),
+	load_icon_frame = UIContainer:New(),
+	Buttons = UIContainer:New(),
+	currentJoinPoint = UIContainer:New(),
+	HeaderCursor = UIContainer:New(),
+	HUD_Bubble_R = UIContainer:New(),
+	Cursor = UIContainer:New(),
+	YouAreHere = UIContainer:New(),
+	Legend = UIContainer:New(),
+	BlackBar_2 = UIContainer:New(),
+	BlackBar = UIContainer:New(),
+	BankBar_Red = UIContainer:New(),
+	StoryMap = UIContainer:New(),
+	Shortcuts = {},
+
+
+	Create = function (self) 
+		self.instance = GetCurrentLayer()
+		SetTickFrequency(self.instance,0)	-- tick every frame
+
+				self.Autosave_Icon.icon1 = UIIcon:New()
+		self.Autosave_Icon:Insert(self.Autosave_Icon.icon1)
+		self.Autosave_Icon.icon1:Create(self.instance, "Autosave_Icon.icon1", "load_icon_2", -162.15, 710, 64, 64,"center")
+		self.load_icon_frame.icon1 = UIIcon:New()
+		self.load_icon_frame:Insert(self.load_icon_frame.icon1)
+		self.load_icon_frame.icon1:Create(self.instance, "load_icon_frame.icon1", "load_bubble", -163.35, 710, 64, 64,"center")
+		self.Buttons.text1 = UIText:New()
+		self.Buttons:Insert(self.Buttons.text1)
+		self.Buttons.text1:Create(self.instance, "Buttons.text1", "STR_SCROLL", "COMMONUI", "18_BodegaSans-Medium", 1505.3000000000002, 673.7, "right")
+		self.Buttons.text3 = UIText:New()
+		self.Buttons:Insert(self.Buttons.text3)
+		self.Buttons.text3:Create(self.instance, "Buttons.text3", "STR_CANCEL", "COMMONUI", "18_BodegaSans-Medium", 1775.3000000000002, 673.7, "right")
+		self.Buttons.text5 = UIText:New()
+		self.Buttons:Insert(self.Buttons.text5)
+		self.Buttons.text5:Create(self.instance, "Buttons.text5", "STR_SELECT", "COMMONUI", "18_BodegaSans-Medium", 2030.2000000000003, 673.7, "right")
+		self.currentJoinPoint.icon1 = UIIcon:New()
+		self.currentJoinPoint:Insert(self.currentJoinPoint.icon1)
+		self.currentJoinPoint.icon1:Create(self.instance, "currentJoinPoint.icon1", "icon_map_red", 501.45, 1.8500000000000014, 25.6, 25.6,"center")
+		self.HeaderCursor.JoinPointName = UIText:New()
+		self.HeaderCursor:Insert(self.HeaderCursor.JoinPointName)
+		self.HeaderCursor.JoinPointName:Create(self.instance, "HeaderCursor.JoinPointName", "STR_DYN_HUD_1", "INGAMEUI", "18_BodegaSans-Medium", 1007.4, 115.15, "center")
+		self.HeaderCursor.icon3 = UIIcon:New()
+		self.HeaderCursor:Insert(self.HeaderCursor.icon3)
+		self.HeaderCursor.icon3:Create(self.instance, "HeaderCursor.icon3", "component_cursor_01", 772.95, 148.2, 128, 80,"center")
+		self.HeaderCursor.icon4 = UIIcon:New()
+		self.HeaderCursor:Insert(self.HeaderCursor.icon4)
+		self.HeaderCursor.icon4:Create(self.instance, "HeaderCursor.icon4", "component_cursor_01", 1365.05, 148.2, 128, 80,"center")
+		self.HeaderCursor.icon5 = UIIcon:New()
+		self.HeaderCursor:Insert(self.HeaderCursor.icon5)
+		self.HeaderCursor.icon5:Create(self.instance, "HeaderCursor.icon5", "component_cursor_02", 1245.1, 148.2, 480, 80,"center")
+		self.HUD_Bubble_R.icon1 = UIIcon:New()
+		self.HUD_Bubble_R:Insert(self.HUD_Bubble_R.icon1)
+		self.HUD_Bubble_R.icon1:Create(self.instance, "HUD_Bubble_R.icon1", "component_hud_bubble_2", 1092, 132.9, 64, 64,"center")
+		self.HUD_Bubble_R.icon2 = UIIcon:New()
+		self.HUD_Bubble_R:Insert(self.HUD_Bubble_R.icon2)
+		self.HUD_Bubble_R.icon2:Create(self.instance, "HUD_Bubble_R.icon2", "component_hud_minigame_02", 1078.75, 116.30000000000001, 32, 32,"center")
+		self.Cursor.HUD_Bubble_L = UIContainer:New()
+		self.Cursor.HUD_Bubble_L.icon1 = UIIcon:New()
+		self.Cursor.HUD_Bubble_L:Insert(self.Cursor.HUD_Bubble_L.icon1)
+		self.Cursor.HUD_Bubble_L.icon1:Create(self.instance, "Cursor.HUD_Bubble_L.icon1", "component_hud_bubble_2", 324.95, 164.9, 64, 64,"center")
+		self.Cursor.HUD_Bubble_L.icon2 = UIIcon:New()
+		self.Cursor.HUD_Bubble_L:Insert(self.Cursor.HUD_Bubble_L.icon2)
+		self.Cursor.HUD_Bubble_L.icon2:Create(self.instance, "Cursor.HUD_Bubble_L.icon2", "component_hud_minigame_02", 305.6, 148.3, 32, 32,"center")
+		self.YouAreHere.icon1 = UIIcon:New()
+		self.YouAreHere:Insert(self.YouAreHere.icon1)
+		self.YouAreHere.icon1:Create(self.instance, "YouAreHere.icon1", "component_hud_minigame_02", 647.75, -44.95, 16, 32,"center")
+		self.Legend.text1 = UIText:New()
+		self.Legend:Insert(self.Legend.text1)
+		self.Legend.text1:Create(self.instance, "Legend.text1", "STR_STORYMAP_1", "INGAMEUI", "18_BodegaSans-Medium", 1034.35, 152.65, "left")
+		self.Legend.text3 = UIText:New()
+		self.Legend:Insert(self.Legend.text3)
+		self.Legend.text3:Create(self.instance, "Legend.text3", "STR_STORYMAP_2", "INGAMEUI", "18_BodegaSans-Medium", 1271.35, 152.65, "left")
+		self.Legend.text5 = UIText:New()
+		self.Legend:Insert(self.Legend.text5)
+		self.Legend.text5:Create(self.instance, "Legend.text5", "STR_STORYMAP_4", "INGAMEUI", "18_BodegaSans-Medium", 1508.95, 152.65, "left")
+		self.Legend.text7 = UIText:New()
+		self.Legend:Insert(self.Legend.text7)
+		self.Legend.text7:Create(self.instance, "Legend.text7", "STR_COMPLETED", "INGAMEUI", "18_BodegaSans-Medium", 1702.45, 152.65, "left")
+		self.Legend.Icon_White = UIContainer:New()
+		self.Legend.Icon_White.icon1 = UIIcon:New()
+		self.Legend.Icon_White:Insert(self.Legend.Icon_White.icon1)
+		self.Legend.Icon_White.icon1:Create(self.instance, "Legend.Icon_White.icon1", "icon_map_white", 834.35, 215.8, 64, 64,"center")
+		self.Legend.Icon_Yellow = UIContainer:New()
+		self.Legend.Icon_Yellow.icon1 = UIIcon:New()
+		self.Legend.Icon_Yellow:Insert(self.Legend.Icon_Yellow.icon1)
+		self.Legend.Icon_Yellow.icon1:Create(self.instance, "Legend.Icon_Yellow.icon1", "icon_map_critical_star", 1042.35, 182.8, 32, 32,"center")
+		self.Legend.Icon_Blue = UIContainer:New()
+		self.Legend.Icon_Blue.icon1 = UIIcon:New()
+		self.Legend.Icon_Blue:Insert(self.Legend.Icon_Blue.icon1)
+		self.Legend.Icon_Blue.icon1:Create(self.instance, "Legend.Icon_Blue.icon1", "icon_map_blue", 1294.35, 215.8, 64, 64,"center")
+		self.Legend.Icon_Green = UIContainer:New()
+		self.Legend.Icon_Green.icon1 = UIIcon:New()
+		self.Legend.Icon_Green:Insert(self.Legend.Icon_Green.icon1)
+		self.Legend.Icon_Green.icon1:Create(self.instance, "Legend.Icon_Green.icon1", "icon_map_green", 1504.35, 215.8, 64, 64,"center")
+		self.BlackBar_2.icon1 = UIIcon:New()
+		self.BlackBar_2:Insert(self.BlackBar_2.icon1)
+		self.BlackBar_2.icon1:Create(self.instance, "BlackBar_2.icon1", "component_frame_color", 664.85, 139.95, 8, 8,"center")
+		self.BlackBar.icon1 = UIIcon:New()
+		self.BlackBar:Insert(self.BlackBar.icon1)
+		self.BlackBar.icon1:Create(self.instance, "BlackBar.icon1", "component_frame_color", 664.85, 139.95, 8, 8,"center")
+		self.BankBar_Red.YellowGradient = UIContainer:New()
+		self.BankBar_Red.YellowGradient.icon1 = UIIcon:New()
+		self.BankBar_Red.YellowGradient:Insert(self.BankBar_Red.YellowGradient.icon1)
+		self.BankBar_Red.YellowGradient.icon1:Create(self.instance, "BankBar_Red.YellowGradient.icon1", "component_bankgradient", 1470.1, 688.5, 64, 8,"center")
+		self.BankBar_Red.icon1 = UIIcon:New()
+		self.BankBar_Red:Insert(self.BankBar_Red.icon1)
+		self.BankBar_Red.icon1:Create(self.instance, "BankBar_Red.icon1", "component_bankbar", 2174.1, 711, 1536, 64,"center")
+		self.StoryMap.icon1 = UIIcon:New()
+		self.StoryMap:Insert(self.StoryMap.icon1)
+		self.StoryMap.icon1:Create(self.instance, "StoryMap.icon1", "STORYMAP_"..GetSceneName().."_1", 1010, 730.25, 370, 370,"center")
+		self.StoryMap.icon2 = UIIcon:New()
+		self.StoryMap:Insert(self.StoryMap.icon2)
+		self.StoryMap.icon2:Create(self.instance, "StoryMap.icon2", "STORYMAP_"..GetSceneName().."_2", 1380, 730.2, 370, 370,"center")
+		self.Shortcuts.JoinPointName = self.HeaderCursor.JoinPointName
+
+
+		self.curJoinPointList = {GetCurrentUnlockedJoinPointList()}
+		self:CreateMapIcons()
+	end,
+	
+
+	CreateMapIcons = function(self)
+		self.mapReferencePoints[1].x, self.mapReferencePoints[2].y, self.mapReferencePoints[2].x, self.mapReferencePoints[1].y = GetMapExtents()	
+	
+		self.baseMapOffset.x = self.mapReferencePoints[1].x
+		self.baseMapOffset.y = self.mapReferencePoints[1].y
+		
+		self.baseMapScale.x = (self.mapReferencePoints[2].x - self.mapReferencePoints[1].x) / 1280
+		self.baseMapScale.y = (self.mapReferencePoints[2].y - self.mapReferencePoints[1].y) / 720
+		
+		self.baseMapOffset.x = self.baseMapOffset.x + (640*self.baseMapScale.x)
+		
+		local scaleFactorX, scaleFactorY = GetStoryMapScale()
+		self.baseMapScale.x = self.baseMapScale.x * scaleFactorX
+		self.baseMapScale.y = self.baseMapScale.y * scaleFactorY
+
+		self.StoryMap.joinpoints = UIContainer:New()
+		self.StoryMap.joinpoints.icons = {}
+		for i, jp in ipairs(self.curJoinPointList) do
+			self.StoryMap.joinpoints.icons[i] = UIIcon:New()
+			self.StoryMap.joinpoints:Insert(self.StoryMap.joinpoints.icons[i])
+
+			local iconName = ""
+			local eventName = GetJoinPointEventName(jp)
+			
+			DebugPrint(eventName)
+			
+			if (StoryEventExists("StoryEvent_".. eventName) == 1) then
+				if (eventName == "FE_Ramones") then
+					iconName = "icon_map_paintjobs"
+				elseif (eventName == "FE_Docs") then
+					iconName = "icon_map_parts"
+				elseif (eventName == "FE_Luigis") then
+					iconName = "icon_map_tires"
+				elseif (IsEventOnCriticalPath("StoryEvent_".. eventName) ~= 0 and StoryEvent_Completed("StoryEvent_".. eventName) == 0) then
+					iconName = "icon_map_critical_path"
+				elseif (IsCriticalExploreJoinPoint(jp) == 1) then
+					iconName = "icon_map_critical_path"
+				else
+					-- all other activities
+					local eventInfo = {GetEvent("StoryEvent_"..eventName)}
+
+					iconName = ""..eventInfo[4]
+
+					if ( StoryEvent_Completed("StoryEvent_".. eventName) == 0 and IsExploreJoinPoint(jp) == 0) then
+						iconName = iconName .. "_white"
+					end
+					
+				end
+				
+				--DebugPrint(iconName)
+	
+				self.StoryMap.joinpoints.icons[i]:Create(self.instance, "self.StoryMap.joinpoints["..i.."]", iconName, 0, 0, 26, 26,"center")
+				self.StoryMap.joinpoints.icons[i]:SetDimensions(26, 26)
+				local jpWorldX, jpWorldZ = GetJoinPointPosition(jp)
+ 				local nJPx, nJPy = self:GetNormalizedMapPosition(GetJoinPointPosition(jp))
+				self.StoryMap.joinpoints.icons[i]:SetPosition(nJPx, nJPy)
+				
+				--DebugPrint("Join Point World Pos: " .. jpWorldX .. " , " .. jpWorldZ)
+				--DebugPrint("Join Point Pos: " .. nJPx .. " , " .. nJPy)
+
+				if (i > 1) then
+					WeldComponents(self.StoryMap.joinpoints.icons[1].instance, self.StoryMap.joinpoints.icons[i].instance)
+				end
+			end
+		end
+		
+		self.StoryMap.caricon = UIContainer:New()
+		self.StoryMap.caricon.icon = UIIcon:New()
+		self.StoryMap:Insert(self.StoryMap.caricon.icon)
+		self.StoryMap.caricon.icon:Create(self.instance, "self.StoryMap.caricon.icon", "icon_map_car", 0.0, 0.0, 34, 34, "center")
+		self.StoryMap.caricon.icon:SetDimensions(34, 34)
+
+	end,
+
+	RepositionMapIcons = function(self)
+		for i, jp in ipairs(self.curJoinPointList) do
+			if (StoryEventExists("StoryEvent_".. GetJoinPointEventName(jp)) == 1) then
+				self.StoryMap.joinpoints.icons[i]:SetDimensions(26, 26)
+				local nJPx, nJPy = self:GetNormalizedMapPosition(GetJoinPointPosition(jp))
+				
+				-- 26 * 26
+				local distSq = 676 
+				-- Push icons apart from eachother so they are not overlapping
+				-- Run two iterations of this to minimize overlap
+				for k = 1, 2 do
+					for j = i, 1, -1 do
+						if(i != j) then
+							-- Find the distance squared between the two points
+							local xVal = self.StoryMap.joinpoints.icons[i].position.x - self.StoryMap.joinpoints.icons[j].position.x
+							local yVal = self.StoryMap.joinpoints.icons[i].position.y - self.StoryMap.joinpoints.icons[j].position.y
+							
+							local xValSq = xVal * xVal
+							local yValSq = yVal * yVal
+							
+							--DebugPrint("xValSq: " .. xValSq)
+							--DebugPrint("yValSq: " .. yValSq)
+							
+							if ((xValSq + yValSq) < distSq) then
+							
+								-- Move joinpoint 1 away from 2
+								local dist = math.sqrt((xValSq + yValSq))
+								--DebugPrint("Dist: " .. dist)
+								if dist > 0.0 then
+									local xNorm = xVal / dist
+									local yNorm = yVal / dist
+		 
+									self.StoryMap.joinpoints.icons[i].position.x = self.StoryMap.joinpoints.icons[i].position.x + (xNorm * (26.0 - dist))
+									self.StoryMap.joinpoints.icons[i].position.y = self.StoryMap.joinpoints.icons[i].position.y + (yNorm * (26.0 - dist))
+									nJPx = self.StoryMap.joinpoints.icons[i].position.x
+									nJPy = self.StoryMap.joinpoints.icons[i].position.y
+								
+								end
+							end
+						end
+					end
+				end
+								
+				self.StoryMap.joinpoints.icons[i]:SetPosition(nJPx, nJPy)
+			end
+		end
+
+		self.StoryMap.caricon.icon:SetDimensions(34, 34)
+		local playerX, playerY, playerZ = GetPlayerPosition()
+		local nPX, nPY = self:GetNormalizedMapPosition(playerX, playerZ)
+		DebugPrint("Player: " .. nPX .. " , " .. nPY)
+		self.StoryMap.caricon.icon:SetPosition(nPX, nPY)
+		
+		local playerLookX, playerLookY, playerLookZ = GetPlayerLook()
+		if (playerLookZ == 0.0) then
+			playerLookZ = 0.000001
+		end
+		local angle = math.atan(playerLookX / playerLookZ)
+		
+		if (playerLookZ < 0.0) then
+			angle = angle + math.pi
+		end
+		
+		angle = math.deg(angle)
+		
+		self.StoryMap.caricon.icon:SetAngle(angle)
+	end,
+
+
+	OnOutro = function(self)
+
+		MoveWelded(self.StoryMap.joinpoints.icons[1].instance,-1000,-1000)
+
+	end,
+
+	StartUI = function (self)
+		PlayMenuAnimation(self.instance,"intro");
+
+		if (self.MenuState == 0 or self.MenuState == 3) then
+			LoopMenuAnimation(self.instance,"Main");
+			self.MenuState = 1
+			PauseGame(1)
+		end
+	end,
+
+	EndUI = function (self)
+		self.MenuState = 3
+					 PlayMenuAnimation(self.instance,"outro");
+	end,
+
+	Destroy = function (self)
+	end,
+
+	Tick = function (self, dTime)
+		if (self.MenuState == 1) then
+
+			self:RepositionMapIcons()
+			self.MenuState = 2
+			
+		elseif (self.MenuState == 2 and GetMenuAnimationState(self.instance,"intro") == 0) then
+			self:SelectJoinPoint(1)
+         AllowInput = true
+			self.MenuState = 0
+
+		elseif (self.MenuState == 3 and GetMenuAnimationState(self.instance,"outro") == 0) then
+			EndMenu(self.instance)
+
+      elseif (self.MenuState == 5 and AreAllSectionsReady()) then
+         if(Counter > 1) then
+            self.MenuState = 6
+         end
+         
+         Counter = Counter + 1
+ 
+		elseif (self.MenuState == 6 and AreAllSectionsReady()) then
+         ShowAllOverlays()
+
+         AllowInput = true
+			self.MenuState = 0
+ 
+			EndMenu(self.instance)
+
+			local eventName = GetJoinPointEventName(self.curJoinPointList[self.curJoinPoint])
+			local joinPointName = self.curJoinPointList[self.curJoinPoint]
+
+			if (string.sub(eventName, -3) == "_EX") then
+				RaiseMenu("MackMenu")
+				MackMenu:Initialize(eventName)
+			else
+				RaiseMenu('JoinPointMenu')
+
+				JoinPointMenu:Initialize(eventName, joinPointName)	
+			end
+
+		end
+	end,
+	
+	GetNormalizedMapPosition = function(self, x,y)
+	
+		x = self.curMapOffset.x + ((x - self.baseMapOffset.x) / self.baseMapScale.x)
+		y = self.curMapOffset.y + ((y - self.baseMapOffset.y) / self.baseMapScale.y)
+	
+
+		return x,y
+	end,
+	
+	UpdatePositioning = function(self) 
+		self.curJoinPointPos.x = self.StoryMap.joinpoints.icons[self.curJoinPoint].position.x
+		self.curJoinPointPos.y = self.StoryMap.joinpoints.icons[self.curJoinPoint].position.y
+		self.currentJoinPoint.icon1:SetPosition(self.curJoinPointPos.x, self.curJoinPointPos.y)
+	end,
+
+	SelectJoinPoint = function(self, joinpoint) 
+		if (joinpoint <= 0) then
+			joinpoint = #self.curJoinPointList
+		elseif (joinpoint > #self.curJoinPointList) then
+			joinpoint = 1
+		end
+		
+		self.curJoinPoint = joinpoint
+		
+		self:UpdatePositioning()
+
+		local jpName = GetJoinPointEventName(self.curJoinPointList[self.curJoinPoint])
+		if (string.sub(jpName, -3) == "_EX") then
+			self.Shortcuts.JoinPointName:SetValue(GetLocalizedString("InGameUI","STR_MACK_READY"))
+		else
+			self.Shortcuts.JoinPointName:SetValue(GetLocalizedString("EventInfo","STR_"..jpName.."_TITLE"))
+		end
+	end,
+	
+	
+	OnKeyDown = function (self,key)
+      if (AllowInput == true) then
+         if (key == InputKey("LEFT")) then
+            PlayUISound( UISoundEventLeft_Right )
+            self:SelectJoinPoint(self.curJoinPoint + 1)
+         end
+         
+         if (key == InputKey("RIGHT")) then
+            PlayUISound( UISoundEventLeft_Right )
+            self:SelectJoinPoint(self.curJoinPoint - 1)
+         end
+         
+               
+         if (key == InputKey("OK")) then
+            PlayUISound( UISoundEventSeelct_Continue )
+            
+            LoopMenuAnimation(self.instance,"loading");
+            AllowInput = false
+
+            PauseGame(0)
+            
+            local jpName = GetJoinPointEventName(self.curJoinPointList[self.curJoinPoint])
+            SetPlayerPosition(jpName .."_START")
+            
+            local x, y, z = GetPlayerPosition()
+            SetStreamingPosition(x, y, z)
+               
+            BlockWhileStreaming()
+            
+            HideAllOverlays()
+            
+            Counter = 0
+            self.MenuState = 5
+         end
+         
+         if (key == InputKey("CANCEL")) then
+            PlayUISound( UISoundEventMenu_Out )
+         
+            self:EndUI()
+
+            PauseGame(0)
+         end
+      end
+	end
+}

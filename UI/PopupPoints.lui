@@ -1,0 +1,135 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L0_1.instance = 0
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+L1_1 = UIText
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.points1 = L1_1
+L1_1 = UIText
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.points2 = L1_1
+L1_1 = UIText
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.points3 = L1_1
+L1_1 = UIText
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.points4 = L1_1
+L1_1 = UIText
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.points5 = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = A0_2.points1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "points1"
+  L5_2 = "STR_DYN_CREDITS_9"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = -317.95
+  L9_2 = -307
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.points2
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "points2"
+  L5_2 = "STR_DYN_CREDITS_10"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = -317.6
+  L9_2 = -271.7
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.points3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "points3"
+  L5_2 = "STR_DYN_CREDITS_11"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = -315.05
+  L9_2 = -236.4
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.points4
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "points4"
+  L5_2 = "STR_DYN_CREDITS_12"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = -317.6
+  L9_2 = -201.1
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.points5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "points5"
+  L5_2 = "STR_DYN_CREDITS_13"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = -317.6
+  L9_2 = -165.8
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L0_1.Create = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2
+  L3_2 = PlayMenuAnimation
+  L4_2 = A0_2.instance
+  L5_2 = "GiveBonus"
+  L3_2(L4_2, L5_2)
+end
+L0_1.GiveBonus = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+end
+L0_1.SetRacerPosition = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+end
+L0_1.OnKeyDown = L1_1
+PopupPoints = L0_1

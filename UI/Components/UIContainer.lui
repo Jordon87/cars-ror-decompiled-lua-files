@@ -1,0 +1,346 @@
+local L0_1, L1_1
+L0_1 = {}
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UIContainer"
+  return L1_2
+end
+L0_1.QueryComponentType = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L1_2 = {}
+  L2_2 = {}
+  L1_2.contents = L2_2
+  L1_2.numContents = 0
+  L1_2.hasCachedCentroid = 0
+  L2_2 = {}
+  L2_2.x = 0
+  L2_2.y = 0
+  L1_2.CachedCentroid = L2_2
+  L2_2 = {}
+  L2_2.w = 0
+  L2_2.h = 0
+  L1_2.CachedDimensions = L2_2
+  L2_2 = {}
+  L3_2 = UIContainer
+  L2_2.__index = L3_2
+  L3_2 = setmetatable
+  L4_2 = L1_2
+  L5_2 = L2_2
+  L3_2(L4_2, L5_2)
+  return L1_2
+end
+L0_1.New = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
+  L1_2 = A0_2.hasCachedCentroid
+  if L1_2 == 0 then
+    L1_2 = 0
+    L2_2 = 0
+    L3_2 = 0
+    L4_2 = {}
+    L4_2.x = -9999
+    L4_2.y = -9999
+    L5_2 = {}
+    L5_2.x = 9999
+    L5_2.y = 9999
+    L6_2 = 1
+    L7_2 = A0_2.numContents
+    L8_2 = 1
+    for L9_2 = L6_2, L7_2, L8_2 do
+      L10_2 = A0_2.contents
+      L10_2 = L10_2[L9_2]
+      L11_2 = type
+      L12_2 = L10_2
+      L11_2 = L11_2(L12_2)
+      if L11_2 == "table" then
+        L11_2 = L10_2.name
+        if L11_2 ~= nil then
+          L11_2 = {}
+          L11_2.x = 0
+          L11_2.y = 0
+          L12_2 = GetComponentAnimationPosition
+          L13_2 = L10_2.owner
+          L14_2 = L10_2.name
+          L12_2, L13_2 = L12_2(L13_2, L14_2)
+          L11_2.y = L13_2
+          L11_2.x = L12_2
+          L12_2 = L11_2.x
+          L2_2 = L2_2 + L12_2
+          L12_2 = L11_2.y
+          L3_2 = L3_2 + L12_2
+          L1_2 = L1_2 + 1
+          L12_2 = L11_2
+          L13_2 = L11_2.x
+          L14_2 = L10_2.dimensions
+          L14_2 = L14_2.w
+          L13_2 = L13_2 + L14_2
+          L11_2.x = L13_2
+          L13_2 = L11_2.y
+          L14_2 = L10_2.dimensions
+          L14_2 = L14_2.h
+          L13_2 = L13_2 + L14_2
+          L11_2.y = L13_2
+          L13_2 = L11_2.x
+          L14_2 = L4_2.x
+          if L13_2 > L14_2 then
+            L13_2 = L11_2.x
+            L4_2.x = L13_2
+          end
+          L13_2 = L11_2.y
+          L14_2 = L4_2.y
+          if L13_2 > L14_2 then
+            L13_2 = L11_2.y
+            L4_2.y = L13_2
+          end
+          L11_2 = L12_2
+          L13_2 = L11_2.x
+          L14_2 = L10_2.dimensions
+          L14_2 = L14_2.w
+          L13_2 = L13_2 - L14_2
+          L11_2.x = L13_2
+          L13_2 = L11_2.y
+          L14_2 = L10_2.dimensions
+          L14_2 = L14_2.h
+          L13_2 = L13_2 - L14_2
+          L11_2.y = L13_2
+          L13_2 = L11_2.x
+          L14_2 = L5_2.x
+          if L13_2 < L14_2 then
+            L13_2 = L11_2.x
+            L5_2.x = L13_2
+          end
+          L13_2 = L11_2.y
+          L14_2 = L5_2.y
+          if L13_2 < L14_2 then
+            L13_2 = L11_2.y
+            L5_2.y = L13_2
+          end
+        end
+      end
+    end
+    L6_2 = A0_2.CachedDimensions
+    L7_2 = L4_2.x
+    L8_2 = L5_2.x
+    L7_2 = L7_2 - L8_2
+    L6_2.w = L7_2
+    L6_2 = A0_2.CachedDimensions
+    L7_2 = L4_2.y
+    L8_2 = L5_2.y
+    L7_2 = L7_2 - L8_2
+    L6_2.h = L7_2
+    if L1_2 == 0 then
+      L6_2 = 0
+      L7_2 = 0
+      return L6_2, L7_2
+    end
+    L6_2 = A0_2.CachedCentroid
+    L7_2 = L2_2 / L1_2
+    L6_2.x = L7_2
+    L6_2 = A0_2.CachedCentroid
+    L7_2 = L3_2 / L1_2
+    L6_2.y = L7_2
+    A0_2.hasCachedCentroid = 1
+  end
+  L1_2 = A0_2.CachedCentroid
+  L1_2 = L1_2.x
+  L2_2 = A0_2.CachedCentroid
+  L2_2 = L2_2.y
+  return L1_2, L2_2
+end
+L0_1.GetCentroid = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = 0
+  L3_2 = 0
+  L5_2 = A0_2
+  L4_2 = A0_2.GetCentroid
+  L4_2, L5_2 = L4_2(L5_2)
+  L3_2 = L5_2
+  L2_2 = L4_2
+  if A1_2 == 0 then
+    L4_2 = A0_2.CachedDimensions
+    L4_2 = L4_2.w
+    L2_2 = L2_2 - L4_2
+  elseif A1_2 == 1 then
+  elseif A1_2 == 2 then
+    L4_2 = A0_2.CachedDimensions
+    L4_2 = L4_2.w
+    L2_2 = L2_2 + L4_2
+  end
+  L4_2 = L2_2
+  L5_2 = L3_2
+  return L4_2, L5_2
+end
+L0_1.GetEdge = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2.numContents
+  L2_2 = L2_2 + 1
+  A0_2.numContents = L2_2
+  L2_2 = table
+  L2_2 = L2_2.insert
+  L3_2 = A0_2.contents
+  L4_2 = A0_2.numContents
+  L5_2 = A1_2
+  L2_2(L3_2, L4_2, L5_2)
+end
+L0_1.Insert = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L4_2 = 0
+  L5_2 = 0
+  if not A2_2 then
+    A2_2 = 1
+  end
+  if not A3_2 then
+    L6_2 = {}
+    L6_2.x = 0
+    L6_2.y = 0
+    A3_2 = L6_2
+  end
+  if A1_2 ~= nil then
+    L6_2 = type
+    L7_2 = A1_2
+    L6_2 = L6_2(L7_2)
+    if L6_2 == "table" then
+      L6_2 = A1_2.GetEdge
+      if L6_2 ~= nil then
+        L7_2 = A1_2
+        L6_2 = A1_2.GetEdge
+        L8_2 = A2_2
+        L6_2, L7_2 = L6_2(L7_2, L8_2)
+        L5_2 = L7_2
+        L4_2 = L6_2
+      else
+        L6_2 = A1_2.GetCentroid
+        if L6_2 ~= nil then
+          L7_2 = A1_2
+          L6_2 = A1_2.GetCentroid
+          L6_2, L7_2 = L6_2(L7_2)
+          L5_2 = L7_2
+          L4_2 = L6_2
+        else
+          L6_2 = GetComponentValue
+          L7_2 = A1_2.instance
+          L8_2 = "x"
+          L6_2 = L6_2(L7_2, L8_2)
+          L4_2 = L6_2
+          L6_2 = GetComponentValue
+          L7_2 = A1_2.instance
+          L8_2 = "y"
+          L6_2 = L6_2(L7_2, L8_2)
+          L5_2 = L6_2
+        end
+      end
+      L6_2 = A3_2.x
+      L4_2 = L4_2 + L6_2
+      L6_2 = A3_2.y
+      L5_2 = L5_2 + L6_2
+      L7_2 = A0_2
+      L6_2 = A0_2.Move
+      L8_2 = A3_2.x
+      L8_2 = L4_2 + L8_2
+      L9_2 = A3_2.y
+      L9_2 = L5_2 + L9_2
+      L6_2(L7_2, L8_2, L9_2)
+    end
+  end
+end
+L0_1.MoveTo = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
+  A0_2.hasCachedCentroid = 0
+  L4_2 = A0_2
+  L3_2 = A0_2.GetCentroid
+  L3_2, L4_2 = L3_2(L4_2)
+  L5_2 = 0
+  L6_2 = 0
+  if A1_2 == nil or A2_2 == nil then
+    L7_2 = DebugPrint
+    L8_2 = "hit breakpoint - (newX == nil or newY = nil)"
+    L7_2(L8_2)
+    L7_2 = dbgBreak
+    L7_2()
+    return
+  end
+  L7_2 = pairs
+  L8_2 = A0_2.contents
+  L7_2, L8_2, L9_2 = L7_2(L8_2)
+  for L10_2, L11_2 in L7_2, L8_2, L9_2 do
+    L12_2 = type
+    L13_2 = L11_2
+    L12_2 = L12_2(L13_2)
+    if L12_2 == "table" then
+      L12_2 = L11_2.QueryComponentType
+      if L12_2 ~= nil then
+        L13_2 = L11_2
+        L12_2 = L11_2.QueryComponentType
+        L12_2 = L12_2(L13_2)
+        if L12_2 == "UIContainer" then
+          L13_2 = L11_2
+          L12_2 = L11_2.GetCentroid
+          L12_2, L13_2 = L12_2(L13_2)
+          L6_2 = L13_2
+          L5_2 = L12_2
+      end
+      else
+        L12_2 = L11_2.instance
+        if L12_2 ~= nil then
+          L12_2 = GetComponentValue
+          L13_2 = L11_2.instance
+          L14_2 = "x"
+          L12_2 = L12_2(L13_2, L14_2)
+          L5_2 = L12_2
+          L12_2 = GetComponentValue
+          L13_2 = L11_2.instance
+          L14_2 = "y"
+          L12_2 = L12_2(L13_2, L14_2)
+          L6_2 = L12_2
+        end
+      end
+      L12_2 = L5_2 - L3_2
+      L11_2.localX = L12_2
+      L12_2 = L6_2 - L4_2
+      L11_2.localY = L12_2
+    end
+  end
+  L7_2 = pairs
+  L8_2 = A0_2.contents
+  L7_2, L8_2, L9_2 = L7_2(L8_2)
+  for L10_2, L11_2 in L7_2, L8_2, L9_2 do
+    L12_2 = type
+    L13_2 = L11_2
+    L12_2 = L12_2(L13_2)
+    if L12_2 == "table" then
+      L12_2 = L11_2.instance
+      if L12_2 ~= nil then
+        L12_2 = SetComponentValue
+        L13_2 = L11_2.instance
+        L14_2 = "x"
+        L15_2 = L11_2.localX
+        L15_2 = A1_2 + L15_2
+        L12_2(L13_2, L14_2, L15_2)
+        L12_2 = SetComponentValue
+        L13_2 = L11_2.instance
+        L14_2 = "y"
+        L15_2 = L11_2.localY
+        L15_2 = A2_2 + L15_2
+        L12_2(L13_2, L14_2, L15_2)
+      else
+        L12_2 = L11_2.Move
+        if L12_2 ~= nil then
+          L13_2 = L11_2
+          L12_2 = L11_2.Move
+          L14_2 = L11_2.localX
+          L14_2 = A1_2 + L14_2
+          L15_2 = L11_2.localY
+          L15_2 = A2_2 + L15_2
+          L12_2(L13_2, L14_2, L15_2)
+        end
+      end
+    end
+  end
+end
+L0_1.Move = L1_1
+UIContainer = L0_1

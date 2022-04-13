@@ -1,0 +1,1616 @@
+local L0_1, L1_1, L2_1, L3_1
+L0_1 = IncludeScript
+L1_1 = "C\\Script\\StreamingHelpers"
+L0_1(L1_1)
+L0_1 = {}
+L0_1.instance = 0
+L0_1.eventInit = 0
+L0_1.curPaintJob = 0
+L1_1 = {}
+L0_1.PlayableChars = L1_1
+L0_1.ActiveCharIndex = 1
+L0_1.ForceCharacterChange = true
+L1_1 = {}
+L0_1.ActiveCharPaintJobs = L1_1
+L1_1 = {}
+L2_1 = nil
+L3_1 = nil
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L0_1.SelectedChar = L1_1
+L0_1.LoadProfileChar = true
+L0_1.isFrontEnd = 0
+L0_1.curPlayerIndex = 1
+L1_1 = GetNumPlayers
+L1_1 = L1_1()
+L0_1.NumPlayers = L1_1
+L0_1.EventSet = "ExplorerHub"
+L1_1 = getvar
+L2_1 = "LastActivity"
+L1_1 = L1_1(L2_1)
+L0_1.EventToLaunch = L1_1
+L0_1.PreviousMenu = ""
+L0_1.Started = 0
+L0_1.FinishedIntro = 0
+L0_1.AllowInput = true
+L0_1.DelayedAction = nil
+L0_1.curVehicleCamera = 0
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.HeaderCursor = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Buttons = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.Title = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.HUD_Bubble_L = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.HUD_Bubble_R = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.HUD_Bubble_U = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.HUD_Bubble_D = L1_1
+L1_1 = UIContainer
+L2_1 = L1_1
+L1_1 = L1_1.New
+L1_1 = L1_1(L2_1)
+L0_1.BankBar_Red = L1_1
+L1_1 = {}
+L0_1.Shortcuts = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = GetCurrentLayer
+  L1_2 = L1_2()
+  A0_2.instance = L1_2
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.player = L2_2
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HeaderCursor
+  L3_2 = L3_2.player
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HeaderCursor
+  L1_2 = L1_2.player
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HeaderCursor.player"
+  L5_2 = "STR_DYN_CREDITS_1"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = 996.25
+  L9_2 = 112.15
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon3 = L2_2
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HeaderCursor
+  L3_2 = L3_2.icon3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HeaderCursor
+  L1_2 = L1_2.icon3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HeaderCursor.icon3"
+  L5_2 = "component_cursor_01"
+  L6_2 = 874.15
+  L7_2 = 137.9
+  L8_2 = 128
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon4 = L2_2
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HeaderCursor
+  L3_2 = L3_2.icon4
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HeaderCursor
+  L1_2 = L1_2.icon4
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HeaderCursor.icon4"
+  L5_2 = "component_cursor_01"
+  L6_2 = 1240.25
+  L7_2 = 137.9
+  L8_2 = 128
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon5 = L2_2
+  L1_2 = A0_2.HeaderCursor
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HeaderCursor
+  L3_2 = L3_2.icon5
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HeaderCursor
+  L1_2 = L1_2.icon5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HeaderCursor.icon5"
+  L5_2 = "component_cursor_02"
+  L6_2 = 1111.85
+  L7_2 = 137.9
+  L8_2 = 240
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text1"
+  L5_2 = "STR_SELECT"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = 2910.15
+  L9_2 = 667
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text3 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text3
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text3
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text3"
+  L5_2 = "STR_BACK"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = 2727.25
+  L9_2 = 667
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text5 = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.text5
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.text5
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.text5"
+  L5_2 = "STR_SWITCH_GARAGE_1"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = 2587.25
+  L9_2 = 667
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Buttons
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.changeControls = L2_2
+  L1_2 = A0_2.Buttons
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Buttons
+  L3_2 = L3_2.changeControls
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Buttons
+  L1_2 = L1_2.changeControls
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Buttons.changeControls"
+  L5_2 = "STR_DYN_CREDITS_2"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = 2317.25
+  L9_2 = 667
+  L10_2 = "right"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Title
+  L2_2 = UIText
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.text1 = L2_2
+  L1_2 = A0_2.Title
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.Title
+  L3_2 = L3_2.text1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.Title
+  L1_2 = L1_2.text1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "Title.text1"
+  L5_2 = "STR_RAMONE_SHOP"
+  L6_2 = "COMMONUI"
+  L7_2 = "18_BodegaSans-Medium"
+  L8_2 = 1466.1
+  L9_2 = 623.5
+  L10_2 = "left"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_L
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_Bubble_L
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_L
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_L
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_L.icon1"
+  L5_2 = "icon_paintjobs"
+  L6_2 = 344.1
+  L7_2 = 400.95
+  L8_2 = 64
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_L
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon2 = L2_2
+  L1_2 = A0_2.HUD_Bubble_L
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_L
+  L3_2 = L3_2.icon2
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_L
+  L1_2 = L1_2.icon2
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_L.icon2"
+  L5_2 = "hud_minigame_02"
+  L6_2 = 282.1
+  L7_2 = 384.35
+  L8_2 = 32
+  L9_2 = 32
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_R
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_Bubble_R
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_R
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_R
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_R.icon1"
+  L5_2 = "icon_paintjobs"
+  L6_2 = 1053.2
+  L7_2 = 400.95
+  L8_2 = 64
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_R
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon2 = L2_2
+  L1_2 = A0_2.HUD_Bubble_R
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_R
+  L3_2 = L3_2.icon2
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_R
+  L1_2 = L1_2.icon2
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_R.icon2"
+  L5_2 = "hud_minigame_02"
+  L6_2 = 1083.2
+  L7_2 = 384.35
+  L8_2 = 32
+  L9_2 = 32
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_U
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_Bubble_U
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_U
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_U
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_U.icon1"
+  L5_2 = "hud_bubble_2"
+  L6_2 = 670.05
+  L7_2 = 204.95
+  L8_2 = 64
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_U
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon2 = L2_2
+  L1_2 = A0_2.HUD_Bubble_U
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_U
+  L3_2 = L3_2.icon2
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_U
+  L1_2 = L1_2.icon2
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_U.icon2"
+  L5_2 = "hud_minigame_02"
+  L6_2 = 670.05
+  L7_2 = 200.25
+  L8_2 = 32
+  L9_2 = 32
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_D
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.HUD_Bubble_D
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_D
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_D
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_D.icon1"
+  L5_2 = "hud_bubble_2"
+  L6_2 = 670.05
+  L7_2 = 584.95
+  L8_2 = 64
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.HUD_Bubble_D
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon2 = L2_2
+  L1_2 = A0_2.HUD_Bubble_D
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.HUD_Bubble_D
+  L3_2 = L3_2.icon2
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.HUD_Bubble_D
+  L1_2 = L1_2.icon2
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "HUD_Bubble_D.icon2"
+  L5_2 = "hud_minigame_02"
+  L6_2 = 670.05
+  L7_2 = 586.2
+  L8_2 = 32
+  L9_2 = 32
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.BankBar_Red
+  L2_2 = UIContainer
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.YellowGradient = L2_2
+  L1_2 = A0_2.BankBar_Red
+  L1_2 = L1_2.YellowGradient
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.BankBar_Red
+  L1_2 = L1_2.YellowGradient
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.BankBar_Red
+  L3_2 = L3_2.YellowGradient
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.BankBar_Red
+  L1_2 = L1_2.YellowGradient
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "BankBar_Red.YellowGradient.icon1"
+  L5_2 = "component_bankgradient"
+  L6_2 = 1470.1
+  L7_2 = 688.5
+  L8_2 = 64
+  L9_2 = 8
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.BankBar_Red
+  L2_2 = UIIcon
+  L3_2 = L2_2
+  L2_2 = L2_2.New
+  L2_2 = L2_2(L3_2)
+  L1_2.icon1 = L2_2
+  L1_2 = A0_2.BankBar_Red
+  L2_2 = L1_2
+  L1_2 = L1_2.Insert
+  L3_2 = A0_2.BankBar_Red
+  L3_2 = L3_2.icon1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.BankBar_Red
+  L1_2 = L1_2.icon1
+  L2_2 = L1_2
+  L1_2 = L1_2.Create
+  L3_2 = A0_2.instance
+  L4_2 = "BankBar_Red.icon1"
+  L5_2 = "component_bankbar"
+  L6_2 = 2174.1
+  L7_2 = 711
+  L8_2 = 1536
+  L9_2 = 64
+  L10_2 = "center"
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.HeaderCursor
+  L2_2 = L2_2.player
+  L1_2.player = L2_2
+  L1_2 = A0_2.Shortcuts
+  L2_2 = A0_2.Buttons
+  L2_2 = L2_2.changeControls
+  L1_2.changeControls = L2_2
+  L1_2 = SetTickFrequency
+  L2_2 = A0_2.instance
+  L3_2 = 0.5
+  L1_2(L2_2, L3_2)
+  L1_2 = Split
+  L2_2 = getvar
+  L3_2 = "CurrentActivity"
+  L2_2 = L2_2(L3_2)
+  L3_2 = "\\"
+  L1_2 = L1_2(L2_2, L3_2)
+  L2_2 = #L1_2
+  L2_2 = L1_2[L2_2]
+  if L2_2 == "FE_FrontEnd" then
+    A0_2.isFrontEnd = 1
+  else
+    A0_2.isFrontEnd = 0
+  end
+end
+L0_1.Create = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = A0_2.Shortcuts
+  L1_2 = L1_2.changeControls
+  L2_2 = L1_2
+  L1_2 = L1_2.SetValue
+  L3_2 = ""
+  L1_2(L2_2, L3_2)
+  A0_2.FinishedIntro = 1
+  A0_2.curVehicleCamera = 0
+  A0_2.Started = 0
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "intro"
+  L1_2(L2_2, L3_2)
+  L1_2 = EnableNonCriticalToy
+  L2_2 = "ProfileChar_Mcq"
+  L3_2 = 0
+  L1_2(L2_2, L3_2)
+  L1_2 = SetEventTimer
+  L2_2 = "RamonesIntro"
+  L3_2 = 1
+  L1_2(L2_2, L3_2)
+  A0_2.AllowInput = false
+  L1_2 = {}
+  function L2_2()
+    local L0_3, L1_3
+    L0_3 = GetTimeRemaining
+    L1_3 = "RamonesIntro"
+    L0_3 = L0_3(L1_3)
+    L0_3 = L0_3 <= 0
+    return L0_3
+  end
+  L1_2.predicate = L2_2
+  function L2_2()
+    local L0_3, L1_3
+    L0_3 = A0_2
+    L0_3.AllowInput = true
+  end
+  L1_2.action = L2_2
+  A0_2.DelayedAction = L1_2
+end
+L0_1.StartUI = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = string
+  L2_2 = L2_2.lower
+  L3_2 = A1_2
+  L2_2 = L2_2(L3_2)
+  if L2_2 == "intro" then
+    L3_2 = A0_2.Shortcuts
+    L3_2 = L3_2.player
+    L4_2 = L3_2
+    L3_2 = L3_2.SetValue
+    L5_2 = ""
+    L6_2 = GetLocalizedString
+    L7_2 = "InGameUI"
+    L8_2 = "STR_PLAYER"
+    L6_2 = L6_2(L7_2, L8_2)
+    L7_2 = " "
+    L8_2 = A0_2.curPlayerIndex
+    L5_2 = L5_2 .. L6_2 .. L7_2 .. L8_2
+    L3_2(L4_2, L5_2)
+    L3_2 = PlayMenuAnimation
+    L4_2 = A0_2.instance
+    L5_2 = "ChangePlayer"
+    L3_2(L4_2, L5_2)
+    A0_2.FinishedIntro = 0
+    L3_2 = A0_2.curPlayerIndex
+    if L3_2 == 1 then
+      L3_2 = SetPlayerInputEnabled
+      L4_2 = 0
+      L5_2 = 1
+      L3_2(L4_2, L5_2)
+      L3_2 = SetPlayerInputEnabled
+      L4_2 = 1
+      L5_2 = 0
+      L3_2(L4_2, L5_2)
+    else
+      L3_2 = A0_2.curPlayerIndex
+      if L3_2 == 2 then
+        L3_2 = SetPlayerInputEnabled
+        L4_2 = 0
+        L5_2 = 0
+        L3_2(L4_2, L5_2)
+        L3_2 = SetPlayerInputEnabled
+        L4_2 = 1
+        L5_2 = 1
+        L3_2(L4_2, L5_2)
+      end
+    end
+  elseif L2_2 == "outro" then
+  end
+end
+L0_1.OnAnimationPlayed = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = A0_2.isFrontEnd
+  if L1_2 == 1 then
+    L1_2 = DebugPrint
+    L2_2 = "Showing change controls"
+    L1_2(L2_2)
+    L1_2 = A0_2.Shortcuts
+    L1_2 = L1_2.changeControls
+    L2_2 = L1_2
+    L1_2 = L1_2.SetValue
+    L3_2 = ""
+    L4_2 = GetLocalizedString
+    L5_2 = "CARSFRONTENDUI"
+    L6_2 = "STR_CHANGECONTROL"
+    L4_2 = L4_2(L5_2, L6_2)
+    L3_2 = L3_2 .. L4_2
+    L1_2(L2_2, L3_2)
+  else
+    L1_2 = DebugPrint
+    L2_2 = "Hiding change controls"
+    L1_2(L2_2)
+    L1_2 = A0_2.Shortcuts
+    L1_2 = L1_2.changeControls
+    L2_2 = L1_2
+    L1_2 = L1_2.SetValue
+    L3_2 = ""
+    L1_2(L2_2, L3_2)
+  end
+end
+L0_1.DoPostIntroInit = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = DebugPrint
+  L2_2 = "Ramones:EndUI()"
+  L1_2(L2_2)
+  L1_2 = EnableToy
+  L2_2 = A0_2.PlayableChars
+  L3_2 = A0_2.ActiveCharIndex
+  L2_2 = L2_2[L3_2]
+  L3_2 = 0
+  L1_2(L2_2, L3_2)
+  L1_2 = PlayMenuAnimation
+  L2_2 = A0_2.instance
+  L3_2 = "outro"
+  L1_2(L2_2, L3_2)
+  L1_2 = EndMenu
+  L2_2 = A0_2.instance
+  L1_2(L2_2)
+  A0_2.Started = 0
+end
+L0_1.EndUI = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.Destroy = L1_1
+function L1_1(A0_2)
+  local L1_2
+  A0_2.Started = 0
+end
+L0_1.Init = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.eventInit
+  if L2_2 == 0 then
+    L3_2 = A0_2
+    L2_2 = A0_2.SwitchPlayers
+    L4_2 = A0_2.curPlayerIndex
+    L2_2(L3_2, L4_2)
+    A0_2.eventInit = 1
+  end
+  L2_2 = A0_2.FinishedIntro
+  if L2_2 == 0 then
+    L2_2 = GetMenuAnimationState
+    L3_2 = A0_2.instance
+    L4_2 = "intro"
+    L2_2 = L2_2(L3_2, L4_2)
+    if L2_2 == 0 then
+      A0_2.FinishedIntro = 1
+      L3_2 = A0_2
+      L2_2 = A0_2.DoPostIntroInit
+      L2_2(L3_2)
+    end
+  end
+  L2_2 = A0_2.Started
+  if L2_2 == 0 then
+    A0_2.Started = 1
+    L3_2 = A0_2
+    L2_2 = A0_2.ChangeCharacter
+    L4_2 = A0_2.ActiveCharIndex
+    L2_2(L3_2, L4_2)
+    L2_2 = GetGarageMode
+    L2_2 = L2_2()
+    if L2_2 ~= "story" then
+      L2_2 = FadeInScreen
+      L3_2 = 0.5
+      L2_2(L3_2)
+    end
+    L2_2 = LoopMenuAnimation
+    L3_2 = A0_2.instance
+    L4_2 = "main"
+    L2_2(L3_2, L4_2)
+    A0_2.AllowInput = true
+  end
+  L2_2 = A0_2.DelayedAction
+  if L2_2 ~= nil then
+    L2_2 = A0_2.DelayedAction
+    L2_2 = L2_2.predicate
+    L2_2 = L2_2()
+    if L2_2 then
+      L2_2 = A0_2.DelayedAction
+      L2_2 = L2_2.action
+      L2_2()
+      A0_2.DelayedAction = nil
+    end
+  end
+end
+L0_1.Tick = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = A0_2.ActiveCharPaintJobs
+  L2_2 = #L2_2
+  if L2_2 <= 1 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBadInput
+    L2_2(L3_2)
+  else
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventFE_Ramones_Toggle
+    L2_2(L3_2)
+    if A1_2 < 1 then
+      L2_2 = A0_2.ActiveCharPaintJobs
+      L2_2 = #L2_2
+      A0_2.curPaintJob = L2_2
+    else
+      L2_2 = A0_2.ActiveCharPaintJobs
+      L2_2 = #L2_2
+      if A1_2 > L2_2 then
+        A0_2.curPaintJob = 1
+      else
+        A0_2.curPaintJob = A1_2
+      end
+    end
+    L2_2 = string
+    L2_2 = L2_2.lower
+    L3_2 = A0_2.PlayableChars
+    L4_2 = A0_2.ActiveCharIndex
+    L3_2 = L3_2[L4_2]
+    L2_2 = L2_2(L3_2)
+    L3_2 = string
+    L3_2 = L3_2.lower
+    L4_2 = A0_2.ActiveCharPaintJobs
+    L5_2 = A0_2.curPaintJob
+    L4_2 = L4_2[L5_2]
+    L3_2 = L3_2(L4_2)
+    L4_2 = SetWorkingPaintJob
+    L5_2 = L2_2
+    L6_2 = L3_2
+    L4_2(L5_2, L6_2)
+    L4_2 = CharSelectHelpers
+    L5_2 = L4_2
+    L4_2 = L4_2.LoadRequiredStreamingSections
+    L6_2 = L2_2
+    L4_2(L5_2, L6_2)
+    L4_2 = CharSelectHelpers
+    L5_2 = L4_2
+    L4_2 = L4_2.ApplyCurrentVehicleSettings
+    L6_2 = L2_2
+    L4_2(L5_2, L6_2)
+  end
+end
+L0_1.UpdatePaintJob = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L2_2 = A0_2.ActiveCharIndex
+  if L2_2 == A1_2 then
+    L2_2 = ForceCharacterChange
+    if L2_2 == false then
+      L2_2 = DebugPrint
+      L3_2 = "Not changing character.  Current char = "
+      L4_2 = A0_2.PlayableChars
+      L5_2 = A0_2.ActiveCharIndex
+      L4_2 = L4_2[L5_2]
+      L3_2 = L3_2 .. L4_2
+      L2_2(L3_2)
+      L2_2 = CharSelectHelpers
+      L3_2 = L2_2
+      L2_2 = L2_2.LoadRequiredStreamingSections
+      L4_2 = A0_2.PlayableChars
+      L5_2 = A0_2.ActiveCharIndex
+      L4_2 = L4_2[L5_2]
+      L2_2(L3_2, L4_2)
+      L2_2 = A0_2.PlayableChars
+      L3_2 = A0_2.ActiveCharIndex
+      L2_2 = L2_2[L3_2]
+      L3_2 = SetToyPositionByMatrixToy
+      L4_2 = L2_2
+      L5_2 = "RamonesCharPosition"
+      L3_2(L4_2, L5_2)
+      L3_2 = IsLargeVehicle
+      L4_2 = L2_2
+      L3_2 = L3_2(L4_2)
+      if L3_2 == 1 then
+        L4_2 = A0_2.curVehicleCamera
+        if L4_2 ~= 1 then
+          L4_2 = PlayCameraAnimation
+          L5_2 = "FrontEndCamera"
+          L6_2 = "Anim\\RamoneCam01"
+          L4_2(L5_2, L6_2)
+          A0_2.curVehicleCamera = 1
+      end
+      elseif L3_2 == 0 then
+        L4_2 = A0_2.curVehicleCamera
+        if L4_2 ~= 2 then
+          L4_2 = PlayCameraAnimation
+          L5_2 = "FrontEndCamera"
+          L6_2 = "Anim\\RamoneCam02"
+          L4_2(L5_2, L6_2)
+          A0_2.curVehicleCamera = 2
+        end
+      end
+      return
+    end
+  end
+  L2_2 = EnableToy
+  L3_2 = A0_2.PlayableChars
+  L4_2 = A0_2.ActiveCharIndex
+  L3_2 = L3_2[L4_2]
+  L4_2 = 0
+  L2_2(L3_2, L4_2)
+  L2_2 = StopToyAnimation
+  L3_2 = A0_2.PlayableChars
+  L4_2 = A0_2.ActiveCharIndex
+  L3_2 = L3_2[L4_2]
+  L2_2(L3_2)
+  A0_2.ActiveCharIndex = A1_2
+  L2_2 = A0_2.PlayableChars
+  L3_2 = A0_2.ActiveCharIndex
+  L2_2 = L2_2[L3_2]
+  L3_2 = {}
+  L4_2 = GetUnlockedPaintJobList
+  L5_2 = L2_2
+  L4_2, L5_2, L6_2, L7_2, L8_2, L9_2 = L4_2(L5_2)
+  L3_2[1] = L4_2
+  L3_2[2] = L5_2
+  L3_2[3] = L6_2
+  L3_2[4] = L7_2
+  L3_2[5] = L8_2
+  L3_2[6] = L9_2
+  A0_2.ActiveCharPaintJobs = L3_2
+  L3_2 = SetToyPositionByMatrixToy
+  L4_2 = L2_2
+  L5_2 = "RamonesCharPosition"
+  L3_2(L4_2, L5_2)
+  L3_2 = LoadAnimationDataFromStream
+  L4_2 = L2_2
+  L5_2 = "_1"
+  L4_2 = L4_2 .. L5_2
+  L3_2(L4_2)
+  L3_2 = CharSelectHelpers
+  L4_2 = L3_2
+  L3_2 = L3_2.InitializeVehicleSettings
+  L5_2 = L2_2
+  L3_2(L4_2, L5_2)
+  L3_2 = CharSelectHelpers
+  L4_2 = L3_2
+  L3_2 = L3_2.LoadRequiredStreamingSections
+  L5_2 = L2_2
+  L3_2(L4_2, L5_2)
+  L3_2 = CharSelectHelpers
+  L4_2 = L3_2
+  L3_2 = L3_2.ApplyCurrentVehicleSettings
+  L5_2 = L2_2
+  L3_2(L4_2, L5_2)
+  L3_2 = GetWorkingPaintJob
+  L4_2 = L2_2
+  L3_2 = L3_2(L4_2)
+  L4_2 = ipairs
+  L5_2 = A0_2.ActiveCharPaintJobs
+  L4_2, L5_2, L6_2 = L4_2(L5_2)
+  for L7_2, L8_2 in L4_2, L5_2, L6_2 do
+    if L8_2 == L3_2 then
+      A0_2.curPaintJob = L7_2
+    end
+  end
+  L4_2 = IsLargeVehicle
+  L5_2 = L2_2
+  L4_2 = L4_2(L5_2)
+  if L4_2 == 1 then
+    L5_2 = A0_2.curVehicleCamera
+    if L5_2 ~= 1 then
+      L5_2 = PlayCameraAnimation
+      L6_2 = "FrontEndCamera"
+      L7_2 = "Anim\\RamoneCam01"
+      L5_2(L6_2, L7_2)
+      A0_2.curVehicleCamera = 1
+  end
+  elseif L4_2 == 0 then
+    L5_2 = A0_2.curVehicleCamera
+    if L5_2 ~= 2 then
+      L5_2 = PlayCameraAnimation
+      L6_2 = "FrontEndCamera"
+      L7_2 = "Anim\\RamoneCam02"
+      L5_2(L6_2, L7_2)
+      A0_2.curVehicleCamera = 2
+    end
+  end
+  L5_2 = SetCharacterAnimation
+  L6_2 = L2_2
+  L7_2 = L2_2
+  L8_2 = "_BEFT_Initial"
+  L7_2 = L7_2 .. L8_2
+  L8_2 = ""
+  L9_2 = true
+  L5_2(L6_2, L7_2, L8_2, L9_2)
+  L5_2 = SetInitialPose
+  L6_2 = L2_2
+  L5_2(L6_2)
+  L5_2 = EnableToy
+  L6_2 = L2_2
+  L7_2 = 1
+  L5_2(L6_2, L7_2)
+  L5_2 = false
+  ForceCharacterChange = L5_2
+end
+L0_1.ChangeCharacter = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = DebugPrint
+  L3_2 = "Eventset for switchplayers: "
+  L4_2 = A0_2.EventSet
+  L3_2 = L3_2 .. L4_2
+  L2_2(L3_2)
+  L2_2 = true
+  ForceCharacterChange = L2_2
+  L2_2 = PlayUISound
+  L3_2 = UISoundEventFE_Ramones_NextChar
+  L2_2(L3_2)
+  if A1_2 == 1 then
+    L2_2 = A0_2.PlayableChars
+    L2_2 = #L2_2
+    if 0 < L2_2 then
+      L2_2 = EnableToy
+      L3_2 = A0_2.PlayableChars
+      L4_2 = A0_2.ActiveCharIndex
+      L3_2 = L3_2[L4_2]
+      L4_2 = 0
+      L2_2(L3_2, L4_2)
+    end
+    L2_2 = {}
+    L3_2 = GetEventSpecificVehicleList
+    L4_2 = A0_2.EventToLaunch
+    L3_2, L4_2, L5_2, L6_2, L7_2 = L3_2(L4_2)
+    L2_2[1] = L3_2
+    L2_2[2] = L4_2
+    L2_2[3] = L5_2
+    L2_2[4] = L6_2
+    L2_2[5] = L7_2
+    A0_2.PlayableChars = L2_2
+    L2_2 = A0_2.PlayableChars
+    L2_2 = #L2_2
+    if L2_2 < 1 then
+      L2_2 = {}
+      L3_2 = GetEventSetVehicleList
+      L4_2 = A0_2.EventSet
+      L3_2, L4_2, L5_2, L6_2, L7_2 = L3_2(L4_2)
+      L2_2[1] = L3_2
+      L2_2[2] = L4_2
+      L2_2[3] = L5_2
+      L2_2[4] = L6_2
+      L2_2[5] = L7_2
+      A0_2.PlayableChars = L2_2
+    end
+    L2_2 = A0_2.PlayableChars
+    L2_2 = #L2_2
+    if L2_2 == 0 then
+      L2_2 = DebugPrint
+      L3_2 = "Oh noes! theres no playable characters in this eventset!"
+      L2_2(L3_2)
+    end
+    L2_2 = GetGarageMode
+    L2_2 = L2_2()
+    if L2_2 == "story" then
+      L2_2 = A0_2.SelectedChar
+      L2_2 = L2_2[A1_2]
+      if L2_2 == nil then
+        L2_2 = A0_2.SelectedChar
+        L3_2 = CharSelectHelpers
+        L4_2 = L3_2
+        L3_2 = L3_2.GetProfileVehicleIndex
+        L5_2 = A0_2.PlayableChars
+        L3_2 = L3_2(L4_2, L5_2)
+        L2_2[A1_2] = L3_2
+    end
+    else
+      L2_2 = A0_2.SelectedChar
+      L2_2 = L2_2[A1_2]
+      if L2_2 == nil then
+        L2_2 = A0_2.SelectedChar
+        L2_2[A1_2] = A1_2
+      end
+    end
+    L3_2 = A0_2
+    L2_2 = A0_2.ChangeCharacter
+    L4_2 = A0_2.SelectedChar
+    L4_2 = L4_2[A1_2]
+    L2_2(L3_2, L4_2)
+  elseif A1_2 == 2 then
+    L2_2 = EnableToy
+    L3_2 = A0_2.PlayableChars
+    L4_2 = A0_2.ActiveCharIndex
+    L3_2 = L3_2[L4_2]
+    L4_2 = 0
+    L2_2(L3_2, L4_2)
+    L2_2 = table
+    L2_2 = L2_2.remove
+    L3_2 = A0_2.PlayableChars
+    L4_2 = A0_2.ActiveCharIndex
+    L2_2(L3_2, L4_2)
+    L2_2 = A0_2.SelectedChar
+    L3_2 = A0_2.curPlayerIndex
+    L4_2 = A0_2.ActiveCharIndex
+    L2_2[L3_2] = L4_2
+    L3_2 = A0_2
+    L2_2 = A0_2.ChangeCharacter
+    L4_2 = 1
+    L2_2(L3_2, L4_2)
+  end
+  A0_2.curPlayerIndex = A1_2
+  L2_2 = A0_2.Shortcuts
+  L2_2 = L2_2.player
+  L3_2 = L2_2
+  L2_2 = L2_2.SetValue
+  L4_2 = ""
+  L5_2 = GetLocalizedString
+  L6_2 = "InGameUI"
+  L7_2 = "STR_PLAYER"
+  L5_2 = L5_2(L6_2, L7_2)
+  L6_2 = " "
+  L7_2 = A1_2
+  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
+  L2_2(L3_2, L4_2)
+  L2_2 = PlayMenuAnimation
+  L3_2 = A0_2.instance
+  L4_2 = "ChangePlayer"
+  L2_2(L3_2, L4_2)
+  if A1_2 == 1 then
+    L2_2 = SetPlayerInputEnabled
+    L3_2 = 0
+    L4_2 = 1
+    L2_2(L3_2, L4_2)
+    L2_2 = SetPlayerInputEnabled
+    L3_2 = 1
+    L4_2 = 0
+    L2_2(L3_2, L4_2)
+    L2_2 = BindControllerConfigStrings
+    L3_2 = GetControllerConfig
+    L4_2 = 1
+    L3_2, L4_2, L5_2, L6_2, L7_2 = L3_2(L4_2)
+    L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+    L2_2 = A0_2.isFrontEnd
+    if L2_2 == 1 then
+      L2_2 = A0_2.Shortcuts
+      L2_2 = L2_2.changeControls
+      L3_2 = L2_2
+      L2_2 = L2_2.SetValue
+      L4_2 = ""
+      L5_2 = GetLocalizedString
+      L6_2 = "CARSFRONTENDUI"
+      L7_2 = "STR_CHANGECONTROL"
+      L5_2 = L5_2(L6_2, L7_2)
+      L4_2 = L4_2 .. L5_2
+      L2_2(L3_2, L4_2)
+    end
+  elseif A1_2 == 2 then
+    L2_2 = SetPlayerInputEnabled
+    L3_2 = 0
+    L4_2 = 0
+    L2_2(L3_2, L4_2)
+    L2_2 = SetPlayerInputEnabled
+    L3_2 = 1
+    L4_2 = 1
+    L2_2(L3_2, L4_2)
+    L2_2 = BindControllerConfigStrings
+    L3_2 = GetControllerConfig
+    L4_2 = 2
+    L3_2, L4_2, L5_2, L6_2, L7_2 = L3_2(L4_2)
+    L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+    L2_2 = A0_2.isFrontEnd
+    if L2_2 == 1 then
+      L2_2 = A0_2.Shortcuts
+      L2_2 = L2_2.changeControls
+      L3_2 = L2_2
+      L2_2 = L2_2.SetValue
+      L4_2 = ""
+      L5_2 = GetLocalizedString
+      L6_2 = "CARSFRONTENDUI"
+      L7_2 = "STR_CHANGECONTROL"
+      L5_2 = L5_2(L6_2, L7_2)
+      L4_2 = L4_2 .. L5_2
+      L2_2(L3_2, L4_2)
+    end
+  end
+end
+L0_1.SwitchPlayers = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2.PlayableChars
+  if L2_2 ~= nil then
+    L2_2 = A0_2.PlayableChars
+    L2_2 = #L2_2
+    if L2_2 ~= 0 then
+      L2_2 = A0_2.PlayableChars
+      L3_2 = A0_2.ActiveCharIndex
+      L2_2 = L2_2[L3_2]
+      if L2_2 ~= nil then
+        goto lbl_17
+      end
+    end
+  end
+  L2_2 = DebugPrint
+  L3_2 = "Not switching garages"
+  L2_2(L3_2)
+  do return end
+  ::lbl_17::
+  L2_2 = A0_2.SelectedChar
+  L3_2 = A0_2.curPlayerIndex
+  L4_2 = A0_2.ActiveCharIndex
+  L2_2[L3_2] = L4_2
+  if A1_2 < 0 then
+    L2_2 = GetGameMode
+    L2_2 = L2_2()
+    if L2_2 ~= "story" then
+      L2_2 = DoesCarHaveSwappableParts
+      L3_2 = A0_2.PlayableChars
+      L4_2 = A0_2.ActiveCharIndex
+      L3_2 = L3_2[L4_2]
+      L2_2 = L2_2(L3_2)
+      if L2_2 == 0 then
+        goto lbl_59
+      end
+    end
+    A0_2.AllowInput = false
+    L2_2 = RaiseMenu
+    L3_2 = "DocsGarage"
+    L2_2(L3_2)
+    L2_2 = DocsGarage
+    L3_2 = A0_2.EventSet
+    L2_2.EventSet = L3_2
+    L2_2 = DocsGarage
+    L3_2 = A0_2.EventToLaunch
+    L2_2.EventToLaunch = L3_2
+    L2_2 = DocsGarage
+    L3_2 = A0_2.PreviousMenu
+    L2_2.PreviousMenu = L3_2
+    L2_2 = DocsGarage
+    L3_2 = A0_2.PlayableChars
+    L4_2 = A0_2.ActiveCharIndex
+    L3_2 = L3_2[L4_2]
+    L2_2.CurVehicle = L3_2
+    L2_2 = DocsGarage
+    L3_2 = L2_2
+    L2_2 = L2_2.Init
+    L2_2(L3_2)
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventFE_Ramones_Complete
+    L2_2(L3_2)
+    goto lbl_108
+    ::lbl_59::
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBadInput
+    L2_2(L3_2)
+  else
+    L2_2 = GetGameMode
+    L2_2 = L2_2()
+    if L2_2 == "story" then
+      L2_2 = {}
+      L3_2 = GetUnlockedWheelSetList
+      L4_2 = A0_2.PlayableChars
+      L5_2 = A0_2.ActiveCharIndex
+      L4_2 = L4_2[L5_2]
+      L3_2, L4_2, L5_2 = L3_2(L4_2)
+      L2_2[1] = L3_2
+      L2_2[2] = L4_2
+      L2_2[3] = L5_2
+      L2_2 = #L2_2
+      if not (L2_2 < 2) then
+        goto lbl_81
+      end
+    end
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventBadInput
+    L2_2(L3_2)
+    goto lbl_108
+    ::lbl_81::
+    A0_2.AllowInput = false
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventFE_Ramones_Complete
+    L2_2(L3_2)
+    L2_2 = RaiseMenu
+    L3_2 = "LuigiGarage"
+    L2_2(L3_2)
+    L2_2 = LuigiGarage
+    L3_2 = A0_2.EventSet
+    L2_2.EventSet = L3_2
+    L2_2 = LuigiGarage
+    L3_2 = A0_2.EventToLaunch
+    L2_2.EventToLaunch = L3_2
+    L2_2 = LuigiGarage
+    L3_2 = A0_2.PreviousMenu
+    L2_2.PreviousMenu = L3_2
+    L2_2 = LuigiGarage
+    L3_2 = A0_2.PlayableChars
+    L4_2 = A0_2.ActiveCharIndex
+    L3_2 = L3_2[L4_2]
+    L2_2.CurVehicle = L3_2
+    L2_2 = LuigiGarage
+    L3_2 = L2_2
+    L2_2 = L2_2.ChangeVehicle
+    L4_2 = A0_2.PlayableChars
+    L5_2 = A0_2.ActiveCharIndex
+    L4_2 = L4_2[L5_2]
+    L2_2(L3_2, L4_2)
+  end
+  ::lbl_108::
+end
+L0_1.SwitchGarages = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = A0_2.PlayableChars
+  L2_2 = A0_2.ActiveCharIndex
+  L1_2 = L1_2[L2_2]
+  if L1_2 == nil then
+    return
+  end
+  L1_2 = PlayUISound
+  L2_2 = UISoundEventFE_Ramones_Complete
+  L1_2(L2_2)
+  L1_2 = SaveVehicleSettings
+  L2_2 = A0_2.curPlayerIndex
+  L3_2 = A0_2.PlayableChars
+  L4_2 = A0_2.ActiveCharIndex
+  L3_2 = L3_2[L4_2]
+  L1_2(L2_2, L3_2)
+  L1_2 = SetPlayerInputEnabled
+  L2_2 = 1
+  L3_2 = 1
+  L1_2(L2_2, L3_2)
+  L1_2 = SetPlayerInputEnabled
+  L2_2 = 0
+  L3_2 = 1
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.curPlayerIndex
+  L2_2 = A0_2.NumPlayers
+  if L1_2 < L2_2 then
+    A0_2.AllowInput = true
+    L2_2 = A0_2
+    L1_2 = A0_2.SwitchPlayers
+    L3_2 = A0_2.curPlayerIndex
+    L3_2 = L3_2 + 1
+    L1_2(L2_2, L3_2)
+  else
+    L1_2 = GetGarageMode
+    L1_2 = L1_2()
+    if L1_2 == "story" then
+      L2_2 = A0_2
+      L1_2 = A0_2.Quit
+      L1_2(L2_2)
+    else
+      L2_2 = A0_2
+      L1_2 = A0_2.EndUI
+      L1_2(L2_2)
+      L1_2 = SwitchStoryEvent
+      L2_2 = A0_2.EventToLaunch
+      L1_2(L2_2)
+    end
+  end
+end
+L0_1.SaveAndQuit = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L2_2 = A0_2
+  L1_2 = A0_2.EndUI
+  L1_2(L2_2)
+  L1_2 = EnableNonCriticalToy
+  L2_2 = "ProfileChar_Mcq"
+  L3_2 = 1
+  L1_2(L2_2, L3_2)
+  L1_2 = GetGarageMode
+  L1_2 = L1_2()
+  if L1_2 == "story" then
+    L1_2 = SwitchStoryEvent
+    L2_2 = "StoryEvent_Explore"
+    L1_2(L2_2)
+  else
+    L1_2 = A0_2.PreviousMenu
+    if L1_2 == "FE_DifficultyMenu" then
+      L1_2 = ClearWorkingDataSet
+      L1_2()
+      L1_2 = PlayCameraAnimation
+      L2_2 = "FrontEndCamera"
+      L3_2 = "Anim\\FECam10a"
+      L1_2(L2_2, L3_2)
+      L1_2 = RaiseMenu
+      L2_2 = "FE_DifficultyMenu"
+      L1_2(L2_2)
+      L1_2 = FE_DifficultyMenu
+      L2_2 = A0_2.EventToLaunch
+      L1_2.EventToLaunch = L2_2
+      L1_2 = FE_DifficultyMenu
+      L2_2 = A0_2.EventSet
+      L1_2.EventSet = L2_2
+      L1_2 = SetPlayerInputEnabled
+      L2_2 = 0
+      L3_2 = 1
+      L1_2(L2_2, L3_2)
+      L1_2 = SetPlayerInputEnabled
+      L2_2 = 1
+      L3_2 = 0
+      L1_2(L2_2, L3_2)
+    end
+    L1_2 = CharSelectHelpers
+    L2_2 = L1_2
+    L1_2 = L1_2.LoadProfileMenuVehicleStreamSections
+    L1_2(L2_2)
+  end
+end
+L0_1.Quit = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L2_2 = A0_2.AllowInput
+  if not L2_2 then
+    return
+  end
+  L2_2 = InputKey
+  L3_2 = "OK"
+  L2_2 = L2_2(L3_2)
+  if A1_2 == L2_2 then
+    L2_2 = PlayUISound
+    L3_2 = UISoundEventSelectContinue
+    L2_2(L3_2)
+    L2_2 = PlayCSAnimation
+    L3_2 = A0_2.PlayableChars
+    L4_2 = A0_2.ActiveCharIndex
+    L3_2 = L3_2[L4_2]
+    L2_2 = L2_2(L3_2)
+    L3_2 = math
+    L3_2 = L3_2.ceil
+    L4_2 = L2_2
+    L3_2 = L3_2(L4_2)
+    L2_2 = L3_2
+    L3_2 = SetEventTimer
+    L4_2 = "CharSelectAnim"
+    L5_2 = L2_2
+    L3_2(L4_2, L5_2)
+    A0_2.AllowInput = false
+    L3_2 = {}
+    function L4_2()
+      local L0_3, L1_3
+      L0_3 = GetTimeRemaining
+      L1_3 = "CharSelectAnim"
+      L0_3 = L0_3(L1_3)
+      L0_3 = L0_3 <= 0
+      return L0_3
+    end
+    L3_2.predicate = L4_2
+    function L4_2()
+      local L0_3, L1_3
+      L0_3 = A0_2
+      L1_3 = L0_3
+      L0_3 = L0_3.SaveAndQuit
+      L0_3(L1_3)
+    end
+    L3_2.action = L4_2
+    A0_2.DelayedAction = L3_2
+  else
+    L2_2 = InputKey
+    L3_2 = "CANCEL"
+    L2_2 = L2_2(L3_2)
+    if A1_2 == L2_2 then
+      L2_2 = PlayUISound
+      L3_2 = UISoundEventBack
+      L2_2(L3_2)
+      L2_2 = A0_2.curPlayerIndex
+      if L2_2 == 2 then
+        L3_2 = A0_2
+        L2_2 = A0_2.SwitchPlayers
+        L4_2 = 1
+        L2_2(L3_2, L4_2)
+      else
+        L2_2 = GetGarageMode
+        L2_2 = L2_2()
+        if L2_2 == "story" then
+          L2_2 = PushMenu
+          L3_2 = "Popup"
+          L2_2(L3_2)
+          L2_2 = Popup
+          L3_2 = L2_2
+          L2_2 = L2_2.RaisePopup
+          L4_2 = GetLocalizedString
+          L5_2 = "TRC"
+          L6_2 = "STR_NEW_WARNING"
+          L4_2 = L4_2(L5_2, L6_2)
+          L5_2 = Wrap
+          L6_2 = GetLocalizedString
+          L7_2 = "TRC"
+          L8_2 = "STR_NEW_CONTINUE_WITHOUT_SAVING_PROFILE"
+          L6_2 = L6_2(L7_2, L8_2)
+          L7_2 = 40
+          L5_2 = L5_2(L6_2, L7_2)
+          function L6_2()
+            local L0_3, L1_3
+            L0_3 = RamoneGarage
+            L1_3 = L0_3
+            L0_3 = L0_3.Quit
+            L0_3(L1_3)
+          end
+          L7_2 = GetLocalizedString
+          L8_2 = "CommonUI"
+          L9_2 = "STR_CONFIRM"
+          L7_2 = L7_2(L8_2, L9_2)
+          L8_2 = nil
+          L9_2 = GetLocalizedString
+          L10_2 = "CommonUI"
+          L11_2 = "STR_CANCEL"
+          L9_2, L10_2, L11_2 = L9_2(L10_2, L11_2)
+          L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+        else
+          L3_2 = A0_2
+          L2_2 = A0_2.Quit
+          L2_2(L3_2)
+        end
+      end
+    else
+      L2_2 = InputKey
+      L3_2 = "AUX1"
+      L2_2 = L2_2(L3_2)
+      if A1_2 == L2_2 then
+        L3_2 = A0_2
+        L2_2 = A0_2.SwitchGarages
+        L4_2 = -1
+        L2_2(L3_2, L4_2)
+      else
+        L2_2 = InputKey
+        L3_2 = "AUX2"
+        L2_2 = L2_2(L3_2)
+        if A1_2 == L2_2 then
+          L2_2 = A0_2.isFrontEnd
+          if L2_2 == 1 then
+            L2_2 = RaiseMenu
+            L3_2 = "IG_ControlSettings_"
+            L4_2 = GetPlatform
+            L4_2 = L4_2()
+            L3_2 = L3_2 .. L4_2
+            L2_2(L3_2)
+        end
+        else
+          L2_2 = InputKey
+          L3_2 = "UP"
+          L2_2 = L2_2(L3_2)
+          if A1_2 == L2_2 then
+            L2_2 = PlayUISound
+            L3_2 = UISoundEventUP_DOWN
+            L2_2(L3_2)
+            L3_2 = A0_2
+            L2_2 = A0_2.ChangeCharacter
+            L4_2 = A0_2.ActiveCharIndex
+            L5_2 = A0_2.PlayableChars
+            L5_2 = #L5_2
+            L4_2 = L4_2 % L5_2
+            L4_2 = L4_2 + 1
+            L2_2(L3_2, L4_2)
+          else
+            L2_2 = InputKey
+            L3_2 = "DOWN"
+            L2_2 = L2_2(L3_2)
+            if A1_2 == L2_2 then
+              L2_2 = PlayUISound
+              L3_2 = UISoundEventUP_DOWN
+              L2_2(L3_2)
+              L2_2 = A0_2.ActiveCharIndex
+              if L2_2 == 1 then
+                L3_2 = A0_2
+                L2_2 = A0_2.ChangeCharacter
+                L4_2 = A0_2.PlayableChars
+                L4_2 = #L4_2
+                L2_2(L3_2, L4_2)
+              else
+                L3_2 = A0_2
+                L2_2 = A0_2.ChangeCharacter
+                L4_2 = A0_2.ActiveCharIndex
+                L4_2 = L4_2 - 1
+                L2_2(L3_2, L4_2)
+              end
+            else
+              L2_2 = InputKey
+              L3_2 = "LEFT"
+              L2_2 = L2_2(L3_2)
+              if A1_2 == L2_2 then
+                L3_2 = A0_2
+                L2_2 = A0_2.UpdatePaintJob
+                L4_2 = A0_2.curPaintJob
+                L4_2 = L4_2 - 1
+                L2_2(L3_2, L4_2)
+              else
+                L2_2 = InputKey
+                L3_2 = "RIGHT"
+                L2_2 = L2_2(L3_2)
+                if A1_2 == L2_2 then
+                  L3_2 = A0_2
+                  L2_2 = A0_2.UpdatePaintJob
+                  L4_2 = A0_2.curPaintJob
+                  L4_2 = L4_2 + 1
+                  L2_2(L3_2, L4_2)
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
+L0_1.OnKeyDown = L1_1
+RamoneGarage = L0_1

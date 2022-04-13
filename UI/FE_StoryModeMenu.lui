@@ -1,0 +1,169 @@
+FE_StoryModeMenu = {
+	instance = 0, 
+	curSelection = 1,
+	Mode = 0,
+	slotsAvailable = 0,
+	
+		CursorOptions = UIContainer:New(),
+	Cursor = UIContainer:New(),
+	Shortcuts = {},
+
+
+	Create = function (self) 
+		self.instance = GetCurrentLayer()
+		PlaceMenuInWorld(self.instance,"StoryModeMenu")
+		
+				self.CursorOptions.text1 = UIText:New()
+		self.CursorOptions:Insert(self.CursorOptions.text1)
+		self.CursorOptions.text1:Create(self.instance, "CursorOptions.text1", "STR_NEW_GAME", "CARSFRONTENDUI", "FE_GarageGothicBlack_3D", 657.3, 91.30000000000001, "center")
+		self.CursorOptions.loadgame = UIText:New()
+		self.CursorOptions:Insert(self.CursorOptions.loadgame)
+		self.CursorOptions.loadgame:Create(self.instance, "CursorOptions.loadgame", "STR_LOAD_GAME", "CARSFRONTENDUI", "FE_GarageGothicBlack_3D", 657.3, 144.3, "center")
+		self.CursorOptions.deletegame = UIText:New()
+		self.CursorOptions:Insert(self.CursorOptions.deletegame)
+		self.CursorOptions.deletegame:Create(self.instance, "CursorOptions.deletegame", "STR_DELETEPROFILE", "CARSFRONTENDUI", "FE_GarageGothicBlack_3D", 657.3, 201.3, "center")
+		self.Cursor.icon1 = UIIcon:New()
+		self.Cursor:Insert(self.Cursor.icon1)
+		self.Cursor.icon1:Create(self.instance, "Cursor.icon1", "component_cursor_03_3D", 330.07500000000005, 1156, 256.05, 32,"center")
+		self.Shortcuts.loadgame = self.CursorOptions.loadgame
+		self.Shortcuts.deletegame = self.CursorOptions.deletegame
+
+
+
+		PlayMenuAnimation(self.instance,"intro");					
+	end,
+	
+	StartUI = function (self)
+		PlayMenuAnimation(self.instance,"intro");
+		self.Mode = 1
+
+      if(GetPlatform() == "ps3" and FE_ProfileButtons ~= nil and FE_ProfileButtons.instance ~= nil and getvar("ProfileLoaded") == 0) then
+         SetComponentValue(FE_ProfileButtons.Buttons.text3.instance, "color", 0.0)
+      else
+         SetComponentValue(FE_ProfileButtons.Buttons.text3.instance, "color", 1.0)
+      end
+	end,
+
+	EndUI = function (self)
+		PlayMenuAnimation(self.instance,"outro");
+		EndMenu(self.instance)
+	end,
+
+	Destroy = function (self)
+	end,
+
+	OnAnimationPlayed = function(self, anim) 
+		if (anim == "intro") then
+			self:onFocusChanged(1)
+		end
+	end,
+
+	onFocusChanged = function(self, hasFocus)        
+	end,	
+
+	LuaEventHandler = function(self, type, paramA, paramB, szInfo, result) 
+		DebugPrint("received lua event: " .. type)
+
+		if (type == LE_FINISHED_LOADING and paramA == 5) then	-- no device selected 
+			self:doCancel()
+	              
+		elseif (type == LE_PROFILES_DISABLED) then
+			self:doCancel()	
+		
+		elseif (type == LE_PS3_PROFILE_LOADED) then
+			DebugPrint("storymodemenu LE_PS3_PROFILE_LOADED")
+			self.Mode = 10
+
+		end
+	end,
+
+	Tick = function (self, dTime)
+		if (self.Mode == 1 and GetMenuAnimationState(self.instance, "intro") == 0) then
+			self:UpdateSelection(1)
+			self.Mode = 2
+		
+			self:onFocusChanged(1)
+		end	
+
+        if (self.Mode == 10 and GetMenuAnimationState(self.instance, "outro") == 0) then
+			self.Mode = 0
+			self:EndUI()
+			RaiseMenu("FE_MainMenu")
+			PlayCameraAnimation("FrontEndCamera","Anim\\FECam01")
+		end	
+	end,
+	
+	UpdateSelection = function(self, newSelection)
+
+	
+		if (newSelection < 1) then 
+			newSelection = # self.CursorOptions.contents
+		elseif (newSelection > #self.CursorOptions.contents) then
+			newSelection = 1
+		end
+
+		self.curSelection = newSelection
+
+                self.Cursor:MoveTo(self.CursorOptions.contents[self.curSelection], 1, {x=0,y=0})
+	--	self.Cursor2:MoveTo(self.CursorOptions.contents[self.curSelection], 2, {x=20,y=0})
+	
+	end,
+
+	OnKeyDown = function (self,key)
+	
+		if (key == InputKey("UP")) then
+			PlayUISound(UISoundEventUP_DOWN)
+			self:UpdateSelection(self.curSelection - 1)
+			
+		elseif (key == InputKey("DOWN")) then
+			PlayUISound(UISoundEventUP_DOWN)
+			self:UpdateSelection(self.curSelection + 1)
+		end
+		
+		if (key == InputKey("OK")) then
+
+   		local platform = GetPlatform()
+
+			
+			PlayUISound(UISoundEventSelect_Continue)
+			
+			if (platform == "ps3") then
+				PS3ProfileHandler(self.curSelection)
+			else
+				RaiseMenu("FE_ProfileMenu")
+				FE_ProfileMenu.mode = self.curSelection	
+				FE_ProfileMenu:Reset()		
+				self:EndUI()
+			end
+				
+		end
+
+		if (key == InputKey("CANCEL")) then	
+         if(GetPlatform() != "ps3" or getvar("ProfileLoaded") == 1) then
+			   if (getvar("ProfileLoaded") == 0 and (FE_StoryModeMenu.PreviousMenu == nil or FE_StoryModeMenu.PreviousMenu == "")) then 	  
+				   RaiseMenu("Popup")
+				   Popup:RaisePopup(GetLocalizedString("TRC","STR_NEW_CONTINUE_WITHOUT_SAVING_NEW_FILE"),
+					   Wrap(GetLocalizedString("TRC","STR_NEW_CONTINUE_WITHOUT_SAVING_PROFILE") ,38),
+					   function() FE_StoryModeMenu:doCancel(); end, GetLocalizedString("COMMONUI","STR_CONFIRM"), 
+					   function() EndMenu(Popup.instance); RaiseMenu("FE_StoryModeMenu"); end, GetLocalizedString("COMMONUI","STR_CANCEL"))
+   			
+			   elseif ( FE_StoryModeMenu.PreviousMenu == "FE_Options" ) then 	  
+				   PlayUISound(UISoundEventMenu_Out)
+				   RaiseMenu("FE_Options")
+				   PlayCameraAnimation("FrontEndCamera","Anim\\FECam14R")
+				   self:EndUI()			
+			   else
+				   self:doCancel()
+			   end
+         end
+		end
+      
+	end,
+
+	doCancel = function(self) 
+		PlayUISound(UISoundEventMenu_Out)
+		RaiseMenu("FE_MainMenu")
+		PlayCameraAnimation("FrontEndCamera","Anim\\FECam01")
+		self:EndUI()
+	end
+}

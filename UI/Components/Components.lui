@@ -1,0 +1,19 @@
+local L0_1, L1_1
+L0_1 = LoadUIComponent
+L1_1 = "UILayer"
+L0_1(L1_1)
+L0_1 = LoadUIComponent
+L1_1 = "UIContainer"
+L0_1(L1_1)
+L0_1 = LoadUIComponent
+L1_1 = "UIText"
+L0_1(L1_1)
+L0_1 = LoadUIComponent
+L1_1 = "UIIcon"
+L0_1(L1_1)
+L0_1 = LoadUIComponent
+L1_1 = "UITextBox"
+L0_1(L1_1)
+L0_1 = LoadUIComponent
+L1_1 = "UIBarGraph"
+L0_1(L1_1)
