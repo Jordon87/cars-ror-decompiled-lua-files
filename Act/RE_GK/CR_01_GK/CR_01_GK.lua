@@ -1,103 +1,34 @@
-local L0_1, L1_1
-L0_1 = IncludeScript
-L1_1 = "C\\Act\\RE_GK\\RE_GK"
-L0_1(L1_1)
-L0_1 = DebugPrint
-L1_1 = "loading cr_01_gk startscript"
-L0_1(L1_1)
-L0_1 = {}
-L0_1.numHumans = 1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = State_PreEvent
-  if A1_2 == L2_2 then
-    L2_2 = DebugPrint
-    L3_2 = "preevent"
-    L2_2(L3_2)
-    L2_2 = PushMenu
-    L3_2 = "PreEvent"
-    L2_2(L3_2)
-  else
-    L2_2 = State_PreEventUI
-    if A1_2 == L2_2 then
-      L2_2 = DebugPrint
-      L3_2 = "preeventUI"
-      L2_2(L3_2)
-    else
-      L2_2 = State_Begin
-      if A1_2 == L2_2 then
-        L2_2 = DebugPrint
-        L3_2 = "begin"
-        L2_2(L3_2)
-      else
-        L2_2 = State_Rollup
-        if A1_2 == L2_2 then
-          L2_2 = DebugPrint
-          L3_2 = "rollup"
-          L2_2(L3_2)
-        else
-          L2_2 = State_Countdown
-          if A1_2 == L2_2 then
-            L2_2 = DebugPrint
-            L3_2 = "countdown"
-            L2_2(L3_2)
-          else
-            L2_2 = State_Running
-            if A1_2 == L2_2 then
-              L2_2 = DebugPrint
-              L3_2 = "running"
-              L2_2(L3_2)
-              L2_2 = SetHUD
-              L3_2 = "RaceHUD"
-              L2_2(L3_2)
-              L2_2 = AttachSubmenu
-              L3_2 = CurrentHUD
-              L3_2 = L3_2.instance
-              L4_2 = "HUD_GuidoKart_1"
-              L2_2(L3_2, L4_2)
-            else
-              L2_2 = State_GameOver
-              if A1_2 == L2_2 then
-                L2_2 = DebugPrint
-                L3_2 = "gameover"
-                L2_2(L3_2)
-              else
-                L2_2 = State_End
-                if A1_2 == L2_2 then
-                  L2_2 = DebugPrint
-                  L3_2 = "State_End"
-                  L2_2(L3_2)
-                else
-                  L2_2 = State_Results
-                  if A1_2 == L2_2 then
-                    L2_2 = PushMenu
-                    L3_2 = "Results"
-                    L2_2(L3_2)
-                  else
-                    L2_2 = State_PostEvent
-                    if A1_2 == L2_2 then
-                      L2_2 = PushPostEvent
-                      L2_2()
-                      L2_2 = DebugPrint
-                      L3_2 = "State_PostEvent"
-                      L2_2(L3_2)
-                    else
-                      L2_2 = State_PostEventUI
-                      if A1_2 == L2_2 then
-                        L2_2 = DebugPrint
-                        L3_2 = "State_PostEventUI"
-                        L2_2(L3_2)
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
+IncludeScript("C\\Act\\RE_GK\\RE_GK")
+DebugPrint("loading cr_01_gk startscript")
+CR_01_GK = {
+  numHumans = 1,
+  ChangedState = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == State_PreEvent then
+      DebugPrint("preevent")
+      PushMenu("PreEvent")
+    elseif _ARG_1_ == State_PreEventUI then
+      DebugPrint("preeventUI")
+    elseif _ARG_1_ == State_Begin then
+      DebugPrint("begin")
+    elseif _ARG_1_ == State_Rollup then
+      DebugPrint("rollup")
+    elseif _ARG_1_ == State_Countdown then
+      DebugPrint("countdown")
+    elseif _ARG_1_ == State_Running then
+      DebugPrint("running")
+      SetHUD("RaceHUD")
+      AttachSubmenu(CurrentHUD.instance, "HUD_GuidoKart_1")
+    elseif _ARG_1_ == State_GameOver then
+      DebugPrint("gameover")
+    elseif _ARG_1_ == State_End then
+      DebugPrint("State_End")
+    elseif _ARG_1_ == State_Results then
+      PushMenu("Results")
+    elseif _ARG_1_ == State_PostEvent then
+      PushPostEvent()
+      DebugPrint("State_PostEvent")
+    elseif _ARG_1_ == State_PostEventUI then
+      DebugPrint("State_PostEventUI")
     end
   end
-end
-L0_1.ChangedState = L1_1
-CR_01_GK = L0_1
+}
