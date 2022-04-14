@@ -1,140 +1,29 @@
-local L0_1, L1_1
-L0_1 = 1
-BAR_JUST_LEFT = L0_1
-L0_1 = 2
-BAR_JUST_RIGHT = L0_1
-function L0_1(A0_2, A1_2, A2_2, A3_2, A4_2)
-  local L5_2, L6_2, L7_2
-  if A1_2 ~= nil then
-    L5_2 = type
-    L6_2 = A1_2
-    L5_2 = L5_2(L6_2)
-    if L5_2 == "table" then
-      A1_2.bargraph_owner = A0_2
-      A1_2.bargraph_name = A2_2
-      A1_2.bargraph_slider = A3_2
-      L5_2 = A4_2 or L5_2
-      if not A4_2 then
-        L5_2 = BAR_JUST_LEFT
-      end
-      A1_2.bargraph_justification = L5_2
-      L5_2 = {}
-      L5_2.x = 0
-      L5_2.y = 0
-      A1_2.animDimensions = L5_2
-      L5_2 = {}
-      L5_2.x = 0
-      L5_2.y = 0
-      A1_2.animPosition = L5_2
-      function L5_2(A0_3, A1_3)
-        local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
-        L2_3 = A0_3.animDimensions
-        L3_3 = A0_3.animDimensions
-        L4_3 = GetComponentAnimationDimensions
-        L5_3 = A0_3.bargraph_owner
-        L5_3 = L5_3.instance
-        L6_3 = A0_3.bargraph_name
-        L7_3 = ".Background.icon1"
-        L6_3 = L6_3 .. L7_3
-        L4_3, L5_3 = L4_3(L5_3, L6_3)
-        L3_3.y = L5_3
-        L2_3.x = L4_3
-        L2_3 = A0_3.animPosition
-        L3_3 = A0_3.animPosition
-        L4_3 = GetComponentAnimationPosition
-        L5_3 = A0_3.bargraph_owner
-        L5_3 = L5_3.instance
-        L6_3 = A0_3.bargraph_name
-        L7_3 = ".Background.icon1"
-        L6_3 = L6_3 .. L7_3
-        L4_3, L5_3 = L4_3(L5_3, L6_3)
-        L3_3.y = L5_3
-        L2_3.x = L4_3
-        L2_3 = A0_3.bargraph_justification
-        L3_3 = BAR_JUST_LEFT
-        if L2_3 == L3_3 then
-          L2_3 = A0_3.Blackbar
-          L2_3 = L2_3.icon1
-          L3_3 = L2_3
-          L2_3 = L2_3.SetDimensions
-          L4_3 = A0_3.animDimensions
-          L4_3 = L4_3.x
-          L5_3 = 1 - A1_3
-          L4_3 = L4_3 * L5_3
-          L5_3 = A0_3.animDimensions
-          L5_3 = L5_3.y
-          L2_3(L3_3, L4_3, L5_3)
-          L2_3 = A0_3.Blackbar
-          L2_3 = L2_3.icon1
-          L3_3 = L2_3
-          L2_3 = L2_3.SetPosition
-          L4_3 = A0_3.animPosition
-          L4_3 = L4_3.x
-          L5_3 = A0_3.animDimensions
-          L5_3 = L5_3.x
-          L5_3 = L5_3 * A1_3
-          L5_3 = L5_3 / 2
-          L4_3 = L4_3 + L5_3
-          L5_3 = A0_3.animPosition
-          L5_3 = L5_3.y
-          L2_3(L3_3, L4_3, L5_3)
-          L2_3 = A0_3.Slider
-          if L2_3 ~= nil then
-            L2_3 = A0_3.animDimensions
-            L2_3 = L2_3.x
-            L2_3 = L2_3 * A1_3
-            L3_3 = A0_3.Slider
-            L4_3 = L3_3
-            L3_3 = L3_3.Move
-            L5_3 = A0_3.animPosition
-            L5_3 = L5_3.x
-            L6_3 = A0_3.animDimensions
-            L6_3 = L6_3.x
-            L6_3 = L6_3 / 2
-            L6_3 = L2_3 - L6_3
-            L5_3 = L5_3 + L6_3
-            L6_3 = A0_3.animPosition
-            L6_3 = L6_3.y
-            L3_3(L4_3, L5_3, L6_3)
-          else
-            L2_3 = A0_3.bargraph_slider
-            if L2_3 ~= nil then
-              L2_3 = A0_3.bargraph_slider
-              L2_3 = L2_3.Move
-              if L2_3 ~= nil then
-                L2_3 = A0_3.animDimensions
-                L2_3 = L2_3.x
-                L2_3 = L2_3 * A1_3
-                L3_3 = A0_3.bargraph_slider
-                L4_3 = L3_3
-                L3_3 = L3_3.Move
-                L5_3 = A0_3.animPosition
-                L5_3 = L5_3.x
-                L6_3 = A0_3.animDimensions
-                L6_3 = L6_3.x
-                L6_3 = L6_3 / 2
-                L6_3 = L2_3 - L6_3
-                L5_3 = L5_3 + L6_3
-                L6_3 = A0_3.animPosition
-                L6_3 = L6_3.y
-                L3_3(L4_3, L5_3, L6_3)
-              end
-            end
-          end
-        else
-          L2_3 = DebugPrint
-          L3_3 = "yarrrr no bargraph justify yet"
-          L2_3(L3_3)
+BAR_JUST_LEFT = 1
+BAR_JUST_RIGHT = 2
+function MakeUIBarGraph(_ARG_0_, _ARG_1_, _ARG_2_, _ARG_3_, _ARG_4_)
+  if _ARG_1_ ~= nil and type(_ARG_1_) == "table" then
+    _ARG_1_.bargraph_owner = _ARG_0_
+    _ARG_1_.bargraph_name = _ARG_2_
+    _ARG_1_.bargraph_slider = _ARG_3_
+    _ARG_1_.bargraph_justification = _ARG_4_ or BAR_JUST_LEFT
+    _ARG_1_.animDimensions = {x = 0, y = 0}
+    _ARG_1_.animPosition = {x = 0, y = 0}
+    function _ARG_1_.SetBarPercent(_ARG_0_, _ARG_1_)
+      _ARG_0_.animDimensions.x, _ARG_0_.animDimensions.y = GetComponentAnimationDimensions(_ARG_0_.bargraph_owner.instance, _ARG_0_.bargraph_name .. ".Background.icon1")
+      _ARG_0_.animPosition.x, _ARG_0_.animPosition.y = GetComponentAnimationPosition(_ARG_0_.bargraph_owner.instance, _ARG_0_.bargraph_name .. ".Background.icon1")
+      if _ARG_0_.bargraph_justification == BAR_JUST_LEFT then
+        _ARG_0_.Blackbar.icon1:SetDimensions(_ARG_0_.animDimensions.x * (1 - _ARG_1_), _ARG_0_.animDimensions.y)
+        _ARG_0_.Blackbar.icon1:SetPosition(_ARG_0_.animPosition.x + _ARG_0_.animDimensions.x * _ARG_1_ / 2, _ARG_0_.animPosition.y)
+        if _ARG_0_.Slider ~= nil then
+          _ARG_0_.Slider:Move(_ARG_0_.animPosition.x + (_ARG_0_.animDimensions.x * _ARG_1_ - _ARG_0_.animDimensions.x / 2), _ARG_0_.animPosition.y)
+        elseif _ARG_0_.bargraph_slider ~= nil and _ARG_0_.bargraph_slider.Move ~= nil then
+          _ARG_0_.bargraph_slider:Move(_ARG_0_.animPosition.x + (_ARG_0_.animDimensions.x * _ARG_1_ - _ARG_0_.animDimensions.x / 2), _ARG_0_.animPosition.y)
         end
+      else
+        DebugPrint("yarrrr no bargraph justify yet")
       end
-      A1_2.SetBarPercent = L5_2
-  end
+    end
   else
-    L5_2 = DebugPrint
-    L6_2 = "MakeUIBarGraph called on a nil element: "
-    L7_2 = A2_2
-    L6_2 = L6_2 .. L7_2
-    L5_2(L6_2)
+    DebugPrint("MakeUIBarGraph called on a nil element: " .. _ARG_2_)
   end
 end
-MakeUIBarGraph = L0_1

@@ -1,100 +1,35 @@
-local L0_1, L1_1
-function L0_1(A0_2, A1_2)
-  local L2_2
-  if not A1_2 then
-    A1_2 = 0
-  end
-  A0_2.maxTextWidth = -1
-  function L2_2(A0_3, A1_3)
-    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
-    L2_3 = Split
-    L3_3 = A1_3
-    L4_3 = "\n"
-    L2_3 = L2_3(L3_3, L4_3)
-    L3_3 = 1
-    L4_3 = A0_3.contents
-    L4_3 = #L4_3
-    L5_3 = 1
-    L6_3 = 1
-    L7_3 = A0_3.contents
-    if L7_3 ~= nil then
-      while L3_3 <= L4_3 do
-        L7_3 = A0_3.contents
-        L7_3 = L7_3[L3_3]
-        L8_3 = type
-        L9_3 = L7_3
-        L8_3 = L8_3(L9_3)
-        if L8_3 == "table" then
-          L8_3 = L7_3.QueryComponentType
-          if L8_3 ~= nil then
-            L9_3 = L7_3
-            L8_3 = L7_3.QueryComponentType
-            L8_3 = L8_3(L9_3)
-            if L8_3 == "UIText" then
-              L8_3 = A1_2
-              if L5_3 >= L8_3 then
-                L8_3 = #L2_3
-                if L6_3 <= L8_3 then
-                  L9_3 = L7_3
-                  L8_3 = L7_3.SetValue
-                  L10_3 = L2_3[L6_3]
-                  L8_3(L9_3, L10_3)
-                  L6_3 = L6_3 + 1
-                else
-                  L9_3 = L7_3
-                  L8_3 = L7_3.SetValue
-                  L10_3 = ""
-                  L8_3(L9_3, L10_3)
-                end
+function MakeUITextBox(_ARG_0_, _ARG_1_)
+  _ARG_1_ = _ARG_1_ or 0
+  _ARG_0_.maxTextWidth = -1
+  function _ARG_0_.SetText(_ARG_0_, _ARG_1_)
+    if _ARG_0_.contents ~= nil then
+      while 1 <= #_ARG_0_.contents do
+        if type(_ARG_0_.contents[1]) == "table" and _ARG_0_.contents[1].QueryComponentType ~= nil then
+          if _ARG_0_.contents[1]:QueryComponentType() == "UIText" then
+            if 1 >= _UPVALUE0_ then
+              if 1 <= #Split(_ARG_1_, "\n") then
+                _ARG_0_.contents[1]:SetValue(Split(_ARG_1_, "\n")[1])
+              else
+                _ARG_0_.contents[1]:SetValue("")
               end
-              L5_3 = L5_3 + 1
             end
-        end
+          end
         else
-          L8_3 = DebugPrint
-          L9_3 = "non-table/component type listed in UIContainer's contents."
-          L8_3(L9_3)
+          DebugPrint("non-table/component type listed in UIContainer's contents.")
         end
-        L3_3 = L3_3 + 1
       end
     else
-      L7_3 = pairs
-      L8_3 = A0_3
-      L7_3, L8_3, L9_3 = L7_3(L8_3)
-      for L10_3, L11_3 in L7_3, L8_3, L9_3 do
-        L12_3 = type
-        L13_3 = L11_3
-        L12_3 = L12_3(L13_3)
-        if L12_3 == "table" then
-          L12_3 = L11_3.QueryComponentType
-          if L12_3 ~= nil then
-            L13_3 = L11_3
-            L12_3 = L11_3.QueryComponentType
-            L12_3 = L12_3(L13_3)
-            if L12_3 == "UIText" then
-              L12_3 = A1_2
-              if L5_3 >= L12_3 then
-                L12_3 = #L2_3
-                if L6_3 <= L12_3 then
-                  L13_3 = L11_3
-                  L12_3 = L11_3.SetValue
-                  L14_3 = L2_3[L6_3]
-                  L12_3(L13_3, L14_3)
-                  L6_3 = L6_3 + 1
-                else
-                  L13_3 = L11_3
-                  L12_3 = L11_3.SetValue
-                  L14_3 = ""
-                  L12_3(L13_3, L14_3)
-                end
-              end
-              L5_3 = L5_3 + 1
+      for _FORV_10_, _FORV_11_ in pairs(_ARG_0_) do
+        if type(_FORV_11_) == "table" and _FORV_11_.QueryComponentType ~= nil and _FORV_11_:QueryComponentType() == "UIText" then
+          if 1 + 1 >= _UPVALUE0_ then
+            if 1 + 1 <= #Split(_ARG_1_, "\n") then
+              _FORV_11_:SetValue(Split(_ARG_1_, "\n")[1 + 1])
+            else
+              _FORV_11_:SetValue("")
             end
           end
         end
       end
     end
   end
-  A0_2.SetText = L2_2
 end
-MakeUITextBox = L0_1
