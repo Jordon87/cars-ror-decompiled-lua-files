@@ -1,878 +1,146 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.LastGesturePrompt = "None"
-L0_1.state = 1
-L0_1.HideGesturePrompt = false
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Points = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_3 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_4 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_5 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_6 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_7 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_8 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Ring = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Bul = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.TauntMeter = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Bubble_1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Score = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.Points
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.points_round = L2_2
-  L1_2 = A0_2.Points
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Points
-  L3_2 = L3_2.points_round
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Points
-  L1_2 = L1_2.points_round
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Points.points_round"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2231.15
-  L9_2 = 577.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_1.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1723.05
-  L7_2 = 516.7
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_2
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_2
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_2.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1680.15
-  L7_2 = 559.5
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_3
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_3
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_3.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1680.15
-  L7_2 = 645.05
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_4
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_4
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_4
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_4
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_4.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1723.05
-  L7_2 = 687.95
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_5
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_5
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_5
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_5
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_5.icon1"
-  L5_2 = "hud_timeslot"
-  L6_2 = 1808.65
-  L7_2 = 687.95
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_6
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_6
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_6
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_6
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_6.icon1"
-  L5_2 = "hud_timeslot"
-  L6_2 = 1851.4
-  L7_2 = 645.05
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_7
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_7
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_7
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_7
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_7.icon1"
-  L5_2 = "hud_timeslot_2"
-  L6_2 = 1851.4
-  L7_2 = 559.5
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_8
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_8
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_8
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_8
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_8.icon1"
-  L5_2 = "hud_timeslot_2"
-  L6_2 = 1808.65
-  L7_2 = 516.7
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Ring
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Ring
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Ring.icon1"
-  L5_2 = "hud_ring"
-  L6_2 = 1765.45
-  L7_2 = 666.05
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Ring
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Ring
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Ring.icon2"
-  L5_2 = "hud_ring"
-  L6_2 = 1829.45
-  L7_2 = 666.05
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Bul
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Bul
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Bul
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Bul
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Bul.icon1"
-  L5_2 = "hud_bul"
-  L6_2 = -396
-  L7_2 = 159.85
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TauntMeter
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TauntMeter
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TauntMeter.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = -1.55
-  L7_2 = 147.7
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TauntMeter
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TauntMeter
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TauntMeter.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 111.35
-  L7_2 = 142
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TauntMeter
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TauntMeter
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TauntMeter.Background.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 111.35
-  L7_2 = 144.05
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TauntMeter
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Color1 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Color1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Color1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TauntMeter
-  L3_2 = L3_2.Color1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Color1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TauntMeter.Color1.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = 111.35
-  L7_2 = 144.05
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TauntMeter
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TauntMeter
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TauntMeter.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 15.5
-  L7_2 = 190.45
-  L8_2 = 32
-  L9_2 = 55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TauntMeter
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TauntMeter.Bar.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 335.5
-  L7_2 = 190.45
-  L8_2 = 320
-  L9_2 = 55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TauntMeter
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TauntMeter
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TauntMeter.Bar.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 367.5
-  L7_2 = 190.45
-  L8_2 = 32
-  L9_2 = 55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Bubble_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Bubble_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Bubble_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Bubble_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Bubble_1.icon1"
-  L5_2 = "hud_bubble_1"
-  L6_2 = -399.1
-  L7_2 = 161
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.scorebar = L2_2
-  L1_2 = A0_2.Score
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.scorebar
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.scorebar
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.scorebar"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 408.35
-  L9_2 = 673.95
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 477.075
-  L7_2 = 708
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Points
-  L2_2 = L2_2.points_round
-  L1_2.points_round = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Score
-  L2_2 = L2_2.scorebar
-  L1_2.scorebar = L2_2
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.TauntMeter
-  L4_2 = "TauntMeter"
-  L5_2 = A0_2.HUD_Bul_Anim
-  L1_2(L2_2, L3_2, L4_2, L5_2)
-  L1_2 = SetTickFrequency
-  L2_2 = A0_2.instance
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = AttachSubmenu
-  L2_2 = A0_2.instance
-  L3_2 = GetGestureHUD
-  L4_2 = getvar
-  L5_2 = "CurrentPlayerIndex"
-  L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2 = L4_2(L5_2)
-  L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  A0_2.state = 1
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = string
-  L2_2 = L2_2.lower
-  L3_2 = A1_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 == "intro" then
-    A0_2.HideGesturePrompt = false
-  elseif L2_2 == "outro" then
-    A0_2.HideGesturePrompt = true
-  end
-end
-L0_1.OnAnimationPlayed = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = getvar
-  L3_2 = "CurrentPlayerIndex"
-  L2_2 = L2_2(L3_2)
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.points_round
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = ""
-  L6_2 = GetRoundPointsForPlayer
-  L7_2 = L2_2
-  L6_2 = L6_2(L7_2)
-  L5_2 = L5_2 .. L6_2
-  L3_2(L4_2, L5_2)
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.scorebar
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = GetLocalizedString
-  L6_2 = "INGAMEUI"
-  L7_2 = "STR_SCORE_LABEL"
-  L5_2 = L5_2(L6_2, L7_2)
-  L6_2 = " : "
-  L7_2 = GetTotalPointsForPlayer
-  L8_2 = L2_2
-  L7_2 = L7_2(L8_2)
-  L7_2 = 0 + L7_2
-  L5_2 = L5_2 .. L6_2 .. L7_2
-  L3_2(L4_2, L5_2)
-  L3_2 = SetPlayerScore
-  L4_2 = L2_2 - 1
-  L5_2 = GetTotalPointsForPlayer
-  L6_2 = L2_2
-  L5_2, L6_2, L7_2, L8_2, L9_2 = L5_2(L6_2)
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  L3_2 = GetAngerPercent
-  L3_2 = L3_2()
-  L4_2 = L3_2 / 100
-  L5_2 = A0_2.TauntMeter
-  L6_2 = L5_2
-  L5_2 = L5_2.SetBarPercent
-  L7_2 = L4_2
-  L5_2(L6_2, L7_2)
-  L5_2 = FixGestureNames
-  L6_2 = GetCurrentGesturePrompt
-  L6_2 = L6_2()
-  L7_2 = GetCurrentGestureStick
-  L7_2, L8_2, L9_2 = L7_2()
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
-  L6_2 = A0_2.LastGesturePrompt
-  if L5_2 ~= L6_2 then
-    L6_2 = StopMenuAnimation
-    L7_2 = A0_2.instance
-    L8_2 = A0_2.LastGesturePrompt
-    L6_2(L7_2, L8_2)
-    L6_2 = LoopMenuAnimation
-    L7_2 = A0_2.instance
-    L8_2 = L5_2
-    L6_2(L7_2, L8_2)
-    A0_2.LastGesturePrompt = L5_2
-  end
-  L6_2 = GetGestureTime
-  L6_2 = L6_2()
-  L7_2 = A0_2.state
-  L7_2 = 0.125 * L7_2
-  L7_2 = 1 - L7_2
-  if L6_2 < L7_2 then
-    L6_2 = A0_2.state
-    L6_2 = L6_2 + 1
-    A0_2.state = L6_2
-    L6_2 = A0_2.state
-    if 4 < L6_2 then
-      L6_2 = PlayUISound
-      L7_2 = UISoundEventGestureBeep2
-      L6_2(L7_2)
-    else
-      L6_2 = PlayUISound
-      L7_2 = UISoundEventGestureBeep1
-      L6_2(L7_2)
+HUD_Materdor_1 = {
+  instance = 0,
+  LastGesturePrompt = "None",
+  state = 1,
+  HideGesturePrompt = false,
+  Points = UIContainer:New(),
+  Time_1 = UIContainer:New(),
+  Time_2 = UIContainer:New(),
+  Time_3 = UIContainer:New(),
+  Time_4 = UIContainer:New(),
+  Time_5 = UIContainer:New(),
+  Time_6 = UIContainer:New(),
+  Time_7 = UIContainer:New(),
+  Time_8 = UIContainer:New(),
+  HUD_Ring = UIContainer:New(),
+  HUD_Bul = UIContainer:New(),
+  TauntMeter = UIContainer:New(),
+  HUD_Bubble_1 = UIContainer:New(),
+  Score = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.Points.points_round = UIText:New()
+    _ARG_0_.Points:Insert(_ARG_0_.Points.points_round)
+    _ARG_0_.Points.points_round:Create(_ARG_0_.instance, "Points.points_round", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 2231.15, 577.9, "center")
+    _ARG_0_.Time_1.icon1 = UIIcon:New()
+    _ARG_0_.Time_1:Insert(_ARG_0_.Time_1.icon1)
+    _ARG_0_.Time_1.icon1:Create(_ARG_0_.instance, "Time_1.icon1", "hud_timeslot_3", 1723.05, 516.7, 64, 64, "center")
+    _ARG_0_.Time_2.icon1 = UIIcon:New()
+    _ARG_0_.Time_2:Insert(_ARG_0_.Time_2.icon1)
+    _ARG_0_.Time_2.icon1:Create(_ARG_0_.instance, "Time_2.icon1", "hud_timeslot_3", 1680.15, 559.5, 64, 64, "center")
+    _ARG_0_.Time_3.icon1 = UIIcon:New()
+    _ARG_0_.Time_3:Insert(_ARG_0_.Time_3.icon1)
+    _ARG_0_.Time_3.icon1:Create(_ARG_0_.instance, "Time_3.icon1", "hud_timeslot_3", 1680.15, 645.05, 64, 64, "center")
+    _ARG_0_.Time_4.icon1 = UIIcon:New()
+    _ARG_0_.Time_4:Insert(_ARG_0_.Time_4.icon1)
+    _ARG_0_.Time_4.icon1:Create(_ARG_0_.instance, "Time_4.icon1", "hud_timeslot_3", 1723.05, 687.95, 64, 64, "center")
+    _ARG_0_.Time_5.icon1 = UIIcon:New()
+    _ARG_0_.Time_5:Insert(_ARG_0_.Time_5.icon1)
+    _ARG_0_.Time_5.icon1:Create(_ARG_0_.instance, "Time_5.icon1", "hud_timeslot", 1808.65, 687.95, 64, 64, "center")
+    _ARG_0_.Time_6.icon1 = UIIcon:New()
+    _ARG_0_.Time_6:Insert(_ARG_0_.Time_6.icon1)
+    _ARG_0_.Time_6.icon1:Create(_ARG_0_.instance, "Time_6.icon1", "hud_timeslot", 1851.4, 645.05, 64, 64, "center")
+    _ARG_0_.Time_7.icon1 = UIIcon:New()
+    _ARG_0_.Time_7:Insert(_ARG_0_.Time_7.icon1)
+    _ARG_0_.Time_7.icon1:Create(_ARG_0_.instance, "Time_7.icon1", "hud_timeslot_2", 1851.4, 559.5, 64, 64, "center")
+    _ARG_0_.Time_8.icon1 = UIIcon:New()
+    _ARG_0_.Time_8:Insert(_ARG_0_.Time_8.icon1)
+    _ARG_0_.Time_8.icon1:Create(_ARG_0_.instance, "Time_8.icon1", "hud_timeslot_2", 1808.65, 516.7, 64, 64, "center")
+    _ARG_0_.HUD_Ring.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Ring:Insert(_ARG_0_.HUD_Ring.icon1)
+    _ARG_0_.HUD_Ring.icon1:Create(_ARG_0_.instance, "HUD_Ring.icon1", "hud_ring", 1765.45, 666.05, 64, 128, "center")
+    _ARG_0_.HUD_Ring.icon2 = UIIcon:New()
+    _ARG_0_.HUD_Ring:Insert(_ARG_0_.HUD_Ring.icon2)
+    _ARG_0_.HUD_Ring.icon2:Create(_ARG_0_.instance, "HUD_Ring.icon2", "hud_ring", 1829.45, 666.05, 64, 128, "center")
+    _ARG_0_.HUD_Bul.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Bul:Insert(_ARG_0_.HUD_Bul.icon1)
+    _ARG_0_.HUD_Bul.icon1:Create(_ARG_0_.instance, "HUD_Bul.icon1", "hud_bul", -396, 159.85, 64, 64, "center")
+    _ARG_0_.TauntMeter.GradientHighlight = UIContainer:New()
+    _ARG_0_.TauntMeter.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.TauntMeter.GradientHighlight:Insert(_ARG_0_.TauntMeter.GradientHighlight.icon1)
+    _ARG_0_.TauntMeter.GradientHighlight.icon1:Create(_ARG_0_.instance, "TauntMeter.GradientHighlight.icon1", "hud_gradient_2", -1.55, 147.7, 16, 16, "center")
+    _ARG_0_.TauntMeter.Blackbar = UIContainer:New()
+    _ARG_0_.TauntMeter.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.TauntMeter.Blackbar:Insert(_ARG_0_.TauntMeter.Blackbar.icon1)
+    _ARG_0_.TauntMeter.Blackbar.icon1:Create(_ARG_0_.instance, "TauntMeter.Blackbar.icon1", "component_frame_color", 111.35, 142, 128, 8, "center")
+    _ARG_0_.TauntMeter.Background = UIContainer:New()
+    _ARG_0_.TauntMeter.Background.icon1 = UIIcon:New()
+    _ARG_0_.TauntMeter.Background:Insert(_ARG_0_.TauntMeter.Background.icon1)
+    _ARG_0_.TauntMeter.Background.icon1:Create(_ARG_0_.instance, "TauntMeter.Background.icon1", "component_frame_color", 111.35, 144.05, 128, 8, "center")
+    _ARG_0_.TauntMeter.Color1 = UIContainer:New()
+    _ARG_0_.TauntMeter.Color1.icon1 = UIIcon:New()
+    _ARG_0_.TauntMeter.Color1:Insert(_ARG_0_.TauntMeter.Color1.icon1)
+    _ARG_0_.TauntMeter.Color1.icon1:Create(_ARG_0_.instance, "TauntMeter.Color1.icon1", "hud_speedometer_2", 111.35, 144.05, 128, 8, "center")
+    _ARG_0_.TauntMeter.Bar = UIContainer:New()
+    _ARG_0_.TauntMeter.Bar.icon1 = UIIcon:New()
+    _ARG_0_.TauntMeter.Bar:Insert(_ARG_0_.TauntMeter.Bar.icon1)
+    _ARG_0_.TauntMeter.Bar.icon1:Create(_ARG_0_.instance, "TauntMeter.Bar.icon1", "hud_component_5", 15.5, 190.45, 32, 55, "center")
+    _ARG_0_.TauntMeter.Bar.icon2 = UIIcon:New()
+    _ARG_0_.TauntMeter.Bar:Insert(_ARG_0_.TauntMeter.Bar.icon2)
+    _ARG_0_.TauntMeter.Bar.icon2:Create(_ARG_0_.instance, "TauntMeter.Bar.icon2", "hud_component_2", 335.5, 190.45, 320, 55, "center")
+    _ARG_0_.TauntMeter.Bar.icon3 = UIIcon:New()
+    _ARG_0_.TauntMeter.Bar:Insert(_ARG_0_.TauntMeter.Bar.icon3)
+    _ARG_0_.TauntMeter.Bar.icon3:Create(_ARG_0_.instance, "TauntMeter.Bar.icon3", "hud_component_5", 367.5, 190.45, 32, 55, "center")
+    _ARG_0_.HUD_Bubble_1.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Bubble_1:Insert(_ARG_0_.HUD_Bubble_1.icon1)
+    _ARG_0_.HUD_Bubble_1.icon1:Create(_ARG_0_.instance, "HUD_Bubble_1.icon1", "hud_bubble_1", -399.1, 161, 64, 64, "center")
+    _ARG_0_.Score.scorebar = UIText:New()
+    _ARG_0_.Score:Insert(_ARG_0_.Score.scorebar)
+    _ARG_0_.Score.scorebar:Create(_ARG_0_.instance, "Score.scorebar", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 408.35, 673.95, "left")
+    _ARG_0_.Score.Frame = UIContainer:New()
+    _ARG_0_.Score.Frame.icon1 = UIIcon:New()
+    _ARG_0_.Score.Frame:Insert(_ARG_0_.Score.Frame.icon1)
+    _ARG_0_.Score.Frame.icon1:Create(_ARG_0_.instance, "Score.Frame.icon1", "hud_component_6", 477.075, 708, 255.95, 32, "center")
+    _ARG_0_.Shortcuts.points_round = _ARG_0_.Points.points_round
+    _ARG_0_.Shortcuts.scorebar = _ARG_0_.Score.scorebar
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.TauntMeter, "TauntMeter", _ARG_0_.HUD_Bul_Anim)
+    SetTickFrequency(_ARG_0_.instance, 0)
+    AttachSubmenu(_ARG_0_.instance, GetGestureHUD(getvar("CurrentPlayerIndex")))
+  end,
+  StartUI = function(_ARG_0_)
+    _ARG_0_.state = 1
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  OnAnimationPlayed = function(_ARG_0_, _ARG_1_)
+    if string.lower(_ARG_1_) == "intro" then
+      _ARG_0_.HideGesturePrompt = false
+    elseif string.lower(_ARG_1_) == "outro" then
+      _ARG_0_.HideGesturePrompt = true
+    end
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.Shortcuts.points_round:SetValue("" .. GetRoundPointsForPlayer((getvar("CurrentPlayerIndex"))))
+    _ARG_0_.Shortcuts.scorebar:SetValue(GetLocalizedString("INGAMEUI", "STR_SCORE_LABEL") .. " : " .. 0 + GetTotalPointsForPlayer((getvar("CurrentPlayerIndex"))))
+    SetPlayerScore(getvar("CurrentPlayerIndex") - 1, GetTotalPointsForPlayer((getvar("CurrentPlayerIndex"))))
+    _ARG_0_.TauntMeter:SetBarPercent(GetAngerPercent() / 100)
+    if FixGestureNames(GetCurrentGesturePrompt(), GetCurrentGestureStick()) ~= _ARG_0_.LastGesturePrompt then
+      StopMenuAnimation(_ARG_0_.instance, _ARG_0_.LastGesturePrompt)
+      LoopMenuAnimation(_ARG_0_.instance, (FixGestureNames(GetCurrentGesturePrompt(), GetCurrentGestureStick())))
+      _ARG_0_.LastGesturePrompt = FixGestureNames(GetCurrentGesturePrompt(), GetCurrentGestureStick())
+    end
+    if GetGestureTime() < 1 - 0.125 * _ARG_0_.state then
+      _ARG_0_.state = _ARG_0_.state + 1
+      if _ARG_0_.state > 4 then
+        PlayUISound(UISoundEventGestureBeep2)
+      else
+        PlayUISound(UISoundEventGestureBeep1)
+      end
+    end
+    if GetGestureTime() ~= 0 and _ARG_0_.HideGesturePrompt == false then
+      SetMenuAnimationPos(_ARG_0_.instance, "Countdown", 1 - GetGestureTime())
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    if HUD_Gestures_Points ~= nil then
+      HUD_Gestures_Points:GiveBonus(_ARG_1_, _ARG_2_)
     end
   end
-  L6_2 = GetGestureTime
-  L6_2 = L6_2()
-  if L6_2 ~= 0 then
-    L6_2 = A0_2.HideGesturePrompt
-    if L6_2 == false then
-      L6_2 = SetMenuAnimationPos
-      L7_2 = A0_2.instance
-      L8_2 = "Countdown"
-      L9_2 = GetGestureTime
-      L9_2 = L9_2()
-      L9_2 = 1 - L9_2
-      L6_2(L7_2, L8_2, L9_2)
-    end
-  end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2
-  L3_2 = HUD_Gestures_Points
-  if L3_2 ~= nil then
-    L3_2 = HUD_Gestures_Points
-    L4_2 = L3_2
-    L3_2 = L3_2.GiveBonus
-    L5_2 = A1_2
-    L6_2 = A2_2
-    L3_2(L4_2, L5_2, L6_2)
-  end
-end
-L0_1.GiveBonus = L1_1
-HUD_Materdor_1 = L0_1
+}

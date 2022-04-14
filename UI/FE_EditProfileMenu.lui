@@ -1,100 +1,34 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Title = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = PlaceMenuInWorld
-  L2_2 = A0_2.instance
-  L3_2 = "CreditsMenu"
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Title
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Title
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Title.text1"
-  L5_2 = "STR_MENUTITLE_ENTERNAME"
-  L6_2 = "CARSFRONTENDUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1524.45
-  L9_2 = 107.35
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
-  L3_2 = PlayMenuAnimation
-  L4_2 = A0_2.instance
-  L5_2 = "GiveBonus"
-  L3_2(L4_2, L5_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.SetRacerPosition = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = InputKey
-  L3_2 = "CANCEL"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventBack2
-    L2_2(L3_2)
-    L2_2 = PlayCameraAnimation
-    L3_2 = "FrontEndCamera"
-    L4_2 = "Anim\\FECam13R"
-    L2_2(L3_2, L4_2)
-    L2_2 = RaiseMenu
-    L3_2 = "FE_Options"
-    L2_2(L3_2)
+FE_EditProfileMenu = {
+  instance = 0,
+  Title = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    PlaceMenuInWorld(_ARG_0_.instance, "CreditsMenu")
+    _ARG_0_.Title.text1 = UIText:New()
+    _ARG_0_.Title:Insert(_ARG_0_.Title.text1)
+    _ARG_0_.Title.text1:Create(_ARG_0_.instance, "Title.text1", "STR_MENUTITLE_ENTERNAME", "CARSFRONTENDUI", "FE_GarageGothicBlack_3D", 1524.45, 107.35, "center")
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    PlayMenuAnimation(_ARG_0_.instance, "GiveBonus")
+  end,
+  SetRacerPosition = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == InputKey("CANCEL") then
+      PlayUISound(UISoundEventBack2)
+      PlayCameraAnimation("FrontEndCamera", "Anim\\FECam13R")
+      RaiseMenu("FE_Options")
+    end
   end
-end
-L0_1.OnKeyDown = L1_1
-FE_EditProfileMenu = L0_1
+}

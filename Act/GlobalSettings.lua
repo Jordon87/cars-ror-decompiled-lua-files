@@ -1,306 +1,187 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.WheelTimeExtend = 1.5
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = "FlickLeftStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "FlickRightStick"
-L7_1 = "LeftStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L6_1 = {}
-L7_1 = "FlickUpStick"
-L8_1 = "RightStick"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L7_1 = {}
-L8_1 = "FlickDownStick"
-L9_1 = "LeftStick"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.easy = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = "RotateClockwiseStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "RotateClockwiseStick"
-L7_1 = "RightStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.medium = L3_1
-L3_1 = {}
-L4_1 = "ABXY"
-L5_1 = "BXYA"
-L6_1 = {}
-L7_1 = "RotateCounterClockwiseStick"
-L8_1 = "LeftStick"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.hard = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = "FlickLeftStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "FlickRightStick"
-L7_1 = "LeftStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L6_1 = {}
-L7_1 = "FlickLeftStick"
-L8_1 = "RightStick"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L7_1 = {}
-L8_1 = "FlickRightStick"
-L9_1 = "RightStick"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.dodge = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = "FlickUpStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "FlickUpStick"
-L7_1 = "RightStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.jump = L3_1
-L1_1.ps2 = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = "FlickLeft"
-L5_1 = "FlickRight"
-L6_1 = "FlickUp"
-L7_1 = "FlickDown"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.easy = L3_1
-L3_1 = {}
-L4_1 = "Thrust"
-L5_1 = "TwistLeft"
-L6_1 = "TwistRight"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.medium = L3_1
-L3_1 = {}
-L4_1 = "RotateClockwise"
-L5_1 = "RotateCounterClockwise"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.hard = L3_1
-L3_1 = {}
-L4_1 = "FlickLeft"
-L5_1 = "FlickRight"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.dodge = L3_1
-L3_1 = {}
-L4_1 = "FlickUp"
-L3_1[1] = L4_1
-L2_1.jump = L3_1
-L1_1.sixaxis = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = "FlickLeft"
-L5_1 = "FlickRight"
-L6_1 = "FlickUp"
-L7_1 = "FlickDown"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.easy = L3_1
-L3_1 = {}
-L4_1 = "Thrust"
-L5_1 = "TwistLeft"
-L6_1 = "TwistRight"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.medium = L3_1
-L3_1 = {}
-L4_1 = "RotateClockwise"
-L5_1 = "RotateCounterClockwise"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.hard = L3_1
-L3_1 = {}
-L4_1 = "FlickLeft"
-L5_1 = "FlickRight"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.dodge = L3_1
-L3_1 = {}
-L4_1 = "FlickUp"
-L3_1[1] = L4_1
-L2_1.jump = L3_1
-L1_1.gcn = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = "FlickLeftStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "FlickRightStick"
-L7_1 = "LeftStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L6_1 = {}
-L7_1 = "FlickUpStick"
-L8_1 = "RightStick"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L7_1 = {}
-L8_1 = "FlickDownStick"
-L9_1 = "LeftStick"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.easy = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = "RotateClockwiseStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "RotateClockwiseStick"
-L7_1 = "RightStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.medium = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = "RotateCounterClockwiseStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1[1] = L4_1
-L2_1.hard = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = "FlickLeftStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "FlickRightStick"
-L7_1 = "LeftStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L6_1 = {}
-L7_1 = "FlickLeftStick"
-L8_1 = "RightStick"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L7_1 = {}
-L8_1 = "FlickRightStick"
-L9_1 = "RightStick"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.dodge = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = "FlickUpStick"
-L6_1 = "LeftStick"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = "FlickUpStick"
-L7_1 = "RightStick"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.jump = L3_1
-L1_1.x360 = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = "XYA"
-L5_1 = "YXB"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.easy = L3_1
-L3_1 = {}
-L4_1 = "ULRD"
-L5_1 = "ABXY"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.medium = L3_1
-L3_1 = {}
-L4_1 = "BXYA"
-L5_1 = "LUDR"
-L6_1 = "UDLR"
-L7_1 = "RLDU"
-L8_1 = "BXYA"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.hard = L3_1
-L3_1 = {}
-L4_1 = "XYA"
-L5_1 = "YXB"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.dodge = L3_1
-L3_1 = {}
-L4_1 = "XYA"
-L5_1 = "YXB"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.jump = L3_1
-L1_1.x360_wheel = L2_1
-L0_1.Gestures = L1_1
-GlobalSettings = L0_1
-L0_1 = GlobalSettings
-L0_1 = L0_1.Gestures
-L1_1 = GlobalSettings
-L1_1 = L1_1.Gestures
-L1_1 = L1_1.ps2
-L0_1.ps3 = L1_1
+GlobalSettings = {
+  WheelTimeExtend = 1.5,
+  Gestures = {
+    ps2 = {
+      easy = {
+        {
+          "FlickLeftStick",
+          "LeftStick"
+        },
+        {
+          "FlickRightStick",
+          "LeftStick"
+        },
+        {
+          "FlickUpStick",
+          "RightStick"
+        },
+        {
+          "FlickDownStick",
+          "LeftStick"
+        }
+      },
+      medium = {
+        {
+          "RotateClockwiseStick",
+          "LeftStick"
+        },
+        {
+          "RotateClockwiseStick",
+          "RightStick"
+        }
+      },
+      hard = {
+        "ABXY",
+        "BXYA",
+        {
+          "RotateCounterClockwiseStick",
+          "LeftStick"
+        }
+      },
+      dodge = {
+        {
+          "FlickLeftStick",
+          "LeftStick"
+        },
+        {
+          "FlickRightStick",
+          "LeftStick"
+        },
+        {
+          "FlickLeftStick",
+          "RightStick"
+        },
+        {
+          "FlickRightStick",
+          "RightStick"
+        }
+      },
+      jump = {
+        {
+          "FlickUpStick",
+          "LeftStick"
+        },
+        {
+          "FlickUpStick",
+          "RightStick"
+        }
+      }
+    },
+    sixaxis = {
+      easy = {
+        "FlickLeft",
+        "FlickRight",
+        "FlickUp",
+        "FlickDown"
+      },
+      medium = {
+        "Thrust",
+        "TwistLeft",
+        "TwistRight"
+      },
+      hard = {
+        "RotateClockwise",
+        "RotateCounterClockwise"
+      },
+      dodge = {"FlickLeft", "FlickRight"},
+      jump = {"FlickUp"}
+    },
+    gcn = {
+      easy = {
+        "FlickLeft",
+        "FlickRight",
+        "FlickUp",
+        "FlickDown"
+      },
+      medium = {
+        "Thrust",
+        "TwistLeft",
+        "TwistRight"
+      },
+      hard = {
+        "RotateClockwise",
+        "RotateCounterClockwise"
+      },
+      dodge = {"FlickLeft", "FlickRight"},
+      jump = {"FlickUp"}
+    },
+    x360 = {
+      easy = {
+        {
+          "FlickLeftStick",
+          "LeftStick"
+        },
+        {
+          "FlickRightStick",
+          "LeftStick"
+        },
+        {
+          "FlickUpStick",
+          "RightStick"
+        },
+        {
+          "FlickDownStick",
+          "LeftStick"
+        }
+      },
+      medium = {
+        {
+          "RotateClockwiseStick",
+          "LeftStick"
+        },
+        {
+          "RotateClockwiseStick",
+          "RightStick"
+        }
+      },
+      hard = {
+        {
+          "RotateCounterClockwiseStick",
+          "LeftStick"
+        }
+      },
+      dodge = {
+        {
+          "FlickLeftStick",
+          "LeftStick"
+        },
+        {
+          "FlickRightStick",
+          "LeftStick"
+        },
+        {
+          "FlickLeftStick",
+          "RightStick"
+        },
+        {
+          "FlickRightStick",
+          "RightStick"
+        }
+      },
+      jump = {
+        {
+          "FlickUpStick",
+          "LeftStick"
+        },
+        {
+          "FlickUpStick",
+          "RightStick"
+        }
+      }
+    },
+    x360_wheel = {
+      easy = {"XYA", "YXB"},
+      medium = {"ULRD", "ABXY"},
+      hard = {
+        "BXYA",
+        "LUDR",
+        "UDLR",
+        "RLDU",
+        "BXYA"
+      },
+      dodge = {"XYA", "YXB"},
+      jump = {"XYA", "YXB"}
+    }
+  }
+}
+GlobalSettings.Gestures.ps3 = GlobalSettings.Gestures.ps2

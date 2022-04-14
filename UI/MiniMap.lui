@@ -1,478 +1,72 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_MiniMap = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Minimap_Mask = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Minimap_Mask
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Minimap_Mask
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Minimap_Mask
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Minimap_Mask
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Minimap_Mask.icon1"
-  L5_2 = "minimap_mask"
-  L6_2 = 236
-  L7_2 = 1025
-  L8_2 = 256
-  L9_2 = 256
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_MiniMapFrame = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.HUD_MiniMapFrame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.HUD_MiniMapFrame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.HUD_MiniMapFrame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.HUD_MiniMapFrame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.HUD_MiniMapFrame.icon1"
-  L5_2 = "hud_minimap"
-  L6_2 = 108
-  L7_2 = 1025
-  L8_2 = 128
-  L9_2 = 256
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.HUD_MiniMapFrame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.HUD_MiniMapFrame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.HUD_MiniMapFrame
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.HUD_MiniMapFrame
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.HUD_MiniMapFrame.icon2"
-  L5_2 = "hud_minimap"
-  L6_2 = 236
-  L7_2 = 1025
-  L8_2 = 128
-  L9_2 = 256
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_1.icon1"
-  L5_2 = "minimap_1"
-  L6_2 = -20
-  L7_2 = 769
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_2 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_2
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_2
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_2.icon1"
-  L5_2 = "minimap_2"
-  L6_2 = 108
-  L7_2 = 769
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_3 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_3
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_3
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_3.icon1"
-  L5_2 = "minimap_3"
-  L6_2 = 236
-  L7_2 = 769
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_4 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_4
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_4
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_4
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_4
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_4.icon1"
-  L5_2 = "minimap_4"
-  L6_2 = -20
-  L7_2 = 897
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_5 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_5
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_5
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_5
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_5
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_5.icon1"
-  L5_2 = "minimap_5"
-  L6_2 = 108
-  L7_2 = 897
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_6 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_6
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_6
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_6
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_6
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_6.icon1"
-  L5_2 = "minimap_6"
-  L6_2 = 236
-  L7_2 = 897
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_7 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_7
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_7
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_7
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_7
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_7.icon1"
-  L5_2 = "minimap_7"
-  L6_2 = -20
-  L7_2 = 1025
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_8 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_8
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_8
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_8
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_8
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_8.icon1"
-  L5_2 = "minimap_8"
-  L6_2 = 108
-  L7_2 = 1025
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Map_9 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_9
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_9
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_MiniMap
-  L3_2 = L3_2.Map_9
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_MiniMap
-  L1_2 = L1_2.Map_9
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_MiniMap.Map_9.icon1"
-  L5_2 = "minimap_9"
-  L6_2 = 236
-  L7_2 = 1025
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L11_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
-  L3_2 = PlayMenuAnimation
-  L4_2 = A0_2.instance
-  L5_2 = "GiveBonus"
-  L3_2(L4_2, L5_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.SetRacerPosition = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-MiniMap = L0_1
+MiniMap = {
+  instance = 0,
+  HUD_MiniMap = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.HUD_MiniMap.Minimap_Mask = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Minimap_Mask.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Minimap_Mask:Insert(_ARG_0_.HUD_MiniMap.Minimap_Mask.icon1)
+    _ARG_0_.HUD_MiniMap.Minimap_Mask.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Minimap_Mask.icon1", "minimap_mask", 236, 1025, 256, 256, "center")
+    _ARG_0_.HUD_MiniMap.HUD_MiniMapFrame = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.HUD_MiniMapFrame.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.HUD_MiniMapFrame:Insert(_ARG_0_.HUD_MiniMap.HUD_MiniMapFrame.icon1)
+    _ARG_0_.HUD_MiniMap.HUD_MiniMapFrame.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.HUD_MiniMapFrame.icon1", "hud_minimap", 108, 1025, 128, 256, "center")
+    _ARG_0_.HUD_MiniMap.HUD_MiniMapFrame.icon2 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.HUD_MiniMapFrame:Insert(_ARG_0_.HUD_MiniMap.HUD_MiniMapFrame.icon2)
+    _ARG_0_.HUD_MiniMap.HUD_MiniMapFrame.icon2:Create(_ARG_0_.instance, "HUD_MiniMap.HUD_MiniMapFrame.icon2", "hud_minimap", 236, 1025, 128, 256, "center")
+    _ARG_0_.HUD_MiniMap.Map_1 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_1.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_1:Insert(_ARG_0_.HUD_MiniMap.Map_1.icon1)
+    _ARG_0_.HUD_MiniMap.Map_1.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_1.icon1", "minimap_1", -20, 769, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_2 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_2.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_2:Insert(_ARG_0_.HUD_MiniMap.Map_2.icon1)
+    _ARG_0_.HUD_MiniMap.Map_2.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_2.icon1", "minimap_2", 108, 769, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_3 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_3.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_3:Insert(_ARG_0_.HUD_MiniMap.Map_3.icon1)
+    _ARG_0_.HUD_MiniMap.Map_3.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_3.icon1", "minimap_3", 236, 769, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_4 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_4.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_4:Insert(_ARG_0_.HUD_MiniMap.Map_4.icon1)
+    _ARG_0_.HUD_MiniMap.Map_4.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_4.icon1", "minimap_4", -20, 897, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_5 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_5.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_5:Insert(_ARG_0_.HUD_MiniMap.Map_5.icon1)
+    _ARG_0_.HUD_MiniMap.Map_5.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_5.icon1", "minimap_5", 108, 897, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_6 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_6.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_6:Insert(_ARG_0_.HUD_MiniMap.Map_6.icon1)
+    _ARG_0_.HUD_MiniMap.Map_6.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_6.icon1", "minimap_6", 236, 897, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_7 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_7.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_7:Insert(_ARG_0_.HUD_MiniMap.Map_7.icon1)
+    _ARG_0_.HUD_MiniMap.Map_7.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_7.icon1", "minimap_7", -20, 1025, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_8 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_8.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_8:Insert(_ARG_0_.HUD_MiniMap.Map_8.icon1)
+    _ARG_0_.HUD_MiniMap.Map_8.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_8.icon1", "minimap_8", 108, 1025, 128, 128, "center", 1)
+    _ARG_0_.HUD_MiniMap.Map_9 = UIContainer:New()
+    _ARG_0_.HUD_MiniMap.Map_9.icon1 = UIIcon:New()
+    _ARG_0_.HUD_MiniMap.Map_9:Insert(_ARG_0_.HUD_MiniMap.Map_9.icon1)
+    _ARG_0_.HUD_MiniMap.Map_9.icon1:Create(_ARG_0_.instance, "HUD_MiniMap.Map_9.icon1", "minimap_9", 236, 1025, 128, 128, "center", 1)
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    PlayMenuAnimation(_ARG_0_.instance, "GiveBonus")
+  end,
+  SetRacerPosition = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+  end
+}

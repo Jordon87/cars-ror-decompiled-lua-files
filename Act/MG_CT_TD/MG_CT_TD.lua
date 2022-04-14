@@ -1,408 +1,97 @@
-local L0_1, L1_1
-L0_1 = {}
-L0_1.EnemyAIName = "MachAI2"
-L1_1 = {}
-L0_1.CurrentWaitEvents = L1_1
-L0_1.ActivityCoroutine = nil
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = DebugPrint
-  L3_2 = A1_2
-  L2_2(L3_2)
-  if A1_2 == "begin" then
-    A0_2.CurrentWaitEvents = nil
-    L2_2 = coroutine
-    L2_2 = L2_2.create
-    L3_2 = A0_2.TokyoDriftScript
-    L2_2 = L2_2(L3_2)
-    A0_2.ActivityCoroutine = L2_2
-    L2_2 = coroutine
-    L2_2 = L2_2.resume
-    L3_2 = A0_2.ActivityCoroutine
-    L4_2 = A0_2
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = A0_2.CurrentWaitEvents
-  if L2_2 ~= nil then
-    L2_2 = ipairs
-    L3_2 = A0_2.CurrentWaitEvents
-    L2_2, L3_2, L4_2 = L2_2(L3_2)
-    for L5_2, L6_2 in L2_2, L3_2, L4_2 do
-      L7_2 = A0_2.CurrentWaitEvents
-      L7_2 = L7_2[L5_2]
-      if L7_2 == A1_2 then
-        L7_2 = coroutine
-        L7_2 = L7_2.resume
-        L8_2 = A0_2.ActivityCoroutine
-        L9_2 = A1_2
-        L7_2(L8_2, L9_2)
+MG_CT_TD = {
+  EnemyAIName = "MachAI2",
+  CurrentWaitEvents = {},
+  ActivityCoroutine = nil,
+  EventHandler = function(_ARG_0_, _ARG_1_)
+    DebugPrint(_ARG_1_)
+    if _ARG_1_ == "begin" then
+      _ARG_0_.CurrentWaitEvents = nil
+      _ARG_0_.ActivityCoroutine = coroutine.create(_ARG_0_.TokyoDriftScript)
+      coroutine.resume(_ARG_0_.ActivityCoroutine, _ARG_0_)
+    end
+    if _ARG_0_.CurrentWaitEvents ~= nil then
+      for _FORV_5_, _FORV_6_ in ipairs(_ARG_0_.CurrentWaitEvents) do
+        if _ARG_0_.CurrentWaitEvents[_FORV_5_] == _ARG_1_ then
+          coroutine.resume(_ARG_0_.ActivityCoroutine, _ARG_1_)
+        end
       end
     end
   end
-end
-L0_1.EventHandler = L1_1
-MG_CT_TD = L0_1
-L0_1 = MG_CT_TD
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = A0_2
-  L1_2 = A0_2.WaitForEvent
-  L3_2 = "TokyoIntroVO"
-  L1_2(L2_2, L3_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.Wait
-  L3_2 = 1.5
-  L1_2(L2_2, L3_2)
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = "MIAT"
-    L2_2 = "MIAT_BEFT_CTTDMATST"
-    L3_2 = math
-    L3_2 = L3_2.random
-    L4_2 = 2
-    L3_2 = L3_2(L4_2)
-    L2_2 = L2_2 .. L3_2
-    L4_2 = A0_2
-    L3_2 = A0_2.PlayDialogueAndWait
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L4_2 = A0_2
-    L3_2 = A0_2.Wait
-    L5_2 = 0.5
-    L3_2(L4_2, L5_2)
-    L1_2 = "TIAT"
-    L3_2 = "TIAT_BEFT_CTTDMATST"
-    L4_2 = math
-    L4_2 = L4_2.random
-    L5_2 = 2
-    L4_2 = L4_2(L5_2)
-    L2_2 = L3_2 .. L4_2
-    L4_2 = A0_2
-    L3_2 = A0_2.PlayDialogueAndWait
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L3_2 = PlayQueuedDialogue
-    L4_2 = "MATT"
-    L5_2 = "Announcement"
-    L6_2 = "CT_TDstart"
-    L7_2 = 10
-    L3_2(L4_2, L5_2, L6_2, L7_2)
+}
+function MG_CT_TD.TokyoDriftScript(_ARG_0_)
+  _ARG_0_:WaitForEvent("TokyoIntroVO")
+  _ARG_0_:Wait(1.5)
+  if GetNumPlayers() == 1 then
+    _ARG_0_:PlayDialogueAndWait("MIAT", "MIAT_BEFT_CTTDMATST" .. math.random(2), "MIAT_BEFT_CTTDMATST" .. math.random(2))
+    _ARG_0_:Wait(0.5)
+    _ARG_0_:PlayDialogueAndWait("TIAT", "TIAT_BEFT_CTTDMATST" .. math.random(2), "TIAT_BEFT_CTTDMATST" .. math.random(2))
+    PlayQueuedDialogue("MATT", "Announcement", "CT_TDstart", 10)
   else
-    L1_2 = "MIAT"
-    L2_2 = "MIAT_BEFT_CTTDMCQST"
-    L3_2 = math
-    L3_2 = L3_2.random
-    L4_2 = 2
-    L3_2 = L3_2(L4_2)
-    L2_2 = L2_2 .. L3_2
-    L4_2 = A0_2
-    L3_2 = A0_2.PlayDialogueAndWait
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L4_2 = A0_2
-    L3_2 = A0_2.Wait
-    L5_2 = 0.5
-    L3_2(L4_2, L5_2)
-    L1_2 = "TIAT"
-    L3_2 = "TIAT_BEFT_CTTDMCQST"
-    L4_2 = math
-    L4_2 = L4_2.random
-    L5_2 = 2
-    L4_2 = L4_2(L5_2)
-    L2_2 = L3_2 .. L4_2
-    L4_2 = A0_2
-    L3_2 = A0_2.PlayDialogueAndWait
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L3_2 = PlayQueuedDialogue
-    L4_2 = "MATT"
-    L5_2 = "Announcement"
-    L6_2 = "CT_TDstart"
-    L7_2 = 10
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L3_2 = PlayQueuedDialogue
-    L4_2 = "MCQT"
-    L5_2 = "Announcement"
-    L6_2 = "CT_TDstart"
-    L7_2 = 10
-    L3_2(L4_2, L5_2, L6_2, L7_2)
+    _ARG_0_:PlayDialogueAndWait("MIAT", "MIAT_BEFT_CTTDMCQST" .. math.random(2), "MIAT_BEFT_CTTDMCQST" .. math.random(2))
+    _ARG_0_:Wait(0.5)
+    _ARG_0_:PlayDialogueAndWait("TIAT", "TIAT_BEFT_CTTDMCQST" .. math.random(2), "TIAT_BEFT_CTTDMCQST" .. math.random(2))
+    PlayQueuedDialogue("MATT", "Announcement", "CT_TDstart", 10)
+    PlayQueuedDialogue("MCQT", "Announcement", "CT_TDstart", 10)
   end
-  L2_2 = A0_2
-  L1_2 = A0_2.WaitForEvent
-  L3_2 = "EndRaceCutscene"
-  L1_2(L2_2, L3_2)
-  L1_2 = DebugPrint
-  L2_2 = "DoEndRaceCutscene"
-  L1_2(L2_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.Wait
-  L3_2 = 5
-  L1_2(L2_2, L3_2)
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = EnableToy
-    L2_2 = "MCQT_end"
-    L3_2 = 0
-    L1_2(L2_2, L3_2)
+  _ARG_0_:WaitForEvent("EndRaceCutscene")
+  DebugPrint("DoEndRaceCutscene")
+  _ARG_0_:Wait(5)
+  if GetNumPlayers() == 1 then
+    EnableToy("MCQT_end", 0)
   end
-  L1_2 = HideHUD
-  L1_2()
-  L1_2 = PlayCameraAnimation
-  L2_2 = "EndLevelCam"
-  L3_2 = "Anim\\Endlevel"
-  L1_2(L2_2, L3_2)
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = "MATT_end"
-    L2_2 = "MATT_BF_PROMPT1"
-    L4_2 = A0_2
-    L3_2 = A0_2.PlayDialogueAndWait
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L1_2 = "MIAT_end"
-    L3_2 = "MIAT_BEFT_CTTDMATFN"
-    L4_2 = math
-    L4_2 = L4_2.random
-    L5_2 = 2
-    L4_2 = L4_2(L5_2)
-    L2_2 = L3_2 .. L4_2
-    L4_2 = A0_2
-    L3_2 = A0_2.PlayDialogueAndWait
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L4_2 = A0_2
-    L3_2 = A0_2.Wait
-    L5_2 = 0.5
-    L3_2(L4_2, L5_2)
-    L1_2 = "TIAT_end"
-    L3_2 = "TIAT_BEFT_CTTDMATFN"
-    L4_2 = math
-    L4_2 = L4_2.random
-    L5_2 = 2
-    L4_2 = L4_2(L5_2)
-    L2_2 = L3_2 .. L4_2
-    L4_2 = A0_2
-    L3_2 = A0_2.PlayDialogueAndWait
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
+  HideHUD()
+  PlayCameraAnimation("EndLevelCam", "Anim\\Endlevel")
+  if GetNumPlayers() == 1 then
+    _ARG_0_:PlayDialogueAndWait("MATT_end", "MATT_BF_PROMPT1", "MATT_BF_PROMPT1")
+    _ARG_0_:PlayDialogueAndWait("MIAT_end", "MIAT_BEFT_CTTDMATFN" .. math.random(2), "MIAT_BEFT_CTTDMATFN" .. math.random(2))
+    _ARG_0_:Wait(0.5)
+    _ARG_0_:PlayDialogueAndWait("TIAT_end", "TIAT_BEFT_CTTDMATFN" .. math.random(2), "TIAT_BEFT_CTTDMATFN" .. math.random(2))
+  elseif GetPlayerScore(1, 6) >= GetPlayerScore(2, 6) then
+    PlayQueuedDialogue("MATT_end", "Announcement", "CT_TDend", 10)
+    _ARG_0_:PlayCharacterAnimationAndWait("MATT_end", "MATT_BF_PROMPT1", "", false)
+    _ARG_0_:PlayDialogueAndWait("MIAT_end", "MIAT_BEFT_CTTDMATFN" .. math.random(2), "MIAT_BEFT_CTTDMATFN" .. math.random(2))
+    _ARG_0_:Wait(0.5)
+    _ARG_0_:PlayDialogueAndWait("TIAT_end", "TIAT_BEFT_CTTDMATFN" .. math.random(2), "TIAT_BEFT_CTTDMATFN" .. math.random(2))
   else
-    L1_2 = GetPlayerScore
-    L2_2 = 1
-    L3_2 = 6
-    L1_2 = L1_2(L2_2, L3_2)
-    L2_2 = GetPlayerScore
-    L3_2 = 2
-    L4_2 = 6
-    L2_2 = L2_2(L3_2, L4_2)
-    if L1_2 >= L2_2 then
-      L3_2 = PlayQueuedDialogue
-      L4_2 = "MATT_end"
-      L5_2 = "Announcement"
-      L6_2 = "CT_TDend"
-      L7_2 = 10
-      L3_2(L4_2, L5_2, L6_2, L7_2)
-      L4_2 = A0_2
-      L3_2 = A0_2.PlayCharacterAnimationAndWait
-      L5_2 = "MATT_end"
-      L6_2 = "MATT_BF_PROMPT1"
-      L7_2 = ""
-      L8_2 = false
-      L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-      L3_2 = "MIAT_end"
-      L4_2 = "MIAT_BEFT_CTTDMATFN"
-      L5_2 = math
-      L5_2 = L5_2.random
-      L6_2 = 2
-      L5_2 = L5_2(L6_2)
-      L4_2 = L4_2 .. L5_2
-      L6_2 = A0_2
-      L5_2 = A0_2.PlayDialogueAndWait
-      L7_2 = L3_2
-      L8_2 = L4_2
-      L9_2 = L4_2
-      L5_2(L6_2, L7_2, L8_2, L9_2)
-      L6_2 = A0_2
-      L5_2 = A0_2.Wait
-      L7_2 = 0.5
-      L5_2(L6_2, L7_2)
-      L3_2 = "TIAT_end"
-      L5_2 = "TIAT_BEFT_CTTDMATFN"
-      L6_2 = math
-      L6_2 = L6_2.random
-      L7_2 = 2
-      L6_2 = L6_2(L7_2)
-      L4_2 = L5_2 .. L6_2
-      L6_2 = A0_2
-      L5_2 = A0_2.PlayDialogueAndWait
-      L7_2 = L3_2
-      L8_2 = L4_2
-      L9_2 = L4_2
-      L5_2(L6_2, L7_2, L8_2, L9_2)
-    else
-      L3_2 = PlayQueuedDialogue
-      L4_2 = "MCQT_end"
-      L5_2 = "Announcement"
-      L6_2 = "CT_TDend"
-      L7_2 = 10
-      L3_2(L4_2, L5_2, L6_2, L7_2)
-      L4_2 = A0_2
-      L3_2 = A0_2.PlayCharacterAnimationAndWait
-      L5_2 = "MCQT_end"
-      L6_2 = "MCQT_BEF_WON2"
-      L7_2 = ""
-      L8_2 = false
-      L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-      L3_2 = "MIAT_end"
-      L4_2 = "MIAT_BEFT_CTTDMCQFN"
-      L5_2 = math
-      L5_2 = L5_2.random
-      L6_2 = 2
-      L5_2 = L5_2(L6_2)
-      L4_2 = L4_2 .. L5_2
-      L6_2 = A0_2
-      L5_2 = A0_2.PlayDialogueAndWait
-      L7_2 = L3_2
-      L8_2 = L4_2
-      L9_2 = L4_2
-      L5_2(L6_2, L7_2, L8_2, L9_2)
-      L6_2 = A0_2
-      L5_2 = A0_2.Wait
-      L7_2 = 0.5
-      L5_2(L6_2, L7_2)
-      L3_2 = "TIAT_end"
-      L5_2 = "TIAT_BEFT_CTTDMCQFN"
-      L6_2 = math
-      L6_2 = L6_2.random
-      L7_2 = 2
-      L6_2 = L6_2(L7_2)
-      L4_2 = L5_2 .. L6_2
-      L6_2 = A0_2
-      L5_2 = A0_2.PlayDialogueAndWait
-      L7_2 = L3_2
-      L8_2 = L4_2
-      L9_2 = L4_2
-      L5_2(L6_2, L7_2, L8_2, L9_2)
-    end
+    PlayQueuedDialogue("MCQT_end", "Announcement", "CT_TDend", 10)
+    _ARG_0_:PlayCharacterAnimationAndWait("MCQT_end", "MCQT_BEF_WON2", "", false)
+    _ARG_0_:PlayDialogueAndWait("MIAT_end", "MIAT_BEFT_CTTDMCQFN" .. math.random(2), "MIAT_BEFT_CTTDMCQFN" .. math.random(2))
+    _ARG_0_:Wait(0.5)
+    _ARG_0_:PlayDialogueAndWait("TIAT_end", "TIAT_BEFT_CTTDMCQFN" .. math.random(2), "TIAT_BEFT_CTTDMCQFN" .. math.random(2))
   end
-  L1_2 = FinishEndRaceCutscene
-  L1_2()
+  FinishEndRaceCutscene()
 end
-L0_1.TokyoDriftScript = L1_1
-L0_1 = MG_CT_TD
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = {}
-  L3_2 = A1_2
-  L2_2[1] = L3_2
-  A0_2.CurrentWaitEvents = L2_2
-  L2_2 = coroutine
-  L2_2 = L2_2.yield
-  L2_2()
-  A0_2.CurrentWaitEvents = nil
+function MG_CT_TD.WaitForEvent(_ARG_0_, _ARG_1_)
+  _ARG_0_.CurrentWaitEvents = {_ARG_1_}
+  coroutine.yield()
+  _ARG_0_.CurrentWaitEvents = nil
 end
-L0_1.WaitForEvent = L1_1
-L0_1 = MG_CT_TD
-function L1_1(A0_2, A1_2)
-  local L2_2
-  A0_2.CurrentWaitEvents = A1_2
-  L2_2 = coroutine
-  L2_2 = L2_2.yield
-  L2_2 = L2_2()
-  A0_2.CurrentWaitEvents = nil
-  return L2_2
+function MG_CT_TD.WaitForMultipleEvents(_ARG_0_, _ARG_1_)
+  _ARG_0_.CurrentWaitEvents = _ARG_1_
+  _ARG_0_.CurrentWaitEvents = nil
+  return (coroutine.yield())
 end
-L0_1.WaitForMultipleEvents = L1_1
-L0_1 = MG_CT_TD
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  A0_2.CurrentWaitEvents = A1_2
-  while true do
-    L2_2 = A0_2.CurrentWaitEvents
-    L2_2 = #L2_2
-    if not (0 < L2_2) then
-      break
-    end
-    L2_2 = coroutine
-    L2_2 = L2_2.yield
-    L2_2 = L2_2()
-    L3_2 = A0_2.CurrentWaitEvents
-    L4_2 = nil
-    L5_2 = nil
-    for L6_2, L7_2 in L3_2, L4_2, L5_2 do
-      if L7_2 == L2_2 then
-        L8_2 = table
-        L8_2 = L8_2.remove
-        L9_2 = A0_2.CurrentWaitEvents
-        L10_2 = L6_2
-        L8_2(L9_2, L10_2)
+function MG_CT_TD.WaitForAllEvents(_ARG_0_, _ARG_1_)
+  _ARG_0_.CurrentWaitEvents = _ARG_1_
+  while #_ARG_0_.CurrentWaitEvents > 0 do
+    for _FORV_6_, _FORV_7_ in _ARG_0_.CurrentWaitEvents, nil, nil do
+      if _FORV_7_ == coroutine.yield() then
+        table.remove(_ARG_0_.CurrentWaitEvents, _FORV_6_)
       end
     end
   end
-  A0_2.CurrentWaitEvents = nil
-  L2_2 = event
-  return L2_2
+  _ARG_0_.CurrentWaitEvents = nil
+  return event
 end
-L0_1.WaitForAllEvents = L1_1
-L0_1 = MG_CT_TD
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = SetEventTimer
-  L3_2 = "Wait"
-  L4_2 = A1_2
-  L3_2 = L3_2 .. L4_2
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.WaitForEvent
-  L4_2 = "Wait"
-  L5_2 = A1_2
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
+function MG_CT_TD.Wait(_ARG_0_, _ARG_1_)
+  SetEventTimer("Wait" .. _ARG_1_, _ARG_1_)
+  _ARG_0_:WaitForEvent("Wait" .. _ARG_1_)
 end
-L0_1.Wait = L1_1
-L0_1 = MG_CT_TD
-function L1_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2
-  L4_2 = PlayToyDialogueMotion
-  L5_2 = A1_2
-  L6_2 = A3_2
-  L7_2 = A3_2
-  L4_2(L5_2, L6_2, L7_2)
-  L5_2 = A0_2
-  L4_2 = A0_2.WaitForEvent
-  L6_2 = A3_2
-  L4_2(L5_2, L6_2)
+function MG_CT_TD.PlayDialogueAndWait(_ARG_0_, _ARG_1_, _ARG_2_, _ARG_3_)
+  PlayToyDialogueMotion(_ARG_1_, _ARG_3_, _ARG_3_)
+  _ARG_0_:WaitForEvent(_ARG_3_)
 end
-L0_1.PlayDialogueAndWait = L1_1
-L0_1 = MG_CT_TD
-function L1_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2
-  L4_2 = SetCharacterAnimation
-  L5_2 = A1_2
-  L6_2 = A2_2
-  L7_2 = A2_2
-  L8_2 = A3_2
-  L4_2(L5_2, L6_2, L7_2, L8_2)
-  L5_2 = A0_2
-  L4_2 = A0_2.WaitForEvent
-  L6_2 = A2_2
-  L4_2(L5_2, L6_2)
+function MG_CT_TD.PlayCharacterAnimationAndWait(_ARG_0_, _ARG_1_, _ARG_2_, _ARG_3_)
+  SetCharacterAnimation(_ARG_1_, _ARG_2_, _ARG_2_, _ARG_3_)
+  _ARG_0_:WaitForEvent(_ARG_2_)
 end
-L0_1.PlayCharacterAnimationAndWait = L1_1

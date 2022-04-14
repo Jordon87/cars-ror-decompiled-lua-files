@@ -1,4804 +1,958 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.state = 0
-L0_1.fullyCreated = 0
-L0_1.hasRacerIcons = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.RacerIcons = L1_1
-L0_1.PauseHandle = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Buttons = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Title = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Trophies = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Menu = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Checkers2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Checkers3 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Checkers1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.BankBar_Yellow = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.BankBar_Red = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Dim_Layer_BG = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text1"
-  L5_2 = "STR_CONTINUE"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1575.7
-  L9_2 = 673.65
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Title
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Title
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Title
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Title.text1"
-  L5_2 = "STR_RESULTS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1466.1
-  L9_2 = 623.5
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Trophies
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Trophies
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Trophies
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Trophies
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Trophies.icon1"
-  L5_2 = "hud_trophies_gold"
-  L6_2 = 355
-  L7_2 = -292.65
-  L8_2 = 41
-  L9_2 = 41
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Trophies
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Trophies
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Trophies
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Trophies
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Trophies.icon2"
-  L5_2 = "hud_trophies_silver"
-  L6_2 = 355
-  L7_2 = -251.65
-  L8_2 = 41
-  L9_2 = 41
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Trophies
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Trophies
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Trophies
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Trophies
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Trophies.icon3"
-  L5_2 = "hud_trophies_bronze"
-  L6_2 = 355
-  L7_2 = -210.65
-  L8_2 = 41
-  L9_2 = 41
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.mg_title = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.mg_title
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.mg_title
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.mg_title"
-  L5_2 = "STR_DYN_MENU_64_1"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1055.35
-  L9_2 = 379.4
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.col_2 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.col_2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.col_2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.col_2"
-  L5_2 = "STR_DYN_HUD_18"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1038.35
-  L9_2 = 429.45
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.col_3 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.col_3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.col_3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.col_3"
-  L5_2 = "STR_DYN_HUD_19"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1118.35
-  L9_2 = 429.45
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.col_1 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.col_1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.col_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.col_1"
-  L5_2 = "STR_DYN_HUD_18"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 429.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_1 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_1"
-  L5_2 = "STR_DYN_HUD_5"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 468.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_2 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_2"
-  L5_2 = "STR_DYN_HUD_7"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 509.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_3 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_3"
-  L5_2 = "STR_DYN_HUD_9"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 550.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_4 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_4"
-  L5_2 = "STR_DYN_HUD_11"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 591.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_5 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_5"
-  L5_2 = "STR_DYN_HUD_13"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 632.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_6 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_6
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_6
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_6"
-  L5_2 = "STR_DYN_HUD_15"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 673.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_7 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_7"
-  L5_2 = "STR_DYN_HUD_17"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 714.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p2_8 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p2_8
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p2_8
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p2_8"
-  L5_2 = "STR_DYN_HUD_27"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1050.9
-  L9_2 = 755.9
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_1 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_1"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 468.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_2 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_2"
-  L5_2 = "STR_DYN_HUD_6"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 509.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_3 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_3"
-  L5_2 = "STR_DYN_HUD_8"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 550.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_4 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_4"
-  L5_2 = "STR_DYN_HUD_10"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 591.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_5 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_5"
-  L5_2 = "STR_DYN_HUD_12"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 632.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_6 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_6
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_6
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_6"
-  L5_2 = "STR_DYN_HUD_14"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 673.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_7 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_7"
-  L5_2 = "STR_DYN_HUD_16"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 714.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.p1_8 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.p1_8
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.p1_8
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.p1_8"
-  L5_2 = "STR_DYN_HUD_26"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1040.9
-  L9_2 = 755.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_1 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_1"
-  L5_2 = "STR_DYN_HUD_18"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 470.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_2 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_2"
-  L5_2 = "STR_DYN_HUD_19"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 511.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_3 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_3"
-  L5_2 = "STR_DYN_HUD_20"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 552.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_4 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_4"
-  L5_2 = "STR_DYN_HUD_21"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 593.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_5 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_5"
-  L5_2 = "STR_DYN_HUD_22"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 634.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_6 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_6
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_6
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_6"
-  L5_2 = "STR_DYN_HUD_23"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 675.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_7 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_7"
-  L5_2 = "STR_DYN_HUD_24"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 716.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.category_8 = L2_2
-  L1_2 = A0_2.Menu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.category_8
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.category_8
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.category_8"
-  L5_2 = "STR_DYN_HUD_25"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 998.35
-  L9_2 = 757.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Dim_Grid = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.Dim_Grid
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.Dim_Grid.icon1"
-  L5_2 = "component_frame_white"
-  L6_2 = 1060.1
-  L7_2 = 600.6
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.Dim_Grid
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.Dim_Grid.icon2"
-  L5_2 = "component_frame_white"
-  L6_2 = 1060.1
-  L7_2 = 618.8
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.Dim_Grid
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.Dim_Grid.icon3"
-  L5_2 = "component_frame_white"
-  L6_2 = 1060.1
-  L7_2 = 637
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon4 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.Dim_Grid
-  L3_2 = L3_2.icon4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Grid
-  L1_2 = L1_2.icon4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.Dim_Grid.icon4"
-  L5_2 = "component_frame_white"
-  L6_2 = 1060.1
-  L7_2 = 655.2
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameMenu = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon1"
-  L5_2 = "component_frame_01"
-  L6_2 = 1182
-  L7_2 = 623.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon2"
-  L5_2 = "component_frame_02"
-  L6_2 = 1118
-  L7_2 = 1007.9
-  L8_2 = 64
-  L9_2 = 385
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon3"
-  L5_2 = "component_frame_03"
-  L6_2 = 1182
-  L7_2 = 1072.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon4 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon4"
-  L5_2 = "component_frame_04"
-  L6_2 = 1704
-  L7_2 = 1072.2
-  L8_2 = 522
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon5"
-  L5_2 = "component_frame_05"
-  L6_2 = 1703.6
-  L7_2 = 623.2
-  L8_2 = 522
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon6 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon6
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon6
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon6"
-  L5_2 = "component_frame_01"
-  L6_2 = 1832
-  L7_2 = 623.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon7 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon7"
-  L5_2 = "component_frame_02"
-  L6_2 = 1832
-  L7_2 = 1007.9
-  L8_2 = 64
-  L9_2 = 385
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon8 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon8
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon8
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon8"
-  L5_2 = "component_frame_03"
-  L6_2 = 1832
-  L7_2 = 1072.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.YellowGradient = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.YellowGradient
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.YellowGradient
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.YellowGradient
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.YellowGradient
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.YellowGradient.icon1"
-  L5_2 = "component_bankgradient"
-  L6_2 = 1116.95
-  L7_2 = 386.2
-  L8_2 = 64
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Dim_Layer = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Layer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Layer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.Dim_Layer
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Layer
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.Dim_Layer.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 1058.2
-  L7_2 = 564.7
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Checkers2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers2
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers2
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers2.icon1"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 97.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Checkers2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers2
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers2
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers2.icon2"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 97.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Checkers3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers3
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers3
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers3.icon1"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 545.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Checkers3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers3
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers3
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers3.icon2"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 545.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon1"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 353.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon2"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 385.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon3"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 417.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon4 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon4"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 449.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon5"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 481.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon6 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon6
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon6
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon6"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 513.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon7 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon7"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 545.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon8 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon8
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon8
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon8"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 577.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon9 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon9
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon9
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon9"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 609.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon10 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon10
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon10
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon10"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 353.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon11 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon11
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon11
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon11"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 385.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon12 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon12
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon12
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon12"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 417.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon13 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon13
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon13
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon13"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 449.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon14 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon14
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon14
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon14"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 481.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon15 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon15
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon15
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon15"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 513.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon16 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon16
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon16
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon16"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 545.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon17 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon17
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon17
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon17"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 577.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon18 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon18
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon18
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon18"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 609.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon19 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon19
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon19
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon19"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 321.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon20 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon20
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon20
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon20"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 321.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon21 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon21
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon21
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon21"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 641.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon22"
-  L3_2 = UIIcon
-  L4_2 = L3_2
-  L3_2 = L3_2.New
-  L3_2 = L3_2(L4_2)
-  L1_2[L2_2] = L3_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L4_2 = "icon22"
-  L3_2 = L3_2[L4_2]
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon22"
-  L1_2 = L1_2[L2_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon22"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 641.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon23"
-  L3_2 = UIIcon
-  L4_2 = L3_2
-  L3_2 = L3_2.New
-  L3_2 = L3_2(L4_2)
-  L1_2[L2_2] = L3_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L4_2 = "icon23"
-  L3_2 = L3_2[L4_2]
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon23"
-  L1_2 = L1_2[L2_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon23"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 673.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon24"
-  L3_2 = UIIcon
-  L4_2 = L3_2
-  L3_2 = L3_2.New
-  L3_2 = L3_2(L4_2)
-  L1_2[L2_2] = L3_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L4_2 = "icon24"
-  L3_2 = L3_2[L4_2]
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon24"
-  L1_2 = L1_2[L2_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon24"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 673.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon25"
-  L3_2 = UIIcon
-  L4_2 = L3_2
-  L3_2 = L3_2.New
-  L3_2 = L3_2(L4_2)
-  L1_2[L2_2] = L3_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L4_2 = "icon25"
-  L3_2 = L3_2[L4_2]
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon25"
-  L1_2 = L1_2[L2_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon25"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 705.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon26"
-  L3_2 = UIIcon
-  L4_2 = L3_2
-  L3_2 = L3_2.New
-  L3_2 = L3_2(L4_2)
-  L1_2[L2_2] = L3_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L4_2 = "icon26"
-  L3_2 = L3_2[L4_2]
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = "icon26"
-  L1_2 = L1_2[L2_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon26"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1348
-  L7_2 = 705.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = "BankBar_Yellow"
-  L1_2 = A0_2[L1_2]
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = "BankBar_Yellow"
-  L1_2 = A0_2[L1_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = "BankBar_Yellow"
-  L3_2 = A0_2[L3_2]
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = "BankBar_Yellow"
-  L1_2 = A0_2[L1_2]
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Yellow.icon1"
-  L5_2 = "component_bankgradient"
-  L6_2 = 3640.5
-  L7_2 = 625
-  L8_2 = 1536
-  L9_2 = 4
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = "BankBar_Red"
-  L1_2 = A0_2[L1_2]
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.YellowGradient = L2_2
-  L1_2 = "BankBar_Red"
-  L1_2 = A0_2[L1_2]
-  L1_2 = L1_2.YellowGradient
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = "BankBar_Red"
-  L1_2 = A0_2[L1_2]
-  L1_2 = L1_2.YellowGradient
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = "BankBar_Red"
-  L3_2 = A0_2[L3_2]
-  L3_2 = L3_2.YellowGradient
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = "BankBar_Red"
-  L1_2 = A0_2[L1_2]
-  L1_2 = L1_2.YellowGradient
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red.YellowGradient.icon1"
-  L5_2 = "component_bankgradient"
-  L6_2 = 1470.1
-  L7_2 = 688.5
-  L8_2 = 64
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = "BankBar_Red"
-  L1_2 = A0_2[L1_2]
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = "BankBar_Red"
-  L1_2 = A0_2[L1_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = "BankBar_Red"
-  L3_2 = A0_2[L3_2]
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = "BankBar_Red"
-  L1_2 = A0_2[L1_2]
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red.icon1"
-  L5_2 = "component_bankbar"
-  L6_2 = 2174.1
-  L7_2 = 711
-  L8_2 = 1536
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = "Dim_Layer_BG"
-  L1_2 = A0_2[L1_2]
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = "Dim_Layer_BG"
-  L1_2 = A0_2[L1_2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = "Dim_Layer_BG"
-  L3_2 = A0_2[L3_2]
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = "Dim_Layer_BG"
-  L1_2 = A0_2[L1_2]
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Dim_Layer_BG.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 648
-  L7_2 = 378
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.mg_title
-  L1_2.mg_title = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.col_2
-  L1_2.col_2 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.col_3
-  L1_2.col_3 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.col_1
-  L1_2.col_1 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_1
-  L1_2.p2_1 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_2
-  L1_2.p2_2 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_3
-  L1_2.p2_3 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_4
-  L1_2.p2_4 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_5
-  L1_2.p2_5 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_6
-  L1_2.p2_6 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_7
-  L1_2.p2_7 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p2_8
-  L1_2.p2_8 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_1
-  L1_2.p1_1 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_2
-  L1_2.p1_2 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_3
-  L1_2.p1_3 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_4
-  L1_2.p1_4 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_5
-  L1_2.p1_5 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_6
-  L1_2.p1_6 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_7
-  L1_2.p1_7 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.p1_8
-  L1_2.p1_8 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_1
-  L1_2.category_1 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_2
-  L1_2.category_2 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_3
-  L1_2.category_3 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_4
-  L1_2.category_4 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_5
-  L1_2.category_5 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_6
-  L1_2.category_6 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_7
-  L1_2.category_7 = L2_2
-  L1_2 = "Shortcuts"
-  L1_2 = A0_2[L1_2]
-  L2_2 = A0_2.Menu
-  L2_2 = L2_2.category_8
-  L1_2.category_8 = L2_2
-  L1_2 = "fullyCreated"
-  L2_2 = 0
-  A0_2[L1_2] = L2_2
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.OnOutro = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-  L1_2 = LoopMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "Main"
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.PauseHandle
-  if L1_2 == 0 then
-    L1_2 = PlayerPauseGame
-    L2_2 = 1
-    L1_2(L2_2)
-    A0_2.PauseHandle = 1
-  end
-  A0_2.state = 1
-  L1_2 = HideHUD
-  L1_2()
-  L1_2 = Split
-  L2_2 = getvar
-  L3_2 = "CurrentActivity"
-  L2_2 = L2_2(L3_2)
-  L3_2 = "\\"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = #L1_2
-  L2_2 = L1_2[L2_2]
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.mg_title
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = GetLocalizedString
-  L6_2 = "EventInfo"
-  L7_2 = "STR_"
-  L8_2 = L2_2
-  L9_2 = "_TITLE"
-  L7_2 = L7_2 .. L8_2 .. L9_2
-  L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2 = L5_2(L6_2, L7_2)
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L3_2 = A0_2.fullyCreated
-  if L3_2 == 0 then
-    L3_2 = GetCurrentActivityType
-    L3_2 = L3_2()
-    L4_2 = DebugPrint
-    L5_2 = "Bringing up results screen for activity type: "
-    L6_2 = L3_2
-    L5_2 = L5_2 .. L6_2
-    L4_2(L5_2)
-    if L3_2 == "RaceRoad" or L3_2 == "RaceBase" or L3_2 == "RaceRustbucket" or L3_2 == "GuidoKart" or L3_2 == "RaceTimeTrial" or L3_2 == "RaceRelay" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitRaceRoad
-      L4_2(L5_2)
-      L4_2 = PlayMenuAnimation
-      L5_2 = A0_2.instance
-      L6_2 = "Trophies"
-      L4_2(L5_2, L6_2)
-    elseif L3_2 == "Materdor" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitMaterdor
-      L4_2(L5_2)
-    elseif L3_2 == "AutoCross" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitAutoCross
-      L4_2(L5_2)
-    elseif L3_2 == "FindRetrieve" or L3_2 == "Transporter" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitTimedActivity
-      L4_2(L5_2)
-    elseif L3_2 == "StampedeRoundup" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitStampedeActivity
-      L4_2(L5_2)
-    elseif L3_2 == "StuntMater" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitStuntMater
-      L4_2(L5_2)
-    elseif L3_2 == "JumpDrift" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitJumpDrift
-      L4_2(L5_2)
-    elseif L3_2 == "FindTire" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitFindTire
-      L4_2(L5_2)
-    elseif L3_2 == "TokyoDrift" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitTokyoDrift
-      L4_2(L5_2)
-    elseif L3_2 == "SheriffChase" then
-      L5_2 = A0_2
-      L4_2 = A0_2.InitSheriffChase
-      L4_2(L5_2)
-    else
-      L4_2 = {}
-      L5_2 = ""
-      L6_2 = ""
-      L7_2 = ""
-      L8_2 = ""
-      L4_2[1] = L5_2
-      L4_2[2] = L6_2
-      L4_2[3] = L7_2
-      L4_2[4] = L8_2
-      L5_2 = {}
-      L6_2 = ""
-      L7_2 = "(missing results for activity type)"
-      L8_2 = L3_2
-      L9_2 = ""
-      L5_2[1] = L6_2
-      L5_2[2] = L7_2
-      L5_2[3] = L8_2
-      L5_2[4] = L9_2
-      L6_2 = {}
-      L7_2 = ""
-      L8_2 = "report this as a bug "
-      L9_2 = ""
-      L6_2[1] = L7_2
-      L6_2[2] = L8_2
-      L6_2[3] = L9_2
-      L8_2 = A0_2
-      L7_2 = A0_2.Initialize
-      L9_2 = L6_2
-      L10_2 = L4_2
-      L11_2 = L5_2
-      L12_2 = L5_2
-      L7_2(L8_2, L9_2, L10_2, L11_2, L12_2)
+Results = {
+  instance = 0,
+  state = 0,
+  fullyCreated = 0,
+  hasRacerIcons = 0,
+  RacerIcons = UIContainer:New(),
+  PauseHandle = 0,
+  Buttons = UIContainer:New(),
+  Title = UIContainer:New(),
+  Trophies = UIContainer:New(),
+  Menu = UIContainer:New(),
+  Checkers2 = UIContainer:New(),
+  Checkers3 = UIContainer:New(),
+  Checkers1 = UIContainer:New(),
+  BankBar_Yellow = UIContainer:New(),
+  BankBar_Red = UIContainer:New(),
+  Dim_Layer_BG = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.Buttons.text1 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text1)
+    _ARG_0_.Buttons.text1:Create(_ARG_0_.instance, "Buttons.text1", "STR_CONTINUE", "COMMONUI", "18_BodegaSans-Medium", 1575.7, 673.65, "right")
+    _ARG_0_.Title.text1 = UIText:New()
+    _ARG_0_.Title:Insert(_ARG_0_.Title.text1)
+    _ARG_0_.Title.text1:Create(_ARG_0_.instance, "Title.text1", "STR_RESULTS", "INGAMEUI", "18_BodegaSans-Medium", 1466.1, 623.5, "left")
+    _ARG_0_.Trophies.icon1 = UIIcon:New()
+    _ARG_0_.Trophies:Insert(_ARG_0_.Trophies.icon1)
+    _ARG_0_.Trophies.icon1:Create(_ARG_0_.instance, "Trophies.icon1", "hud_trophies_gold", 355, -292.65, 41, 41, "center")
+    _ARG_0_.Trophies.icon2 = UIIcon:New()
+    _ARG_0_.Trophies:Insert(_ARG_0_.Trophies.icon2)
+    _ARG_0_.Trophies.icon2:Create(_ARG_0_.instance, "Trophies.icon2", "hud_trophies_silver", 355, -251.65, 41, 41, "center")
+    _ARG_0_.Trophies.icon3 = UIIcon:New()
+    _ARG_0_.Trophies:Insert(_ARG_0_.Trophies.icon3)
+    _ARG_0_.Trophies.icon3:Create(_ARG_0_.instance, "Trophies.icon3", "hud_trophies_bronze", 355, -210.65, 41, 41, "center")
+    _ARG_0_.Menu.mg_title = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.mg_title)
+    _ARG_0_.Menu.mg_title:Create(_ARG_0_.instance, "Menu.mg_title", "STR_DYN_MENU_64_1", "INGAMEUI", "18_BodegaSans-Medium", 1055.35, 379.4, "center")
+    _ARG_0_.Menu.col_2 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.col_2)
+    _ARG_0_.Menu.col_2:Create(_ARG_0_.instance, "Menu.col_2", "STR_DYN_HUD_18", "INGAMEUI", "18_BodegaSans-Medium", 1038.35, 429.45, "center")
+    _ARG_0_.Menu.col_3 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.col_3)
+    _ARG_0_.Menu.col_3:Create(_ARG_0_.instance, "Menu.col_3", "STR_DYN_HUD_19", "INGAMEUI", "18_BodegaSans-Medium", 1118.35, 429.45, "right")
+    _ARG_0_.Menu.col_1 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.col_1)
+    _ARG_0_.Menu.col_1:Create(_ARG_0_.instance, "Menu.col_1", "STR_DYN_HUD_18", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 429.45, "left")
+    _ARG_0_.Menu.p2_1 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_1)
+    _ARG_0_.Menu.p2_1:Create(_ARG_0_.instance, "Menu.p2_1", "STR_DYN_HUD_5", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 468.9, "right")
+    _ARG_0_.Menu.p2_2 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_2)
+    _ARG_0_.Menu.p2_2:Create(_ARG_0_.instance, "Menu.p2_2", "STR_DYN_HUD_7", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 509.9, "right")
+    _ARG_0_.Menu.p2_3 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_3)
+    _ARG_0_.Menu.p2_3:Create(_ARG_0_.instance, "Menu.p2_3", "STR_DYN_HUD_9", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 550.9, "right")
+    _ARG_0_.Menu.p2_4 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_4)
+    _ARG_0_.Menu.p2_4:Create(_ARG_0_.instance, "Menu.p2_4", "STR_DYN_HUD_11", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 591.9, "right")
+    _ARG_0_.Menu.p2_5 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_5)
+    _ARG_0_.Menu.p2_5:Create(_ARG_0_.instance, "Menu.p2_5", "STR_DYN_HUD_13", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 632.9, "right")
+    _ARG_0_.Menu.p2_6 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_6)
+    _ARG_0_.Menu.p2_6:Create(_ARG_0_.instance, "Menu.p2_6", "STR_DYN_HUD_15", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 673.9, "right")
+    _ARG_0_.Menu.p2_7 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_7)
+    _ARG_0_.Menu.p2_7:Create(_ARG_0_.instance, "Menu.p2_7", "STR_DYN_HUD_17", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 714.9, "right")
+    _ARG_0_.Menu.p2_8 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p2_8)
+    _ARG_0_.Menu.p2_8:Create(_ARG_0_.instance, "Menu.p2_8", "STR_DYN_HUD_27", "INGAMEUI", "18_BodegaSans-Medium", 1050.9, 755.9, "right")
+    _ARG_0_.Menu.p1_1 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_1)
+    _ARG_0_.Menu.p1_1:Create(_ARG_0_.instance, "Menu.p1_1", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 468.9, "center")
+    _ARG_0_.Menu.p1_2 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_2)
+    _ARG_0_.Menu.p1_2:Create(_ARG_0_.instance, "Menu.p1_2", "STR_DYN_HUD_6", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 509.9, "center")
+    _ARG_0_.Menu.p1_3 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_3)
+    _ARG_0_.Menu.p1_3:Create(_ARG_0_.instance, "Menu.p1_3", "STR_DYN_HUD_8", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 550.9, "center")
+    _ARG_0_.Menu.p1_4 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_4)
+    _ARG_0_.Menu.p1_4:Create(_ARG_0_.instance, "Menu.p1_4", "STR_DYN_HUD_10", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 591.9, "center")
+    _ARG_0_.Menu.p1_5 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_5)
+    _ARG_0_.Menu.p1_5:Create(_ARG_0_.instance, "Menu.p1_5", "STR_DYN_HUD_12", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 632.9, "center")
+    _ARG_0_.Menu.p1_6 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_6)
+    _ARG_0_.Menu.p1_6:Create(_ARG_0_.instance, "Menu.p1_6", "STR_DYN_HUD_14", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 673.9, "center")
+    _ARG_0_.Menu.p1_7 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_7)
+    _ARG_0_.Menu.p1_7:Create(_ARG_0_.instance, "Menu.p1_7", "STR_DYN_HUD_16", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 714.9, "center")
+    _ARG_0_.Menu.p1_8 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.p1_8)
+    _ARG_0_.Menu.p1_8:Create(_ARG_0_.instance, "Menu.p1_8", "STR_DYN_HUD_26", "INGAMEUI", "18_BodegaSans-Medium", 1040.9, 755.9, "center")
+    _ARG_0_.Menu.category_1 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_1)
+    _ARG_0_.Menu.category_1:Create(_ARG_0_.instance, "Menu.category_1", "STR_DYN_HUD_18", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 470.45, "left")
+    _ARG_0_.Menu.category_2 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_2)
+    _ARG_0_.Menu.category_2:Create(_ARG_0_.instance, "Menu.category_2", "STR_DYN_HUD_19", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 511.45, "left")
+    _ARG_0_.Menu.category_3 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_3)
+    _ARG_0_.Menu.category_3:Create(_ARG_0_.instance, "Menu.category_3", "STR_DYN_HUD_20", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 552.45, "left")
+    _ARG_0_.Menu.category_4 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_4)
+    _ARG_0_.Menu.category_4:Create(_ARG_0_.instance, "Menu.category_4", "STR_DYN_HUD_21", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 593.45, "left")
+    _ARG_0_.Menu.category_5 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_5)
+    _ARG_0_.Menu.category_5:Create(_ARG_0_.instance, "Menu.category_5", "STR_DYN_HUD_22", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 634.45, "left")
+    _ARG_0_.Menu.category_6 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_6)
+    _ARG_0_.Menu.category_6:Create(_ARG_0_.instance, "Menu.category_6", "STR_DYN_HUD_23", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 675.45, "left")
+    _ARG_0_.Menu.category_7 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_7)
+    _ARG_0_.Menu.category_7:Create(_ARG_0_.instance, "Menu.category_7", "STR_DYN_HUD_24", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 716.45, "left")
+    _ARG_0_.Menu.category_8 = UIText:New()
+    _ARG_0_.Menu:Insert(_ARG_0_.Menu.category_8)
+    _ARG_0_.Menu.category_8:Create(_ARG_0_.instance, "Menu.category_8", "STR_DYN_HUD_25", "INGAMEUI", "18_BodegaSans-Medium", 998.35, 757.45, "left")
+    _ARG_0_.Menu.Dim_Grid = UIContainer:New()
+    _ARG_0_.Menu.Dim_Grid.icon1 = UIIcon:New()
+    _ARG_0_.Menu.Dim_Grid:Insert(_ARG_0_.Menu.Dim_Grid.icon1)
+    _ARG_0_.Menu.Dim_Grid.icon1:Create(_ARG_0_.instance, "Menu.Dim_Grid.icon1", "component_frame_white", 1060.1, 600.6, 8, 8, "center")
+    _ARG_0_.Menu.Dim_Grid.icon2 = UIIcon:New()
+    _ARG_0_.Menu.Dim_Grid:Insert(_ARG_0_.Menu.Dim_Grid.icon2)
+    _ARG_0_.Menu.Dim_Grid.icon2:Create(_ARG_0_.instance, "Menu.Dim_Grid.icon2", "component_frame_white", 1060.1, 618.8, 8, 8, "center")
+    _ARG_0_.Menu.Dim_Grid.icon3 = UIIcon:New()
+    _ARG_0_.Menu.Dim_Grid:Insert(_ARG_0_.Menu.Dim_Grid.icon3)
+    _ARG_0_.Menu.Dim_Grid.icon3:Create(_ARG_0_.instance, "Menu.Dim_Grid.icon3", "component_frame_white", 1060.1, 637, 8, 8, "center")
+    _ARG_0_.Menu.Dim_Grid.icon4 = UIIcon:New()
+    _ARG_0_.Menu.Dim_Grid:Insert(_ARG_0_.Menu.Dim_Grid.icon4)
+    _ARG_0_.Menu.Dim_Grid.icon4:Create(_ARG_0_.instance, "Menu.Dim_Grid.icon4", "component_frame_white", 1060.1, 655.2, 8, 8, "center")
+    _ARG_0_.Menu.FrameMenu = UIContainer:New()
+    _ARG_0_.Menu.FrameMenu.icon1 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon1)
+    _ARG_0_.Menu.FrameMenu.icon1:Create(_ARG_0_.instance, "Menu.FrameMenu.icon1", "component_frame_01", 1182, 623.2, 128, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon2 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon2)
+    _ARG_0_.Menu.FrameMenu.icon2:Create(_ARG_0_.instance, "Menu.FrameMenu.icon2", "component_frame_02", 1118, 1007.9, 64, 385, "center")
+    _ARG_0_.Menu.FrameMenu.icon3 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon3)
+    _ARG_0_.Menu.FrameMenu.icon3:Create(_ARG_0_.instance, "Menu.FrameMenu.icon3", "component_frame_03", 1182, 1072.2, 128, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon4 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon4)
+    _ARG_0_.Menu.FrameMenu.icon4:Create(_ARG_0_.instance, "Menu.FrameMenu.icon4", "component_frame_04", 1704, 1072.2, 522, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon5 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon5)
+    _ARG_0_.Menu.FrameMenu.icon5:Create(_ARG_0_.instance, "Menu.FrameMenu.icon5", "component_frame_05", 1703.6, 623.2, 522, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon6 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon6)
+    _ARG_0_.Menu.FrameMenu.icon6:Create(_ARG_0_.instance, "Menu.FrameMenu.icon6", "component_frame_01", 1832, 623.2, 128, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon7 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon7)
+    _ARG_0_.Menu.FrameMenu.icon7:Create(_ARG_0_.instance, "Menu.FrameMenu.icon7", "component_frame_02", 1832, 1007.9, 64, 385, "center")
+    _ARG_0_.Menu.FrameMenu.icon8 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon8)
+    _ARG_0_.Menu.FrameMenu.icon8:Create(_ARG_0_.instance, "Menu.FrameMenu.icon8", "component_frame_03", 1832, 1072.2, 128, 64, "center")
+    _ARG_0_.Menu.YellowGradient = UIContainer:New()
+    _ARG_0_.Menu.YellowGradient.icon1 = UIIcon:New()
+    _ARG_0_.Menu.YellowGradient:Insert(_ARG_0_.Menu.YellowGradient.icon1)
+    _ARG_0_.Menu.YellowGradient.icon1:Create(_ARG_0_.instance, "Menu.YellowGradient.icon1", "component_bankgradient", 1116.95, 386.2, 64, 8, "center")
+    _ARG_0_.Menu.Dim_Layer = UIContainer:New()
+    _ARG_0_.Menu.Dim_Layer.icon1 = UIIcon:New()
+    _ARG_0_.Menu.Dim_Layer:Insert(_ARG_0_.Menu.Dim_Layer.icon1)
+    _ARG_0_.Menu.Dim_Layer.icon1:Create(_ARG_0_.instance, "Menu.Dim_Layer.icon1", "component_frame_color", 1058.2, 564.7, 8, 8, "center")
+    _ARG_0_.Checkers2.icon1 = UIIcon:New()
+    _ARG_0_.Checkers2:Insert(_ARG_0_.Checkers2.icon1)
+    _ARG_0_.Checkers2.icon1:Create(_ARG_0_.instance, "Checkers2.icon1", "component_frame_checker", 648, 97.1, 32, 32, "center")
+    _ARG_0_.Checkers2.icon2 = UIIcon:New()
+    _ARG_0_.Checkers2:Insert(_ARG_0_.Checkers2.icon2)
+    _ARG_0_.Checkers2.icon2:Create(_ARG_0_.instance, "Checkers2.icon2", "component_frame_checker", 1348, 97.1, 32, 32, "center")
+    _ARG_0_.Checkers3.icon1 = UIIcon:New()
+    _ARG_0_.Checkers3:Insert(_ARG_0_.Checkers3.icon1)
+    _ARG_0_.Checkers3.icon1:Create(_ARG_0_.instance, "Checkers3.icon1", "component_frame_checker", 648, 545.1, 32, 32, "center")
+    _ARG_0_.Checkers3.icon2 = UIIcon:New()
+    _ARG_0_.Checkers3:Insert(_ARG_0_.Checkers3.icon2)
+    _ARG_0_.Checkers3.icon2:Create(_ARG_0_.instance, "Checkers3.icon2", "component_frame_checker", 1348, 545.1, 32, 32, "center")
+    _ARG_0_.Checkers1.icon1 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon1)
+    _ARG_0_.Checkers1.icon1:Create(_ARG_0_.instance, "Checkers1.icon1", "component_frame_checker", 648, 353.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon2 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon2)
+    _ARG_0_.Checkers1.icon2:Create(_ARG_0_.instance, "Checkers1.icon2", "component_frame_checker", 648, 385.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon3 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon3)
+    _ARG_0_.Checkers1.icon3:Create(_ARG_0_.instance, "Checkers1.icon3", "component_frame_checker", 648, 417.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon4 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon4)
+    _ARG_0_.Checkers1.icon4:Create(_ARG_0_.instance, "Checkers1.icon4", "component_frame_checker", 648, 449.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon5 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon5)
+    _ARG_0_.Checkers1.icon5:Create(_ARG_0_.instance, "Checkers1.icon5", "component_frame_checker", 648, 481.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon6 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon6)
+    _ARG_0_.Checkers1.icon6:Create(_ARG_0_.instance, "Checkers1.icon6", "component_frame_checker", 648, 513.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon7 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon7)
+    _ARG_0_.Checkers1.icon7:Create(_ARG_0_.instance, "Checkers1.icon7", "component_frame_checker", 648, 545.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon8 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon8)
+    _ARG_0_.Checkers1.icon8:Create(_ARG_0_.instance, "Checkers1.icon8", "component_frame_checker", 648, 577.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon9 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon9)
+    _ARG_0_.Checkers1.icon9:Create(_ARG_0_.instance, "Checkers1.icon9", "component_frame_checker", 648, 609.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon10 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon10)
+    _ARG_0_.Checkers1.icon10:Create(_ARG_0_.instance, "Checkers1.icon10", "component_frame_checker", 1348, 353.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon11 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon11)
+    _ARG_0_.Checkers1.icon11:Create(_ARG_0_.instance, "Checkers1.icon11", "component_frame_checker", 1348, 385.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon12 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon12)
+    _ARG_0_.Checkers1.icon12:Create(_ARG_0_.instance, "Checkers1.icon12", "component_frame_checker", 1348, 417.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon13 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon13)
+    _ARG_0_.Checkers1.icon13:Create(_ARG_0_.instance, "Checkers1.icon13", "component_frame_checker", 1348, 449.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon14 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon14)
+    _ARG_0_.Checkers1.icon14:Create(_ARG_0_.instance, "Checkers1.icon14", "component_frame_checker", 1348, 481.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon15 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon15)
+    _ARG_0_.Checkers1.icon15:Create(_ARG_0_.instance, "Checkers1.icon15", "component_frame_checker", 1348, 513.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon16 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon16)
+    _ARG_0_.Checkers1.icon16:Create(_ARG_0_.instance, "Checkers1.icon16", "component_frame_checker", 1348, 545.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon17 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon17)
+    _ARG_0_.Checkers1.icon17:Create(_ARG_0_.instance, "Checkers1.icon17", "component_frame_checker", 1348, 577.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon18 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon18)
+    _ARG_0_.Checkers1.icon18:Create(_ARG_0_.instance, "Checkers1.icon18", "component_frame_checker", 1348, 609.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon19 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon19)
+    _ARG_0_.Checkers1.icon19:Create(_ARG_0_.instance, "Checkers1.icon19", "component_frame_checker", 648, 321.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon20 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon20)
+    _ARG_0_.Checkers1.icon20:Create(_ARG_0_.instance, "Checkers1.icon20", "component_frame_checker", 1348, 321.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon21 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon21)
+    _ARG_0_.Checkers1.icon21:Create(_ARG_0_.instance, "Checkers1.icon21", "component_frame_checker", 648, 641.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon22 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon22)
+    _ARG_0_.Checkers1.icon22:Create(_ARG_0_.instance, "Checkers1.icon22", "component_frame_checker", 1348, 641.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon23 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon23)
+    _ARG_0_.Checkers1.icon23:Create(_ARG_0_.instance, "Checkers1.icon23", "component_frame_checker", 648, 673.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon24 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon24)
+    _ARG_0_.Checkers1.icon24:Create(_ARG_0_.instance, "Checkers1.icon24", "component_frame_checker", 1348, 673.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon25 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon25)
+    _ARG_0_.Checkers1.icon25:Create(_ARG_0_.instance, "Checkers1.icon25", "component_frame_checker", 648, 705.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon26 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon26)
+    _ARG_0_.Checkers1.icon26:Create(_ARG_0_.instance, "Checkers1.icon26", "component_frame_checker", 1348, 705.05, 32, 32, "center")
+    _ARG_0_.BankBar_Yellow.icon1 = UIIcon:New()
+    _ARG_0_.BankBar_Yellow:Insert(_ARG_0_.BankBar_Yellow.icon1)
+    _ARG_0_.BankBar_Yellow.icon1:Create(_ARG_0_.instance, "BankBar_Yellow.icon1", "component_bankgradient", 3640.5, 625, 1536, 4, "center")
+    _ARG_0_.BankBar_Red.YellowGradient = UIContainer:New()
+    _ARG_0_.BankBar_Red.YellowGradient.icon1 = UIIcon:New()
+    _ARG_0_.BankBar_Red.YellowGradient:Insert(_ARG_0_.BankBar_Red.YellowGradient.icon1)
+    _ARG_0_.BankBar_Red.YellowGradient.icon1:Create(_ARG_0_.instance, "BankBar_Red.YellowGradient.icon1", "component_bankgradient", 1470.1, 688.5, 64, 8, "center")
+    _ARG_0_.BankBar_Red.icon1 = UIIcon:New()
+    _ARG_0_.BankBar_Red:Insert(_ARG_0_.BankBar_Red.icon1)
+    _ARG_0_.BankBar_Red.icon1:Create(_ARG_0_.instance, "BankBar_Red.icon1", "component_bankbar", 2174.1, 711, 1536, 64, "center")
+    _ARG_0_.Dim_Layer_BG.icon1 = UIIcon:New()
+    _ARG_0_.Dim_Layer_BG:Insert(_ARG_0_.Dim_Layer_BG.icon1)
+    _ARG_0_.Dim_Layer_BG.icon1:Create(_ARG_0_.instance, "Dim_Layer_BG.icon1", "component_frame_color", 648, 378, 8, 8, "center")
+    _ARG_0_.Shortcuts.mg_title = _ARG_0_.Menu.mg_title
+    _ARG_0_.Shortcuts.col_2 = _ARG_0_.Menu.col_2
+    _ARG_0_.Shortcuts.col_3 = _ARG_0_.Menu.col_3
+    _ARG_0_.Shortcuts.col_1 = _ARG_0_.Menu.col_1
+    _ARG_0_.Shortcuts.p2_1 = _ARG_0_.Menu.p2_1
+    _ARG_0_.Shortcuts.p2_2 = _ARG_0_.Menu.p2_2
+    _ARG_0_.Shortcuts.p2_3 = _ARG_0_.Menu.p2_3
+    _ARG_0_.Shortcuts.p2_4 = _ARG_0_.Menu.p2_4
+    _ARG_0_.Shortcuts.p2_5 = _ARG_0_.Menu.p2_5
+    _ARG_0_.Shortcuts.p2_6 = _ARG_0_.Menu.p2_6
+    _ARG_0_.Shortcuts.p2_7 = _ARG_0_.Menu.p2_7
+    _ARG_0_.Shortcuts.p2_8 = _ARG_0_.Menu.p2_8
+    _ARG_0_.Shortcuts.p1_1 = _ARG_0_.Menu.p1_1
+    _ARG_0_.Shortcuts.p1_2 = _ARG_0_.Menu.p1_2
+    _ARG_0_.Shortcuts.p1_3 = _ARG_0_.Menu.p1_3
+    _ARG_0_.Shortcuts.p1_4 = _ARG_0_.Menu.p1_4
+    _ARG_0_.Shortcuts.p1_5 = _ARG_0_.Menu.p1_5
+    _ARG_0_.Shortcuts.p1_6 = _ARG_0_.Menu.p1_6
+    _ARG_0_.Shortcuts.p1_7 = _ARG_0_.Menu.p1_7
+    _ARG_0_.Shortcuts.p1_8 = _ARG_0_.Menu.p1_8
+    _ARG_0_.Shortcuts.category_1 = _ARG_0_.Menu.category_1
+    _ARG_0_.Shortcuts.category_2 = _ARG_0_.Menu.category_2
+    _ARG_0_.Shortcuts.category_3 = _ARG_0_.Menu.category_3
+    _ARG_0_.Shortcuts.category_4 = _ARG_0_.Menu.category_4
+    _ARG_0_.Shortcuts.category_5 = _ARG_0_.Menu.category_5
+    _ARG_0_.Shortcuts.category_6 = _ARG_0_.Menu.category_6
+    _ARG_0_.Shortcuts.category_7 = _ARG_0_.Menu.category_7
+    _ARG_0_.Shortcuts.category_8 = _ARG_0_.Menu.category_8
+    _ARG_0_.fullyCreated = 0
+  end,
+  OnOutro = function(_ARG_0_)
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+    LoopMenuAnimation(_ARG_0_.instance, "Main")
+    if _ARG_0_.PauseHandle == 0 then
+      PlayerPauseGame(1)
+      _ARG_0_.PauseHandle = 1
     end
-    A0_2.fullyCreated = 1
-  else
-    L3_2 = GetCurrentActivityType
-    L3_2 = L3_2()
-    if L3_2 == "RaceRoad" or L3_2 == "RaceBase" or L3_2 == "RaceRustbucket" or L3_2 == "GuidoKart" or L3_2 == "RaceTimeTrial" or L3_2 == "RaceRelay" then
-      L5_2 = A0_2
-      L4_2 = A0_2.ShowRacerIcons
-      L4_2(L5_2)
-      L4_2 = PlayMenuAnimation
-      L5_2 = A0_2.instance
-      L6_2 = "Trophies"
-      L4_2(L5_2, L6_2)
-    end
-  end
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = A0_2.PauseHandle
-  if L1_2 == 1 then
-    L1_2 = PlayerPauseGame
-    L2_2 = 0
-    L1_2(L2_2)
-    A0_2.PauseHandle = 0
-  end
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-  A0_2.state = 2
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A0_2.state
-  if L2_2 == 2 then
-    L2_2 = GetMenuAnimationState
-    L3_2 = A0_2.instance
-    L4_2 = "outro"
-    L2_2 = L2_2(L3_2, L4_2)
-    if L2_2 == 0 then
-      L2_2 = EndMenu
-      L3_2 = A0_2.instance
-      L2_2(L3_2)
-    end
-  end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = InputKey
-  L3_2 = "OK"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventSelect_Continue
-    L2_2(L3_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.EndUI
-    L2_2(L3_2)
-  end
-end
-L0_1.OnKeyDown = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
-  local L5_2, L6_2, L7_2, L8_2, L9_2
-  L5_2 = A0_2.Shortcuts
-  L5_2 = L5_2.col_1
-  L6_2 = L5_2
-  L5_2 = L5_2.SetValue
-  L7_2 = ""
-  L8_2 = A1_2[1]
-  L7_2 = L7_2 .. L8_2
-  L5_2(L6_2, L7_2)
-  L5_2 = A0_2.Shortcuts
-  L5_2 = L5_2.col_2
-  L6_2 = L5_2
-  L5_2 = L5_2.SetValue
-  L7_2 = ""
-  L8_2 = A1_2[2]
-  L7_2 = L7_2 .. L8_2
-  L5_2(L6_2, L7_2)
-  L5_2 = A0_2.Shortcuts
-  L5_2 = L5_2.col_3
-  L6_2 = L5_2
-  L5_2 = L5_2.SetValue
-  L7_2 = ""
-  L8_2 = A1_2[3]
-  L7_2 = L7_2 .. L8_2
-  L5_2(L6_2, L7_2)
-  L5_2 = #A2_2
-  if 1 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_1
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[1]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_1
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[1]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_1
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[1]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-  if 2 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_2
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[2]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_2
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[2]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_2
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[2]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-  if 3 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_3
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[3]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_3
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[3]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_3
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[3]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-  if 4 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_4
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[4]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_4
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[4]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_4
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[4]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-  if 5 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_5
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[5]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_5
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[5]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_5
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[5]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-  if 6 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_6
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[6]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_6
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[6]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_6
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[6]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-  if 7 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_7
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[7]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_7
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[7]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_7
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[7]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-  if 8 <= L5_2 then
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.category_8
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A2_2[8]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p1_8
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A3_2[8]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-    L6_2 = A0_2.Shortcuts
-    L6_2 = L6_2.p2_8
-    L7_2 = L6_2
-    L6_2 = L6_2.SetValue
-    L8_2 = ""
-    L9_2 = A4_2[8]
-    L8_2 = L8_2 .. L9_2
-    L6_2(L7_2, L8_2)
-  end
-end
-L0_1.Initialize = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2
-  L1_2 = {}
-  L2_2 = {}
-  L3_2 = {}
-  L4_2 = {}
-  L5_2 = GetLocalizedString
-  L6_2 = "InGameUI"
-  L7_2 = "STR_PLAYER"
-  L5_2 = L5_2(L6_2, L7_2)
-  L6_2 = GetLocalizedString
-  L7_2 = "InGameUI"
-  L8_2 = "STR_BEST_LAP"
-  L6_2 = L6_2(L7_2, L8_2)
-  L7_2 = GetLocalizedString
-  L8_2 = "InGameUI"
-  L9_2 = "STR_TOTAL"
-  L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L7_2(L8_2, L9_2)
-  L4_2[1] = L5_2
-  L4_2[2] = L6_2
-  L4_2[3] = L7_2
-  L4_2[4] = L8_2
-  L4_2[5] = L9_2
-  L4_2[6] = L10_2
-  L4_2[7] = L11_2
-  L4_2[8] = L12_2
-  L4_2[9] = L13_2
-  L4_2[10] = L14_2
-  L4_2[11] = L15_2
-  L4_2[12] = L16_2
-  L4_2[13] = L17_2
-  L4_2[14] = L18_2
-  L4_2[15] = L19_2
-  L4_2[16] = L20_2
-  L4_2[17] = L21_2
-  L4_2[18] = L22_2
-  L5_2 = {}
-  L6_2 = {}
-  L7_2 = A0_2.Shortcuts
-  L7_2 = L7_2.category_1
-  L8_2 = A0_2.Shortcuts
-  L8_2 = L8_2.category_2
-  L9_2 = A0_2.Shortcuts
-  L9_2 = L9_2.category_3
-  L10_2 = A0_2.Shortcuts
-  L10_2 = L10_2.category_4
-  L11_2 = A0_2.Shortcuts
-  L11_2 = L11_2.category_5
-  L12_2 = A0_2.Shortcuts
-  L12_2 = L12_2.category_6
-  L13_2 = A0_2.Shortcuts
-  L13_2 = L13_2.category_7
-  L14_2 = A0_2.Shortcuts
-  L14_2 = L14_2.category_8
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L6_2[3] = L9_2
-  L6_2[4] = L10_2
-  L6_2[5] = L11_2
-  L6_2[6] = L12_2
-  L6_2[7] = L13_2
-  L6_2[8] = L14_2
-  A0_2.RILocs = L6_2
-  L6_2 = getvar
-  L7_2 = "NumRacers"
-  L6_2 = L6_2(L7_2)
-  if 8 < L6_2 then
-    L6_2 = 8
-  end
-  L7_2 = 1
-  L8_2 = L6_2
-  L9_2 = 1
-  for L10_2 = L7_2, L8_2, L9_2 do
-    L11_2 = ""
-    L12_2 = L10_2
-    L13_2 = ". "
-    L11_2 = L11_2 .. L12_2 .. L13_2
-    L1_2[L10_2] = L11_2
-    L11_2 = GetRacerName
-    L12_2 = L10_2
-    L11_2 = L11_2(L12_2)
-    L5_2[L10_2] = L11_2
-    L11_2 = FormatTimeStandardized
-    L12_2 = GetRacerTime
-    L13_2 = L10_2
-    L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L12_2(L13_2)
-    L11_2 = L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-    L3_2[L10_2] = L11_2
-    L11_2 = FormatTimeStandardized
-    L12_2 = GetRacerStat
-    L13_2 = UIStats_BestLap
-    L14_2 = L10_2
-    L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L12_2(L13_2, L14_2)
-    L11_2 = L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-    L2_2[L10_2] = L11_2
-  end
-  L7_2 = GetNumPlayers
-  L7_2 = L7_2()
-  if L7_2 == 1 then
-    L8_2 = GetPlayerRacePosition
-    L9_2 = 0
-    L8_2 = L8_2(L9_2)
-    if 8 < L8_2 then
-      L9_2 = GetRacerName
-      L10_2 = L8_2
-      L9_2 = L9_2(L10_2)
-      L5_2[8] = L9_2
-      L9_2 = ""
-      L10_2 = L8_2
-      L11_2 = ". "
-      L9_2 = L9_2 .. L10_2 .. L11_2
-      L1_2[8] = L9_2
-      L9_2 = FormatTimeStandardized
-      L10_2 = GetRacerTime
-      L11_2 = L8_2
-      L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L10_2(L11_2)
-      L9_2 = L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-      L3_2[8] = L9_2
-    end
-  else
-    L8_2 = GetPlayerRacePosition
-    L9_2 = 0
-    L8_2 = L8_2(L9_2)
-    L9_2 = GetPlayerRacePosition
-    L10_2 = 1
-    L9_2 = L9_2(L10_2)
-    if 8 < L8_2 then
-      if L9_2 == 8 then
-        L10_2 = GetRacerName
-        L11_2 = L9_2
-        L10_2 = L10_2(L11_2)
-        L5_2[7] = L10_2
-        L10_2 = ""
-        L11_2 = L9_2
-        L12_2 = ". "
-        L10_2 = L10_2 .. L11_2 .. L12_2
-        L1_2[7] = L10_2
-        L10_2 = FormatTimeStandardized
-        L11_2 = GetRacerTime
-        L12_2 = L9_2
-        L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L11_2(L12_2)
-        L10_2 = L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-        L3_2[7] = L10_2
+    _ARG_0_.state = 1
+    HideHUD()
+    _ARG_0_.Shortcuts.mg_title:SetValue(GetLocalizedString("EventInfo", "STR_" .. Split(getvar("CurrentActivity"), "\\")[#Split(getvar("CurrentActivity"), "\\")] .. "_TITLE"))
+    if _ARG_0_.fullyCreated == 0 then
+      DebugPrint("Bringing up results screen for activity type: " .. GetCurrentActivityType())
+      if GetCurrentActivityType() == "RaceRoad" or GetCurrentActivityType() == "RaceBase" or GetCurrentActivityType() == "RaceRustbucket" or GetCurrentActivityType() == "GuidoKart" or GetCurrentActivityType() == "RaceTimeTrial" or GetCurrentActivityType() == "RaceRelay" then
+        _ARG_0_:InitRaceRoad()
+        PlayMenuAnimation(_ARG_0_.instance, "Trophies")
+      elseif GetCurrentActivityType() == "Materdor" then
+        _ARG_0_:InitMaterdor()
+      elseif GetCurrentActivityType() == "AutoCross" then
+        _ARG_0_:InitAutoCross()
+      elseif GetCurrentActivityType() == "FindRetrieve" or GetCurrentActivityType() == "Transporter" then
+        _ARG_0_:InitTimedActivity()
+      elseif GetCurrentActivityType() == "StampedeRoundup" then
+        _ARG_0_:InitStampedeActivity()
+      elseif GetCurrentActivityType() == "StuntMater" then
+        _ARG_0_:InitStuntMater()
+      elseif GetCurrentActivityType() == "JumpDrift" then
+        _ARG_0_:InitJumpDrift()
+      elseif GetCurrentActivityType() == "FindTire" then
+        _ARG_0_:InitFindTire()
+      elseif GetCurrentActivityType() == "TokyoDrift" then
+        _ARG_0_:InitTokyoDrift()
+      elseif GetCurrentActivityType() == "SheriffChase" then
+        _ARG_0_:InitSheriffChase()
+      else
+        _ARG_0_:Initialize({
+          "",
+          "report this as a bug ",
+          ""
+        }, {
+          "",
+          "",
+          "",
+          ""
+        }, {
+          "",
+          "(missing results for activity type)",
+          GetCurrentActivityType(),
+          ""
+        }, {
+          "",
+          "(missing results for activity type)",
+          GetCurrentActivityType(),
+          ""
+        })
       end
-      L10_2 = GetRacerName
-      L11_2 = L8_2
-      L10_2 = L10_2(L11_2)
-      L5_2[8] = L10_2
-      L10_2 = ""
-      L11_2 = L8_2
-      L12_2 = ". "
-      L10_2 = L10_2 .. L11_2 .. L12_2
-      L1_2[8] = L10_2
-      L10_2 = FormatTimeStandardized
-      L11_2 = GetRacerTime
-      L12_2 = L8_2
-      L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L11_2(L12_2)
-      L10_2 = L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-      L3_2[8] = L10_2
-    elseif 8 < L9_2 then
-      if L8_2 == 8 then
-        L10_2 = GetRacerName
-        L11_2 = L8_2
-        L10_2 = L10_2(L11_2)
-        L5_2[7] = L10_2
-        L10_2 = ""
-        L11_2 = L8_2
-        L12_2 = ". "
-        L10_2 = L10_2 .. L11_2 .. L12_2
-        L1_2[7] = L10_2
-        L10_2 = FormatTimeStandardized
-        L11_2 = GetRacerTime
-        L12_2 = L8_2
-        L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L11_2(L12_2)
-        L10_2 = L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-        L3_2[7] = L10_2
+      _ARG_0_.fullyCreated = 1
+    elseif GetCurrentActivityType() == "RaceRoad" or GetCurrentActivityType() == "RaceBase" or GetCurrentActivityType() == "RaceRustbucket" or GetCurrentActivityType() == "GuidoKart" or GetCurrentActivityType() == "RaceTimeTrial" or GetCurrentActivityType() == "RaceRelay" then
+      _ARG_0_:ShowRacerIcons()
+      PlayMenuAnimation(_ARG_0_.instance, "Trophies")
+    end
+  end,
+  EndUI = function(_ARG_0_)
+    if _ARG_0_.PauseHandle == 1 then
+      PlayerPauseGame(0)
+      _ARG_0_.PauseHandle = 0
+    end
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+    _ARG_0_.state = 2
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    if _ARG_0_.state == 2 and GetMenuAnimationState(_ARG_0_.instance, "outro") == 0 then
+      EndMenu(_ARG_0_.instance)
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == InputKey("OK") then
+      PlayUISound(UISoundEventSelect_Continue)
+      _ARG_0_:EndUI()
+    end
+  end,
+  Initialize = function(_ARG_0_, _ARG_1_, _ARG_2_, _ARG_3_, _ARG_4_)
+    _ARG_0_.Shortcuts.col_1:SetValue("" .. _ARG_1_[1])
+    _ARG_0_.Shortcuts.col_2:SetValue("" .. _ARG_1_[2])
+    _ARG_0_.Shortcuts.col_3:SetValue("" .. _ARG_1_[3])
+    if #_ARG_2_ >= 1 then
+      _ARG_0_.Shortcuts.category_1:SetValue("" .. _ARG_2_[1])
+      _ARG_0_.Shortcuts.p1_1:SetValue("" .. _ARG_3_[1])
+      _ARG_0_.Shortcuts.p2_1:SetValue("" .. _ARG_4_[1])
+    end
+    if #_ARG_2_ >= 2 then
+      _ARG_0_.Shortcuts.category_2:SetValue("" .. _ARG_2_[2])
+      _ARG_0_.Shortcuts.p1_2:SetValue("" .. _ARG_3_[2])
+      _ARG_0_.Shortcuts.p2_2:SetValue("" .. _ARG_4_[2])
+    end
+    if #_ARG_2_ >= 3 then
+      _ARG_0_.Shortcuts.category_3:SetValue("" .. _ARG_2_[3])
+      _ARG_0_.Shortcuts.p1_3:SetValue("" .. _ARG_3_[3])
+      _ARG_0_.Shortcuts.p2_3:SetValue("" .. _ARG_4_[3])
+    end
+    if #_ARG_2_ >= 4 then
+      _ARG_0_.Shortcuts.category_4:SetValue("" .. _ARG_2_[4])
+      _ARG_0_.Shortcuts.p1_4:SetValue("" .. _ARG_3_[4])
+      _ARG_0_.Shortcuts.p2_4:SetValue("" .. _ARG_4_[4])
+    end
+    if #_ARG_2_ >= 5 then
+      _ARG_0_.Shortcuts.category_5:SetValue("" .. _ARG_2_[5])
+      _ARG_0_.Shortcuts.p1_5:SetValue("" .. _ARG_3_[5])
+      _ARG_0_.Shortcuts.p2_5:SetValue("" .. _ARG_4_[5])
+    end
+    if #_ARG_2_ >= 6 then
+      _ARG_0_.Shortcuts.category_6:SetValue("" .. _ARG_2_[6])
+      _ARG_0_.Shortcuts.p1_6:SetValue("" .. _ARG_3_[6])
+      _ARG_0_.Shortcuts.p2_6:SetValue("" .. _ARG_4_[6])
+    end
+    if #_ARG_2_ >= 7 then
+      _ARG_0_.Shortcuts.category_7:SetValue("" .. _ARG_2_[7])
+      _ARG_0_.Shortcuts.p1_7:SetValue("" .. _ARG_3_[7])
+      _ARG_0_.Shortcuts.p2_7:SetValue("" .. _ARG_4_[7])
+    end
+    if #_ARG_2_ >= 8 then
+      _ARG_0_.Shortcuts.category_8:SetValue("" .. _ARG_2_[8])
+      _ARG_0_.Shortcuts.p1_8:SetValue("" .. _ARG_3_[8])
+      _ARG_0_.Shortcuts.p2_8:SetValue("" .. _ARG_4_[8])
+    end
+  end,
+  InitRaceRoad = function(_ARG_0_)
+    _ARG_0_.RILocs = {
+      _ARG_0_.Shortcuts.category_1,
+      _ARG_0_.Shortcuts.category_2,
+      _ARG_0_.Shortcuts.category_3,
+      _ARG_0_.Shortcuts.category_4,
+      _ARG_0_.Shortcuts.category_5,
+      _ARG_0_.Shortcuts.category_6,
+      _ARG_0_.Shortcuts.category_7,
+      _ARG_0_.Shortcuts.category_8
+    }
+    for _FORV_10_ = 1, 8 do
+    end
+    if _FOR_() == 1 then
+      if 8 < GetPlayerRacePosition(0) then
       end
-      L10_2 = GetRacerName
-      L11_2 = L9_2
-      L10_2 = L10_2(L11_2)
-      L5_2[8] = L10_2
-      L10_2 = ""
-      L11_2 = L9_2
-      L12_2 = ". "
-      L10_2 = L10_2 .. L11_2 .. L12_2
-      L1_2[8] = L10_2
-      L10_2 = FormatTimeStandardized
-      L11_2 = GetRacerTime
-      L12_2 = L9_2
-      L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2 = L11_2(L12_2)
-      L10_2 = L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-      L3_2[8] = L10_2
+    elseif 8 < GetPlayerRacePosition(0) then
+      if GetPlayerRacePosition(1) == 8 then
+      end
+    elseif 8 < GetPlayerRacePosition(1) then
+      if GetPlayerRacePosition(0) == 8 then
+      end
     end
-  end
-  L9_2 = A0_2
-  L8_2 = A0_2.Initialize
-  L10_2 = L4_2
-  L11_2 = L1_2
-  L12_2 = L2_2
-  L13_2 = L3_2
-  L8_2(L9_2, L10_2, L11_2, L12_2, L13_2)
-  A0_2.hasRacerIcons = 1
-  L8_2 = 1
-  L9_2 = L6_2
-  L10_2 = 1
-  for L11_2 = L8_2, L9_2, L10_2 do
-    L12_2 = L5_2[L11_2]
-    L13_2 = A0_2.RacerIcons
-    L14_2 = UIContainer
-    L15_2 = L14_2
-    L14_2 = L14_2.New
-    L14_2 = L14_2(L15_2)
-    L13_2[L12_2] = L14_2
-    L13_2 = A0_2.RacerIcons
-    L14_2 = L13_2
-    L13_2 = L13_2.Insert
-    L15_2 = A0_2.RacerIcons
-    L15_2 = L15_2[L12_2]
-    L13_2(L14_2, L15_2)
-    L13_2 = A0_2.RacerIcons
-    L13_2 = L13_2[L12_2]
-    L14_2 = UIIcon
-    L15_2 = L14_2
-    L14_2 = L14_2.New
-    L14_2 = L14_2(L15_2)
-    L13_2.icon1 = L14_2
-    L13_2 = A0_2.RacerIcons
-    L13_2 = L13_2[L12_2]
-    L14_2 = L13_2
-    L13_2 = L13_2.Insert
-    L15_2 = A0_2.RacerIcons
-    L15_2 = L15_2[L12_2]
-    L15_2 = L15_2.icon1
-    L13_2(L14_2, L15_2)
-    L13_2 = A0_2.RacerIcons
-    L13_2 = L13_2[L12_2]
-    L13_2 = L13_2.icon1
-    L14_2 = L13_2
-    L13_2 = L13_2.Create
-    L15_2 = A0_2.instance
-    L16_2 = "RI["
-    L17_2 = L11_2
-    L18_2 = "].icon1"
-    L16_2 = L16_2 .. L17_2 .. L18_2
-    L17_2 = "icon_"
-    L18_2 = L12_2
-    L19_2 = "_a"
-    L17_2 = L17_2 .. L18_2 .. L19_2
-    L18_2 = -100
-    L19_2 = -100
-    L20_2 = 84
-    L21_2 = 84
-    L22_2 = "center"
-    L13_2(L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-    L13_2 = A0_2.RacerIcons
-    L13_2 = L13_2[L12_2]
-    L14_2 = L13_2
-    L13_2 = L13_2.MoveTo
-    L15_2 = A0_2.RILocs
-    L15_2 = L15_2[L11_2]
-    L16_2 = 0
-    L17_2 = {}
-    L17_2.x = 50
-    L17_2.y = 0
-    L13_2(L14_2, L15_2, L16_2, L17_2)
-  end
-  L8_2 = A0_2.RacerIcons
-  L9_2 = L8_2
-  L8_2 = L8_2.GetCentroid
-  L8_2, L9_2 = L8_2(L9_2)
-  L10_2 = DebugPrint
-  L11_2 = "we have our cached centroid at "
-  L12_2 = type
-  L13_2 = L8_2
-  L12_2 = L12_2(L13_2)
-  L13_2 = ":"
-  L14_2 = L8_2
-  L15_2 = ", "
-  L16_2 = type
-  L17_2 = L9_2
-  L16_2 = L16_2(L17_2)
-  L17_2 = ":"
-  L18_2 = L9_2
-  L11_2 = L11_2 .. L12_2 .. L13_2 .. L14_2 .. L15_2 .. L16_2 .. L17_2 .. L18_2
-  L10_2(L11_2)
-  L10_2 = {}
-  L11_2 = L8_2
-  L12_2 = L9_2
-  L10_2[1] = L11_2
-  L10_2[2] = L12_2
-  A0_2.RaceIconsCentroid = L10_2
-end
-L0_1.InitRaceRoad = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = A0_2.hasRacerIcons
-  if L1_2 == 1 then
-    L1_2 = A0_2.RacerIcons
-    L2_2 = L1_2
-    L1_2 = L1_2.Move
-    L3_2 = A0_2.RaceIconsCentroid
-    L3_2 = L3_2[1]
-    L4_2 = A0_2.RaceIconsCentroid
-    L4_2 = L4_2[2]
-    L1_2(L2_2, L3_2, L4_2)
-  end
-end
-L0_1.ShowRacerIcons = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = A0_2.hasRacerIcons
-  if L1_2 == 1 then
-    L1_2 = A0_2.RacerIcons
-    L2_2 = L1_2
-    L1_2 = L1_2.Move
-    L3_2 = -500
-    L4_2 = -500
-    L1_2(L2_2, L3_2, L4_2)
-  end
-end
-L0_1.OnOutro = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = getvar
-    L6_2 = "ProfileName"
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2)
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L2_2[6] = L8_2
-    L2_2[7] = L9_2
-    L2_2[8] = L10_2
-    L2_2[9] = L11_2
-    L3_2 = {}
-    L4_2 = GetLocalizedString
-    L5_2 = "CommonUI"
-    L6_2 = "STR_TRAC_NAME"
-    L4_2 = L4_2(L5_2, L6_2)
-    L5_2 = GetLocalizedString
-    L6_2 = "InGameUI"
-    L7_2 = "STR_TIME"
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2, L7_2)
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L3_2[7] = L10_2
-    L3_2[8] = L11_2
-    categories = L3_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    blank = L3_2
-    L3_2 = {}
-    L4_2 = GetNumTractorsCaughtForPlayer
-    L5_2 = 1
-    L4_2 = L4_2(L5_2)
-    L5_2 = FormatTimeStandardized
-    L6_2 = GetFinalTime
-    L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L6_2()
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L3_2[7] = L10_2
-    L3_2[8] = L11_2
-    results = L3_2
-    L4_2 = A0_2
-    L3_2 = A0_2.Initialize
-    L5_2 = L2_2
-    L6_2 = categories
-    L7_2 = blank
-    L8_2 = results
-    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  else
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 1"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_PLAYER"
-    L6_2 = L6_2(L7_2, L8_2)
-    L7_2 = " 2"
-    L5_2 = L5_2 .. L6_2 .. L7_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L3_2 = {}
-    L4_2 = GetLocalizedString
-    L5_2 = "CommonUI"
-    L6_2 = "STR_TRAC_NAME"
-    L4_2 = L4_2(L5_2, L6_2)
-    L5_2 = GetLocalizedString
-    L6_2 = "InGameUI"
-    L7_2 = "STR_TIME"
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2, L7_2)
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L3_2[7] = L10_2
-    L3_2[8] = L11_2
-    L4_2 = {}
-    L5_2 = GetNumTractorsCaughtForPlayer
-    L6_2 = 1
-    L5_2 = L5_2(L6_2)
-    L6_2 = FormatTimeStandardized
-    L7_2 = GetFinalTime
-    L7_2, L8_2, L9_2, L10_2, L11_2 = L7_2()
-    L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L4_2[6] = L10_2
-    L4_2[7] = L11_2
-    L5_2 = {}
-    L6_2 = GetNumTractorsCaughtForPlayer
-    L7_2 = 2
-    L6_2 = L6_2(L7_2)
-    L7_2 = FormatTimeStandardized
-    L8_2 = GetFinalTime
-    L8_2, L9_2, L10_2, L11_2 = L8_2()
-    L7_2, L8_2, L9_2, L10_2, L11_2 = L7_2(L8_2, L9_2, L10_2, L11_2)
-    L5_2[1] = L6_2
-    L5_2[2] = L7_2
-    L5_2[3] = L8_2
-    L5_2[4] = L9_2
-    L5_2[5] = L10_2
-    L5_2[6] = L11_2
-    L7_2 = A0_2
-    L6_2 = A0_2.Initialize
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L11_2 = L5_2
-    L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
-  end
-end
-L0_1.InitStampedeActivity = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = getvar
-    L6_2 = "ProfileName"
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2)
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L2_2[6] = L8_2
-    L2_2[7] = L9_2
-    L2_2[8] = L10_2
-    L2_2[9] = L11_2
-    L3_2 = {}
-    L4_2 = GetLocalizedString
-    L5_2 = "InGameUI"
-    L6_2 = "STR_TIME"
-    L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L4_2(L5_2, L6_2)
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L3_2[7] = L10_2
-    L3_2[8] = L11_2
-    categories = L3_2
-    L3_2 = {}
-    L4_2 = ""
-    L3_2[1] = L4_2
-    blank = L3_2
-    L3_2 = {}
-    L4_2 = FormatTimeStandardized
-    L5_2 = GetRacerTime
-    L6_2 = 1
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2)
-    L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L3_2[7] = L10_2
-    L3_2[8] = L11_2
-    results = L3_2
-    L4_2 = A0_2
-    L3_2 = A0_2.Initialize
-    L5_2 = L2_2
-    L6_2 = categories
-    L7_2 = blank
-    L8_2 = results
-    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  else
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = GetRacerName
-    L5_2 = 1
-    L4_2 = L4_2(L5_2)
-    L5_2 = GetRacerName
-    L6_2 = 2
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2)
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L2_2[6] = L8_2
-    L2_2[7] = L9_2
-    L2_2[8] = L10_2
-    L2_2[9] = L11_2
-    L3_2 = {}
-    L4_2 = GetLocalizedString
-    L5_2 = "InGameUI"
-    L6_2 = "STR_TIME"
-    L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L4_2(L5_2, L6_2)
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L3_2[7] = L10_2
-    L3_2[8] = L11_2
-    L4_2 = {}
-    L5_2 = FormatTimeStandardized
-    L6_2 = GetRacerTime
-    L7_2 = 1
-    L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L6_2(L7_2)
-    L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L4_2[6] = L10_2
-    L4_2[7] = L11_2
-    L5_2 = {}
-    L6_2 = FormatTimeStandardized
-    L7_2 = GetRacerTime
-    L8_2 = 2
-    L7_2, L8_2, L9_2, L10_2, L11_2 = L7_2(L8_2)
-    L6_2, L7_2, L8_2, L9_2, L10_2, L11_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
-    L5_2[1] = L6_2
-    L5_2[2] = L7_2
-    L5_2[3] = L8_2
-    L5_2[4] = L9_2
-    L5_2[5] = L10_2
-    L5_2[6] = L11_2
-    L7_2 = A0_2
-    L6_2 = A0_2.Initialize
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L11_2 = L5_2
-    L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
-  end
-end
-L0_1.InitTimedActivity = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 1"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_RAMP_POINTS"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_STUNT_POINTS"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_LANDING_POINTS"
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetLocalizedString
-    L9_2 = "INGAMEUI"
-    L10_2 = "STR_TOTAL"
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = ""
-    L8_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = getvar
-    L8_2 = "DrivingScore"
-    L7_2 = L7_2(L8_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = getvar
-    L9_2 = "StuntScore"
-    L8_2 = L8_2(L9_2)
-    L7_2 = L7_2 .. L8_2
-    L8_2 = ""
-    L9_2 = getvar
-    L10_2 = "LandingScore"
-    L9_2 = L9_2(L10_2)
-    L10_2 = " x "
-    L11_2 = getvar
-    L12_2 = "LandingMultiplier"
-    L11_2 = L11_2(L12_2)
-    L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2
-    L9_2 = ""
-    L10_2 = getvar
-    L11_2 = "DrivingScore"
-    L10_2 = L10_2(L11_2)
-    L11_2 = getvar
-    L12_2 = "StuntScore"
-    L11_2 = L11_2(L12_2)
-    L10_2 = L10_2 + L11_2
-    L11_2 = getvar
-    L12_2 = "LandingScore"
-    L11_2 = L11_2(L12_2)
-    L12_2 = getvar
-    L13_2 = "LandingMultiplier"
-    L12_2 = L12_2(L13_2)
-    L11_2 = L11_2 * L12_2
-    L10_2 = L10_2 + L11_2
-    L9_2 = L9_2 .. L10_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  else
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_PLAYER"
-    L4_2 = L4_2(L5_2, L6_2)
-    L5_2 = " 1"
-    L3_2 = L3_2 .. L4_2 .. L5_2
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 2"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_RAMP_POINTS"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_STUNT_POINTS"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_LANDING_POINTS"
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetLocalizedString
-    L9_2 = "INGAMEUI"
-    L10_2 = "STR_TOTAL"
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = getvar
-    L7_2 = "DrivingScore"
-    L6_2 = L6_2(L7_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = getvar
-    L8_2 = "StuntScore"
-    L7_2 = L7_2(L8_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = getvar
-    L9_2 = "LandingScore"
-    L8_2 = L8_2(L9_2)
-    L9_2 = " x "
-    L10_2 = getvar
-    L11_2 = "LandingMultiplier"
-    L10_2 = L10_2(L11_2)
-    L7_2 = L7_2 .. L8_2 .. L9_2 .. L10_2
-    L8_2 = ""
-    L9_2 = getvar
-    L10_2 = "DrivingScore"
-    L9_2 = L9_2(L10_2)
-    L10_2 = getvar
-    L11_2 = "StuntScore"
-    L10_2 = L10_2(L11_2)
-    L9_2 = L9_2 + L10_2
-    L10_2 = getvar
-    L11_2 = "LandingScore"
-    L10_2 = L10_2(L11_2)
-    L11_2 = getvar
-    L12_2 = "LandingMultiplier"
-    L11_2 = L11_2(L12_2)
-    L10_2 = L10_2 * L11_2
-    L9_2 = L9_2 + L10_2
-    L8_2 = L8_2 .. L9_2
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = getvar
-    L8_2 = "DrivingScore2"
-    L7_2 = L7_2(L8_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = getvar
-    L9_2 = "StuntScore2"
-    L8_2 = L8_2(L9_2)
-    L7_2 = L7_2 .. L8_2
-    L8_2 = ""
-    L9_2 = getvar
-    L10_2 = "LandingScore2"
-    L9_2 = L9_2(L10_2)
-    L10_2 = " x "
-    L11_2 = getvar
-    L12_2 = "LandingMultiplier2"
-    L11_2 = L11_2(L12_2)
-    L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2
-    L9_2 = ""
-    L10_2 = getvar
-    L11_2 = "DrivingScore2"
-    L10_2 = L10_2(L11_2)
-    L11_2 = getvar
-    L12_2 = "StuntScore2"
-    L11_2 = L11_2(L12_2)
-    L10_2 = L10_2 + L11_2
-    L11_2 = getvar
-    L12_2 = "LandingScore2"
-    L11_2 = L11_2(L12_2)
-    L12_2 = getvar
-    L13_2 = "LandingMultiplier2"
-    L12_2 = L12_2(L13_2)
-    L11_2 = L11_2 * L12_2
-    L10_2 = L10_2 + L11_2
-    L9_2 = L9_2 .. L10_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  end
-end
-L0_1.InitStuntMater = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 1"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_BIG_AIR"
-    L4_2 = L4_2(L5_2, L6_2)
-    L3_2 = L3_2 .. L4_2
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_TOTAL_DRIFT"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_BONUS_POINTS"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = ""
-    L8_2 = GetLocalizedString
-    L9_2 = "INGAMEUI"
-    L10_2 = "STR_TOTAL"
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = ""
-    L8_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = GetPlayerScore
-    L7_2 = 1
-    L8_2 = 0
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetPlayerScore
-    L8_2 = 1
-    L9_2 = 1
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetPlayerScore
-    L9_2 = 1
-    L10_2 = 5
-    L8_2 = L8_2(L9_2, L10_2)
-    L9_2 = GetPlayerScore
-    L10_2 = 1
-    L11_2 = 4
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 + L9_2
-    L7_2 = L7_2 .. L8_2
-    L8_2 = ""
-    L9_2 = ""
-    L10_2 = GetPlayerScore
-    L11_2 = 1
-    L12_2 = 6
-    L10_2 = L10_2(L11_2, L12_2)
-    L9_2 = L9_2 .. L10_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  else
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_PLAYER"
-    L4_2 = L4_2(L5_2, L6_2)
-    L5_2 = " 1"
-    L3_2 = L3_2 .. L4_2 .. L5_2
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 2"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_BIG_AIR"
-    L4_2 = L4_2(L5_2, L6_2)
-    L3_2 = L3_2 .. L4_2
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_TOTAL_DRIFT"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_BONUS_POINTS"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = ""
-    L8_2 = GetLocalizedString
-    L9_2 = "INGAMEUI"
-    L10_2 = "STR_TOTAL"
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = GetPlayerScore
-    L6_2 = 1
-    L7_2 = 0
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetPlayerScore
-    L7_2 = 1
-    L8_2 = 1
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetPlayerScore
-    L8_2 = 1
-    L9_2 = 5
-    L7_2 = L7_2(L8_2, L9_2)
-    L8_2 = GetPlayerScore
-    L9_2 = 1
-    L10_2 = 4
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 + L8_2
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = ""
-    L9_2 = GetPlayerScore
-    L10_2 = 1
-    L11_2 = 6
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 .. L9_2
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = GetPlayerScore
-    L7_2 = 2
-    L8_2 = 0
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetPlayerScore
-    L8_2 = 2
-    L9_2 = 1
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetPlayerScore
-    L9_2 = 2
-    L10_2 = 5
-    L8_2 = L8_2(L9_2, L10_2)
-    L9_2 = GetPlayerScore
-    L10_2 = 2
-    L11_2 = 4
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 + L9_2
-    L7_2 = L7_2 .. L8_2
-    L8_2 = ""
-    L9_2 = ""
-    L10_2 = GetPlayerScore
-    L11_2 = 2
-    L12_2 = 6
-    L10_2 = L10_2(L11_2, L12_2)
-    L9_2 = L9_2 .. L10_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  end
-end
-L0_1.InitTokyoDrift = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 1"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = "Speeder 1"
-    L5_2 = "Speeder 2"
-    L6_2 = "Speeder 3"
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = ""
-    L8_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = FormatTimeStandardized
-    L7_2 = ""
-    L8_2 = GetSpeederPursuitTime
-    L9_2 = 1
-    L10_2 = 0
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L6_2 = L6_2(L7_2)
-    L7_2 = FormatTimeStandardized
-    L8_2 = ""
-    L9_2 = GetSpeederPursuitTime
-    L10_2 = 1
-    L11_2 = 1
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 .. L9_2
-    L7_2 = L7_2(L8_2)
-    L8_2 = FormatTimeStandardized
-    L9_2 = ""
-    L10_2 = GetSpeederPursuitTime
-    L11_2 = 1
-    L12_2 = 2
-    L10_2 = L10_2(L11_2, L12_2)
-    L9_2 = L9_2 .. L10_2
-    L8_2, L9_2, L10_2, L11_2, L12_2 = L8_2(L9_2)
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L4_2[6] = L10_2
-    L4_2[7] = L11_2
-    L4_2[8] = L12_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  else
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_PLAYER"
-    L4_2 = L4_2(L5_2, L6_2)
-    L5_2 = " 1"
-    L3_2 = L3_2 .. L4_2 .. L5_2
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 2"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_BEST_DRIFT"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_TOTAL_DRIFT"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_STUNT_POINTS"
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetLocalizedString
-    L9_2 = "INGAMEUI"
-    L10_2 = "STR_TOTAL"
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = ""
-    L8_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L5_2 = A0_2
-    L4_2 = A0_2.Initialize
-    L6_2 = L1_2
-    L7_2 = L2_2
-    L8_2 = L3_2
-    L9_2 = L3_2
-    L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  end
-end
-L0_1.InitSheriffChase = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 1"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_TOTAL_DRIFT"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_STUNT_POINTS"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_TOTAL"
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = ""
-    L9_2 = GetLocalizedString
-    L10_2 = "INGAMEUI"
-    L11_2 = "STR_BEST_DRIFT"
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 .. L9_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L2_2[6] = L8_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = ""
-    L8_2 = ""
-    L9_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = GetPlayerScore
-    L8_2 = 1
-    L9_2 = 1
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetPlayerScore
-    L9_2 = 1
-    L10_2 = 2
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L8_2 = ""
-    L9_2 = GetPlayerScore
-    L10_2 = 1
-    L11_2 = 3
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 .. L9_2
-    L9_2 = ""
-    L10_2 = ""
-    L11_2 = GetPlayerScore
-    L12_2 = 1
-    L13_2 = 0
-    L11_2 = L11_2(L12_2, L13_2)
-    L10_2 = L10_2 .. L11_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L4_2[6] = L10_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  else
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_PLAYER"
-    L4_2 = L4_2(L5_2, L6_2)
-    L5_2 = " 1"
-    L3_2 = L3_2 .. L4_2 .. L5_2
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 2"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_TOTAL_DRIFT"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_STUNT_POINTS"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_TOTAL"
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = ""
-    L9_2 = GetLocalizedString
-    L10_2 = "INGAMEUI"
-    L11_2 = "STR_BEST_DRIFT"
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 .. L9_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L2_2[4] = L6_2
-    L2_2[5] = L7_2
-    L2_2[6] = L8_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = GetPlayerScore
-    L7_2 = 1
-    L8_2 = 1
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = GetPlayerScore
-    L8_2 = 1
-    L9_2 = 2
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetPlayerScore
-    L9_2 = 1
-    L10_2 = 3
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L8_2 = ""
-    L9_2 = ""
-    L10_2 = GetPlayerScore
-    L11_2 = 1
-    L12_2 = 0
-    L10_2 = L10_2(L11_2, L12_2)
-    L9_2 = L9_2 .. L10_2
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L3_2[5] = L8_2
-    L3_2[6] = L9_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = GetPlayerScore
-    L8_2 = 2
-    L9_2 = 1
-    L7_2 = L7_2(L8_2, L9_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = GetPlayerScore
-    L9_2 = 2
-    L10_2 = 2
-    L8_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2 .. L8_2
-    L8_2 = ""
-    L9_2 = GetPlayerScore
-    L10_2 = 2
-    L11_2 = 3
-    L9_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2 .. L9_2
-    L9_2 = ""
-    L10_2 = ""
-    L11_2 = GetPlayerScore
-    L12_2 = 2
-    L13_2 = 0
-    L11_2 = L11_2(L12_2, L13_2)
-    L10_2 = L10_2 .. L11_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L4_2[6] = L10_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  end
-end
-L0_1.InitJumpDrift = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = getvar
-    L6_2 = "ProfileName"
-    L5_2 = L5_2(L6_2)
-    L4_2 = L4_2 .. L5_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_TIRES"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_TIME"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = GetPlayerNumTiresFound
-    L8_2 = 1
-    L7_2 = L7_2(L8_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = FormatTimeStandardized
-    L9_2 = GetPlayerScore
-    L10_2 = 1
-    L11_2 = 2
-    L9_2, L10_2, L11_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2(L9_2, L10_2, L11_2)
-    L7_2 = L7_2 .. L8_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  else
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_PLAYER"
-    L4_2 = L4_2(L5_2, L6_2)
-    L5_2 = " 1"
-    L3_2 = L3_2 .. L4_2 .. L5_2
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_PLAYER"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " 2"
-    L4_2 = L4_2 .. L5_2 .. L6_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L1_2[3] = L4_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_TIRES"
-    L5_2 = L5_2(L6_2, L7_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_TIME"
-    L6_2 = L6_2(L7_2, L8_2)
-    L5_2 = L5_2 .. L6_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L2_2[3] = L5_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = GetPlayerNumTiresFound
-    L7_2 = 1
-    L6_2 = L6_2(L7_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = ""
-    L7_2 = FormatTimeStandardized
-    L8_2 = GetPlayerScore
-    L9_2 = 1
-    L10_2 = 2
-    L8_2, L9_2, L10_2, L11_2 = L8_2(L9_2, L10_2)
-    L7_2 = L7_2(L8_2, L9_2, L10_2, L11_2)
-    L6_2 = L6_2 .. L7_2
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = GetPlayerNumTiresFound
-    L8_2 = 2
-    L7_2 = L7_2(L8_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = ""
-    L8_2 = FormatTimeStandardized
-    L9_2 = GetPlayerScore
-    L10_2 = 2
-    L11_2 = 2
-    L9_2, L10_2, L11_2 = L9_2(L10_2, L11_2)
-    L8_2 = L8_2(L9_2, L10_2, L11_2)
-    L7_2 = L7_2 .. L8_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L1_2
-    L8_2 = L2_2
-    L9_2 = L3_2
-    L10_2 = L4_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  end
-end
-L0_1.InitFindTire = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetNumPlayers
-  L1_2 = L1_2()
-  if L1_2 == 1 then
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_POINTS_LABEL"
-    L4_2 = L4_2(L5_2, L6_2)
-    L3_2 = L3_2 .. L4_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetTotalPointsForPlayer
-    L6_2 = 1
-    L5_2 = L5_2(L6_2)
-    L4_2 = L4_2 .. L5_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = getvar
-    L8_2 = "ProfileName"
-    L7_2, L8_2, L9_2, L10_2 = L7_2(L8_2)
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L4_2[4] = L8_2
-    L4_2[5] = L9_2
-    L4_2[6] = L10_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L4_2
-    L8_2 = L1_2
-    L9_2 = L3_2
-    L10_2 = L2_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  else
-    L1_2 = {}
-    L2_2 = ""
-    L3_2 = ""
-    L4_2 = GetLocalizedString
-    L5_2 = "INGAMEUI"
-    L6_2 = "STR_POINTS_LABEL"
-    L4_2 = L4_2(L5_2, L6_2)
-    L3_2 = L3_2 .. L4_2
-    L1_2[1] = L2_2
-    L1_2[2] = L3_2
-    L2_2 = {}
-    L3_2 = ""
-    L4_2 = ""
-    L5_2 = GetTotalPointsForPlayer
-    L6_2 = 1
-    L5_2 = L5_2(L6_2)
-    L4_2 = L4_2 .. L5_2
-    L2_2[1] = L3_2
-    L2_2[2] = L4_2
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = GetTotalPointsForPlayer
-    L7_2 = 2
-    L6_2 = L6_2(L7_2)
-    L5_2 = L5_2 .. L6_2
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L4_2 = {}
-    L5_2 = ""
-    L6_2 = GetLocalizedString
-    L7_2 = "InGameUI"
-    L8_2 = "STR_PLAYER"
-    L6_2 = L6_2(L7_2, L8_2)
-    L7_2 = " 1"
-    L6_2 = L6_2 .. L7_2
-    L7_2 = GetLocalizedString
-    L8_2 = "InGameUI"
-    L9_2 = "STR_PLAYER"
-    L7_2 = L7_2(L8_2, L9_2)
-    L8_2 = " 2"
-    L7_2 = L7_2 .. L8_2
-    L4_2[1] = L5_2
-    L4_2[2] = L6_2
-    L4_2[3] = L7_2
-    L6_2 = A0_2
-    L5_2 = A0_2.Initialize
-    L7_2 = L4_2
-    L8_2 = L1_2
-    L9_2 = L2_2
-    L10_2 = L3_2
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  end
-end
-L0_1.InitMaterdor = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L1_2 = getvar
-  L2_2 = "WinnerPlayer"
-  L1_2 = L1_2(L2_2)
-  iWinnerRacer = L1_2
-  L1_2 = getvar
-  L2_2 = "ShowWinner"
-  L1_2 = L1_2(L2_2)
-  showWinner = L1_2
-  L1_2 = nil
-  L2_2 = GetLocalizedString
-  L3_2 = "InGameUI"
-  L4_2 = "STR_PLAYER"
-  L2_2 = L2_2(L3_2, L4_2)
-  szPlayer = L2_2
-  L2_2 = showWinner
-  if L2_2 == 1 then
-    L2_2 = GetLocalizedString
-    L3_2 = "InGameUI"
-    L4_2 = "STR_WON_MSG"
-    L2_2 = L2_2(L3_2, L4_2)
-    szYouWin = L2_2
-    L2_2 = iWinnerRacer
-    if L2_2 == 0 then
-      L2_2 = {}
-      L3_2 = ""
-      L4_2 = szPlayer
-      L5_2 = 1
-      L6_2 = ",  "
-      L7_2 = szYouWin
-      L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-      L5_2 = szPlayer
-      L6_2 = 2
-      L5_2 = L5_2 .. L6_2
-      L2_2[1] = L3_2
-      L2_2[2] = L4_2
-      L2_2[3] = L5_2
-      L1_2 = L2_2
+    _ARG_0_:Initialize({
+      GetLocalizedString("InGameUI", "STR_PLAYER"),
+      GetLocalizedString("InGameUI", "STR_BEST_LAP"),
+      GetLocalizedString("InGameUI", "STR_TOTAL")
+    }, {
+      [_FORV_10_] = "" .. _FORV_10_ .. ". ",
+      [8] = "" .. GetPlayerRacePosition(0) .. ". ",
+      [7] = "" .. GetPlayerRacePosition(1) .. ". ",
+      [8] = "" .. GetPlayerRacePosition(0) .. ". ",
+      [7] = "" .. GetPlayerRacePosition(0) .. ". ",
+      [8] = "" .. GetPlayerRacePosition(1) .. ". "
+    }, {
+      [_FORV_10_] = FormatTimeStandardized(GetRacerStat(UIStats_BestLap, _FORV_10_))
+    }, {
+      [_FORV_10_] = FormatTimeStandardized(GetRacerTime(_FORV_10_)),
+      [8] = FormatTimeStandardized(GetRacerTime((GetPlayerRacePosition(0)))),
+      [7] = FormatTimeStandardized(GetRacerTime((GetPlayerRacePosition(1)))),
+      [8] = FormatTimeStandardized(GetRacerTime((GetPlayerRacePosition(0)))),
+      [7] = FormatTimeStandardized(GetRacerTime((GetPlayerRacePosition(0)))),
+      [8] = FormatTimeStandardized(GetRacerTime((GetPlayerRacePosition(1))))
+    })
+    _ARG_0_.hasRacerIcons = 1
+    for _FORV_11_ = 1, 8 do
+      _ARG_0_.RacerIcons[{
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_]] = UIContainer:New()
+      _ARG_0_.RacerIcons:Insert(_ARG_0_.RacerIcons[{
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_]])
+      _ARG_0_.RacerIcons[{
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_]].icon1 = UIIcon:New()
+      _ARG_0_.RacerIcons[{
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_]]:Insert(_ARG_0_.RacerIcons[{
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_]].icon1)
+      _ARG_0_.RacerIcons[{
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_]].icon1:Create(_ARG_0_.instance, "RI[" .. _FORV_11_ .. "].icon1", "icon_" .. {
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_] .. "_a", -100, -100, 84, 84, "center")
+      _ARG_0_.RacerIcons[{
+        [_FORV_10_] = GetRacerName(_FORV_10_),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(1))),
+        [8] = GetRacerName((GetPlayerRacePosition(0))),
+        [7] = GetRacerName((GetPlayerRacePosition(0))),
+        [8] = GetRacerName((GetPlayerRacePosition(1)))
+      }[_FORV_11_]]:MoveTo(_ARG_0_.RILocs[_FORV_11_], 0, {x = 50, y = 0})
+    end
+    DebugPrint("we have our cached centroid at " .. type(_FOR_:GetCentroid()) .. ":" .. _FOR_:GetCentroid() .. ", " .. type(_FOR_:GetCentroid()) .. ":" .. _FOR_:GetCentroid())
+    _ARG_0_.RaceIconsCentroid = {
+      _FOR_:GetCentroid()
+    }
+  end,
+  ShowRacerIcons = function(_ARG_0_)
+    if _ARG_0_.hasRacerIcons == 1 then
+      _ARG_0_.RacerIcons:Move(_ARG_0_.RaceIconsCentroid[1], _ARG_0_.RaceIconsCentroid[2])
+    end
+  end,
+  OnOutro = function(_ARG_0_)
+    if _ARG_0_.hasRacerIcons == 1 then
+      _ARG_0_.RacerIcons:Move(-500, -500)
+    end
+  end,
+  InitStampedeActivity = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      categories = {
+        GetLocalizedString("CommonUI", "STR_TRAC_NAME"),
+        GetLocalizedString("InGameUI", "STR_TIME")
+      }
+      blank = {"", ""}
+      results = {
+        GetNumTractorsCaughtForPlayer(1),
+        FormatTimeStandardized(GetFinalTime())
+      }
+      _ARG_0_:Initialize({
+        "",
+        "",
+        getvar("ProfileName")
+      }, categories, blank, results)
     else
-      L2_2 = {}
-      L3_2 = ""
-      L4_2 = szPlayer
-      L5_2 = 1
-      L4_2 = L4_2 .. L5_2
-      L5_2 = szPlayer
-      L6_2 = 2
-      L7_2 = ",  "
-      L8_2 = szYouWin
-      L5_2 = L5_2 .. L6_2 .. L7_2 .. L8_2
-      L2_2[1] = L3_2
-      L2_2[2] = L4_2
-      L2_2[3] = L5_2
-      L1_2 = L2_2
+      _ARG_0_:Initialize({
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 2"
+      }, {
+        GetLocalizedString("CommonUI", "STR_TRAC_NAME"),
+        GetLocalizedString("InGameUI", "STR_TIME")
+      }, {
+        GetNumTractorsCaughtForPlayer(1),
+        FormatTimeStandardized(GetFinalTime())
+      }, {
+        GetNumTractorsCaughtForPlayer(2),
+        FormatTimeStandardized(GetFinalTime())
+      })
     end
-  else
-    L2_2 = GetNumPlayers
-    L2_2 = L2_2()
-    if L2_2 == 2 then
-      L2_2 = {}
-      L3_2 = ""
-      L4_2 = szPlayer
-      L5_2 = 1
-      L4_2 = L4_2 .. L5_2
-      L5_2 = szPlayer
-      L6_2 = 2
-      L5_2 = L5_2 .. L6_2
-      L2_2[1] = L3_2
-      L2_2[2] = L4_2
-      L2_2[3] = L5_2
-      L1_2 = L2_2
+  end,
+  InitTimedActivity = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      categories = {
+        GetLocalizedString("InGameUI", "STR_TIME")
+      }
+      blank = {""}
+      results = {
+        FormatTimeStandardized(GetRacerTime(1))
+      }
+      _ARG_0_:Initialize({
+        "",
+        "",
+        getvar("ProfileName")
+      }, categories, blank, results)
     else
-      L2_2 = {}
-      L3_2 = ""
-      L4_2 = ""
-      L5_2 = szPlayer
-      L6_2 = iWinnerRacer
-      L6_2 = L6_2 + 1
-      L5_2 = L5_2 .. L6_2
-      L2_2[1] = L3_2
-      L2_2[2] = L4_2
-      L2_2[3] = L5_2
-      L1_2 = L2_2
+      _ARG_0_:Initialize({
+        "",
+        GetRacerName(1),
+        GetRacerName(2)
+      }, {
+        GetLocalizedString("InGameUI", "STR_TIME")
+      }, {
+        FormatTimeStandardized(GetRacerTime(1))
+      }, {
+        FormatTimeStandardized(GetRacerTime(2))
+      })
+    end
+  end,
+  InitStuntMater = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      _ARG_0_:Initialize({
+        "",
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1"
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_RAMP_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_STUNT_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_LANDING_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL")
+      }, {
+        "",
+        "",
+        "",
+        "",
+        ""
+      }, {
+        "",
+        "" .. getvar("DrivingScore"),
+        "" .. getvar("StuntScore"),
+        "" .. getvar("LandingScore") .. " x " .. getvar("LandingMultiplier"),
+        "" .. getvar("DrivingScore") + getvar("StuntScore") + getvar("LandingScore") * getvar("LandingMultiplier")
+      })
+    else
+      _ARG_0_:Initialize({
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 2"
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_RAMP_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_STUNT_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_LANDING_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL")
+      }, {
+        "",
+        "" .. getvar("DrivingScore"),
+        "" .. getvar("StuntScore"),
+        "" .. getvar("LandingScore") .. " x " .. getvar("LandingMultiplier"),
+        "" .. getvar("DrivingScore") + getvar("StuntScore") + getvar("LandingScore") * getvar("LandingMultiplier")
+      }, {
+        "",
+        "" .. getvar("DrivingScore2"),
+        "" .. getvar("StuntScore2"),
+        "" .. getvar("LandingScore2") .. " x " .. getvar("LandingMultiplier2"),
+        "" .. getvar("DrivingScore2") + getvar("StuntScore2") + getvar("LandingScore2") * getvar("LandingMultiplier2")
+      })
+    end
+  end,
+  InitTokyoDrift = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      _ARG_0_:Initialize({
+        "",
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1"
+      }, {
+        "" .. GetLocalizedString("INGAMEUI", "STR_BIG_AIR"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL_DRIFT"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_BONUS_POINTS"),
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL")
+      }, {
+        "",
+        "",
+        "",
+        "",
+        ""
+      }, {
+        "" .. GetPlayerScore(1, 0),
+        "" .. GetPlayerScore(1, 1),
+        "" .. GetPlayerScore(1, 5) + GetPlayerScore(1, 4),
+        "",
+        "" .. GetPlayerScore(1, 6)
+      })
+    else
+      _ARG_0_:Initialize({
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 2"
+      }, {
+        "" .. GetLocalizedString("INGAMEUI", "STR_BIG_AIR"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL_DRIFT"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_BONUS_POINTS"),
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL")
+      }, {
+        "" .. GetPlayerScore(1, 0),
+        "" .. GetPlayerScore(1, 1),
+        "" .. GetPlayerScore(1, 5) + GetPlayerScore(1, 4),
+        "",
+        "" .. GetPlayerScore(1, 6)
+      }, {
+        "" .. GetPlayerScore(2, 0),
+        "" .. GetPlayerScore(2, 1),
+        "" .. GetPlayerScore(2, 5) + GetPlayerScore(2, 4),
+        "",
+        "" .. GetPlayerScore(2, 6)
+      })
+    end
+  end,
+  InitSheriffChase = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      _ARG_0_:Initialize({
+        "",
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1"
+      }, {
+        "",
+        "Speeder 1",
+        "Speeder 2",
+        "Speeder 3"
+      }, {
+        "",
+        "",
+        "",
+        "",
+        ""
+      }, {
+        "",
+        FormatTimeStandardized("" .. GetSpeederPursuitTime(1, 0)),
+        FormatTimeStandardized("" .. GetSpeederPursuitTime(1, 1)),
+        FormatTimeStandardized("" .. GetSpeederPursuitTime(1, 2))
+      })
+    else
+      _ARG_0_:Initialize({
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 2"
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_BEST_DRIFT"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL_DRIFT"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_STUNT_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL")
+      }, {
+        "",
+        "",
+        "",
+        "",
+        ""
+      }, {
+        "",
+        "",
+        "",
+        "",
+        ""
+      })
+    end
+  end,
+  InitJumpDrift = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      _ARG_0_:Initialize({
+        "",
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1"
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL_DRIFT"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_STUNT_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL"),
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_BEST_DRIFT")
+      }, {
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      }, {
+        "",
+        "" .. GetPlayerScore(1, 1),
+        "" .. GetPlayerScore(1, 2),
+        "" .. GetPlayerScore(1, 3),
+        "",
+        "" .. GetPlayerScore(1, 0)
+      })
+    else
+      _ARG_0_:Initialize({
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 2"
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL_DRIFT"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_STUNT_POINTS"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TOTAL"),
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_BEST_DRIFT")
+      }, {
+        "",
+        "" .. GetPlayerScore(1, 1),
+        "" .. GetPlayerScore(1, 2),
+        "" .. GetPlayerScore(1, 3),
+        "",
+        "" .. GetPlayerScore(1, 0)
+      }, {
+        "",
+        "" .. GetPlayerScore(2, 1),
+        "" .. GetPlayerScore(2, 2),
+        "" .. GetPlayerScore(2, 3),
+        "",
+        "" .. GetPlayerScore(2, 0)
+      })
+    end
+  end,
+  InitFindTire = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      _ARG_0_:Initialize({
+        "",
+        "",
+        "" .. getvar("ProfileName")
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_TIRES"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TIME")
+      }, {
+        "",
+        "",
+        "",
+        ""
+      }, {
+        "",
+        "" .. GetPlayerNumTiresFound(1),
+        "" .. FormatTimeStandardized(GetPlayerScore(1, 2))
+      })
+    else
+      _ARG_0_:Initialize({
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 1",
+        "" .. GetLocalizedString("INGAMEUI", "STR_PLAYER") .. " 2"
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_TIRES"),
+        "" .. GetLocalizedString("INGAMEUI", "STR_TIME")
+      }, {
+        "",
+        "" .. GetPlayerNumTiresFound(1),
+        "" .. FormatTimeStandardized(GetPlayerScore(1, 2))
+      }, {
+        "",
+        "" .. GetPlayerNumTiresFound(2),
+        "" .. FormatTimeStandardized(GetPlayerScore(2, 2))
+      })
+    end
+  end,
+  InitMaterdor = function(_ARG_0_)
+    if GetNumPlayers() == 1 then
+      _ARG_0_:Initialize({
+        "",
+        "",
+        getvar("ProfileName")
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_POINTS_LABEL")
+      }, {"", ""}, {
+        "",
+        "" .. GetTotalPointsForPlayer(1)
+      })
+    else
+      _ARG_0_:Initialize({
+        "",
+        GetLocalizedString("InGameUI", "STR_PLAYER") .. " 1",
+        GetLocalizedString("InGameUI", "STR_PLAYER") .. " 2"
+      }, {
+        "",
+        "" .. GetLocalizedString("INGAMEUI", "STR_POINTS_LABEL")
+      }, {
+        "",
+        "" .. GetTotalPointsForPlayer(1)
+      }, {
+        "",
+        "" .. GetTotalPointsForPlayer(2)
+      })
+    end
+  end,
+  InitAutoCross = function(_ARG_0_)
+    iWinnerRacer = getvar("WinnerPlayer")
+    showWinner = getvar("ShowWinner")
+    szPlayer = GetLocalizedString("InGameUI", "STR_PLAYER")
+    if showWinner == 1 then
+      szYouWin = GetLocalizedString("InGameUI", "STR_WON_MSG")
+      if iWinnerRacer == 0 then
+      else
+      end
+    elseif GetNumPlayers() == 2 then
+    else
+    end
+    iRacer = 0
+    curTime = math.floor(getvar(iRacer .. "TotalRaceTime"))
+    staticPenalty = getvar("SecondsPenaltyPerStaticObject") * getvar(iRacer .. "NumStaticObjectsHit")
+    dynamicPenalty = getvar("SecondsPenaltyPerDynamicObject") * getvar(iRacer .. "NumDynamicObjectsHit")
+    totalPenalty = staticPenalty + dynamicPenalty
+    totalTime1 = curTime + totalPenalty
+    player1Results = {
+      " " .. FormatTimeStandardized(curTime),
+      "+ " .. FormatTimeStandardized(dynamicPenalty),
+      "+ " .. FormatTimeStandardized(staticPenalty),
+      "= " .. FormatTimeStandardized(totalTime1)
+    }
+    if GetNumPlayers() == 2 then
+      iRacer = 1
+      curTime = math.floor(getvar(iRacer .. "TotalRaceTime"))
+      staticPenalty = getvar("SecondsPenaltyPerStaticObject") * getvar(iRacer .. "NumStaticObjectsHit")
+      dynamicPenalty = getvar("SecondsPenaltyPerDynamicObject") * getvar(iRacer .. "NumDynamicObjectsHit")
+      totalPenalty = staticPenalty + dynamicPenalty
+      totalTime2 = curTime + totalPenalty
+      player2Results = {
+        " " .. FormatTimeStandardized(curTime),
+        "+ " .. FormatTimeStandardized(dynamicPenalty),
+        "+ " .. FormatTimeStandardized(staticPenalty),
+        "= " .. FormatTimeStandardized(totalTime2)
+      }
+      if totalTime1 == totalTime2 then
+      end
+      _ARG_0_:Initialize({
+        "",
+        szPlayer .. 1,
+        szPlayer .. 2
+      }, {
+        GetLocalizedString("InGameUI", "STR_FINISH_TIME"),
+        GetLocalizedString("InGameUI", "STR_CONE_PENALTY"),
+        GetLocalizedString("InGameUI", "STR_WALL_PENALTY"),
+        GetLocalizedString("InGameUI", "STR_TOTAL_TIME")
+      }, player1Results, player2Results)
+    else
+      _ARG_0_:Initialize({
+        "",
+        szPlayer .. 1,
+        szPlayer .. 2
+      }, {
+        GetLocalizedString("InGameUI", "STR_FINISH_TIME"),
+        GetLocalizedString("InGameUI", "STR_CONE_PENALTY"),
+        GetLocalizedString("InGameUI", "STR_WALL_PENALTY"),
+        GetLocalizedString("InGameUI", "STR_TOTAL_TIME")
+      }, {
+        "",
+        "",
+        "",
+        ""
+      }, player1Results)
     end
   end
-  L2_2 = {}
-  L3_2 = GetLocalizedString
-  L4_2 = "InGameUI"
-  L5_2 = "STR_FINISH_TIME"
-  L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = GetLocalizedString
-  L5_2 = "InGameUI"
-  L6_2 = "STR_CONE_PENALTY"
-  L4_2 = L4_2(L5_2, L6_2)
-  L5_2 = GetLocalizedString
-  L6_2 = "InGameUI"
-  L7_2 = "STR_WALL_PENALTY"
-  L5_2 = L5_2(L6_2, L7_2)
-  L6_2 = GetLocalizedString
-  L7_2 = "InGameUI"
-  L8_2 = "STR_TOTAL_TIME"
-  L6_2, L7_2, L8_2, L9_2 = L6_2(L7_2, L8_2)
-  L2_2[1] = L3_2
-  L2_2[2] = L4_2
-  L2_2[3] = L5_2
-  L2_2[4] = L6_2
-  L2_2[5] = L7_2
-  L2_2[6] = L8_2
-  L2_2[7] = L9_2
-  L3_2 = 0
-  iRacer = L3_2
-  L3_2 = math
-  L3_2 = L3_2.floor
-  L4_2 = getvar
-  L5_2 = iRacer
-  L6_2 = "TotalRaceTime"
-  L5_2 = L5_2 .. L6_2
-  L4_2, L5_2, L6_2, L7_2, L8_2, L9_2 = L4_2(L5_2)
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  curTime = L3_2
-  L3_2 = getvar
-  L4_2 = "SecondsPenaltyPerStaticObject"
-  L3_2 = L3_2(L4_2)
-  L4_2 = getvar
-  L5_2 = iRacer
-  L6_2 = "NumStaticObjectsHit"
-  L5_2 = L5_2 .. L6_2
-  L4_2 = L4_2(L5_2)
-  L3_2 = L3_2 * L4_2
-  staticPenalty = L3_2
-  L3_2 = getvar
-  L4_2 = "SecondsPenaltyPerDynamicObject"
-  L3_2 = L3_2(L4_2)
-  L4_2 = getvar
-  L5_2 = iRacer
-  L6_2 = "NumDynamicObjectsHit"
-  L5_2 = L5_2 .. L6_2
-  L4_2 = L4_2(L5_2)
-  L3_2 = L3_2 * L4_2
-  dynamicPenalty = L3_2
-  L3_2 = staticPenalty
-  L4_2 = dynamicPenalty
-  L3_2 = L3_2 + L4_2
-  totalPenalty = L3_2
-  L3_2 = curTime
-  L4_2 = totalPenalty
-  L3_2 = L3_2 + L4_2
-  totalTime1 = L3_2
-  L3_2 = {}
-  L4_2 = " "
-  L5_2 = FormatTimeStandardized
-  L6_2 = curTime
-  L5_2 = L5_2(L6_2)
-  L4_2 = L4_2 .. L5_2
-  L5_2 = "+ "
-  L6_2 = FormatTimeStandardized
-  L7_2 = dynamicPenalty
-  L6_2 = L6_2(L7_2)
-  L5_2 = L5_2 .. L6_2
-  L6_2 = "+ "
-  L7_2 = FormatTimeStandardized
-  L8_2 = staticPenalty
-  L7_2 = L7_2(L8_2)
-  L6_2 = L6_2 .. L7_2
-  L7_2 = "= "
-  L8_2 = FormatTimeStandardized
-  L9_2 = totalTime1
-  L8_2 = L8_2(L9_2)
-  L7_2 = L7_2 .. L8_2
-  L3_2[1] = L4_2
-  L3_2[2] = L5_2
-  L3_2[3] = L6_2
-  L3_2[4] = L7_2
-  player1Results = L3_2
-  L3_2 = GetNumPlayers
-  L3_2 = L3_2()
-  if L3_2 == 2 then
-    L3_2 = 1
-    iRacer = L3_2
-    L3_2 = math
-    L3_2 = L3_2.floor
-    L4_2 = getvar
-    L5_2 = iRacer
-    L6_2 = "TotalRaceTime"
-    L5_2 = L5_2 .. L6_2
-    L4_2, L5_2, L6_2, L7_2, L8_2, L9_2 = L4_2(L5_2)
-    L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-    curTime = L3_2
-    L3_2 = getvar
-    L4_2 = "SecondsPenaltyPerStaticObject"
-    L3_2 = L3_2(L4_2)
-    L4_2 = getvar
-    L5_2 = iRacer
-    L6_2 = "NumStaticObjectsHit"
-    L5_2 = L5_2 .. L6_2
-    L4_2 = L4_2(L5_2)
-    L3_2 = L3_2 * L4_2
-    staticPenalty = L3_2
-    L3_2 = getvar
-    L4_2 = "SecondsPenaltyPerDynamicObject"
-    L3_2 = L3_2(L4_2)
-    L4_2 = getvar
-    L5_2 = iRacer
-    L6_2 = "NumDynamicObjectsHit"
-    L5_2 = L5_2 .. L6_2
-    L4_2 = L4_2(L5_2)
-    L3_2 = L3_2 * L4_2
-    dynamicPenalty = L3_2
-    L3_2 = staticPenalty
-    L4_2 = dynamicPenalty
-    L3_2 = L3_2 + L4_2
-    totalPenalty = L3_2
-    L3_2 = curTime
-    L4_2 = totalPenalty
-    L3_2 = L3_2 + L4_2
-    totalTime2 = L3_2
-    L3_2 = {}
-    L4_2 = " "
-    L5_2 = FormatTimeStandardized
-    L6_2 = curTime
-    L5_2 = L5_2(L6_2)
-    L4_2 = L4_2 .. L5_2
-    L5_2 = "+ "
-    L6_2 = FormatTimeStandardized
-    L7_2 = dynamicPenalty
-    L6_2 = L6_2(L7_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = "+ "
-    L7_2 = FormatTimeStandardized
-    L8_2 = staticPenalty
-    L7_2 = L7_2(L8_2)
-    L6_2 = L6_2 .. L7_2
-    L7_2 = "= "
-    L8_2 = FormatTimeStandardized
-    L9_2 = totalTime2
-    L8_2 = L8_2(L9_2)
-    L7_2 = L7_2 .. L8_2
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    player2Results = L3_2
-    L3_2 = totalTime1
-    L4_2 = totalTime2
-    if L3_2 == L4_2 then
-      L3_2 = {}
-      L4_2 = ""
-      L5_2 = szPlayer
-      L6_2 = 1
-      L5_2 = L5_2 .. L6_2
-      L6_2 = szPlayer
-      L7_2 = 2
-      L6_2 = L6_2 .. L7_2
-      L3_2[1] = L4_2
-      L3_2[2] = L5_2
-      L3_2[3] = L6_2
-      L1_2 = L3_2
-    end
-    L4_2 = A0_2
-    L3_2 = A0_2.Initialize
-    L5_2 = L1_2
-    L6_2 = L2_2
-    L7_2 = player1Results
-    L8_2 = player2Results
-    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  else
-    L3_2 = {}
-    L4_2 = ""
-    L5_2 = ""
-    L6_2 = ""
-    L7_2 = ""
-    L3_2[1] = L4_2
-    L3_2[2] = L5_2
-    L3_2[3] = L6_2
-    L3_2[4] = L7_2
-    L5_2 = A0_2
-    L4_2 = A0_2.Initialize
-    L6_2 = L1_2
-    L7_2 = L2_2
-    L8_2 = L3_2
-    L9_2 = player1Results
-    L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  end
-end
-L0_1.InitAutoCross = L1_1
-Results = L0_1
+}

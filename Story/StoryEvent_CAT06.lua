@@ -1,67 +1,28 @@
-local L0_1, L1_1
-L0_1 = {}
-function L1_1()
-  local L0_2, L1_2
-  L0_2 = DebugPrint
-  L1_2 = "onQuit()"
-  L0_2(L1_2)
-  L0_2 = SwitchStoryEvent
-  L1_2 = "StoryEvent_Explore"
-  L0_2(L1_2)
-end
-L0_1.onQuit = L1_1
-function L1_1()
-  local L0_2, L1_2
-  L0_2 = DebugPrint
-  L1_2 = "onContinue()"
-  L0_2(L1_2)
-  L0_2 = SwitchStoryEvent
-  L1_2 = "StoryEvent_Explore"
-  L0_2(L1_2)
-end
-L0_1.onContinue = L1_1
-function L1_1()
-  local L0_2, L1_2
-  L0_2 = DebugPrint
-  L1_2 = "onUnlocked()"
-  L0_2(L1_2)
-end
-L0_1.onUnlocked = L1_1
-function L1_1()
-  local L0_2, L1_2
-  L0_2 = DebugPrint
-  L1_2 = "onFailed()"
-  L0_2(L1_2)
-end
-L0_1.onFailed = L1_1
-function L1_1()
-  local L0_2, L1_2
-  L0_2 = DebugPrint
-  L1_2 = "onPlaced()"
-  L0_2(L1_2)
-  L0_2 = StoryEvent_CAT06
-  L0_2 = L0_2.onFailed
-  L0_2()
-end
-L0_1.onPlaced = L1_1
-function L1_1()
-  local L0_2, L1_2
-  L0_2 = DebugPrint
-  L1_2 = "onFirst()"
-  L0_2(L1_2)
-  L0_2 = UnlockPaintjob
-  L1_2 = "mcqm_f1"
-  L0_2(L1_2)
-  L0_2 = UnlockWheelset
-  L1_2 = "mcq_wheelset_14D"
-  L0_2(L1_2)
-  L0_2 = DebugPrint
-  L1_2 = "Unlocked mcqm_f1 and wheelset14D"
-  L0_2(L1_2)
-end
-L0_1.onFirst = L1_1
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onCutsceneFinished = L1_1
-StoryEvent_CAT06 = L0_1
+StoryEvent_CAT06 = {
+  onQuit = function()
+    DebugPrint("onQuit()")
+    SwitchStoryEvent("StoryEvent_Explore")
+  end,
+  onContinue = function()
+    DebugPrint("onContinue()")
+    SwitchStoryEvent("StoryEvent_Explore")
+  end,
+  onUnlocked = function()
+    DebugPrint("onUnlocked()")
+  end,
+  onFailed = function()
+    DebugPrint("onFailed()")
+  end,
+  onPlaced = function()
+    DebugPrint("onPlaced()")
+    StoryEvent_CAT06.onFailed()
+  end,
+  onFirst = function()
+    DebugPrint("onFirst()")
+    UnlockPaintjob("mcqm_f1")
+    UnlockWheelset("mcq_wheelset_14D")
+    DebugPrint("Unlocked mcqm_f1 and wheelset14D")
+  end,
+  onCutsceneFinished = function()
+  end
+}

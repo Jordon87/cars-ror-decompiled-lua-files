@@ -1,466 +1,85 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.lastDriftScore = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.SteerText = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Arrow_Twist = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Drift_Car = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.DriftFrame = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.ScoreTicker = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Message = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = SetTickFrequency
-  L2_2 = A0_2.instance
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.SteerText
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.SteerText
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.SteerText
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.SteerText
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "SteerText.text1"
-  L5_2 = "STR_STEER"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 642
-  L9_2 = 117.2
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Arrow_Twist
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Arrow_Twist
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Arrow_Twist
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Arrow_Twist
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Arrow_Twist.icon1"
-  L5_2 = "hud_drift_arrow"
-  L6_2 = 768
-  L7_2 = 197
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Drift_Car
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Drift_Car
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Drift_Car
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Drift_Car
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Drift_Car.icon1"
-  L5_2 = "hud_drift_car"
-  L6_2 = 671.95
-  L7_2 = 220.8
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.DriftFrame
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_Drift = L2_2
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_Drift
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_Drift
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.DriftFrame
-  L3_2 = L3_2.HUD_Drift
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_Drift
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "DriftFrame.HUD_Drift.icon1"
-  L5_2 = "hud_drift"
-  L6_2 = 800
-  L7_2 = 380.9
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_Drift
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_Drift
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.DriftFrame
-  L3_2 = L3_2.HUD_Drift
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_Drift
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "DriftFrame.HUD_Drift.icon2"
-  L5_2 = "hud_drift"
-  L6_2 = 864
-  L7_2 = 380.9
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.DriftFrame
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_DriftBar = L2_2
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_DriftBar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_DriftBar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.DriftFrame
-  L3_2 = L3_2.HUD_DriftBar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_DriftBar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "DriftFrame.HUD_DriftBar.icon1"
-  L5_2 = "hud_driftbar"
-  L6_2 = 799.95
-  L7_2 = 332.85
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_DriftBar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_DriftBar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.DriftFrame
-  L3_2 = L3_2.HUD_DriftBar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.DriftFrame
-  L1_2 = L1_2.HUD_DriftBar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "DriftFrame.HUD_DriftBar.icon2"
-  L5_2 = "hud_driftbar"
-  L6_2 = 863.95
-  L7_2 = 332.85
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.ScoreTicker
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.DriftScore = L2_2
-  L1_2 = A0_2.ScoreTicker
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.ScoreTicker
-  L3_2 = L3_2.DriftScore
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.ScoreTicker
-  L1_2 = L1_2.DriftScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "ScoreTicker.DriftScore"
-  L5_2 = "STR_DYN_CREDITS_7"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1056.8
-  L9_2 = 98.6
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Message
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.CoolFactor = L2_2
-  L1_2 = A0_2.Message
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Message
-  L3_2 = L3_2.CoolFactor
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Message
-  L1_2 = L1_2.CoolFactor
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Message.CoolFactor"
-  L5_2 = "STR_DYN_CREDITS_5"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1115.95
-  L9_2 = 351.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.ScoreTicker
-  L2_2 = L2_2.DriftScore
-  L1_2.DriftScore = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Message
-  L2_2 = L2_2.CoolFactor
-  L1_2.CoolFactor = L2_2
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-  A0_2.lastDriftScore = 0
-  L1_2 = A0_2.Shortcuts
-  L1_2 = L1_2.CoolFactor
-  L2_2 = L1_2
-  L1_2 = L1_2.SetValue
-  L3_2 = ""
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
-  L2_2 = 500
-  L3_2 = 1000
-  L4_2 = 1500
-  L5_2 = 8
-  L6_2 = getvar
-  L7_2 = "Player1Speed"
-  L6_2 = L6_2(L7_2)
-  L7_2 = getvar
-  L8_2 = "P1DriftAngle"
-  L7_2 = L7_2(L8_2)
-  L7_2 = L7_2 / 0.0174532
-  L8_2 = getvar
-  L9_2 = "IsJumpAndDrift"
-  L8_2 = L8_2(L9_2)
-  if L8_2 == 1 then
-    L9_2 = getvar
-    L10_2 = "CurrentPlayerIndex"
-    L9_2 = L9_2(L10_2)
-    L10_2 = getvar
-    L11_2 = "Player"
-    L12_2 = L9_2 + 1
-    L13_2 = "Speed"
-    L11_2 = L11_2 .. L12_2 .. L13_2
-    L10_2 = L10_2(L11_2)
-    L6_2 = L10_2
-    L10_2 = getvar
-    L11_2 = "P"
-    L12_2 = L9_2 + 1
-    L13_2 = "DriftAngle"
-    L11_2 = L11_2 .. L12_2 .. L13_2
-    L10_2 = L10_2(L11_2)
-    L7_2 = L10_2 / 0.0174532
-  end
-  L9_2 = SetComponentValue
-  L10_2 = A0_2.HUD_Drift_Car
-  L10_2 = L10_2.icon1
-  L10_2 = L10_2.instance
-  L11_2 = "rot"
-  L12_2 = L7_2
-  L9_2(L10_2, L11_2, L12_2)
-  L9_2 = getvar
-  L10_2 = "P1DriftScore"
-  L9_2 = L9_2(L10_2)
-  L10_2 = A0_2.Shortcuts
-  L10_2 = L10_2.DriftScore
-  L11_2 = L10_2
-  L10_2 = L10_2.SetValue
-  L12_2 = ""
-  L13_2 = math
-  L13_2 = L13_2.floor
-  L14_2 = L9_2
-  L13_2 = L13_2(L14_2)
-  L12_2 = L12_2 .. L13_2
-  L10_2(L11_2, L12_2)
-  if L2_2 > L9_2 then
-    A0_2.lastDriftScore = 0
-  end
-  if L2_2 < L9_2 then
-    L10_2 = A0_2.lastDriftScore
-    if L10_2 == 0 then
-      L10_2 = PlayMenuAnimation
-      L11_2 = A0_2.instance
-      L12_2 = "Great"
-      L10_2(L11_2, L12_2)
-      L10_2 = PlayUISound
-      L11_2 = UISoundEventGoodDrift
-      L10_2(L11_2)
-      L10_2 = A0_2.Shortcuts
-      L10_2 = L10_2.CoolFactor
-      L11_2 = L10_2
-      L10_2 = L10_2.SetValue
-      L12_2 = GetLocalizedString
-      L13_2 = "InGameUI"
-      L14_2 = "STR_DRIFTMETER_1"
-      L12_2, L13_2, L14_2 = L12_2(L13_2, L14_2)
-      L10_2(L11_2, L12_2, L13_2, L14_2)
-      A0_2.lastDriftScore = 1
+HUD_DriftMeter = {
+  instance = 0,
+  lastDriftScore = 0,
+  SteerText = UIContainer:New(),
+  Arrow_Twist = UIContainer:New(),
+  HUD_Drift_Car = UIContainer:New(),
+  DriftFrame = UIContainer:New(),
+  ScoreTicker = UIContainer:New(),
+  Message = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    SetTickFrequency(_ARG_0_.instance, 0)
+    _ARG_0_.SteerText.text1 = UIText:New()
+    _ARG_0_.SteerText:Insert(_ARG_0_.SteerText.text1)
+    _ARG_0_.SteerText.text1:Create(_ARG_0_.instance, "SteerText.text1", "STR_STEER", "COMMONUI", "18_BodegaSans-Medium", 642, 117.2, "center")
+    _ARG_0_.Arrow_Twist.icon1 = UIIcon:New()
+    _ARG_0_.Arrow_Twist:Insert(_ARG_0_.Arrow_Twist.icon1)
+    _ARG_0_.Arrow_Twist.icon1:Create(_ARG_0_.instance, "Arrow_Twist.icon1", "hud_drift_arrow", 768, 197, 128, 64, "center")
+    _ARG_0_.HUD_Drift_Car.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Drift_Car:Insert(_ARG_0_.HUD_Drift_Car.icon1)
+    _ARG_0_.HUD_Drift_Car.icon1:Create(_ARG_0_.instance, "HUD_Drift_Car.icon1", "hud_drift_car", 671.95, 220.8, 32, 64, "center")
+    _ARG_0_.DriftFrame.HUD_Drift = UIContainer:New()
+    _ARG_0_.DriftFrame.HUD_Drift.icon1 = UIIcon:New()
+    _ARG_0_.DriftFrame.HUD_Drift:Insert(_ARG_0_.DriftFrame.HUD_Drift.icon1)
+    _ARG_0_.DriftFrame.HUD_Drift.icon1:Create(_ARG_0_.instance, "DriftFrame.HUD_Drift.icon1", "hud_drift", 800, 380.9, 64, 128, "center")
+    _ARG_0_.DriftFrame.HUD_Drift.icon2 = UIIcon:New()
+    _ARG_0_.DriftFrame.HUD_Drift:Insert(_ARG_0_.DriftFrame.HUD_Drift.icon2)
+    _ARG_0_.DriftFrame.HUD_Drift.icon2:Create(_ARG_0_.instance, "DriftFrame.HUD_Drift.icon2", "hud_drift", 864, 380.9, 64, 128, "center")
+    _ARG_0_.DriftFrame.HUD_DriftBar = UIContainer:New()
+    _ARG_0_.DriftFrame.HUD_DriftBar.icon1 = UIIcon:New()
+    _ARG_0_.DriftFrame.HUD_DriftBar:Insert(_ARG_0_.DriftFrame.HUD_DriftBar.icon1)
+    _ARG_0_.DriftFrame.HUD_DriftBar.icon1:Create(_ARG_0_.instance, "DriftFrame.HUD_DriftBar.icon1", "hud_driftbar", 799.95, 332.85, 64, 64, "center")
+    _ARG_0_.DriftFrame.HUD_DriftBar.icon2 = UIIcon:New()
+    _ARG_0_.DriftFrame.HUD_DriftBar:Insert(_ARG_0_.DriftFrame.HUD_DriftBar.icon2)
+    _ARG_0_.DriftFrame.HUD_DriftBar.icon2:Create(_ARG_0_.instance, "DriftFrame.HUD_DriftBar.icon2", "hud_driftbar", 863.95, 332.85, 64, 64, "center")
+    _ARG_0_.ScoreTicker.DriftScore = UIText:New()
+    _ARG_0_.ScoreTicker:Insert(_ARG_0_.ScoreTicker.DriftScore)
+    _ARG_0_.ScoreTicker.DriftScore:Create(_ARG_0_.instance, "ScoreTicker.DriftScore", "STR_DYN_CREDITS_7", "COMMONUI", "18_BodegaSans-Medium", 1056.8, 98.6, "center")
+    _ARG_0_.Message.CoolFactor = UIText:New()
+    _ARG_0_.Message:Insert(_ARG_0_.Message.CoolFactor)
+    _ARG_0_.Message.CoolFactor:Create(_ARG_0_.instance, "Message.CoolFactor", "STR_DYN_CREDITS_5", "COMMONUI", "18_BodegaSans-Medium", 1115.95, 351.55, "center")
+    _ARG_0_.Shortcuts.DriftScore = _ARG_0_.ScoreTicker.DriftScore
+    _ARG_0_.Shortcuts.CoolFactor = _ARG_0_.Message.CoolFactor
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+    _ARG_0_.lastDriftScore = 0
+    _ARG_0_.Shortcuts.CoolFactor:SetValue("")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    if getvar("IsJumpAndDrift") == 1 then
     end
-  end
-  if L3_2 < L9_2 then
-    L10_2 = A0_2.lastDriftScore
-    if L10_2 == 1 then
-      L10_2 = PlayMenuAnimation
-      L11_2 = A0_2.instance
-      L12_2 = "Awesome"
-      L10_2(L11_2, L12_2)
-      L10_2 = PlayUISound
-      L11_2 = UISoundEventGreatDrift
-      L10_2(L11_2)
-      L10_2 = A0_2.Shortcuts
-      L10_2 = L10_2.CoolFactor
-      L11_2 = L10_2
-      L10_2 = L10_2.SetValue
-      L12_2 = GetLocalizedString
-      L13_2 = "InGameUI"
-      L14_2 = "STR_DRIFTMETER_2"
-      L12_2, L13_2, L14_2 = L12_2(L13_2, L14_2)
-      L10_2(L11_2, L12_2, L13_2, L14_2)
-      A0_2.lastDriftScore = 2
+    SetComponentValue(_ARG_0_.HUD_Drift_Car.icon1.instance, "rot", getvar("P" .. getvar("CurrentPlayerIndex") + 1 .. "DriftAngle") / 0.0174532)
+    _ARG_0_.Shortcuts.DriftScore:SetValue("" .. math.floor((getvar("P1DriftScore"))))
+    if 500 > getvar("P1DriftScore") then
+      _ARG_0_.lastDriftScore = 0
     end
-  end
-  if L4_2 < L9_2 then
-    L10_2 = A0_2.lastDriftScore
-    if L10_2 == 2 then
-      L10_2 = PlayMenuAnimation
-      L11_2 = A0_2.instance
-      L12_2 = "Super"
-      L10_2(L11_2, L12_2)
-      L10_2 = PlayUISound
-      L11_2 = UISoundEventAwesomeDrift
-      L10_2(L11_2)
-      L10_2 = A0_2.Shortcuts
-      L10_2 = L10_2.CoolFactor
-      L11_2 = L10_2
-      L10_2 = L10_2.SetValue
-      L12_2 = GetLocalizedString
-      L13_2 = "InGameUI"
-      L14_2 = "STR_DRIFTMETER_3"
-      L12_2, L13_2, L14_2 = L12_2(L13_2, L14_2)
-      L10_2(L11_2, L12_2, L13_2, L14_2)
-      A0_2.lastDriftScore = 3
+    if 500 < getvar("P1DriftScore") and _ARG_0_.lastDriftScore == 0 then
+      PlayMenuAnimation(_ARG_0_.instance, "Great")
+      PlayUISound(UISoundEventGoodDrift)
+      _ARG_0_.Shortcuts.CoolFactor:SetValue(GetLocalizedString("InGameUI", "STR_DRIFTMETER_1"))
+      _ARG_0_.lastDriftScore = 1
     end
+    if 1000 < getvar("P1DriftScore") and _ARG_0_.lastDriftScore == 1 then
+      PlayMenuAnimation(_ARG_0_.instance, "Awesome")
+      PlayUISound(UISoundEventGreatDrift)
+      _ARG_0_.Shortcuts.CoolFactor:SetValue(GetLocalizedString("InGameUI", "STR_DRIFTMETER_2"))
+      _ARG_0_.lastDriftScore = 2
+    end
+    if 1500 < getvar("P1DriftScore") and _ARG_0_.lastDriftScore == 2 then
+      PlayMenuAnimation(_ARG_0_.instance, "Super")
+      PlayUISound(UISoundEventAwesomeDrift)
+      _ARG_0_.Shortcuts.CoolFactor:SetValue(GetLocalizedString("InGameUI", "STR_DRIFTMETER_3"))
+      _ARG_0_.lastDriftScore = 3
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
   end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-HUD_DriftMeter = L0_1
+}
