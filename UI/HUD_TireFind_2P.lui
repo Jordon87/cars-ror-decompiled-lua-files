@@ -1,1318 +1,178 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Timer = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.TimeCount = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Tire1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Tire2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.TireCount1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.TireCount2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Boost1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Boost2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Speedometer1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Speedometer2 = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.HUD_Timer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Timer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Timer
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Timer
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Timer.icon1"
-  L5_2 = "hud_timer"
-  L6_2 = 522.8
-  L7_2 = 410.05
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.hud_time = L2_2
-  L1_2 = A0_2.TimeCount
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.hud_time
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.hud_time
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.hud_time"
-  L5_2 = "STR_DYN_HUD_2"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 992.95
-  L9_2 = 406.65
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_Bubble_1 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.HUD_Bubble_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.HUD_Bubble_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.HUD_Bubble_1.icon1"
-  L5_2 = "hud_bubble_1"
-  L6_2 = 878.7
-  L7_2 = 465.85
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameTime = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.FrameTime
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.FrameTime.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1072.725
-  L7_2 = 485
-  L8_2 = 79.95
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.FrameTime
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.FrameTime.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 1192.9
-  L7_2 = 485
-  L8_2 = 120
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.FrameTime
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.FrameTime.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 1272.9
-  L7_2 = 485
-  L8_2 = 80
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Tire1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Tire1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Tire1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Tire1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Tire1.icon1"
-  L5_2 = "hud_tire"
-  L6_2 = -454.25
-  L7_2 = 156.7
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Tire2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Tire2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Tire2
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Tire2
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Tire2.icon1"
-  L5_2 = "hud_tire"
-  L6_2 = -454.2
-  L7_2 = 679.7
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.tire_count1 = L2_2
-  L1_2 = A0_2.TireCount1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount1
-  L3_2 = L3_2.tire_count1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.tire_count1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount1.tire_count1"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = -32.25
-  L9_2 = 152.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_Bubble_1 = L2_2
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount1
-  L3_2 = L3_2.HUD_Bubble_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.HUD_Bubble_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount1.HUD_Bubble_1.icon1"
-  L5_2 = "hud_bubble_1"
-  L6_2 = -99.45
-  L7_2 = 211.35
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameShortest = L2_2
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount1
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount1.FrameShortest.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 47.7
-  L7_2 = 230.5
-  L8_2 = 80
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount1
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount1.FrameShortest.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 79.75
-  L7_2 = 230.4
-  L8_2 = 32
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount1
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount1
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount1.FrameShortest.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 159.75
-  L7_2 = 230.5
-  L8_2 = 80
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.tire_count2 = L2_2
-  L1_2 = A0_2.TireCount2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount2
-  L3_2 = L3_2.tire_count2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.tire_count2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount2.tire_count2"
-  L5_2 = "STR_DYN_HUD_3"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = -32.2
-  L9_2 = 675.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_Bubble_1 = L2_2
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount2
-  L3_2 = L3_2.HUD_Bubble_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.HUD_Bubble_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount2.HUD_Bubble_1.icon1"
-  L5_2 = "hud_bubble_1"
-  L6_2 = -99.4
-  L7_2 = 734.35
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameShortest = L2_2
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount2
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount2.FrameShortest.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 47.75
-  L7_2 = 753.5
-  L8_2 = 80
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount2
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount2.FrameShortest.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 79.8
-  L7_2 = 753.4
-  L8_2 = 32
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TireCount2
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TireCount2
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TireCount2.FrameShortest.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 159.8
-  L7_2 = 753.5
-  L8_2 = 80
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = 1777.55
-  L7_2 = 359
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 1954
-  L7_2 = 362.725
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = 1890.4
-  L7_2 = 354.2
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1792.6
-  L7_2 = 378.3
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = 1980.6
-  L7_2 = 378.3
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = 1948.6
-  L7_2 = 378.3
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = 1777.6
-  L7_2 = 689
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 1954.05
-  L7_2 = 692.725
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = 1890.45
-  L7_2 = 684.2
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1792.65
-  L7_2 = 708.3
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = 1980.65
-  L7_2 = 708.3
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = 1948.65
-  L7_2 = 708.3
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text_speed1 = L2_2
-  L1_2 = A0_2.Speedometer1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer1
-  L3_2 = L3_2.text_speed1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer1
-  L1_2 = L1_2.text_speed1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer1.text_speed1"
-  L5_2 = "STR_DYN_HUD_1"
-  L6_2 = "INGAMEUI"
-  L7_2 = "XX_SpeedometerFont"
-  L8_2 = 1866.95
-  L9_2 = 344.5
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Speedometer1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer1
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer1
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer1.text3"
-  L5_2 = "STR_SPEED_UNITS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2078.3
-  L9_2 = 359.6
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Speedometer1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer1
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer1
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer1.icon5"
-  L5_2 = "hud_speedometer_1"
-  L6_2 = 2061.2
-  L7_2 = 437.65
-  L8_2 = 215
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text_speed2 = L2_2
-  L1_2 = A0_2.Speedometer2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer2
-  L3_2 = L3_2.text_speed2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer2
-  L1_2 = L1_2.text_speed2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer2.text_speed2"
-  L5_2 = "STR_DYN_HUD_5"
-  L6_2 = "INGAMEUI"
-  L7_2 = "XX_SpeedometerFont"
-  L8_2 = 1866.95
-  L9_2 = 674.5
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Speedometer2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer2
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer2
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer2.text3"
-  L5_2 = "STR_SPEED_UNITS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2078.3
-  L9_2 = 689.6
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Speedometer2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer2
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer2
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer2.icon5"
-  L5_2 = "hud_speedometer_1"
-  L6_2 = 2061.2
-  L7_2 = 767.65
-  L8_2 = 215
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.TimeCount
-  L2_2 = L2_2.hud_time
-  L1_2.hud_time = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.TireCount1
-  L2_2 = L2_2.tire_count1
-  L1_2.tire_count1 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.TireCount2
-  L2_2 = L2_2.tire_count2
-  L1_2.tire_count2 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Speedometer1
-  L2_2 = L2_2.text_speed1
-  L1_2.text_speed1 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Speedometer2
-  L2_2 = L2_2.text_speed2
-  L1_2.text_speed2 = L2_2
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.Boost1
-  L4_2 = "Boost1"
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.Boost2
-  L4_2 = "Boost2"
-  L1_2(L2_2, L3_2, L4_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
-  L3_2 = PlayMenuAnimation
-  L4_2 = A0_2.instance
-  L5_2 = "GiveBonus"
-  L3_2(L4_2, L5_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.SetRacerPosition = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.text_speed1
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = ""
-  L5_2 = math
-  L5_2 = L5_2.floor
-  L6_2 = getvar
-  L7_2 = "Player1Speed"
-  L6_2, L7_2, L8_2, L9_2, L10_2 = L6_2(L7_2)
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  L2_2 = getvar
-  L3_2 = "P1NOXTot"
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L3_2 = A0_2.Boost1
-    L4_2 = L3_2
-    L3_2 = L3_2.SetBarPercent
-    L5_2 = getvar
-    L6_2 = "Player1NOX"
-    L5_2 = L5_2(L6_2)
-    L5_2 = L5_2 / L2_2
-    L3_2(L4_2, L5_2)
-  else
-    L3_2 = A0_2.Boost1
-    L4_2 = L3_2
-    L3_2 = L3_2.SetBarPercent
-    L5_2 = 0
-    L3_2(L4_2, L5_2)
+HUD_TireFind_2P = {
+  instance = 0,
+  HUD_Timer = UIContainer:New(),
+  TimeCount = UIContainer:New(),
+  HUD_Tire1 = UIContainer:New(),
+  HUD_Tire2 = UIContainer:New(),
+  TireCount1 = UIContainer:New(),
+  TireCount2 = UIContainer:New(),
+  Boost1 = UIContainer:New(),
+  Boost2 = UIContainer:New(),
+  Speedometer1 = UIContainer:New(),
+  Speedometer2 = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.HUD_Timer.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Timer:Insert(_ARG_0_.HUD_Timer.icon1)
+    _ARG_0_.HUD_Timer.icon1:Create(_ARG_0_.instance, "HUD_Timer.icon1", "hud_timer", 522.8, 410.05, 64, 64, "center")
+    _ARG_0_.TimeCount.hud_time = UIText:New()
+    _ARG_0_.TimeCount:Insert(_ARG_0_.TimeCount.hud_time)
+    _ARG_0_.TimeCount.hud_time:Create(_ARG_0_.instance, "TimeCount.hud_time", "STR_DYN_HUD_2", "INGAMEUI", "18_BodegaSans-Medium", 992.95, 406.65, "center")
+    _ARG_0_.TimeCount.HUD_Bubble_1 = UIContainer:New()
+    _ARG_0_.TimeCount.HUD_Bubble_1.icon1 = UIIcon:New()
+    _ARG_0_.TimeCount.HUD_Bubble_1:Insert(_ARG_0_.TimeCount.HUD_Bubble_1.icon1)
+    _ARG_0_.TimeCount.HUD_Bubble_1.icon1:Create(_ARG_0_.instance, "TimeCount.HUD_Bubble_1.icon1", "hud_bubble_1", 878.7, 465.85, 64, 64, "center")
+    _ARG_0_.TimeCount.FrameTime = UIContainer:New()
+    _ARG_0_.TimeCount.FrameTime.icon1 = UIIcon:New()
+    _ARG_0_.TimeCount.FrameTime:Insert(_ARG_0_.TimeCount.FrameTime.icon1)
+    _ARG_0_.TimeCount.FrameTime.icon1:Create(_ARG_0_.instance, "TimeCount.FrameTime.icon1", "hud_component_5", 1072.725, 485, 79.95, 80, "center")
+    _ARG_0_.TimeCount.FrameTime.icon2 = UIIcon:New()
+    _ARG_0_.TimeCount.FrameTime:Insert(_ARG_0_.TimeCount.FrameTime.icon2)
+    _ARG_0_.TimeCount.FrameTime.icon2:Create(_ARG_0_.instance, "TimeCount.FrameTime.icon2", "hud_component_2", 1192.9, 485, 120, 80, "center")
+    _ARG_0_.TimeCount.FrameTime.icon3 = UIIcon:New()
+    _ARG_0_.TimeCount.FrameTime:Insert(_ARG_0_.TimeCount.FrameTime.icon3)
+    _ARG_0_.TimeCount.FrameTime.icon3:Create(_ARG_0_.instance, "TimeCount.FrameTime.icon3", "hud_component_5", 1272.9, 485, 80, 80, "center")
+    _ARG_0_.HUD_Tire1.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Tire1:Insert(_ARG_0_.HUD_Tire1.icon1)
+    _ARG_0_.HUD_Tire1.icon1:Create(_ARG_0_.instance, "HUD_Tire1.icon1", "hud_tire", -454.25, 156.7, 64, 64, "center")
+    _ARG_0_.HUD_Tire2.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Tire2:Insert(_ARG_0_.HUD_Tire2.icon1)
+    _ARG_0_.HUD_Tire2.icon1:Create(_ARG_0_.instance, "HUD_Tire2.icon1", "hud_tire", -454.2, 679.7, 64, 64, "center")
+    _ARG_0_.TireCount1.tire_count1 = UIText:New()
+    _ARG_0_.TireCount1:Insert(_ARG_0_.TireCount1.tire_count1)
+    _ARG_0_.TireCount1.tire_count1:Create(_ARG_0_.instance, "TireCount1.tire_count1", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", -32.25, 152.15, "center")
+    _ARG_0_.TireCount1.HUD_Bubble_1 = UIContainer:New()
+    _ARG_0_.TireCount1.HUD_Bubble_1.icon1 = UIIcon:New()
+    _ARG_0_.TireCount1.HUD_Bubble_1:Insert(_ARG_0_.TireCount1.HUD_Bubble_1.icon1)
+    _ARG_0_.TireCount1.HUD_Bubble_1.icon1:Create(_ARG_0_.instance, "TireCount1.HUD_Bubble_1.icon1", "hud_bubble_1", -99.45, 211.35, 64, 64, "center")
+    _ARG_0_.TireCount1.FrameShortest = UIContainer:New()
+    _ARG_0_.TireCount1.FrameShortest.icon1 = UIIcon:New()
+    _ARG_0_.TireCount1.FrameShortest:Insert(_ARG_0_.TireCount1.FrameShortest.icon1)
+    _ARG_0_.TireCount1.FrameShortest.icon1:Create(_ARG_0_.instance, "TireCount1.FrameShortest.icon1", "hud_component_5", 47.7, 230.5, 80, 80, "center")
+    _ARG_0_.TireCount1.FrameShortest.icon2 = UIIcon:New()
+    _ARG_0_.TireCount1.FrameShortest:Insert(_ARG_0_.TireCount1.FrameShortest.icon2)
+    _ARG_0_.TireCount1.FrameShortest.icon2:Create(_ARG_0_.instance, "TireCount1.FrameShortest.icon2", "hud_component_2", 79.75, 230.4, 32, 80, "center")
+    _ARG_0_.TireCount1.FrameShortest.icon3 = UIIcon:New()
+    _ARG_0_.TireCount1.FrameShortest:Insert(_ARG_0_.TireCount1.FrameShortest.icon3)
+    _ARG_0_.TireCount1.FrameShortest.icon3:Create(_ARG_0_.instance, "TireCount1.FrameShortest.icon3", "hud_component_5", 159.75, 230.5, 80, 80, "center")
+    _ARG_0_.TireCount2.tire_count2 = UIText:New()
+    _ARG_0_.TireCount2:Insert(_ARG_0_.TireCount2.tire_count2)
+    _ARG_0_.TireCount2.tire_count2:Create(_ARG_0_.instance, "TireCount2.tire_count2", "STR_DYN_HUD_3", "INGAMEUI", "18_BodegaSans-Medium", -32.2, 675.15, "center")
+    _ARG_0_.TireCount2.HUD_Bubble_1 = UIContainer:New()
+    _ARG_0_.TireCount2.HUD_Bubble_1.icon1 = UIIcon:New()
+    _ARG_0_.TireCount2.HUD_Bubble_1:Insert(_ARG_0_.TireCount2.HUD_Bubble_1.icon1)
+    _ARG_0_.TireCount2.HUD_Bubble_1.icon1:Create(_ARG_0_.instance, "TireCount2.HUD_Bubble_1.icon1", "hud_bubble_1", -99.4, 734.35, 64, 64, "center")
+    _ARG_0_.TireCount2.FrameShortest = UIContainer:New()
+    _ARG_0_.TireCount2.FrameShortest.icon1 = UIIcon:New()
+    _ARG_0_.TireCount2.FrameShortest:Insert(_ARG_0_.TireCount2.FrameShortest.icon1)
+    _ARG_0_.TireCount2.FrameShortest.icon1:Create(_ARG_0_.instance, "TireCount2.FrameShortest.icon1", "hud_component_5", 47.75, 753.5, 80, 80, "center")
+    _ARG_0_.TireCount2.FrameShortest.icon2 = UIIcon:New()
+    _ARG_0_.TireCount2.FrameShortest:Insert(_ARG_0_.TireCount2.FrameShortest.icon2)
+    _ARG_0_.TireCount2.FrameShortest.icon2:Create(_ARG_0_.instance, "TireCount2.FrameShortest.icon2", "hud_component_2", 79.8, 753.4, 32, 80, "center")
+    _ARG_0_.TireCount2.FrameShortest.icon3 = UIIcon:New()
+    _ARG_0_.TireCount2.FrameShortest:Insert(_ARG_0_.TireCount2.FrameShortest.icon3)
+    _ARG_0_.TireCount2.FrameShortest.icon3:Create(_ARG_0_.instance, "TireCount2.FrameShortest.icon3", "hud_component_5", 159.8, 753.5, 80, 80, "center")
+    _ARG_0_.Boost1.GradientHighlight = UIContainer:New()
+    _ARG_0_.Boost1.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.GradientHighlight:Insert(_ARG_0_.Boost1.GradientHighlight.icon1)
+    _ARG_0_.Boost1.GradientHighlight.icon1:Create(_ARG_0_.instance, "Boost1.GradientHighlight.icon1", "hud_gradient_2", 1777.55, 359, 16, 16, "center")
+    _ARG_0_.Boost1.Blackbar = UIContainer:New()
+    _ARG_0_.Boost1.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.Blackbar:Insert(_ARG_0_.Boost1.Blackbar.icon1)
+    _ARG_0_.Boost1.Blackbar.icon1:Create(_ARG_0_.instance, "Boost1.Blackbar.icon1", "component_frame_color", 1954, 362.725, 193.6, 16.55, "center")
+    _ARG_0_.Boost1.Background = UIContainer:New()
+    _ARG_0_.Boost1.Background.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.Background:Insert(_ARG_0_.Boost1.Background.icon1)
+    _ARG_0_.Boost1.Background.icon1:Create(_ARG_0_.instance, "Boost1.Background.icon1", "hud_speedometer_2", 1890.4, 354.2, 128, 8, "center")
+    _ARG_0_.Boost1.Bar = UIContainer:New()
+    _ARG_0_.Boost1.Bar.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.Bar:Insert(_ARG_0_.Boost1.Bar.icon1)
+    _ARG_0_.Boost1.Bar.icon1:Create(_ARG_0_.instance, "Boost1.Bar.icon1", "hud_component_5", 1792.6, 378.3, 32, 32, "center")
+    _ARG_0_.Boost1.Bar.icon2 = UIIcon:New()
+    _ARG_0_.Boost1.Bar:Insert(_ARG_0_.Boost1.Bar.icon2)
+    _ARG_0_.Boost1.Bar.icon2:Create(_ARG_0_.instance, "Boost1.Bar.icon2", "hud_component_5", 1980.6, 378.3, 32, 32, "center")
+    _ARG_0_.Boost1.Bar.icon3 = UIIcon:New()
+    _ARG_0_.Boost1.Bar:Insert(_ARG_0_.Boost1.Bar.icon3)
+    _ARG_0_.Boost1.Bar.icon3:Create(_ARG_0_.instance, "Boost1.Bar.icon3", "hud_component_2", 1948.6, 378.3, 156, 32, "center")
+    _ARG_0_.Boost2.GradientHighlight = UIContainer:New()
+    _ARG_0_.Boost2.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.GradientHighlight:Insert(_ARG_0_.Boost2.GradientHighlight.icon1)
+    _ARG_0_.Boost2.GradientHighlight.icon1:Create(_ARG_0_.instance, "Boost2.GradientHighlight.icon1", "hud_gradient_2", 1777.6, 689, 16, 16, "center")
+    _ARG_0_.Boost2.Blackbar = UIContainer:New()
+    _ARG_0_.Boost2.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.Blackbar:Insert(_ARG_0_.Boost2.Blackbar.icon1)
+    _ARG_0_.Boost2.Blackbar.icon1:Create(_ARG_0_.instance, "Boost2.Blackbar.icon1", "component_frame_color", 1954.05, 692.725, 193.6, 16.55, "center")
+    _ARG_0_.Boost2.Background = UIContainer:New()
+    _ARG_0_.Boost2.Background.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.Background:Insert(_ARG_0_.Boost2.Background.icon1)
+    _ARG_0_.Boost2.Background.icon1:Create(_ARG_0_.instance, "Boost2.Background.icon1", "hud_speedometer_2", 1890.45, 684.2, 128, 8, "center")
+    _ARG_0_.Boost2.Bar = UIContainer:New()
+    _ARG_0_.Boost2.Bar.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.Bar:Insert(_ARG_0_.Boost2.Bar.icon1)
+    _ARG_0_.Boost2.Bar.icon1:Create(_ARG_0_.instance, "Boost2.Bar.icon1", "hud_component_5", 1792.65, 708.3, 32, 32, "center")
+    _ARG_0_.Boost2.Bar.icon2 = UIIcon:New()
+    _ARG_0_.Boost2.Bar:Insert(_ARG_0_.Boost2.Bar.icon2)
+    _ARG_0_.Boost2.Bar.icon2:Create(_ARG_0_.instance, "Boost2.Bar.icon2", "hud_component_5", 1980.65, 708.3, 32, 32, "center")
+    _ARG_0_.Boost2.Bar.icon3 = UIIcon:New()
+    _ARG_0_.Boost2.Bar:Insert(_ARG_0_.Boost2.Bar.icon3)
+    _ARG_0_.Boost2.Bar.icon3:Create(_ARG_0_.instance, "Boost2.Bar.icon3", "hud_component_2", 1948.65, 708.3, 156, 32, "center")
+    _ARG_0_.Speedometer1.text_speed1 = UIText:New()
+    _ARG_0_.Speedometer1:Insert(_ARG_0_.Speedometer1.text_speed1)
+    _ARG_0_.Speedometer1.text_speed1:Create(_ARG_0_.instance, "Speedometer1.text_speed1", "STR_DYN_HUD_1", "INGAMEUI", "XX_SpeedometerFont", 1866.95, 344.5, "right")
+    _ARG_0_.Speedometer1.text3 = UIText:New()
+    _ARG_0_.Speedometer1:Insert(_ARG_0_.Speedometer1.text3)
+    _ARG_0_.Speedometer1.text3:Create(_ARG_0_.instance, "Speedometer1.text3", "STR_SPEED_UNITS", "INGAMEUI", "18_BodegaSans-Medium", 2078.3, 359.6, "left")
+    _ARG_0_.Speedometer1.icon5 = UIIcon:New()
+    _ARG_0_.Speedometer1:Insert(_ARG_0_.Speedometer1.icon5)
+    _ARG_0_.Speedometer1.icon5:Create(_ARG_0_.instance, "Speedometer1.icon5", "hud_speedometer_1", 2061.2, 437.65, 215, 128, "center")
+    _ARG_0_.Speedometer2.text_speed2 = UIText:New()
+    _ARG_0_.Speedometer2:Insert(_ARG_0_.Speedometer2.text_speed2)
+    _ARG_0_.Speedometer2.text_speed2:Create(_ARG_0_.instance, "Speedometer2.text_speed2", "STR_DYN_HUD_5", "INGAMEUI", "XX_SpeedometerFont", 1866.95, 674.5, "right")
+    _ARG_0_.Speedometer2.text3 = UIText:New()
+    _ARG_0_.Speedometer2:Insert(_ARG_0_.Speedometer2.text3)
+    _ARG_0_.Speedometer2.text3:Create(_ARG_0_.instance, "Speedometer2.text3", "STR_SPEED_UNITS", "INGAMEUI", "18_BodegaSans-Medium", 2078.3, 689.6, "left")
+    _ARG_0_.Speedometer2.icon5 = UIIcon:New()
+    _ARG_0_.Speedometer2:Insert(_ARG_0_.Speedometer2.icon5)
+    _ARG_0_.Speedometer2.icon5:Create(_ARG_0_.instance, "Speedometer2.icon5", "hud_speedometer_1", 2061.2, 767.65, 215, 128, "center")
+    _ARG_0_.Shortcuts.hud_time = _ARG_0_.TimeCount.hud_time
+    _ARG_0_.Shortcuts.tire_count1 = _ARG_0_.TireCount1.tire_count1
+    _ARG_0_.Shortcuts.tire_count2 = _ARG_0_.TireCount2.tire_count2
+    _ARG_0_.Shortcuts.text_speed1 = _ARG_0_.Speedometer1.text_speed1
+    _ARG_0_.Shortcuts.text_speed2 = _ARG_0_.Speedometer2.text_speed2
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.Boost1, "Boost1")
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.Boost2, "Boost2")
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    PlayMenuAnimation(_ARG_0_.instance, "GiveBonus")
+  end,
+  SetRacerPosition = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.Shortcuts.text_speed1:SetValue("" .. math.floor(getvar("Player1Speed")))
+    if getvar("P1NOXTot") ~= 0 then
+      _ARG_0_.Boost1:SetBarPercent(getvar("Player1NOX") / getvar("P1NOXTot"))
+    else
+      _ARG_0_.Boost1:SetBarPercent(0)
+    end
+    _ARG_0_.Shortcuts.tire_count1:SetValue("" .. GetPlayerNumTiresFound(1) .. "/" .. getvar("TotalTireCount"))
+    _ARG_0_.Shortcuts.text_speed2:SetValue("" .. math.floor(getvar("Player2Speed")))
+    if getvar("P2NOXTot") ~= 0 then
+      _ARG_0_.Boost2:SetBarPercent(getvar("Player2NOX") / getvar("P2NOXTot"))
+    else
+      _ARG_0_.Boost2:SetBarPercent(0)
+    end
+    _ARG_0_.Shortcuts.tire_count2:SetValue("" .. GetPlayerNumTiresFound(2) .. "/" .. getvar("TotalTireCount"))
+    _ARG_0_.Shortcuts.hud_time:SetValue("" .. FormatTimeStandardized(math.floor(getvar("TimeLeft"))))
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
   end
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.tire_count1
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = ""
-  L6_2 = GetPlayerNumTiresFound
-  L7_2 = 1
-  L6_2 = L6_2(L7_2)
-  L7_2 = "/"
-  L8_2 = getvar
-  L9_2 = "TotalTireCount"
-  L8_2 = L8_2(L9_2)
-  L5_2 = L5_2 .. L6_2 .. L7_2 .. L8_2
-  L3_2(L4_2, L5_2)
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.text_speed2
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = ""
-  L6_2 = math
-  L6_2 = L6_2.floor
-  L7_2 = getvar
-  L8_2 = "Player2Speed"
-  L7_2, L8_2, L9_2, L10_2 = L7_2(L8_2)
-  L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2)
-  L5_2 = L5_2 .. L6_2
-  L3_2(L4_2, L5_2)
-  L3_2 = getvar
-  L4_2 = "P2NOXTot"
-  L3_2 = L3_2(L4_2)
-  if L3_2 ~= 0 then
-    L4_2 = A0_2.Boost2
-    L5_2 = L4_2
-    L4_2 = L4_2.SetBarPercent
-    L6_2 = getvar
-    L7_2 = "Player2NOX"
-    L6_2 = L6_2(L7_2)
-    L6_2 = L6_2 / L3_2
-    L4_2(L5_2, L6_2)
-  else
-    L4_2 = A0_2.Boost2
-    L5_2 = L4_2
-    L4_2 = L4_2.SetBarPercent
-    L6_2 = 0
-    L4_2(L5_2, L6_2)
-  end
-  L4_2 = A0_2.Shortcuts
-  L4_2 = L4_2.tire_count2
-  L5_2 = L4_2
-  L4_2 = L4_2.SetValue
-  L6_2 = ""
-  L7_2 = GetPlayerNumTiresFound
-  L8_2 = 2
-  L7_2 = L7_2(L8_2)
-  L8_2 = "/"
-  L9_2 = getvar
-  L10_2 = "TotalTireCount"
-  L9_2 = L9_2(L10_2)
-  L6_2 = L6_2 .. L7_2 .. L8_2 .. L9_2
-  L4_2(L5_2, L6_2)
-  L4_2 = A0_2.Shortcuts
-  L4_2 = L4_2.hud_time
-  L5_2 = L4_2
-  L4_2 = L4_2.SetValue
-  L6_2 = ""
-  L7_2 = FormatTimeStandardized
-  L8_2 = math
-  L8_2 = L8_2.floor
-  L9_2 = getvar
-  L10_2 = "TimeLeft"
-  L9_2, L10_2 = L9_2(L10_2)
-  L8_2, L9_2, L10_2 = L8_2(L9_2, L10_2)
-  L7_2 = L7_2(L8_2, L9_2, L10_2)
-  L6_2 = L6_2 .. L7_2
-  L4_2(L5_2, L6_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-HUD_TireFind_2P = L0_1
+}

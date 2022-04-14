@@ -1,2307 +1,363 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = {}
-L1_1.SCHunting = 0
-L1_1.SCPursuing = 1
-L1_1.SCCaught = 2
-L1_1.SCFailed = 3
-L1_1.SCSuccess = 4
-L0_1.Modes = L1_1
-L0_1.mode = 0
-L0_1.huntedIndex = 0
-L1_1 = {}
-L0_1.RacerIcons = L1_1
-L0_1.state = ""
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Floater = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Message = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Timer = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.TimeCount = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Boost = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Speedometer = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Badge1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Badge2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Badge3 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HealthBar1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HealthBar2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HealthBar3 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Car1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Car2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Car3 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Score = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.Floater
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.newBonusPoints = L2_2
-  L1_2 = A0_2.Floater
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Floater
-  L3_2 = L3_2.newBonusPoints
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Floater
-  L1_2 = L1_2.newBonusPoints
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Floater.newBonusPoints"
-  L5_2 = "STR_DYN_HUD_8"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1945.35
-  L9_2 = 241.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Floater
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Dim_Grid_1 = L2_2
-  L1_2 = A0_2.Floater
-  L1_2 = L1_2.Dim_Grid_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Floater
-  L1_2 = L1_2.Dim_Grid_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Floater
-  L3_2 = L3_2.Dim_Grid_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Floater
-  L1_2 = L1_2.Dim_Grid_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Floater.Dim_Grid_1.icon1"
-  L5_2 = "component_bankgradient"
-  L6_2 = 1953.95
-  L7_2 = 246.55
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Message
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.chase_message = L2_2
-  L1_2 = A0_2.Message
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Message
-  L3_2 = L3_2.chase_message
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Message
-  L1_2 = L1_2.chase_message
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Message.chase_message"
-  L5_2 = "STR_DYN_MENU_64_12"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1101.05
-  L9_2 = 184.75
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Timer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Timer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Timer
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Timer
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Timer.icon1"
-  L5_2 = "hud_timer"
-  L6_2 = 1648.2
-  L7_2 = 155.55
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.hud_time = L2_2
-  L1_2 = A0_2.TimeCount
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.hud_time
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.hud_time
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.hud_time"
-  L5_2 = "STR_DYN_HUD_2"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2105.3
-  L9_2 = 152.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_Bubble_1 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.HUD_Bubble_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.HUD_Bubble_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.HUD_Bubble_1.icon1"
-  L5_2 = "hud_bubble_1"
-  L6_2 = 2004.05
-  L7_2 = 211.35
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameTime = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.FrameTime
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.FrameTime.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 2186.2
-  L7_2 = 230.5
-  L8_2 = 80
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.FrameTime
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.FrameTime.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 2282.1
-  L7_2 = 230.5
-  L8_2 = 96
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.TimeCount
-  L3_2 = L3_2.FrameTime
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.TimeCount
-  L1_2 = L1_2.FrameTime
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "TimeCount.FrameTime.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 2362.25
-  L7_2 = 230.5
-  L8_2 = 80
-  L9_2 = 80
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = 1777.35
-  L7_2 = 689.05
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 1953.8
-  L7_2 = 692.775
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = 1890.2
-  L7_2 = 684.25
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1792.4
-  L7_2 = 708.35
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = 1980.4
-  L7_2 = 708.35
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = 1948.4
-  L7_2 = 708.35
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text_speed = L2_2
-  L1_2 = A0_2.Speedometer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer
-  L3_2 = L3_2.text_speed
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer
-  L1_2 = L1_2.text_speed
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer.text_speed"
-  L5_2 = "STR_DYN_HUD_1"
-  L6_2 = "INGAMEUI"
-  L7_2 = "XX_SpeedometerFont"
-  L8_2 = 1866.95
-  L9_2 = 674.55
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Speedometer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer.text3"
-  L5_2 = "STR_SPEED_UNITS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2078.3
-  L9_2 = 689.65
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Speedometer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer.icon5"
-  L5_2 = "hud_speedometer_1"
-  L6_2 = 2061.2
-  L7_2 = 767.7
-  L8_2 = 215
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Badge1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Badge1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Badge1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Badge1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Badge1.icon1"
-  L5_2 = "hud_badge"
-  L6_2 = -541.2
-  L7_2 = 137
-  L8_2 = 58
-  L9_2 = 58
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Badge2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Badge2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Badge2
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Badge2
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Badge2.icon1"
-  L5_2 = "hud_badge"
-  L6_2 = -541.2
-  L7_2 = 187
-  L8_2 = 58
-  L9_2 = 58
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Badge3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Badge3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Badge3
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Badge3
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Badge3.icon1"
-  L5_2 = "hud_badge"
-  L6_2 = -541.2
-  L7_2 = 237
-  L8_2 = 58
-  L9_2 = 58
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar1
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar1.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = -217.9
-  L7_2 = 110.425
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar1
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar1.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = -283.5
-  L7_2 = 101.85
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar1
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar1.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = -396.1
-  L7_2 = 106.65
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar1.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = -378.95
-  L7_2 = 126
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar1.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = -190.95
-  L7_2 = 126
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar1.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = -222.95
-  L7_2 = 126
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar2
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar2.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = -217.9
-  L7_2 = 160.425
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar2
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar2.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = -283.5
-  L7_2 = 151.85
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar2
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar2.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = -396.1
-  L7_2 = 156.65
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar2.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = -378.95
-  L7_2 = 176
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar2.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = -190.95
-  L7_2 = 176
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar2.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = -222.95
-  L7_2 = 176
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar3
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar3
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar3.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = -217.9
-  L7_2 = 210.425
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar3
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar3
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar3.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = -283.5
-  L7_2 = 201.85
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar3
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar3
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar3.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = -396.1
-  L7_2 = 206.65
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar3
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar3
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar3.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = -378.95
-  L7_2 = 226
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar3
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar3.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = -190.95
-  L7_2 = 226
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HealthBar3
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HealthBar3
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HealthBar3.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = -222.95
-  L7_2 = 226
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.time_car1 = L2_2
-  L1_2 = A0_2.Car1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car1
-  L3_2 = L3_2.time_car1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car1
-  L1_2 = L1_2.time_car1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car1.time_car1"
-  L5_2 = "STR_DYN_HUD_9"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = -283.35
-  L9_2 = 104
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.car1 = L2_2
-  L1_2 = A0_2.Car1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car1
-  L3_2 = L3_2.car1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car1
-  L1_2 = L1_2.car1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car1.car1"
-  L5_2 = "STR_DYN_HUD_5"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 14.5
-  L9_2 = 104
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.Car1
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Car1
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car1
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car1
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car1.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 129.775
-  L7_2 = 135
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.time_car2 = L2_2
-  L1_2 = A0_2.Car2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car2
-  L3_2 = L3_2.time_car2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car2
-  L1_2 = L1_2.time_car2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car2.time_car2"
-  L5_2 = "STR_DYN_HUD_10"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = -283.35
-  L9_2 = 154
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.car2 = L2_2
-  L1_2 = A0_2.Car2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car2
-  L3_2 = L3_2.car2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car2
-  L1_2 = L1_2.car2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car2.car2"
-  L5_2 = "STR_DYN_HUD_6"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 14.5
-  L9_2 = 154
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.Car2
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Car2
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car2
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car2
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car2.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 129.775
-  L7_2 = 185
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car3
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.car3_time = L2_2
-  L1_2 = A0_2.Car3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car3
-  L3_2 = L3_2.car3_time
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car3
-  L1_2 = L1_2.car3_time
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car3.car3_time"
-  L5_2 = "STR_DYN_HUD_11"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = -283.35
-  L9_2 = 204
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car3
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.car3 = L2_2
-  L1_2 = A0_2.Car3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car3
-  L3_2 = L3_2.car3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car3
-  L1_2 = L1_2.car3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car3.car3"
-  L5_2 = "STR_DYN_HUD_7"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 14.5
-  L9_2 = 204
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Car3
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.Car3
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Car3
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Car3
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Car3
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Car3.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 129.775
-  L7_2 = 235
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Score
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.text1"
-  L5_2 = "STR_SCORE_LABEL"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1955.3
-  L9_2 = 558.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.points_total = L2_2
-  L1_2 = A0_2.Score
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.points_total
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.points_total
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.points_total"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1955.3
-  L9_2 = 594.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameScore = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.FrameScore.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1991.55
-  L7_2 = 625.65
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.FrameScore.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 2096.55
-  L7_2 = 625.65
-  L8_2 = 105
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.FrameScore.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 2128.55
-  L7_2 = 625.65
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Floater
-  L2_2 = L2_2.newBonusPoints
-  L1_2.newBonusPoints = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Message
-  L2_2 = L2_2.chase_message
-  L1_2.chase_message = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.TimeCount
-  L2_2 = L2_2.hud_time
-  L1_2.hud_time = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Speedometer
-  L2_2 = L2_2.text_speed
-  L1_2.text_speed = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Car1
-  L2_2 = L2_2.time_car1
-  L1_2.time_car1 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Car1
-  L2_2 = L2_2.car1
-  L1_2.car1 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Car2
-  L2_2 = L2_2.time_car2
-  L1_2.time_car2 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Car2
-  L2_2 = L2_2.car2
-  L1_2.car2 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Car3
-  L2_2 = L2_2.car3_time
-  L1_2.car3_time = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Car3
-  L2_2 = L2_2.car3
-  L1_2.car3 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Score
-  L2_2 = L2_2.points_total
-  L1_2.points_total = L2_2
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.HealthBar1
-  L4_2 = "HealthBar1"
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.HealthBar2
-  L4_2 = "HealthBar2"
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.HealthBar3
-  L4_2 = "HealthBar3"
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.Boost
-  L4_2 = "Boost"
-  L1_2(L2_2, L3_2, L4_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.mode
-  L2_2 = A0_2.Modes
-  L2_2 = L2_2.SCPursuing
-  if L1_2 == L2_2 then
-    L1_2 = PlayMenuAnimation
-    L2_2 = A0_2.instance
-    L3_2 = "Timer"
-    L1_2(L2_2, L3_2)
-  end
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "TimerOut"
-  L1_2(L2_2, L3_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.HideAllRacerIcons
-  L1_2(L2_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "TimerOut"
-  L1_2(L2_2, L3_2)
-end
-L0_1.HideTimer = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
-  L1_2 = 1
-  L2_2 = 3
-  L3_2 = 1
-  for L4_2 = L1_2, L2_2, L3_2 do
-    L5_2 = A0_2.RacerIcons
-    L5_2 = L5_2[L4_2]
-    if L5_2 == nil then
-      L5_2 = A0_2.RacerIcons
-      L6_2 = UIContainer
-      L7_2 = L6_2
-      L6_2 = L6_2.New
-      L6_2 = L6_2(L7_2)
-      L5_2[L4_2] = L6_2
-      L5_2 = A0_2.RacerIcons
-      L5_2 = L5_2[L4_2]
-      L6_2 = UIIcon
-      L7_2 = L6_2
-      L6_2 = L6_2.New
-      L6_2 = L6_2(L7_2)
-      L5_2.icon1 = L6_2
-      L5_2 = A0_2.RacerIcons
-      L5_2 = L5_2[L4_2]
-      L6_2 = L5_2
-      L5_2 = L5_2.Insert
-      L7_2 = A0_2.RacerIcons
-      L7_2 = L7_2[L4_2]
-      L7_2 = L7_2.icon1
-      L5_2(L6_2, L7_2)
-      L5_2 = A0_2.RacerIcons
-      L5_2 = L5_2[L4_2]
-      L5_2 = L5_2.icon1
-      L6_2 = L5_2
-      L5_2 = L5_2.Create
-      L7_2 = A0_2.instance
-      L8_2 = "RacerIcons["
-      L9_2 = L4_2
-      L10_2 = "].icon1"
-      L8_2 = L8_2 .. L9_2 .. L10_2
-      L9_2 = "icon_"
-      L10_2 = GetSpeederName
-      L11_2 = L4_2
-      L10_2 = L10_2(L11_2)
-      L11_2 = "_a"
-      L9_2 = L9_2 .. L10_2 .. L11_2
-      L10_2 = -100
-      L11_2 = -100
-      L12_2 = 120
-      L13_2 = 120
-      L14_2 = "center"
-      L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+HUD_SheriffChase = {
+  instance = 0,
+  Modes = {
+    SCHunting = 0,
+    SCPursuing = 1,
+    SCCaught = 2,
+    SCFailed = 3,
+    SCSuccess = 4
+  },
+  mode = 0,
+  huntedIndex = 0,
+  RacerIcons = {},
+  state = "",
+  Floater = UIContainer:New(),
+  Message = UIContainer:New(),
+  HUD_Timer = UIContainer:New(),
+  TimeCount = UIContainer:New(),
+  Boost = UIContainer:New(),
+  Speedometer = UIContainer:New(),
+  Badge1 = UIContainer:New(),
+  Badge2 = UIContainer:New(),
+  Badge3 = UIContainer:New(),
+  HealthBar1 = UIContainer:New(),
+  HealthBar2 = UIContainer:New(),
+  HealthBar3 = UIContainer:New(),
+  Car1 = UIContainer:New(),
+  Car2 = UIContainer:New(),
+  Car3 = UIContainer:New(),
+  Score = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.Floater.newBonusPoints = UIText:New()
+    _ARG_0_.Floater:Insert(_ARG_0_.Floater.newBonusPoints)
+    _ARG_0_.Floater.newBonusPoints:Create(_ARG_0_.instance, "Floater.newBonusPoints", "STR_DYN_HUD_8", "INGAMEUI", "18_BodegaSans-Medium", 1945.35, 241.1, "center")
+    _ARG_0_.Floater.Dim_Grid_1 = UIContainer:New()
+    _ARG_0_.Floater.Dim_Grid_1.icon1 = UIIcon:New()
+    _ARG_0_.Floater.Dim_Grid_1:Insert(_ARG_0_.Floater.Dim_Grid_1.icon1)
+    _ARG_0_.Floater.Dim_Grid_1.icon1:Create(_ARG_0_.instance, "Floater.Dim_Grid_1.icon1", "component_bankgradient", 1953.95, 246.55, 8, 8, "center")
+    _ARG_0_.Message.chase_message = UIText:New()
+    _ARG_0_.Message:Insert(_ARG_0_.Message.chase_message)
+    _ARG_0_.Message.chase_message:Create(_ARG_0_.instance, "Message.chase_message", "STR_DYN_MENU_64_12", "INGAMEUI", "18_BodegaSans-Medium", 1101.05, 184.75, "center")
+    _ARG_0_.HUD_Timer.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Timer:Insert(_ARG_0_.HUD_Timer.icon1)
+    _ARG_0_.HUD_Timer.icon1:Create(_ARG_0_.instance, "HUD_Timer.icon1", "hud_timer", 1648.2, 155.55, 64, 64, "center")
+    _ARG_0_.TimeCount.hud_time = UIText:New()
+    _ARG_0_.TimeCount:Insert(_ARG_0_.TimeCount.hud_time)
+    _ARG_0_.TimeCount.hud_time:Create(_ARG_0_.instance, "TimeCount.hud_time", "STR_DYN_HUD_2", "INGAMEUI", "18_BodegaSans-Medium", 2105.3, 152.15, "center")
+    _ARG_0_.TimeCount.HUD_Bubble_1 = UIContainer:New()
+    _ARG_0_.TimeCount.HUD_Bubble_1.icon1 = UIIcon:New()
+    _ARG_0_.TimeCount.HUD_Bubble_1:Insert(_ARG_0_.TimeCount.HUD_Bubble_1.icon1)
+    _ARG_0_.TimeCount.HUD_Bubble_1.icon1:Create(_ARG_0_.instance, "TimeCount.HUD_Bubble_1.icon1", "hud_bubble_1", 2004.05, 211.35, 64, 64, "center")
+    _ARG_0_.TimeCount.FrameTime = UIContainer:New()
+    _ARG_0_.TimeCount.FrameTime.icon1 = UIIcon:New()
+    _ARG_0_.TimeCount.FrameTime:Insert(_ARG_0_.TimeCount.FrameTime.icon1)
+    _ARG_0_.TimeCount.FrameTime.icon1:Create(_ARG_0_.instance, "TimeCount.FrameTime.icon1", "hud_component_5", 2186.2, 230.5, 80, 80, "center")
+    _ARG_0_.TimeCount.FrameTime.icon2 = UIIcon:New()
+    _ARG_0_.TimeCount.FrameTime:Insert(_ARG_0_.TimeCount.FrameTime.icon2)
+    _ARG_0_.TimeCount.FrameTime.icon2:Create(_ARG_0_.instance, "TimeCount.FrameTime.icon2", "hud_component_2", 2282.1, 230.5, 96, 80, "center")
+    _ARG_0_.TimeCount.FrameTime.icon3 = UIIcon:New()
+    _ARG_0_.TimeCount.FrameTime:Insert(_ARG_0_.TimeCount.FrameTime.icon3)
+    _ARG_0_.TimeCount.FrameTime.icon3:Create(_ARG_0_.instance, "TimeCount.FrameTime.icon3", "hud_component_5", 2362.25, 230.5, 80, 80, "center")
+    _ARG_0_.Boost.GradientHighlight = UIContainer:New()
+    _ARG_0_.Boost.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.Boost.GradientHighlight:Insert(_ARG_0_.Boost.GradientHighlight.icon1)
+    _ARG_0_.Boost.GradientHighlight.icon1:Create(_ARG_0_.instance, "Boost.GradientHighlight.icon1", "hud_gradient_2", 1777.35, 689.05, 16, 16, "center")
+    _ARG_0_.Boost.Blackbar = UIContainer:New()
+    _ARG_0_.Boost.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.Boost.Blackbar:Insert(_ARG_0_.Boost.Blackbar.icon1)
+    _ARG_0_.Boost.Blackbar.icon1:Create(_ARG_0_.instance, "Boost.Blackbar.icon1", "component_frame_color", 1953.8, 692.775, 193.6, 16.55, "center")
+    _ARG_0_.Boost.Background = UIContainer:New()
+    _ARG_0_.Boost.Background.icon1 = UIIcon:New()
+    _ARG_0_.Boost.Background:Insert(_ARG_0_.Boost.Background.icon1)
+    _ARG_0_.Boost.Background.icon1:Create(_ARG_0_.instance, "Boost.Background.icon1", "hud_speedometer_2", 1890.2, 684.25, 128, 8, "center")
+    _ARG_0_.Boost.Bar = UIContainer:New()
+    _ARG_0_.Boost.Bar.icon1 = UIIcon:New()
+    _ARG_0_.Boost.Bar:Insert(_ARG_0_.Boost.Bar.icon1)
+    _ARG_0_.Boost.Bar.icon1:Create(_ARG_0_.instance, "Boost.Bar.icon1", "hud_component_5", 1792.4, 708.35, 32, 32, "center")
+    _ARG_0_.Boost.Bar.icon2 = UIIcon:New()
+    _ARG_0_.Boost.Bar:Insert(_ARG_0_.Boost.Bar.icon2)
+    _ARG_0_.Boost.Bar.icon2:Create(_ARG_0_.instance, "Boost.Bar.icon2", "hud_component_5", 1980.4, 708.35, 32, 32, "center")
+    _ARG_0_.Boost.Bar.icon3 = UIIcon:New()
+    _ARG_0_.Boost.Bar:Insert(_ARG_0_.Boost.Bar.icon3)
+    _ARG_0_.Boost.Bar.icon3:Create(_ARG_0_.instance, "Boost.Bar.icon3", "hud_component_2", 1948.4, 708.35, 156, 32, "center")
+    _ARG_0_.Speedometer.text_speed = UIText:New()
+    _ARG_0_.Speedometer:Insert(_ARG_0_.Speedometer.text_speed)
+    _ARG_0_.Speedometer.text_speed:Create(_ARG_0_.instance, "Speedometer.text_speed", "STR_DYN_HUD_1", "INGAMEUI", "XX_SpeedometerFont", 1866.95, 674.55, "right")
+    _ARG_0_.Speedometer.text3 = UIText:New()
+    _ARG_0_.Speedometer:Insert(_ARG_0_.Speedometer.text3)
+    _ARG_0_.Speedometer.text3:Create(_ARG_0_.instance, "Speedometer.text3", "STR_SPEED_UNITS", "INGAMEUI", "18_BodegaSans-Medium", 2078.3, 689.65, "left")
+    _ARG_0_.Speedometer.icon5 = UIIcon:New()
+    _ARG_0_.Speedometer:Insert(_ARG_0_.Speedometer.icon5)
+    _ARG_0_.Speedometer.icon5:Create(_ARG_0_.instance, "Speedometer.icon5", "hud_speedometer_1", 2061.2, 767.7, 215, 128, "center")
+    _ARG_0_.Badge1.icon1 = UIIcon:New()
+    _ARG_0_.Badge1:Insert(_ARG_0_.Badge1.icon1)
+    _ARG_0_.Badge1.icon1:Create(_ARG_0_.instance, "Badge1.icon1", "hud_badge", -541.2, 137, 58, 58, "center")
+    _ARG_0_.Badge2.icon1 = UIIcon:New()
+    _ARG_0_.Badge2:Insert(_ARG_0_.Badge2.icon1)
+    _ARG_0_.Badge2.icon1:Create(_ARG_0_.instance, "Badge2.icon1", "hud_badge", -541.2, 187, 58, 58, "center")
+    _ARG_0_.Badge3.icon1 = UIIcon:New()
+    _ARG_0_.Badge3:Insert(_ARG_0_.Badge3.icon1)
+    _ARG_0_.Badge3.icon1:Create(_ARG_0_.instance, "Badge3.icon1", "hud_badge", -541.2, 237, 58, 58, "center")
+    _ARG_0_.HealthBar1.Blackbar = UIContainer:New()
+    _ARG_0_.HealthBar1.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar1.Blackbar:Insert(_ARG_0_.HealthBar1.Blackbar.icon1)
+    _ARG_0_.HealthBar1.Blackbar.icon1:Create(_ARG_0_.instance, "HealthBar1.Blackbar.icon1", "component_frame_color", -217.9, 110.425, 193.6, 16.55, "center")
+    _ARG_0_.HealthBar1.Background = UIContainer:New()
+    _ARG_0_.HealthBar1.Background.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar1.Background:Insert(_ARG_0_.HealthBar1.Background.icon1)
+    _ARG_0_.HealthBar1.Background.icon1:Create(_ARG_0_.instance, "HealthBar1.Background.icon1", "hud_speedometer_2", -283.5, 101.85, 128, 8, "center")
+    _ARG_0_.HealthBar1.GradientHighlight = UIContainer:New()
+    _ARG_0_.HealthBar1.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar1.GradientHighlight:Insert(_ARG_0_.HealthBar1.GradientHighlight.icon1)
+    _ARG_0_.HealthBar1.GradientHighlight.icon1:Create(_ARG_0_.instance, "HealthBar1.GradientHighlight.icon1", "hud_gradient_2", -396.1, 106.65, 16, 16, "center")
+    _ARG_0_.HealthBar1.Bar = UIContainer:New()
+    _ARG_0_.HealthBar1.Bar.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar1.Bar:Insert(_ARG_0_.HealthBar1.Bar.icon1)
+    _ARG_0_.HealthBar1.Bar.icon1:Create(_ARG_0_.instance, "HealthBar1.Bar.icon1", "hud_component_5", -378.95, 126, 32, 32, "center")
+    _ARG_0_.HealthBar1.Bar.icon2 = UIIcon:New()
+    _ARG_0_.HealthBar1.Bar:Insert(_ARG_0_.HealthBar1.Bar.icon2)
+    _ARG_0_.HealthBar1.Bar.icon2:Create(_ARG_0_.instance, "HealthBar1.Bar.icon2", "hud_component_5", -190.95, 126, 32, 32, "center")
+    _ARG_0_.HealthBar1.Bar.icon3 = UIIcon:New()
+    _ARG_0_.HealthBar1.Bar:Insert(_ARG_0_.HealthBar1.Bar.icon3)
+    _ARG_0_.HealthBar1.Bar.icon3:Create(_ARG_0_.instance, "HealthBar1.Bar.icon3", "hud_component_2", -222.95, 126, 156, 32, "center")
+    _ARG_0_.HealthBar2.Blackbar = UIContainer:New()
+    _ARG_0_.HealthBar2.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar2.Blackbar:Insert(_ARG_0_.HealthBar2.Blackbar.icon1)
+    _ARG_0_.HealthBar2.Blackbar.icon1:Create(_ARG_0_.instance, "HealthBar2.Blackbar.icon1", "component_frame_color", -217.9, 160.425, 193.6, 16.55, "center")
+    _ARG_0_.HealthBar2.Background = UIContainer:New()
+    _ARG_0_.HealthBar2.Background.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar2.Background:Insert(_ARG_0_.HealthBar2.Background.icon1)
+    _ARG_0_.HealthBar2.Background.icon1:Create(_ARG_0_.instance, "HealthBar2.Background.icon1", "hud_speedometer_2", -283.5, 151.85, 128, 8, "center")
+    _ARG_0_.HealthBar2.GradientHighlight = UIContainer:New()
+    _ARG_0_.HealthBar2.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar2.GradientHighlight:Insert(_ARG_0_.HealthBar2.GradientHighlight.icon1)
+    _ARG_0_.HealthBar2.GradientHighlight.icon1:Create(_ARG_0_.instance, "HealthBar2.GradientHighlight.icon1", "hud_gradient_2", -396.1, 156.65, 16, 16, "center")
+    _ARG_0_.HealthBar2.Bar = UIContainer:New()
+    _ARG_0_.HealthBar2.Bar.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar2.Bar:Insert(_ARG_0_.HealthBar2.Bar.icon1)
+    _ARG_0_.HealthBar2.Bar.icon1:Create(_ARG_0_.instance, "HealthBar2.Bar.icon1", "hud_component_5", -378.95, 176, 32, 32, "center")
+    _ARG_0_.HealthBar2.Bar.icon2 = UIIcon:New()
+    _ARG_0_.HealthBar2.Bar:Insert(_ARG_0_.HealthBar2.Bar.icon2)
+    _ARG_0_.HealthBar2.Bar.icon2:Create(_ARG_0_.instance, "HealthBar2.Bar.icon2", "hud_component_5", -190.95, 176, 32, 32, "center")
+    _ARG_0_.HealthBar2.Bar.icon3 = UIIcon:New()
+    _ARG_0_.HealthBar2.Bar:Insert(_ARG_0_.HealthBar2.Bar.icon3)
+    _ARG_0_.HealthBar2.Bar.icon3:Create(_ARG_0_.instance, "HealthBar2.Bar.icon3", "hud_component_2", -222.95, 176, 156, 32, "center")
+    _ARG_0_.HealthBar3.Blackbar = UIContainer:New()
+    _ARG_0_.HealthBar3.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar3.Blackbar:Insert(_ARG_0_.HealthBar3.Blackbar.icon1)
+    _ARG_0_.HealthBar3.Blackbar.icon1:Create(_ARG_0_.instance, "HealthBar3.Blackbar.icon1", "component_frame_color", -217.9, 210.425, 193.6, 16.55, "center")
+    _ARG_0_.HealthBar3.Background = UIContainer:New()
+    _ARG_0_.HealthBar3.Background.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar3.Background:Insert(_ARG_0_.HealthBar3.Background.icon1)
+    _ARG_0_.HealthBar3.Background.icon1:Create(_ARG_0_.instance, "HealthBar3.Background.icon1", "hud_speedometer_2", -283.5, 201.85, 128, 8, "center")
+    _ARG_0_.HealthBar3.GradientHighlight = UIContainer:New()
+    _ARG_0_.HealthBar3.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar3.GradientHighlight:Insert(_ARG_0_.HealthBar3.GradientHighlight.icon1)
+    _ARG_0_.HealthBar3.GradientHighlight.icon1:Create(_ARG_0_.instance, "HealthBar3.GradientHighlight.icon1", "hud_gradient_2", -396.1, 206.65, 16, 16, "center")
+    _ARG_0_.HealthBar3.Bar = UIContainer:New()
+    _ARG_0_.HealthBar3.Bar.icon1 = UIIcon:New()
+    _ARG_0_.HealthBar3.Bar:Insert(_ARG_0_.HealthBar3.Bar.icon1)
+    _ARG_0_.HealthBar3.Bar.icon1:Create(_ARG_0_.instance, "HealthBar3.Bar.icon1", "hud_component_5", -378.95, 226, 32, 32, "center")
+    _ARG_0_.HealthBar3.Bar.icon2 = UIIcon:New()
+    _ARG_0_.HealthBar3.Bar:Insert(_ARG_0_.HealthBar3.Bar.icon2)
+    _ARG_0_.HealthBar3.Bar.icon2:Create(_ARG_0_.instance, "HealthBar3.Bar.icon2", "hud_component_5", -190.95, 226, 32, 32, "center")
+    _ARG_0_.HealthBar3.Bar.icon3 = UIIcon:New()
+    _ARG_0_.HealthBar3.Bar:Insert(_ARG_0_.HealthBar3.Bar.icon3)
+    _ARG_0_.HealthBar3.Bar.icon3:Create(_ARG_0_.instance, "HealthBar3.Bar.icon3", "hud_component_2", -222.95, 226, 156, 32, "center")
+    _ARG_0_.Car1.time_car1 = UIText:New()
+    _ARG_0_.Car1:Insert(_ARG_0_.Car1.time_car1)
+    _ARG_0_.Car1.time_car1:Create(_ARG_0_.instance, "Car1.time_car1", "STR_DYN_HUD_9", "INGAMEUI", "18_BodegaSans-Medium", -283.35, 104, "right")
+    _ARG_0_.Car1.car1 = UIText:New()
+    _ARG_0_.Car1:Insert(_ARG_0_.Car1.car1)
+    _ARG_0_.Car1.car1:Create(_ARG_0_.instance, "Car1.car1", "STR_DYN_HUD_5", "INGAMEUI", "18_BodegaSans-Medium", 14.5, 104, "left")
+    _ARG_0_.Car1.Frame = UIContainer:New()
+    _ARG_0_.Car1.Frame.icon1 = UIIcon:New()
+    _ARG_0_.Car1.Frame:Insert(_ARG_0_.Car1.Frame.icon1)
+    _ARG_0_.Car1.Frame.icon1:Create(_ARG_0_.instance, "Car1.Frame.icon1", "hud_component_6", 129.775, 135, 255.95, 32, "center")
+    _ARG_0_.Car2.time_car2 = UIText:New()
+    _ARG_0_.Car2:Insert(_ARG_0_.Car2.time_car2)
+    _ARG_0_.Car2.time_car2:Create(_ARG_0_.instance, "Car2.time_car2", "STR_DYN_HUD_10", "INGAMEUI", "18_BodegaSans-Medium", -283.35, 154, "right")
+    _ARG_0_.Car2.car2 = UIText:New()
+    _ARG_0_.Car2:Insert(_ARG_0_.Car2.car2)
+    _ARG_0_.Car2.car2:Create(_ARG_0_.instance, "Car2.car2", "STR_DYN_HUD_6", "INGAMEUI", "18_BodegaSans-Medium", 14.5, 154, "left")
+    _ARG_0_.Car2.Frame = UIContainer:New()
+    _ARG_0_.Car2.Frame.icon1 = UIIcon:New()
+    _ARG_0_.Car2.Frame:Insert(_ARG_0_.Car2.Frame.icon1)
+    _ARG_0_.Car2.Frame.icon1:Create(_ARG_0_.instance, "Car2.Frame.icon1", "hud_component_6", 129.775, 185, 255.95, 32, "center")
+    _ARG_0_.Car3.car3_time = UIText:New()
+    _ARG_0_.Car3:Insert(_ARG_0_.Car3.car3_time)
+    _ARG_0_.Car3.car3_time:Create(_ARG_0_.instance, "Car3.car3_time", "STR_DYN_HUD_11", "INGAMEUI", "18_BodegaSans-Medium", -283.35, 204, "right")
+    _ARG_0_.Car3.car3 = UIText:New()
+    _ARG_0_.Car3:Insert(_ARG_0_.Car3.car3)
+    _ARG_0_.Car3.car3:Create(_ARG_0_.instance, "Car3.car3", "STR_DYN_HUD_7", "INGAMEUI", "18_BodegaSans-Medium", 14.5, 204, "left")
+    _ARG_0_.Car3.Frame = UIContainer:New()
+    _ARG_0_.Car3.Frame.icon1 = UIIcon:New()
+    _ARG_0_.Car3.Frame:Insert(_ARG_0_.Car3.Frame.icon1)
+    _ARG_0_.Car3.Frame.icon1:Create(_ARG_0_.instance, "Car3.Frame.icon1", "hud_component_6", 129.775, 235, 255.95, 32, "center")
+    _ARG_0_.Score.text1 = UIText:New()
+    _ARG_0_.Score:Insert(_ARG_0_.Score.text1)
+    _ARG_0_.Score.text1:Create(_ARG_0_.instance, "Score.text1", "STR_SCORE_LABEL", "INGAMEUI", "18_BodegaSans-Medium", 1955.3, 558.15, "center")
+    _ARG_0_.Score.points_total = UIText:New()
+    _ARG_0_.Score:Insert(_ARG_0_.Score.points_total)
+    _ARG_0_.Score.points_total:Create(_ARG_0_.instance, "Score.points_total", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 1955.3, 594.15, "center")
+    _ARG_0_.Score.FrameScore = UIContainer:New()
+    _ARG_0_.Score.FrameScore.icon1 = UIIcon:New()
+    _ARG_0_.Score.FrameScore:Insert(_ARG_0_.Score.FrameScore.icon1)
+    _ARG_0_.Score.FrameScore.icon1:Create(_ARG_0_.instance, "Score.FrameScore.icon1", "hud_component_5", 1991.55, 625.65, 32, 32, "center")
+    _ARG_0_.Score.FrameScore.icon2 = UIIcon:New()
+    _ARG_0_.Score.FrameScore:Insert(_ARG_0_.Score.FrameScore.icon2)
+    _ARG_0_.Score.FrameScore.icon2:Create(_ARG_0_.instance, "Score.FrameScore.icon2", "hud_component_2", 2096.55, 625.65, 105, 32, "center")
+    _ARG_0_.Score.FrameScore.icon3 = UIIcon:New()
+    _ARG_0_.Score.FrameScore:Insert(_ARG_0_.Score.FrameScore.icon3)
+    _ARG_0_.Score.FrameScore.icon3:Create(_ARG_0_.instance, "Score.FrameScore.icon3", "hud_component_5", 2128.55, 625.65, 32, 32, "center")
+    _ARG_0_.Shortcuts.newBonusPoints = _ARG_0_.Floater.newBonusPoints
+    _ARG_0_.Shortcuts.chase_message = _ARG_0_.Message.chase_message
+    _ARG_0_.Shortcuts.hud_time = _ARG_0_.TimeCount.hud_time
+    _ARG_0_.Shortcuts.text_speed = _ARG_0_.Speedometer.text_speed
+    _ARG_0_.Shortcuts.time_car1 = _ARG_0_.Car1.time_car1
+    _ARG_0_.Shortcuts.car1 = _ARG_0_.Car1.car1
+    _ARG_0_.Shortcuts.time_car2 = _ARG_0_.Car2.time_car2
+    _ARG_0_.Shortcuts.car2 = _ARG_0_.Car2.car2
+    _ARG_0_.Shortcuts.car3_time = _ARG_0_.Car3.car3_time
+    _ARG_0_.Shortcuts.car3 = _ARG_0_.Car3.car3
+    _ARG_0_.Shortcuts.points_total = _ARG_0_.Score.points_total
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.HealthBar1, "HealthBar1")
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.HealthBar2, "HealthBar2")
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.HealthBar3, "HealthBar3")
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.Boost, "Boost")
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+    if _ARG_0_.mode == _ARG_0_.Modes.SCPursuing then
+      PlayMenuAnimation(_ARG_0_.instance, "Timer")
     end
-    if L4_2 == 1 then
-      L5_2 = A0_2.RacerIcons
-      L5_2 = L5_2[L4_2]
-      L6_2 = L5_2
-      L5_2 = L5_2.MoveTo
-      L7_2 = A0_2.Shortcuts
-      L7_2 = L7_2.car1
-      L8_2 = {}
-      L8_2.x = 25
-      L8_2.y = 0
-      L5_2(L6_2, L7_2, L8_2)
-    elseif L4_2 == 2 then
-      L5_2 = A0_2.RacerIcons
-      L5_2 = L5_2[L4_2]
-      L6_2 = L5_2
-      L5_2 = L5_2.MoveTo
-      L7_2 = A0_2.Shortcuts
-      L7_2 = L7_2.car2
-      L8_2 = {}
-      L8_2.x = 25
-      L8_2.y = 0
-      L5_2(L6_2, L7_2, L8_2)
-    elseif L4_2 == 3 then
-      L5_2 = A0_2.RacerIcons
-      L5_2 = L5_2[L4_2]
-      L6_2 = L5_2
-      L5_2 = L5_2.MoveTo
-      L7_2 = A0_2.Shortcuts
-      L7_2 = L7_2.car3
-      L8_2 = {}
-      L8_2.x = 25
-      L8_2.y = 0
-      L5_2(L6_2, L7_2, L8_2)
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+    PlayMenuAnimation(_ARG_0_.instance, "TimerOut")
+    _ARG_0_:HideAllRacerIcons()
+  end,
+  HideTimer = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "TimerOut")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  CreateRacerIcons = function(_ARG_0_)
+    for _FORV_4_ = 1, 3 do
+      if _ARG_0_.RacerIcons[_FORV_4_] == nil then
+        _ARG_0_.RacerIcons[_FORV_4_] = UIContainer:New()
+        _ARG_0_.RacerIcons[_FORV_4_].icon1 = UIIcon:New()
+        _ARG_0_.RacerIcons[_FORV_4_]:Insert(_ARG_0_.RacerIcons[_FORV_4_].icon1)
+        _ARG_0_.RacerIcons[_FORV_4_].icon1:Create(_ARG_0_.instance, "RacerIcons[" .. _FORV_4_ .. "].icon1", "icon_" .. GetSpeederName(_FORV_4_) .. "_a", -100, -100, 120, 120, "center")
+      end
+      if _FORV_4_ == 1 then
+        _ARG_0_.RacerIcons[_FORV_4_]:MoveTo(_ARG_0_.Shortcuts.car1, {x = 25, y = 0})
+      elseif _FORV_4_ == 2 then
+        _ARG_0_.RacerIcons[_FORV_4_]:MoveTo(_ARG_0_.Shortcuts.car2, {x = 25, y = 0})
+      elseif _FORV_4_ == 3 then
+        _ARG_0_.RacerIcons[_FORV_4_]:MoveTo(_ARG_0_.Shortcuts.car3, {x = 25, y = 0})
+      end
     end
-  end
-end
-L0_1.CreateRacerIcons = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L1_2 = 1
-  L2_2 = getvar
-  L3_2 = "NumSpeeders"
-  L2_2 = L2_2(L3_2)
-  L3_2 = 1
-  for L4_2 = L1_2, L2_2, L3_2 do
-    L5_2 = A0_2.RacerIcons
-    L5_2 = L5_2[L4_2]
-    L6_2 = L5_2
-    L5_2 = L5_2.Move
-    L7_2 = -500
-    L8_2 = 0
-    L5_2(L6_2, L7_2, L8_2)
-  end
-end
-L0_1.HideAllRacerIcons = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = string
-  L2_2 = L2_2.lower
-  L3_2 = A1_2
-  L2_2 = L2_2(L3_2)
-  A1_2 = L2_2
-  if A1_2 == "intro" then
-    L3_2 = A0_2
-    L2_2 = A0_2.CreateRacerIcons
-    L2_2(L3_2)
-    L2_2 = getvar
-    L3_2 = "HuntedIndex"
-    L2_2 = L2_2(L3_2)
-    L2_2 = L2_2 + 1
-    A0_2.huntedIndex = L2_2
-    L2_2 = A0_2.state
-    if L2_2 == "BeginPatrol" then
-      L2_2 = PlayMenuAnimation
-      L3_2 = A0_2.instance
-      L4_2 = "ShowMsg"
-      L2_2(L3_2, L4_2)
-      L2_2 = PlayMenuAnimation
-      L3_2 = A0_2.instance
-      L4_2 = "Health0"
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = A0_2.state
-      if L2_2 == "BeginChase" then
-        L2_2 = PlayMenuAnimation
-        L3_2 = A0_2.instance
-        L4_2 = "ShowMsg"
-        L2_2(L3_2, L4_2)
-        L2_2 = PlayMenuAnimation
-        L3_2 = A0_2.instance
-        L4_2 = "Health"
-        L5_2 = A0_2.huntedIndex
-        L4_2 = L4_2 .. L5_2
-        L2_2(L3_2, L4_2)
-        L2_2 = PlayMenuAnimation
-        L3_2 = A0_2.instance
-        L4_2 = "Timer"
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = A0_2.state
-        if L2_2 == "FallingBehind" then
-          L2_2 = PlayMenuAnimation
-          L3_2 = A0_2.instance
-          L4_2 = "ShowMsg"
-          L2_2(L3_2, L4_2)
-        else
-          L2_2 = A0_2.state
-          if L2_2 == "CaughtHim" then
-            L2_2 = PlayMenuAnimation
-            L3_2 = A0_2.instance
-            L4_2 = "ShowMsg"
-            L2_2(L3_2, L4_2)
-            L2_2 = PlayMenuAnimation
-            L3_2 = A0_2.instance
-            L4_2 = "Caught"
-            L5_2 = A0_2.huntedIndex
-            L4_2 = L4_2 .. L5_2
-            L2_2(L3_2, L4_2)
-            L2_2 = PlayMenuAnimation
-            L3_2 = A0_2.instance
-            L4_2 = "Health0"
-            L2_2(L3_2, L4_2)
-          else
-            L2_2 = A0_2.state
-            if L2_2 == "Success" then
-            end
-          end
+  end,
+  HideAllRacerIcons = function(_ARG_0_)
+    for _FORV_4_ = 1, getvar("NumSpeeders") do
+      _ARG_0_.RacerIcons[_FORV_4_]:Move(-500, 0)
+    end
+  end,
+  OnAnimationPlayed = function(_ARG_0_, _ARG_1_)
+    _ARG_1_ = string.lower(_ARG_1_)
+    if _ARG_1_ == "intro" then
+      _ARG_0_:CreateRacerIcons()
+      _ARG_0_.huntedIndex = getvar("HuntedIndex") + 1
+      if _ARG_0_.state == "BeginPatrol" then
+        PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+        PlayMenuAnimation(_ARG_0_.instance, "Health0")
+      elseif _ARG_0_.state == "BeginChase" then
+        PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+        PlayMenuAnimation(_ARG_0_.instance, "Health" .. _ARG_0_.huntedIndex)
+        PlayMenuAnimation(_ARG_0_.instance, "Timer")
+      elseif _ARG_0_.state == "FallingBehind" then
+        PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+      elseif _ARG_0_.state == "CaughtHim" then
+        PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+        PlayMenuAnimation(_ARG_0_.instance, "Caught" .. _ARG_0_.huntedIndex)
+        PlayMenuAnimation(_ARG_0_.instance, "Health0")
+      elseif _ARG_0_.state == "Success" then
+      end
+      for _FORV_5_ = 1, 3 do
+        bCaught = IsSpeederCaught(_FORV_5_)
+        if bCaught == 1 then
+          PlayMenuAnimation(_ARG_0_.instance, "Caught" .. _FORV_5_)
         end
       end
+    elseif _ARG_1_ == "outro" then
+      _ARG_0_:HideAllRacerIcons()
     end
-    L2_2 = 1
-    L3_2 = 3
-    L4_2 = 1
-    for L5_2 = L2_2, L3_2, L4_2 do
-      L6_2 = IsSpeederCaught
-      L7_2 = L5_2
-      L6_2 = L6_2(L7_2)
-      bCaught = L6_2
-      L6_2 = bCaught
-      if L6_2 == 1 then
-        L6_2 = PlayMenuAnimation
-        L7_2 = A0_2.instance
-        L8_2 = "Caught"
-        L9_2 = L5_2
-        L8_2 = L8_2 .. L9_2
-        L6_2(L7_2, L8_2)
-      end
-    end
-  elseif A1_2 == "outro" then
-    L3_2 = A0_2
-    L2_2 = A0_2.HideAllRacerIcons
-    L2_2(L3_2)
-  end
-end
-L0_1.OnAnimationPlayed = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.hud_time
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = ""
-  L5_2 = FormatTimeStandardized
-  L6_2 = math
-  L6_2 = L6_2.floor
-  L7_2 = getvar
-  L8_2 = "TotalCatchTime"
-  L7_2, L8_2 = L7_2(L8_2)
-  L6_2, L7_2, L8_2 = L6_2(L7_2, L8_2)
-  L5_2 = L5_2(L6_2, L7_2, L8_2)
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.text_speed
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = ""
-  L5_2 = ConvertSpeedUnits
-  L6_2 = math
-  L6_2 = L6_2.floor
-  L7_2 = getvar
-  L8_2 = "Player1Speed"
-  L7_2, L8_2 = L7_2(L8_2)
-  L6_2, L7_2, L8_2 = L6_2(L7_2, L8_2)
-  L5_2 = L5_2(L6_2, L7_2, L8_2)
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.points_total
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = ""
-  L5_2 = getvar
-  L6_2 = "BonusPointTotal"
-  L5_2 = L5_2(L6_2)
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  L2_2 = getvar
-  L3_2 = "P1NOXTot"
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L3_2 = A0_2.Boost
-    L4_2 = L3_2
-    L3_2 = L3_2.SetBarPercent
-    L5_2 = getvar
-    L6_2 = "Player1NOX"
-    L5_2 = L5_2(L6_2)
-    L5_2 = L5_2 / L2_2
-    L3_2(L4_2, L5_2)
-  else
-    L3_2 = A0_2.Boost
-    L4_2 = L3_2
-    L3_2 = L3_2.SetBarPercent
-    L5_2 = 0
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = getvar
-  L4_2 = "HuntedIndex"
-  L3_2 = L3_2(L4_2)
-  L3_2 = L3_2 + 1
-  A0_2.huntedIndex = L3_2
-  L3_2 = A0_2.huntedIndex
-  if L3_2 == 1 then
-    L3_2 = A0_2.HealthBar1
-    L4_2 = L3_2
-    L3_2 = L3_2.SetBarPercent
-    L5_2 = getvar
-    L6_2 = "Health"
-    L5_2, L6_2, L7_2, L8_2 = L5_2(L6_2)
-    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  else
-    L3_2 = A0_2.huntedIndex
-    if L3_2 == 2 then
-      L3_2 = A0_2.HealthBar2
-      L4_2 = L3_2
-      L3_2 = L3_2.SetBarPercent
-      L5_2 = getvar
-      L6_2 = "Health"
-      L5_2, L6_2, L7_2, L8_2 = L5_2(L6_2)
-      L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.Shortcuts.hud_time:SetValue("" .. FormatTimeStandardized(math.floor(getvar("TotalCatchTime"))))
+    _ARG_0_.Shortcuts.text_speed:SetValue("" .. ConvertSpeedUnits(math.floor(getvar("Player1Speed"))))
+    _ARG_0_.Shortcuts.points_total:SetValue("" .. getvar("BonusPointTotal"))
+    if getvar("P1NOXTot") ~= 0 then
+      _ARG_0_.Boost:SetBarPercent(getvar("Player1NOX") / getvar("P1NOXTot"))
     else
-      L3_2 = A0_2.huntedIndex
-      if L3_2 == 3 then
-        L3_2 = A0_2.HealthBar3
-        L4_2 = L3_2
-        L3_2 = L3_2.SetBarPercent
-        L5_2 = getvar
-        L6_2 = "Health"
-        L5_2, L6_2, L7_2, L8_2 = L5_2(L6_2)
-        L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-      end
+      _ARG_0_.Boost:SetBarPercent(0)
     end
-  end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  if A1_2 == 0 then
-    L3_2 = A0_2.Shortcuts
-    L3_2 = L3_2.newBonusPoints
-    L4_2 = L3_2
-    L3_2 = L3_2.SetValue
-    L5_2 = ""
-    L6_2 = A2_2
-    L7_2 = " "
-    L8_2 = GetLocalizedString
-    L9_2 = "InGameUI"
-    L10_2 = "STR_BIG_AIR"
-    L8_2 = L8_2(L9_2, L10_2)
-    L5_2 = L5_2 .. L6_2 .. L7_2 .. L8_2
-    L3_2(L4_2, L5_2)
-  elseif A1_2 == 2 then
-    L3_2 = A0_2.Shortcuts
-    L3_2 = L3_2.newBonusPoints
-    L4_2 = L3_2
-    L3_2 = L3_2.SetValue
-    L5_2 = ""
-    L6_2 = A2_2
-    L7_2 = " "
-    L8_2 = GetLocalizedString
-    L9_2 = "InGameUI"
-    L10_2 = "STR_TILT"
-    L8_2 = L8_2(L9_2, L10_2)
-    L5_2 = L5_2 .. L6_2 .. L7_2 .. L8_2
-    L3_2(L4_2, L5_2)
-  else
-    L3_2 = A0_2.Shortcuts
-    L3_2 = L3_2.newBonusPoints
-    L4_2 = L3_2
-    L3_2 = L3_2.SetValue
-    L5_2 = ""
-    L6_2 = A2_2
-    L5_2 = L5_2 .. L6_2
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = PlayMenuAnimation
-  L4_2 = A0_2.instance
-  L5_2 = "GiveBonus"
-  L3_2(L4_2, L5_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = DebugPrint
-  L3_2 = "UIChangedState: "
-  L4_2 = A1_2
-  L3_2 = L3_2 .. L4_2
-  L2_2(L3_2)
-  A0_2.state = A1_2
-  L2_2 = A0_2.state
-  if L2_2 == "BeginPatrol" then
-    L2_2 = DebugPrint
-    L3_2 = "BeginPatrol"
-    L2_2(L3_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.CreateRacerIcons
-    L2_2(L3_2)
-    L2_2 = A0_2.Shortcuts
-    L2_2 = L2_2.chase_message
-    L3_2 = L2_2
-    L2_2 = L2_2.SetValue
-    L4_2 = "chase message"
-    L2_2(L3_2, L4_2)
-    L2_2 = PlayMenuAnimation
-    L3_2 = A0_2.instance
-    L4_2 = "ShowMsg"
-    L2_2(L3_2, L4_2)
-    L2_2 = PlayMenuAnimation
-    L3_2 = A0_2.instance
-    L4_2 = "Health0"
-    L2_2(L3_2, L4_2)
-    L2_2 = A0_2.Modes
-    L2_2 = L2_2.SCHunting
-    A0_2.mode = L2_2
-  else
-    L2_2 = A0_2.state
-    if L2_2 == "BeginChase" then
-      L2_2 = DebugPrint
-      L3_2 = "BeginChase"
-      L2_2(L3_2)
-      L2_2 = getvar
-      L3_2 = "HuntedIndex"
-      L2_2 = L2_2(L3_2)
-      L2_2 = L2_2 + 1
-      A0_2.huntedIndex = L2_2
-      L2_2 = DebugPrint
-      L3_2 = "hunting: "
-      L4_2 = A0_2.huntedIndex
-      L3_2 = L3_2 .. L4_2
-      L2_2(L3_2)
-      L2_2 = A0_2.Shortcuts
-      L2_2 = L2_2.chase_message
-      L3_2 = L2_2
-      L2_2 = L2_2.SetValue
-      L4_2 = "gethim message"
-      L2_2(L3_2, L4_2)
-      L2_2 = PlayMenuAnimation
-      L3_2 = A0_2.instance
-      L4_2 = "ShowMsg"
-      L2_2(L3_2, L4_2)
-      L2_2 = PlayMenuAnimation
-      L3_2 = A0_2.instance
-      L4_2 = "Health"
-      L5_2 = A0_2.huntedIndex
-      L4_2 = L4_2 .. L5_2
-      L2_2(L3_2, L4_2)
-      L2_2 = PlayMenuAnimation
-      L3_2 = A0_2.instance
-      L4_2 = "Timer"
-      L2_2(L3_2, L4_2)
-      L2_2 = DebugPrint
-      L3_2 = "Chasing car: "
-      L4_2 = A0_2.huntedIndex
-      L3_2 = L3_2 .. L4_2
-      L2_2(L3_2)
-      L2_2 = A0_2.Modes
-      L2_2 = L2_2.SCPursuing
-      A0_2.mode = L2_2
+    _ARG_0_.huntedIndex = getvar("HuntedIndex") + 1
+    if _ARG_0_.huntedIndex == 1 then
+      _ARG_0_.HealthBar1:SetBarPercent(getvar("Health"))
+    elseif _ARG_0_.huntedIndex == 2 then
+      _ARG_0_.HealthBar2:SetBarPercent(getvar("Health"))
+    elseif _ARG_0_.huntedIndex == 3 then
+      _ARG_0_.HealthBar3:SetBarPercent(getvar("Health"))
+    end
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    if _ARG_1_ == 0 then
+      _ARG_0_.Shortcuts.newBonusPoints:SetValue("" .. _ARG_2_ .. " " .. GetLocalizedString("InGameUI", "STR_BIG_AIR"))
+    elseif _ARG_1_ == 2 then
+      _ARG_0_.Shortcuts.newBonusPoints:SetValue("" .. _ARG_2_ .. " " .. GetLocalizedString("InGameUI", "STR_TILT"))
     else
-      L2_2 = A0_2.state
-      if L2_2 == "FallingBehind" then
-        L2_2 = DebugPrint
-        L3_2 = "FallingBehind"
-        L2_2(L3_2)
-        L2_2 = A0_2.Shortcuts
-        L2_2 = L2_2.chase_message
-        L3_2 = L2_2
-        L2_2 = L2_2.SetValue
-        L4_2 = "fallingbehind message"
-        L2_2(L3_2, L4_2)
-        L2_2 = PlayMenuAnimation
-        L3_2 = A0_2.instance
-        L4_2 = "ShowMsg"
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = A0_2.state
-        if L2_2 == "CaughtHim" then
-          L2_2 = DebugPrint
-          L3_2 = "CaughtHim"
-          L2_2(L3_2)
-          L2_2 = A0_2.Shortcuts
-          L2_2 = L2_2.chase_message
-          L3_2 = L2_2
-          L2_2 = L2_2.SetValue
-          L4_2 = "caughthim message"
-          L2_2(L3_2, L4_2)
-          L2_2 = PlayMenuAnimation
-          L3_2 = A0_2.instance
-          L4_2 = "ShowMsg"
-          L2_2(L3_2, L4_2)
-          L2_2 = PlayMenuAnimation
-          L3_2 = A0_2.instance
-          L4_2 = "Caught"
-          L5_2 = A0_2.huntedIndex
-          L4_2 = L4_2 .. L5_2
-          L2_2(L3_2, L4_2)
-          L2_2 = PlayMenuAnimation
-          L3_2 = A0_2.instance
-          L4_2 = "Health0"
-          L2_2(L3_2, L4_2)
-          L2_2 = DebugPrint
-          L3_2 = "Caught car: "
-          L4_2 = A0_2.huntedIndex
-          L3_2 = L3_2 .. L4_2
-          L2_2(L3_2)
-        else
-          L2_2 = A0_2.state
-          if L2_2 == "Success" then
-          end
-        end
-      end
+      _ARG_0_.Shortcuts.newBonusPoints:SetValue("" .. _ARG_2_)
     end
+    PlayMenuAnimation(_ARG_0_.instance, "GiveBonus")
+  end,
+  UIChangedState = function(_ARG_0_, _ARG_1_)
+    DebugPrint("UIChangedState: " .. _ARG_1_)
+    _ARG_0_.state = _ARG_1_
+    if _ARG_0_.state == "BeginPatrol" then
+      DebugPrint("BeginPatrol")
+      _ARG_0_:CreateRacerIcons()
+      _ARG_0_.Shortcuts.chase_message:SetValue("chase message")
+      PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+      PlayMenuAnimation(_ARG_0_.instance, "Health0")
+      _ARG_0_.mode = _ARG_0_.Modes.SCHunting
+    elseif _ARG_0_.state == "BeginChase" then
+      DebugPrint("BeginChase")
+      _ARG_0_.huntedIndex = getvar("HuntedIndex") + 1
+      DebugPrint("hunting: " .. _ARG_0_.huntedIndex)
+      _ARG_0_.Shortcuts.chase_message:SetValue("gethim message")
+      PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+      PlayMenuAnimation(_ARG_0_.instance, "Health" .. _ARG_0_.huntedIndex)
+      PlayMenuAnimation(_ARG_0_.instance, "Timer")
+      DebugPrint("Chasing car: " .. _ARG_0_.huntedIndex)
+      _ARG_0_.mode = _ARG_0_.Modes.SCPursuing
+    elseif _ARG_0_.state == "FallingBehind" then
+      DebugPrint("FallingBehind")
+      _ARG_0_.Shortcuts.chase_message:SetValue("fallingbehind message")
+      PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+    elseif _ARG_0_.state == "CaughtHim" then
+      DebugPrint("CaughtHim")
+      _ARG_0_.Shortcuts.chase_message:SetValue("caughthim message")
+      PlayMenuAnimation(_ARG_0_.instance, "ShowMsg")
+      PlayMenuAnimation(_ARG_0_.instance, "Caught" .. _ARG_0_.huntedIndex)
+      PlayMenuAnimation(_ARG_0_.instance, "Health0")
+      DebugPrint("Caught car: " .. _ARG_0_.huntedIndex)
+    elseif _ARG_0_.state == "Success" then
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
   end
-end
-L0_1.UIChangedState = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-HUD_SheriffChase = L0_1
+}

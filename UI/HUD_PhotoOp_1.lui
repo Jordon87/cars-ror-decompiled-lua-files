@@ -1,438 +1,75 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Tire = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.CameraInstructions = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.SwitchAnimation = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.ZoomCamera = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.ChangeCamera = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.HUD_Tire
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Tire
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Tire
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Tire
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Tire.icon1"
-  L5_2 = "hud_camera"
-  L6_2 = -701.35
-  L7_2 = 156.7
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CameraInstructions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.CameraInstructions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CameraInstructions
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CameraInstructions
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CameraInstructions.text1"
-  L5_2 = "STR_SNAPSHOT"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 59.25
-  L9_2 = 152.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CameraInstructions
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.CameraInstructions
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.CameraInstructions
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CameraInstructions
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CameraInstructions
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CameraInstructions.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 76.075
-  L7_2 = 182.4
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CameraInstructions
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.HUD_Bubble_1 = L2_2
-  L1_2 = A0_2.CameraInstructions
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.CameraInstructions
-  L1_2 = L1_2.HUD_Bubble_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CameraInstructions
-  L3_2 = L3_2.HUD_Bubble_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CameraInstructions
-  L1_2 = L1_2.HUD_Bubble_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CameraInstructions.HUD_Bubble_1.icon1"
-  L5_2 = "hud_bubble_1"
-  L6_2 = -290
-  L7_2 = 211.35
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.SwitchAnimation
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.SwitchAnimation
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.SwitchAnimation
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.SwitchAnimation
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.SwitchAnimation
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "SwitchAnimation.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 2127.175
-  L7_2 = 164.75
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.SwitchAnimation
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.SwitchAnimation
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.SwitchAnimation
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.SwitchAnimation
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "SwitchAnimation.text1"
-  L5_2 = "STR_SWITCH_ANIM"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2040.2
-  L9_2 = 133.4
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.ZoomCamera
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.ZoomCamera
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.ZoomCamera
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.ZoomCamera
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.ZoomCamera
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "ZoomCamera.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = -0.225
-  L7_2 = 1312
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.ZoomCamera
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.ZoomCamera
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.ZoomCamera
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.ZoomCamera
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "ZoomCamera.text1"
-  L5_2 = "STR_ZOOM_CAMERA"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = -3.15
-  L9_2 = 1278.45
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.ChangeCamera
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.ChangeCamera
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.ChangeCamera
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.ChangeCamera
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.ChangeCamera
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "ChangeCamera.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = -18.275
-  L7_2 = 690.35
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.ChangeCamera
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.SwitchCamera = L2_2
-  L1_2 = A0_2.ChangeCamera
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.ChangeCamera
-  L3_2 = L3_2.SwitchCamera
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.ChangeCamera
-  L1_2 = L1_2.SwitchCamera
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "ChangeCamera.SwitchCamera"
-  L5_2 = "STR_DYN_MENU_64_1"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = -71.4
-  L9_2 = 662.4
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.ChangeCamera
-  L2_2 = L2_2.SwitchCamera
-  L1_2.SwitchCamera = L2_2
-end
-L0_1.Create = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
-  L3_2 = PlayMenuAnimation
-  L4_2 = A0_2.instance
-  L5_2 = "GiveBonus"
-  L3_2(L4_2, L5_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.SetRacerPosition = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-  L1_2 = EndMenu
-  L2_2 = A0_2.instance
-  L1_2(L2_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  if A1_2 == "CameraMovingToNext" then
-    L2_2 = A0_2.Shortcuts
-    L2_2 = L2_2.SwitchCamera
-    L3_2 = L2_2
-    L2_2 = L2_2.SetValue
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "COMMONUI"
-    L7_2 = "STR_DYN_PHOTO_CAMERA_NEXT"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " "
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_SWITCH_CAM"
-    L7_2 = L7_2(L8_2, L9_2)
-    L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-    L2_2(L3_2, L4_2)
-  elseif A1_2 == "CameraMovingToPrev" then
-    L2_2 = A0_2.Shortcuts
-    L2_2 = L2_2.SwitchCamera
-    L3_2 = L2_2
-    L2_2 = L2_2.SetValue
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "COMMONUI"
-    L7_2 = "STR_DYN_PHOTO_CAMERA_PREV"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " "
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_SWITCH_CAM"
-    L7_2 = L7_2(L8_2, L9_2)
-    L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-    L2_2(L3_2, L4_2)
-  elseif A1_2 == "CameraStopped" then
-    L2_2 = A0_2.Shortcuts
-    L2_2 = L2_2.SwitchCamera
-    L3_2 = L2_2
-    L2_2 = L2_2.SetValue
-    L4_2 = ""
-    L5_2 = GetLocalizedString
-    L6_2 = "COMMONUI"
-    L7_2 = "STR_DYN_PHOTO_CAMERA_NEXT_PREV"
-    L5_2 = L5_2(L6_2, L7_2)
-    L6_2 = " "
-    L7_2 = GetLocalizedString
-    L8_2 = "INGAMEUI"
-    L9_2 = "STR_SWITCH_CAM"
-    L7_2 = L7_2(L8_2, L9_2)
-    L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-    L2_2(L3_2, L4_2)
+HUD_PhotoOp_1 = {
+  instance = 0,
+  HUD_Tire = UIContainer:New(),
+  CameraInstructions = UIContainer:New(),
+  SwitchAnimation = UIContainer:New(),
+  ZoomCamera = UIContainer:New(),
+  ChangeCamera = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.HUD_Tire.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Tire:Insert(_ARG_0_.HUD_Tire.icon1)
+    _ARG_0_.HUD_Tire.icon1:Create(_ARG_0_.instance, "HUD_Tire.icon1", "hud_camera", -701.35, 156.7, 64, 64, "center")
+    _ARG_0_.CameraInstructions.text1 = UIText:New()
+    _ARG_0_.CameraInstructions:Insert(_ARG_0_.CameraInstructions.text1)
+    _ARG_0_.CameraInstructions.text1:Create(_ARG_0_.instance, "CameraInstructions.text1", "STR_SNAPSHOT", "INGAMEUI", "18_BodegaSans-Medium", 59.25, 152.45, "left")
+    _ARG_0_.CameraInstructions.Frame = UIContainer:New()
+    _ARG_0_.CameraInstructions.Frame.icon1 = UIIcon:New()
+    _ARG_0_.CameraInstructions.Frame:Insert(_ARG_0_.CameraInstructions.Frame.icon1)
+    _ARG_0_.CameraInstructions.Frame.icon1:Create(_ARG_0_.instance, "CameraInstructions.Frame.icon1", "hud_component_6", 76.075, 182.4, 255.95, 32, "center")
+    _ARG_0_.CameraInstructions.HUD_Bubble_1 = UIContainer:New()
+    _ARG_0_.CameraInstructions.HUD_Bubble_1.icon1 = UIIcon:New()
+    _ARG_0_.CameraInstructions.HUD_Bubble_1:Insert(_ARG_0_.CameraInstructions.HUD_Bubble_1.icon1)
+    _ARG_0_.CameraInstructions.HUD_Bubble_1.icon1:Create(_ARG_0_.instance, "CameraInstructions.HUD_Bubble_1.icon1", "hud_bubble_1", -290, 211.35, 64, 64, "center")
+    _ARG_0_.SwitchAnimation.Frame = UIContainer:New()
+    _ARG_0_.SwitchAnimation.Frame.icon1 = UIIcon:New()
+    _ARG_0_.SwitchAnimation.Frame:Insert(_ARG_0_.SwitchAnimation.Frame.icon1)
+    _ARG_0_.SwitchAnimation.Frame.icon1:Create(_ARG_0_.instance, "SwitchAnimation.Frame.icon1", "hud_component_6", 2127.175, 164.75, 255.95, 32, "center")
+    _ARG_0_.SwitchAnimation.text1 = UIText:New()
+    _ARG_0_.SwitchAnimation:Insert(_ARG_0_.SwitchAnimation.text1)
+    _ARG_0_.SwitchAnimation.text1:Create(_ARG_0_.instance, "SwitchAnimation.text1", "STR_SWITCH_ANIM", "INGAMEUI", "18_BodegaSans-Medium", 2040.2, 133.4, "left")
+    _ARG_0_.ZoomCamera.Frame = UIContainer:New()
+    _ARG_0_.ZoomCamera.Frame.icon1 = UIIcon:New()
+    _ARG_0_.ZoomCamera.Frame:Insert(_ARG_0_.ZoomCamera.Frame.icon1)
+    _ARG_0_.ZoomCamera.Frame.icon1:Create(_ARG_0_.instance, "ZoomCamera.Frame.icon1", "hud_component_6", -0.225, 1312, 255.95, 32, "center")
+    _ARG_0_.ZoomCamera.text1 = UIText:New()
+    _ARG_0_.ZoomCamera:Insert(_ARG_0_.ZoomCamera.text1)
+    _ARG_0_.ZoomCamera.text1:Create(_ARG_0_.instance, "ZoomCamera.text1", "STR_ZOOM_CAMERA", "INGAMEUI", "18_BodegaSans-Medium", -3.15, 1278.45, "left")
+    _ARG_0_.ChangeCamera.Frame = UIContainer:New()
+    _ARG_0_.ChangeCamera.Frame.icon1 = UIIcon:New()
+    _ARG_0_.ChangeCamera.Frame:Insert(_ARG_0_.ChangeCamera.Frame.icon1)
+    _ARG_0_.ChangeCamera.Frame.icon1:Create(_ARG_0_.instance, "ChangeCamera.Frame.icon1", "hud_component_6", -18.275, 690.35, 255.95, 32, "center")
+    _ARG_0_.ChangeCamera.SwitchCamera = UIText:New()
+    _ARG_0_.ChangeCamera:Insert(_ARG_0_.ChangeCamera.SwitchCamera)
+    _ARG_0_.ChangeCamera.SwitchCamera:Create(_ARG_0_.instance, "ChangeCamera.SwitchCamera", "STR_DYN_MENU_64_1", "INGAMEUI", "18_BodegaSans-Medium", -71.4, 662.4, "left")
+    _ARG_0_.Shortcuts.SwitchCamera = _ARG_0_.ChangeCamera.SwitchCamera
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    PlayMenuAnimation(_ARG_0_.instance, "GiveBonus")
+  end,
+  SetRacerPosition = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+    EndMenu(_ARG_0_.instance)
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+  end,
+  EventHandler = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == "CameraMovingToNext" then
+      _ARG_0_.Shortcuts.SwitchCamera:SetValue("" .. GetLocalizedString("COMMONUI", "STR_DYN_PHOTO_CAMERA_NEXT") .. " " .. GetLocalizedString("INGAMEUI", "STR_SWITCH_CAM"))
+    elseif _ARG_1_ == "CameraMovingToPrev" then
+      _ARG_0_.Shortcuts.SwitchCamera:SetValue("" .. GetLocalizedString("COMMONUI", "STR_DYN_PHOTO_CAMERA_PREV") .. " " .. GetLocalizedString("INGAMEUI", "STR_SWITCH_CAM"))
+    elseif _ARG_1_ == "CameraStopped" then
+      _ARG_0_.Shortcuts.SwitchCamera:SetValue("" .. GetLocalizedString("COMMONUI", "STR_DYN_PHOTO_CAMERA_NEXT_PREV") .. " " .. GetLocalizedString("INGAMEUI", "STR_SWITCH_CAM"))
+    end
   end
-end
-L0_1.EventHandler = L1_1
-HUD_PhotoOp_1 = L0_1
+}

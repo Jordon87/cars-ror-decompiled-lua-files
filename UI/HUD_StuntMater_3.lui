@@ -1,197 +1,43 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.state = 1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Points = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Score = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Description = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.Points
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.points_round = L2_2
-  L1_2 = A0_2.Points
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Points
-  L3_2 = L3_2.points_round
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Points
-  L1_2 = L1_2.points_round
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Points.points_round"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1156.95
-  L9_2 = 237.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.scorebar = L2_2
-  L1_2 = A0_2.Score
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.scorebar
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.scorebar
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.scorebar"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 408.35
-  L9_2 = 673.95
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 477.075
-  L7_2 = 708
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Description
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.description = L2_2
-  L1_2 = A0_2.Description
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Description
-  L3_2 = L3_2.description
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Description
-  L1_2 = L1_2.description
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Description.description"
-  L5_2 = "STR_DYN_MENU_LABEL1"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1059.6
-  L9_2 = 221.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Points
-  L2_2 = L2_2.points_round
-  L1_2.points_round = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Score
-  L2_2 = L2_2.scorebar
-  L1_2.scorebar = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Description
-  L2_2 = L2_2.description
-  L1_2.description = L2_2
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  A0_2.state = 1
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.scorebar
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = GetLocalizedString
-  L5_2 = "INGAMEUI"
-  L6_2 = "STR_SCORE_LABEL"
-  L4_2 = L4_2(L5_2, L6_2)
-  L5_2 = " : "
-  L6_2 = getvar
-  L7_2 = "CurrentScore"
-  L6_2 = L6_2(L7_2)
-  L6_2 = 0 + L6_2
-  L4_2 = L4_2 .. L5_2 .. L6_2
-  L2_2(L3_2, L4_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-HUD_StuntMater_3 = L0_1
+HUD_StuntMater_3 = {
+  instance = 0,
+  state = 1,
+  Points = UIContainer:New(),
+  Score = UIContainer:New(),
+  Description = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.Points.points_round = UIText:New()
+    _ARG_0_.Points:Insert(_ARG_0_.Points.points_round)
+    _ARG_0_.Points.points_round:Create(_ARG_0_.instance, "Points.points_round", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 1156.95, 237.9, "center")
+    _ARG_0_.Score.scorebar = UIText:New()
+    _ARG_0_.Score:Insert(_ARG_0_.Score.scorebar)
+    _ARG_0_.Score.scorebar:Create(_ARG_0_.instance, "Score.scorebar", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 408.35, 673.95, "left")
+    _ARG_0_.Score.Frame = UIContainer:New()
+    _ARG_0_.Score.Frame.icon1 = UIIcon:New()
+    _ARG_0_.Score.Frame:Insert(_ARG_0_.Score.Frame.icon1)
+    _ARG_0_.Score.Frame.icon1:Create(_ARG_0_.instance, "Score.Frame.icon1", "hud_component_6", 477.075, 708, 255.95, 32, "center")
+    _ARG_0_.Description.description = UIText:New()
+    _ARG_0_.Description:Insert(_ARG_0_.Description.description)
+    _ARG_0_.Description.description:Create(_ARG_0_.instance, "Description.description", "STR_DYN_MENU_LABEL1", "INGAMEUI", "18_BodegaSans-Medium", 1059.6, 221.9, "center")
+    _ARG_0_.Shortcuts.points_round = _ARG_0_.Points.points_round
+    _ARG_0_.Shortcuts.scorebar = _ARG_0_.Score.scorebar
+    _ARG_0_.Shortcuts.description = _ARG_0_.Description.description
+  end,
+  StartUI = function(_ARG_0_)
+    _ARG_0_.state = 1
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.Shortcuts.scorebar:SetValue(GetLocalizedString("INGAMEUI", "STR_SCORE_LABEL") .. " : " .. 0 + getvar("CurrentScore"))
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+  end
+}

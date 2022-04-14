@@ -1,1458 +1,196 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.curSelection = 3
-L1_1 = UIText
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.text1 = L1_1
-L1_1 = UIText
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.text2 = L1_1
-L1_1 = UIText
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.text3 = L1_1
-L1_1 = UIText
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.text4 = L1_1
-L1_1 = UIText
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.text5 = L1_1
-L1_1 = {}
-L0_1.Background = L1_1
-L1_1 = {}
-L0_1.Symbol_1 = L1_1
-L1_1 = {}
-L0_1.Cursor = L1_1
-L1_1 = {}
-L0_1.BankBar_Red = L1_1
-L1_1 = {}
-L0_1.BankBar = L1_1
-L1_1 = {}
-L0_1.Checkers = L1_1
-L1_1 = {}
-L0_1.Dim_Layer = L1_1
-L1_1 = {}
-L0_1.Frame = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.Symbol_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.Symbol_1
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Symbol_1[1]"
-  L5_2 = "component_header"
-  L6_2 = 256.05
-  L7_2 = 64
-  L8_2 = 512.1
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Symbol_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[2] = L2_2
-  L1_2 = A0_2.Symbol_1
-  L1_2 = L1_2[2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Symbol_1[2]"
-  L5_2 = "component_header"
-  L6_2 = 1278.25
-  L7_2 = 64
-  L8_2 = 512.1
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "text1"
-  L5_2 = "undefined"
-  L6_2 = "STR_CARS_GAMENAME"
-  L7_2 = "24_britannicbold"
-  L8_2 = 162
-  L9_2 = 29.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.text2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "text2"
-  L5_2 = "undefined"
-  L6_2 = "STR_LUIGI_GARAGE"
-  L7_2 = "24_britannicbold"
-  L8_2 = -24
-  L9_2 = 26.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "text3"
-  L5_2 = "undefined"
-  L6_2 = "STR_DOC_GARAGE"
-  L7_2 = "24_britannicbold"
-  L8_2 = -24
-  L9_2 = 66.575
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.text4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "text4"
-  L5_2 = "undefined"
-  L6_2 = "STR_RS_STADIUM"
-  L7_2 = "24_britannicbold"
-  L8_2 = -24
-  L9_2 = 106.525
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.text5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "text5"
-  L5_2 = "undefined"
-  L6_2 = "STR_RAMONE_SHOP"
-  L7_2 = "24_britannicbold"
-  L8_2 = -24
-  L9_2 = -13.45
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[1]"
-  L5_2 = "component_cursor_01"
-  L6_2 = 66
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[2] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[2]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 146
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[3] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[3]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[3]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 178
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[4] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[4]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[4]"
-  L5_2 = "component_cursor_01"
-  L6_2 = 782.6
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[5] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[5]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[5]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 543.1
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[6] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[6]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[6]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 575.1
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[7] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[7]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[7]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 479.6
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[8] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[8]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[8]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 511.6
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[9] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[9]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[9]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 416.05
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[10] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[10]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[10]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 448.05
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[11] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[11]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[11]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 352.55
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[12] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[12]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[12]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 384.55
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[13] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[13]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[13]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 304.55
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[14] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[14]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[14]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 336.55
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[15] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[15]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[15]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 241
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[16] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[16]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[16]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 273
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[17] = L2_2
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2[17]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor[17]"
-  L5_2 = "component_cursor_02"
-  L6_2 = 209.5
-  L7_2 = 32
-  L8_2 = 32
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[1]"
-  L5_2 = "component_frame_01"
-  L6_2 = 64
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[2] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[2]"
-  L5_2 = "component_frame_02"
-  L6_2 = 32
-  L7_2 = 136.925
-  L8_2 = 64
-  L9_2 = 145.85
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[3] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[3]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[3]"
-  L5_2 = "component_frame_03"
-  L6_2 = 64
-  L7_2 = 237
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[4] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[4]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[4]"
-  L5_2 = "component_frame_04"
-  L6_2 = 324.45
-  L7_2 = 237
-  L8_2 = 393
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[5] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[5]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[5]"
-  L5_2 = "component_frame_05"
-  L6_2 = 324.475
-  L7_2 = 32
-  L8_2 = 393.05
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[6] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[6]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[6]"
-  L5_2 = "component_frame_01"
-  L6_2 = 711.55
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[7] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[7]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[7]"
-  L5_2 = "component_frame_02"
-  L6_2 = 679.55
-  L7_2 = 136.925
-  L8_2 = 64
-  L9_2 = 145.85
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[8] = L2_2
-  L1_2 = A0_2.Frame
-  L1_2 = L1_2[8]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Frame[8]"
-  L5_2 = "component_frame_03"
-  L6_2 = 711.5
-  L7_2 = 237
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Dim_Layer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.Dim_Layer
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Dim_Layer[1]"
-  L5_2 = "component_frame_color"
-  L6_2 = 32
-  L7_2 = 32
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[1]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 16
-  L7_2 = 16
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[2] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[2]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 16
-  L7_2 = 47.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[3] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[3]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[3]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 16
-  L7_2 = 79.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[4] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[4]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[4]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 16
-  L7_2 = 111
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[5] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[5]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[5]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 16
-  L7_2 = 143
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[6] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[6]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[6]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 16
-  L7_2 = 174.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[7] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[7]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[7]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 16
-  L7_2 = 206.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[8] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[8]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[8]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 603.1
-  L7_2 = 16
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[9] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[9]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[9]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 603.1
-  L7_2 = 47.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[10] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[10]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[10]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 603.1
-  L7_2 = 79.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[11] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[11]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[11]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 603.1
-  L7_2 = 111
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[12] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[12]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[12]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 603.1
-  L7_2 = 143
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[13] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[13]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[13]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 603.1
-  L7_2 = 174.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[14] = L2_2
-  L1_2 = A0_2.Checkers
-  L1_2 = L1_2[14]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers[14]"
-  L5_2 = "component_frame_checker"
-  L6_2 = 603.1
-  L7_2 = 206.5
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[1]"
-  L5_2 = "component_bankbar"
-  L6_2 = 64
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[2] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[2]"
-  L5_2 = "component_bankbar"
-  L6_2 = 192
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[3] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[3]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[3]"
-  L5_2 = "component_bankbar"
-  L6_2 = 320
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[4] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[4]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[4]"
-  L5_2 = "component_bankbar"
-  L6_2 = 448
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[5] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[5]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[5]"
-  L5_2 = "component_bankbar"
-  L6_2 = 576
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[6] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[6]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[6]"
-  L5_2 = "component_bankbar"
-  L6_2 = 704
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[7] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[7]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[7]"
-  L5_2 = "component_bankbar"
-  L6_2 = 832
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[8] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[8]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[8]"
-  L5_2 = "component_bankbar"
-  L6_2 = 960
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[9] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[9]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[9]"
-  L5_2 = "component_bankbar"
-  L6_2 = 1088
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[10] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[10]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[10]"
-  L5_2 = "component_bankbar"
-  L6_2 = 1216
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[11] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[11]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[11]"
-  L5_2 = "component_bankbar"
-  L6_2 = 1344
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[12] = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2[12]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red[12]"
-  L5_2 = "component_bankbar"
-  L6_2 = 1472
-  L7_2 = 32
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.BankBar
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar[1]"
-  L5_2 = "component_bankgradient"
-  L6_2 = 769.4
-  L7_2 = 61.15
-  L8_2 = 1835.6
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[2] = L2_2
-  L1_2 = A0_2.BankBar
-  L1_2 = L1_2[2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar[2]"
-  L5_2 = "component_bankgradient"
-  L6_2 = 769.4
-  L7_2 = 4.05
-  L8_2 = 1835.6
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[1] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[1]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[1]"
-  L5_2 = "load_title_bg_01"
-  L6_2 = 128.05
-  L7_2 = 128.05
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[2] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[2]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[2]"
-  L5_2 = "load_title_bg_02"
-  L6_2 = 384.05
-  L7_2 = 128.05
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[3] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[3]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[3]"
-  L5_2 = "load_title_bg_03"
-  L6_2 = 640.05
-  L7_2 = 128.05
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[4] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[4]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[4]"
-  L5_2 = "load_title_bg_04"
-  L6_2 = 896.05
-  L7_2 = 128.15
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[5] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[5]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[5]"
-  L5_2 = "load_title_bg_05"
-  L6_2 = 128.05
-  L7_2 = 384.05
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[6] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[6]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[6]"
-  L5_2 = "load_title_bg_06"
-  L6_2 = 384.05
-  L7_2 = 384.05
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[7] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[7]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[7]"
-  L5_2 = "load_title_bg_07"
-  L6_2 = 640.05
-  L7_2 = 384.05
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2[8] = L2_2
-  L1_2 = A0_2.Background
-  L1_2 = L1_2[8]
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Background[8]"
-  L5_2 = "load_title_bg_08"
-  L6_2 = 896.05
-  L7_2 = 384.05
-  L8_2 = 256.1
-  L9_2 = 256.1
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L1_2 = GetComponentValue
-  L2_2 = A0_2.text4
-  L2_2 = L2_2.instance
-  L3_2 = "y"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = A0_2.curSelection
-  L2_2 = L2_2 - 5
-  L2_2 = L2_2 * 40
-  L1_2 = L1_2 - L2_2
-  L1_2 = L1_2 - 20
-  y = L1_2
-  L1_2 = ipairs
-  L2_2 = A0_2.Cursor
-  L1_2, L2_2, L3_2 = L1_2(L2_2)
-  for L4_2, L5_2 in L1_2, L2_2, L3_2 do
-    L6_2 = GetComponentValue
-    L7_2 = L5_2.instance
-    L8_2 = "x"
-    L6_2(L7_2, L8_2)
-    L6_2 = SetComponentValue
-    L7_2 = L5_2.instance
-    L8_2 = "y"
-    L9_2 = y
-    L6_2(L7_2, L8_2, L9_2)
-  end
-end
-L0_1.UpdateCursor = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = DebugPrint
-  L3_2 = "Received key down: "
-  L4_2 = A1_2
-  L3_2 = L3_2 .. L4_2
-  L2_2(L3_2)
-  L2_2 = InputKey
-  L3_2 = "UP"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = A0_2.curSelection
-    L2_2 = L2_2 + 1
-    A0_2.curSelection = L2_2
-    L2_2 = A0_2.curSelection
-    if 3 < L2_2 then
-      A0_2.curSelection = 3
+FrontEnd = {
+  instance = 0,
+  curSelection = 3,
+  text1 = UIText:New(),
+  text2 = UIText:New(),
+  text3 = UIText:New(),
+  text4 = UIText:New(),
+  text5 = UIText:New(),
+  Background = {},
+  Symbol_1 = {},
+  Cursor = {},
+  BankBar_Red = {},
+  BankBar = {},
+  Checkers = {},
+  Dim_Layer = {},
+  Frame = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.Symbol_1[1] = UIIcon:New()
+    _ARG_0_.Symbol_1[1]:Create(_ARG_0_.instance, "Symbol_1[1]", "component_header", 256.05, 64, 512.1, 128, "center")
+    _ARG_0_.Symbol_1[2] = UIIcon:New()
+    _ARG_0_.Symbol_1[2]:Create(_ARG_0_.instance, "Symbol_1[2]", "component_header", 1278.25, 64, 512.1, 128, "center")
+    _ARG_0_.text1:Create(_ARG_0_.instance, "text1", "undefined", "STR_CARS_GAMENAME", "24_britannicbold", 162, 29.55, "center")
+    _ARG_0_.text2:Create(_ARG_0_.instance, "text2", "undefined", "STR_LUIGI_GARAGE", "24_britannicbold", -24, 26.55, "center")
+    _ARG_0_.text3:Create(_ARG_0_.instance, "text3", "undefined", "STR_DOC_GARAGE", "24_britannicbold", -24, 66.575, "center")
+    _ARG_0_.text4:Create(_ARG_0_.instance, "text4", "undefined", "STR_RS_STADIUM", "24_britannicbold", -24, 106.525, "center")
+    _ARG_0_.text5:Create(_ARG_0_.instance, "text5", "undefined", "STR_RAMONE_SHOP", "24_britannicbold", -24, -13.45, "center")
+    _ARG_0_.Cursor[1] = UIIcon:New()
+    _ARG_0_.Cursor[1]:Create(_ARG_0_.instance, "Cursor[1]", "component_cursor_01", 66, 32, 128, 64, "center")
+    _ARG_0_.Cursor[2] = UIIcon:New()
+    _ARG_0_.Cursor[2]:Create(_ARG_0_.instance, "Cursor[2]", "component_cursor_02", 146, 32, 32, 64, "center")
+    _ARG_0_.Cursor[3] = UIIcon:New()
+    _ARG_0_.Cursor[3]:Create(_ARG_0_.instance, "Cursor[3]", "component_cursor_02", 178, 32, 32, 64, "center")
+    _ARG_0_.Cursor[4] = UIIcon:New()
+    _ARG_0_.Cursor[4]:Create(_ARG_0_.instance, "Cursor[4]", "component_cursor_01", 782.6, 32, 128, 64, "center")
+    _ARG_0_.Cursor[5] = UIIcon:New()
+    _ARG_0_.Cursor[5]:Create(_ARG_0_.instance, "Cursor[5]", "component_cursor_02", 543.1, 32, 32, 64, "center")
+    _ARG_0_.Cursor[6] = UIIcon:New()
+    _ARG_0_.Cursor[6]:Create(_ARG_0_.instance, "Cursor[6]", "component_cursor_02", 575.1, 32, 32, 64, "center")
+    _ARG_0_.Cursor[7] = UIIcon:New()
+    _ARG_0_.Cursor[7]:Create(_ARG_0_.instance, "Cursor[7]", "component_cursor_02", 479.6, 32, 32, 64, "center")
+    _ARG_0_.Cursor[8] = UIIcon:New()
+    _ARG_0_.Cursor[8]:Create(_ARG_0_.instance, "Cursor[8]", "component_cursor_02", 511.6, 32, 32, 64, "center")
+    _ARG_0_.Cursor[9] = UIIcon:New()
+    _ARG_0_.Cursor[9]:Create(_ARG_0_.instance, "Cursor[9]", "component_cursor_02", 416.05, 32, 32, 64, "center")
+    _ARG_0_.Cursor[10] = UIIcon:New()
+    _ARG_0_.Cursor[10]:Create(_ARG_0_.instance, "Cursor[10]", "component_cursor_02", 448.05, 32, 32, 64, "center")
+    _ARG_0_.Cursor[11] = UIIcon:New()
+    _ARG_0_.Cursor[11]:Create(_ARG_0_.instance, "Cursor[11]", "component_cursor_02", 352.55, 32, 32, 64, "center")
+    _ARG_0_.Cursor[12] = UIIcon:New()
+    _ARG_0_.Cursor[12]:Create(_ARG_0_.instance, "Cursor[12]", "component_cursor_02", 384.55, 32, 32, 64, "center")
+    _ARG_0_.Cursor[13] = UIIcon:New()
+    _ARG_0_.Cursor[13]:Create(_ARG_0_.instance, "Cursor[13]", "component_cursor_02", 304.55, 32, 32, 64, "center")
+    _ARG_0_.Cursor[14] = UIIcon:New()
+    _ARG_0_.Cursor[14]:Create(_ARG_0_.instance, "Cursor[14]", "component_cursor_02", 336.55, 32, 32, 64, "center")
+    _ARG_0_.Cursor[15] = UIIcon:New()
+    _ARG_0_.Cursor[15]:Create(_ARG_0_.instance, "Cursor[15]", "component_cursor_02", 241, 32, 32, 64, "center")
+    _ARG_0_.Cursor[16] = UIIcon:New()
+    _ARG_0_.Cursor[16]:Create(_ARG_0_.instance, "Cursor[16]", "component_cursor_02", 273, 32, 32, 64, "center")
+    _ARG_0_.Cursor[17] = UIIcon:New()
+    _ARG_0_.Cursor[17]:Create(_ARG_0_.instance, "Cursor[17]", "component_cursor_02", 209.5, 32, 32, 64, "center")
+    _ARG_0_.Frame[1] = UIIcon:New()
+    _ARG_0_.Frame[1]:Create(_ARG_0_.instance, "Frame[1]", "component_frame_01", 64, 32, 128, 64, "center")
+    _ARG_0_.Frame[2] = UIIcon:New()
+    _ARG_0_.Frame[2]:Create(_ARG_0_.instance, "Frame[2]", "component_frame_02", 32, 136.925, 64, 145.85, "center")
+    _ARG_0_.Frame[3] = UIIcon:New()
+    _ARG_0_.Frame[3]:Create(_ARG_0_.instance, "Frame[3]", "component_frame_03", 64, 237, 128, 64, "center")
+    _ARG_0_.Frame[4] = UIIcon:New()
+    _ARG_0_.Frame[4]:Create(_ARG_0_.instance, "Frame[4]", "component_frame_04", 324.45, 237, 393, 64, "center")
+    _ARG_0_.Frame[5] = UIIcon:New()
+    _ARG_0_.Frame[5]:Create(_ARG_0_.instance, "Frame[5]", "component_frame_05", 324.475, 32, 393.05, 64, "center")
+    _ARG_0_.Frame[6] = UIIcon:New()
+    _ARG_0_.Frame[6]:Create(_ARG_0_.instance, "Frame[6]", "component_frame_01", 711.55, 32, 128, 64, "center")
+    _ARG_0_.Frame[7] = UIIcon:New()
+    _ARG_0_.Frame[7]:Create(_ARG_0_.instance, "Frame[7]", "component_frame_02", 679.55, 136.925, 64, 145.85, "center")
+    _ARG_0_.Frame[8] = UIIcon:New()
+    _ARG_0_.Frame[8]:Create(_ARG_0_.instance, "Frame[8]", "component_frame_03", 711.5, 237, 128, 64, "center")
+    _ARG_0_.Dim_Layer[1] = UIIcon:New()
+    _ARG_0_.Dim_Layer[1]:Create(_ARG_0_.instance, "Dim_Layer[1]", "component_frame_color", 32, 32, 64, 64, "center")
+    _ARG_0_.Checkers[1] = UIIcon:New()
+    _ARG_0_.Checkers[1]:Create(_ARG_0_.instance, "Checkers[1]", "component_frame_checker", 16, 16, 32, 32, "center")
+    _ARG_0_.Checkers[2] = UIIcon:New()
+    _ARG_0_.Checkers[2]:Create(_ARG_0_.instance, "Checkers[2]", "component_frame_checker", 16, 47.5, 32, 32, "center")
+    _ARG_0_.Checkers[3] = UIIcon:New()
+    _ARG_0_.Checkers[3]:Create(_ARG_0_.instance, "Checkers[3]", "component_frame_checker", 16, 79.5, 32, 32, "center")
+    _ARG_0_.Checkers[4] = UIIcon:New()
+    _ARG_0_.Checkers[4]:Create(_ARG_0_.instance, "Checkers[4]", "component_frame_checker", 16, 111, 32, 32, "center")
+    _ARG_0_.Checkers[5] = UIIcon:New()
+    _ARG_0_.Checkers[5]:Create(_ARG_0_.instance, "Checkers[5]", "component_frame_checker", 16, 143, 32, 32, "center")
+    _ARG_0_.Checkers[6] = UIIcon:New()
+    _ARG_0_.Checkers[6]:Create(_ARG_0_.instance, "Checkers[6]", "component_frame_checker", 16, 174.5, 32, 32, "center")
+    _ARG_0_.Checkers[7] = UIIcon:New()
+    _ARG_0_.Checkers[7]:Create(_ARG_0_.instance, "Checkers[7]", "component_frame_checker", 16, 206.5, 32, 32, "center")
+    _ARG_0_.Checkers[8] = UIIcon:New()
+    _ARG_0_.Checkers[8]:Create(_ARG_0_.instance, "Checkers[8]", "component_frame_checker", 603.1, 16, 32, 32, "center")
+    _ARG_0_.Checkers[9] = UIIcon:New()
+    _ARG_0_.Checkers[9]:Create(_ARG_0_.instance, "Checkers[9]", "component_frame_checker", 603.1, 47.5, 32, 32, "center")
+    _ARG_0_.Checkers[10] = UIIcon:New()
+    _ARG_0_.Checkers[10]:Create(_ARG_0_.instance, "Checkers[10]", "component_frame_checker", 603.1, 79.5, 32, 32, "center")
+    _ARG_0_.Checkers[11] = UIIcon:New()
+    _ARG_0_.Checkers[11]:Create(_ARG_0_.instance, "Checkers[11]", "component_frame_checker", 603.1, 111, 32, 32, "center")
+    _ARG_0_.Checkers[12] = UIIcon:New()
+    _ARG_0_.Checkers[12]:Create(_ARG_0_.instance, "Checkers[12]", "component_frame_checker", 603.1, 143, 32, 32, "center")
+    _ARG_0_.Checkers[13] = UIIcon:New()
+    _ARG_0_.Checkers[13]:Create(_ARG_0_.instance, "Checkers[13]", "component_frame_checker", 603.1, 174.5, 32, 32, "center")
+    _ARG_0_.Checkers[14] = UIIcon:New()
+    _ARG_0_.Checkers[14]:Create(_ARG_0_.instance, "Checkers[14]", "component_frame_checker", 603.1, 206.5, 32, 32, "center")
+    _ARG_0_.BankBar_Red[1] = UIIcon:New()
+    _ARG_0_.BankBar_Red[1]:Create(_ARG_0_.instance, "BankBar_Red[1]", "component_bankbar", 64, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[2] = UIIcon:New()
+    _ARG_0_.BankBar_Red[2]:Create(_ARG_0_.instance, "BankBar_Red[2]", "component_bankbar", 192, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[3] = UIIcon:New()
+    _ARG_0_.BankBar_Red[3]:Create(_ARG_0_.instance, "BankBar_Red[3]", "component_bankbar", 320, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[4] = UIIcon:New()
+    _ARG_0_.BankBar_Red[4]:Create(_ARG_0_.instance, "BankBar_Red[4]", "component_bankbar", 448, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[5] = UIIcon:New()
+    _ARG_0_.BankBar_Red[5]:Create(_ARG_0_.instance, "BankBar_Red[5]", "component_bankbar", 576, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[6] = UIIcon:New()
+    _ARG_0_.BankBar_Red[6]:Create(_ARG_0_.instance, "BankBar_Red[6]", "component_bankbar", 704, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[7] = UIIcon:New()
+    _ARG_0_.BankBar_Red[7]:Create(_ARG_0_.instance, "BankBar_Red[7]", "component_bankbar", 832, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[8] = UIIcon:New()
+    _ARG_0_.BankBar_Red[8]:Create(_ARG_0_.instance, "BankBar_Red[8]", "component_bankbar", 960, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[9] = UIIcon:New()
+    _ARG_0_.BankBar_Red[9]:Create(_ARG_0_.instance, "BankBar_Red[9]", "component_bankbar", 1088, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[10] = UIIcon:New()
+    _ARG_0_.BankBar_Red[10]:Create(_ARG_0_.instance, "BankBar_Red[10]", "component_bankbar", 1216, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[11] = UIIcon:New()
+    _ARG_0_.BankBar_Red[11]:Create(_ARG_0_.instance, "BankBar_Red[11]", "component_bankbar", 1344, 32, 128, 64, "center")
+    _ARG_0_.BankBar_Red[12] = UIIcon:New()
+    _ARG_0_.BankBar_Red[12]:Create(_ARG_0_.instance, "BankBar_Red[12]", "component_bankbar", 1472, 32, 128, 64, "center")
+    _ARG_0_.BankBar[1] = UIIcon:New()
+    _ARG_0_.BankBar[1]:Create(_ARG_0_.instance, "BankBar[1]", "component_bankgradient", 769.4, 61.15, 1835.6, 8, "center")
+    _ARG_0_.BankBar[2] = UIIcon:New()
+    _ARG_0_.BankBar[2]:Create(_ARG_0_.instance, "BankBar[2]", "component_bankgradient", 769.4, 4.05, 1835.6, 8, "center")
+    _ARG_0_.Background[1] = UIIcon:New()
+    _ARG_0_.Background[1]:Create(_ARG_0_.instance, "Background[1]", "load_title_bg_01", 128.05, 128.05, 256.1, 256.1, "center")
+    _ARG_0_.Background[2] = UIIcon:New()
+    _ARG_0_.Background[2]:Create(_ARG_0_.instance, "Background[2]", "load_title_bg_02", 384.05, 128.05, 256.1, 256.1, "center")
+    _ARG_0_.Background[3] = UIIcon:New()
+    _ARG_0_.Background[3]:Create(_ARG_0_.instance, "Background[3]", "load_title_bg_03", 640.05, 128.05, 256.1, 256.1, "center")
+    _ARG_0_.Background[4] = UIIcon:New()
+    _ARG_0_.Background[4]:Create(_ARG_0_.instance, "Background[4]", "load_title_bg_04", 896.05, 128.15, 256.1, 256.1, "center")
+    _ARG_0_.Background[5] = UIIcon:New()
+    _ARG_0_.Background[5]:Create(_ARG_0_.instance, "Background[5]", "load_title_bg_05", 128.05, 384.05, 256.1, 256.1, "center")
+    _ARG_0_.Background[6] = UIIcon:New()
+    _ARG_0_.Background[6]:Create(_ARG_0_.instance, "Background[6]", "load_title_bg_06", 384.05, 384.05, 256.1, 256.1, "center")
+    _ARG_0_.Background[7] = UIIcon:New()
+    _ARG_0_.Background[7]:Create(_ARG_0_.instance, "Background[7]", "load_title_bg_07", 640.05, 384.05, 256.1, 256.1, "center")
+    _ARG_0_.Background[8] = UIIcon:New()
+    _ARG_0_.Background[8]:Create(_ARG_0_.instance, "Background[8]", "load_title_bg_08", 896.05, 384.05, 256.1, 256.1, "center")
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  UpdateCursor = function(_ARG_0_)
+    y = GetComponentValue(_ARG_0_.text4.instance, "y") - (_ARG_0_.curSelection - 5) * 40 - 20
+    for _FORV_4_, _FORV_5_ in ipairs(_ARG_0_.Cursor) do
+      GetComponentValue(_FORV_5_.instance, "x")
+      SetComponentValue(_FORV_5_.instance, "y", y)
     end
-    L3_2 = A0_2
-    L2_2 = A0_2.UpdateCursor
-    L2_2(L3_2)
-  else
-    L2_2 = InputKey
-    L3_2 = "DOWN"
-    L2_2 = L2_2(L3_2)
-    if A1_2 == L2_2 then
-      L2_2 = A0_2.curSelection
-      L2_2 = L2_2 - 1
-      A0_2.curSelection = L2_2
-      L2_2 = A0_2.curSelection
-      if L2_2 < 0 then
-        A0_2.curSelection = 0
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    DebugPrint("Received key down: " .. _ARG_1_)
+    if _ARG_1_ == InputKey("UP") then
+      _ARG_0_.curSelection = _ARG_0_.curSelection + 1
+      if _ARG_0_.curSelection > 3 then
+        _ARG_0_.curSelection = 3
       end
-      L3_2 = A0_2
-      L2_2 = A0_2.UpdateCursor
-      L2_2(L3_2)
-    else
-      L2_2 = InputKey
-      L3_2 = "OK"
-      L2_2 = L2_2(L3_2)
-      if A1_2 == L2_2 then
-        L2_2 = A0_2.curSelection
-        if L2_2 == 3 then
-          L2_2 = SwitchActivity
-          L3_2 = "FE_Ramones"
-          L4_2 = "player1start"
-          L2_2(L3_2, L4_2)
-        else
-          L2_2 = A0_2.curSelection
-          if L2_2 == 2 then
-            L2_2 = SwitchActivity
-            L3_2 = "FE_Luigis"
-            L4_2 = "player1start"
-            L2_2(L3_2, L4_2)
-          else
-            L2_2 = A0_2.curSelection
-            if L2_2 == 1 then
-              L2_2 = SwitchActivity
-              L3_2 = "FE_Docs"
-              L4_2 = "player1start"
-              L2_2(L3_2, L4_2)
-            else
-              L2_2 = A0_2.curSelection
-              if L2_2 == 0 then
-                L2_2 = SwitchActivity
-                L3_2 = "CR_01_EX"
-                L4_2 = "player1start"
-                L2_2(L3_2, L4_2)
-              end
-            end
-          end
-        end
+      _ARG_0_:UpdateCursor()
+    elseif _ARG_1_ == InputKey("DOWN") then
+      _ARG_0_.curSelection = _ARG_0_.curSelection - 1
+      if _ARG_0_.curSelection < 0 then
+        _ARG_0_.curSelection = 0
+      end
+      _ARG_0_:UpdateCursor()
+    elseif _ARG_1_ == InputKey("OK") then
+      if _ARG_0_.curSelection == 3 then
+        SwitchActivity("FE_Ramones", "player1start")
+      elseif _ARG_0_.curSelection == 2 then
+        SwitchActivity("FE_Luigis", "player1start")
+      elseif _ARG_0_.curSelection == 1 then
+        SwitchActivity("FE_Docs", "player1start")
+      elseif _ARG_0_.curSelection == 0 then
+        SwitchActivity("CR_01_EX", "player1start")
       end
     end
   end
-end
-L0_1.OnKeyDown = L1_1
-FrontEnd = L0_1
+}

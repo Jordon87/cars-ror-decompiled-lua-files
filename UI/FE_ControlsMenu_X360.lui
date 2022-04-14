@@ -1,1014 +1,172 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.curPlayer = 1
-L0_1.curConfigSet = 0
-L0_1.originalConfigSet = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Title = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Direction = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Buttons = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Controls = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Sixaxis_Jump = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_180_Up = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_180 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.X360_Wheel_Steer = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_90_Left = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_90 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Config_Select = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.FE_Arrow_2_R = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.FE_Arrow_2_L = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = PlaceMenuInWorld
-  L2_2 = A0_2.instance
-  L3_2 = "ControlsMenu"
-  L1_2(L2_2, L3_2)
-  L1_2 = GetControllerConfig
-  L2_2 = A0_2.curPlayer
-  L1_2 = L1_2(L2_2)
-  A0_2.curConfigSet = L1_2
-  L1_2 = A0_2.Title
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Title
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Title
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Title.text1"
-  L5_2 = "STR_CONTROLS"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1008.3
-  L9_2 = 87.95
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Direction
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Direction
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Direction
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Direction
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Direction.text1"
-  L5_2 = "STR_LEFT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 487
-  L9_2 = 212.8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Direction
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Direction
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Direction
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Direction
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Direction.text3"
-  L5_2 = "STR_LEFT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 893
-  L9_2 = 212.8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text1"
-  L5_2 = "STR_SCROLL"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 746.15
-  L9_2 = 711.55
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text3"
-  L5_2 = "STR_BACK"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 886.35
-  L9_2 = 711.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text5 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text5"
-  L5_2 = "STR_SELECT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1034.35
-  L9_2 = 711.55
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text1"
-  L5_2 = "STR_GAS"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1077.05
-  L9_2 = 428.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text3"
-  L5_2 = "STR_INTERACT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1439.35
-  L9_2 = 428.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text5 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text5"
-  L5_2 = "STR_BRAKE"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1077.05
-  L9_2 = 483.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text7 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text7"
-  L5_2 = "STR_180_TURN"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1439.45
-  L9_2 = 483.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text9 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text9
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text9
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text9"
-  L5_2 = "STR_DRIFT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1077.1
-  L9_2 = 538.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FreeLook = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.FreeLook
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.FreeLook
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.FreeLook"
-  L5_2 = "STR_FREE_LOOK"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1439.45
-  L9_2 = 703.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text13 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text13
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text13
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text13"
-  L5_2 = "STR_TURBO_BOOST"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1076.9
-  L9_2 = 593.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text15 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text15
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text15
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text15"
-  L5_2 = "STR_LOOK_BACK"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1439.45
-  L9_2 = 593.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text17 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text17
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text17
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text17"
-  L5_2 = "STR_TILT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1077.05
-  L9_2 = 648.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text19 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text19
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text19
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text19"
-  L5_2 = "STR_CHANGE_CAM"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1439.45
-  L9_2 = 648.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text21 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text21
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text21
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text21"
-  L5_2 = "STR_HAND_BRAKE"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1077.1
-  L9_2 = 703.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text23 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text23
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text23
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text23"
-  L5_2 = "STR_START"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1439.45
-  L9_2 = 538.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text25 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text25
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text25
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text25"
-  L5_2 = "STR_STEER"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1077.3
-  L9_2 = 368.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text27 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text27
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text27
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text27"
-  L5_2 = "STR_JUMP"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1494.4
-  L9_2 = 368.1
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Sixaxis_Jump
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Sixaxis_Jump
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Sixaxis_Jump
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Sixaxis_Jump
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Sixaxis_Jump.icon1"
-  L5_2 = "X360_control_013_3D"
-  L6_2 = 461
-  L7_2 = 294
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_180_Up
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_180_Up
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_180_Up
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_180_Up
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_180_Up.icon1"
-  L5_2 = "X360_control_007_3D"
-  L6_2 = 461
-  L7_2 = 287
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_180
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_180
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_180
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_180
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_180.icon1"
-  L5_2 = "X360_control_007_3D"
-  L6_2 = 461
-  L7_2 = 287
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.X360_Wheel_Steer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.X360_Wheel_Steer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.X360_Wheel_Steer
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.X360_Wheel_Steer
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "X360_Wheel_Steer.icon1"
-  L5_2 = "X360_control_008_3D"
-  L6_2 = 57
-  L7_2 = 302
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_90_Left
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_90_Left
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_90_Left
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_90_Left
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_90_Left.icon1"
-  L5_2 = "X360_control_005_3D"
-  L6_2 = 51.5
-  L7_2 = 287
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_90
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_90
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_90
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_90
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_90.icon1"
-  L5_2 = "X360_control_005_3D"
-  L6_2 = 51.45
-  L7_2 = 287
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Config_Select
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.ConfigSet = L2_2
-  L1_2 = A0_2.Config_Select
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Config_Select
-  L3_2 = L3_2.ConfigSet
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Config_Select
-  L1_2 = L1_2.ConfigSet
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Config_Select.ConfigSet"
-  L5_2 = "STR_DYN_CREDITS_1"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 999.7
-  L9_2 = 658.5
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.FE_Arrow_2_R
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.FE_Arrow_2_R
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.FE_Arrow_2_R
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.FE_Arrow_2_R
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "FE_Arrow_2_R.icon1"
-  L5_2 = "fe_arrow_2_3D"
-  L6_2 = 764.8
-  L7_2 = 756.4
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.FE_Arrow_2_L
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.FE_Arrow_2_L
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.FE_Arrow_2_L
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.FE_Arrow_2_L
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "FE_Arrow_2_L.icon1"
-  L5_2 = "fe_arrow_2_3D"
-  L6_2 = 243.2
-  L7_2 = 756.4
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Controls
-  L2_2 = L2_2.FreeLook
-  L1_2.FreeLook = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Config_Select
-  L2_2 = L2_2.ConfigSet
-  L1_2.ConfigSet = L2_2
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-  L1_2 = GetControllerConfig
-  L2_2 = A0_2.curPlayer
-  L1_2 = L1_2(L2_2)
-  A0_2.originalConfigSet = L1_2
-  L2_2 = A0_2
-  L1_2 = A0_2.SwitchConfigSet
-  L3_2 = A0_2.originalConfigSet
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = StopMenuAnimation
-  L3_2 = A0_2.instance
-  L4_2 = "ConfigSet"
-  L5_2 = A0_2.curConfigSet
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  if A1_2 <= 0 then
-    A1_2 = 2
-  elseif 2 < A1_2 then
-    A1_2 = 1
-  end
-  A0_2.curConfigSet = A1_2
-  L2_2 = BindControllerConfigStrings
-  L3_2 = A0_2.curConfigSet
-  L2_2(L3_2)
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.ConfigSet
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = GetLocalizedString
-  L5_2 = "COMMONUI"
-  L6_2 = "STR_CONFIG_"
-  L7_2 = A0_2.curConfigSet
-  L6_2 = L6_2 .. L7_2
-  L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2, L6_2)
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = LoopMenuAnimation
-  L3_2 = A0_2.instance
-  L4_2 = "ConfigSet"
-  L5_2 = A0_2.curConfigSet
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  if A1_2 == 2 then
-    L2_2 = A0_2.Shortcuts
-    L2_2 = L2_2.FreeLook
-    L3_2 = L2_2
-    L2_2 = L2_2.SetValue
-    L4_2 = ""
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = A0_2.Shortcuts
-    L2_2 = L2_2.FreeLook
-    L3_2 = L2_2
-    L2_2 = L2_2.SetValue
-    L4_2 = GetLocalizedString
-    L5_2 = "COMMONUI"
-    L6_2 = "STR_FREE_LOOK"
-    L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2, L6_2)
-    L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  end
-end
-L0_1.SwitchConfigSet = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = InputKey
-  L3_2 = "OK"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = GetPlatform
-    L2_2 = L2_2()
-    if L2_2 == "x360" then
-      L2_2 = A0_2.curConfigSet
-      if L2_2 == 2 then
-        L2_2 = IsWheelController
-        L3_2 = A0_2.curPlayer
-        L2_2 = L2_2(L3_2)
-        if L2_2 == false then
-          L2_2 = PlayUISound
-          L3_2 = UISoundEventBadInput
-          L2_2(L3_2)
-      end
+FE_ControlsMenu_x360 = {
+  instance = 0,
+  curPlayer = 1,
+  curConfigSet = 0,
+  originalConfigSet = 0,
+  Title = UIContainer:New(),
+  Direction = UIContainer:New(),
+  Buttons = UIContainer:New(),
+  Controls = UIContainer:New(),
+  Sixaxis_Jump = UIContainer:New(),
+  Rotate_180_Up = UIContainer:New(),
+  Rotate_180 = UIContainer:New(),
+  X360_Wheel_Steer = UIContainer:New(),
+  Rotate_90_Left = UIContainer:New(),
+  Rotate_90 = UIContainer:New(),
+  Config_Select = UIContainer:New(),
+  FE_Arrow_2_R = UIContainer:New(),
+  FE_Arrow_2_L = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    PlaceMenuInWorld(_ARG_0_.instance, "ControlsMenu")
+    _ARG_0_.curConfigSet = GetControllerConfig(_ARG_0_.curPlayer)
+    _ARG_0_.Title.text1 = UIText:New()
+    _ARG_0_.Title:Insert(_ARG_0_.Title.text1)
+    _ARG_0_.Title.text1:Create(_ARG_0_.instance, "Title.text1", "STR_CONTROLS", "COMMONUI", "FE_GarageGothicBlack_3D", 1008.3, 87.95, "center")
+    _ARG_0_.Direction.text1 = UIText:New()
+    _ARG_0_.Direction:Insert(_ARG_0_.Direction.text1)
+    _ARG_0_.Direction.text1:Create(_ARG_0_.instance, "Direction.text1", "STR_LEFT", "COMMONUI", "FE_GarageGothicBlack_3D", 487, 212.8, "center")
+    _ARG_0_.Direction.text3 = UIText:New()
+    _ARG_0_.Direction:Insert(_ARG_0_.Direction.text3)
+    _ARG_0_.Direction.text3:Create(_ARG_0_.instance, "Direction.text3", "STR_LEFT", "COMMONUI", "FE_GarageGothicBlack_3D", 893, 212.8, "center")
+    _ARG_0_.Buttons.text1 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text1)
+    _ARG_0_.Buttons.text1:Create(_ARG_0_.instance, "Buttons.text1", "STR_SCROLL", "COMMONUI", "FE_GarageGothicBlack_3D", 746.15, 711.55, "left")
+    _ARG_0_.Buttons.text3 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text3)
+    _ARG_0_.Buttons.text3:Create(_ARG_0_.instance, "Buttons.text3", "STR_BACK", "COMMONUI", "FE_GarageGothicBlack_3D", 886.35, 711.55, "center")
+    _ARG_0_.Buttons.text5 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text5)
+    _ARG_0_.Buttons.text5:Create(_ARG_0_.instance, "Buttons.text5", "STR_SELECT", "COMMONUI", "FE_GarageGothicBlack_3D", 1034.35, 711.55, "right")
+    _ARG_0_.Controls.text1 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text1)
+    _ARG_0_.Controls.text1:Create(_ARG_0_.instance, "Controls.text1", "STR_GAS", "COMMONUI", "FE_GarageGothicBlack_3D", 1077.05, 428.1, "left")
+    _ARG_0_.Controls.text3 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text3)
+    _ARG_0_.Controls.text3:Create(_ARG_0_.instance, "Controls.text3", "STR_INTERACT", "COMMONUI", "FE_GarageGothicBlack_3D", 1439.35, 428.1, "left")
+    _ARG_0_.Controls.text5 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text5)
+    _ARG_0_.Controls.text5:Create(_ARG_0_.instance, "Controls.text5", "STR_BRAKE", "COMMONUI", "FE_GarageGothicBlack_3D", 1077.05, 483.1, "left")
+    _ARG_0_.Controls.text7 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text7)
+    _ARG_0_.Controls.text7:Create(_ARG_0_.instance, "Controls.text7", "STR_180_TURN", "COMMONUI", "FE_GarageGothicBlack_3D", 1439.45, 483.1, "left")
+    _ARG_0_.Controls.text9 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text9)
+    _ARG_0_.Controls.text9:Create(_ARG_0_.instance, "Controls.text9", "STR_DRIFT", "COMMONUI", "FE_GarageGothicBlack_3D", 1077.1, 538.1, "left")
+    _ARG_0_.Controls.FreeLook = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.FreeLook)
+    _ARG_0_.Controls.FreeLook:Create(_ARG_0_.instance, "Controls.FreeLook", "STR_FREE_LOOK", "COMMONUI", "FE_GarageGothicBlack_3D", 1439.45, 703.1, "left")
+    _ARG_0_.Controls.text13 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text13)
+    _ARG_0_.Controls.text13:Create(_ARG_0_.instance, "Controls.text13", "STR_TURBO_BOOST", "COMMONUI", "FE_GarageGothicBlack_3D", 1076.9, 593.1, "left")
+    _ARG_0_.Controls.text15 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text15)
+    _ARG_0_.Controls.text15:Create(_ARG_0_.instance, "Controls.text15", "STR_LOOK_BACK", "COMMONUI", "FE_GarageGothicBlack_3D", 1439.45, 593.1, "left")
+    _ARG_0_.Controls.text17 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text17)
+    _ARG_0_.Controls.text17:Create(_ARG_0_.instance, "Controls.text17", "STR_TILT", "COMMONUI", "FE_GarageGothicBlack_3D", 1077.05, 648.1, "left")
+    _ARG_0_.Controls.text19 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text19)
+    _ARG_0_.Controls.text19:Create(_ARG_0_.instance, "Controls.text19", "STR_CHANGE_CAM", "COMMONUI", "FE_GarageGothicBlack_3D", 1439.45, 648.1, "left")
+    _ARG_0_.Controls.text21 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text21)
+    _ARG_0_.Controls.text21:Create(_ARG_0_.instance, "Controls.text21", "STR_HAND_BRAKE", "COMMONUI", "FE_GarageGothicBlack_3D", 1077.1, 703.1, "left")
+    _ARG_0_.Controls.text23 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text23)
+    _ARG_0_.Controls.text23:Create(_ARG_0_.instance, "Controls.text23", "STR_START", "COMMONUI", "FE_GarageGothicBlack_3D", 1439.45, 538.1, "left")
+    _ARG_0_.Controls.text25 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text25)
+    _ARG_0_.Controls.text25:Create(_ARG_0_.instance, "Controls.text25", "STR_STEER", "COMMONUI", "FE_GarageGothicBlack_3D", 1077.3, 368.1, "left")
+    _ARG_0_.Controls.text27 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text27)
+    _ARG_0_.Controls.text27:Create(_ARG_0_.instance, "Controls.text27", "STR_JUMP", "COMMONUI", "FE_GarageGothicBlack_3D", 1494.4, 368.1, "left")
+    _ARG_0_.Sixaxis_Jump.icon1 = UIIcon:New()
+    _ARG_0_.Sixaxis_Jump:Insert(_ARG_0_.Sixaxis_Jump.icon1)
+    _ARG_0_.Sixaxis_Jump.icon1:Create(_ARG_0_.instance, "Sixaxis_Jump.icon1", "X360_control_013_3D", 461, 294, 128, 128, "center")
+    _ARG_0_.Rotate_180_Up.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_180_Up:Insert(_ARG_0_.Rotate_180_Up.icon1)
+    _ARG_0_.Rotate_180_Up.icon1:Create(_ARG_0_.instance, "Rotate_180_Up.icon1", "X360_control_007_3D", 461, 287, 128, 128, "center")
+    _ARG_0_.Rotate_180.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_180:Insert(_ARG_0_.Rotate_180.icon1)
+    _ARG_0_.Rotate_180.icon1:Create(_ARG_0_.instance, "Rotate_180.icon1", "X360_control_007_3D", 461, 287, 128, 128, "center")
+    _ARG_0_.X360_Wheel_Steer.icon1 = UIIcon:New()
+    _ARG_0_.X360_Wheel_Steer:Insert(_ARG_0_.X360_Wheel_Steer.icon1)
+    _ARG_0_.X360_Wheel_Steer.icon1:Create(_ARG_0_.instance, "X360_Wheel_Steer.icon1", "X360_control_008_3D", 57, 302, 128, 128, "center")
+    _ARG_0_.Rotate_90_Left.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_90_Left:Insert(_ARG_0_.Rotate_90_Left.icon1)
+    _ARG_0_.Rotate_90_Left.icon1:Create(_ARG_0_.instance, "Rotate_90_Left.icon1", "X360_control_005_3D", 51.5, 287, 128, 128, "center")
+    _ARG_0_.Rotate_90.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_90:Insert(_ARG_0_.Rotate_90.icon1)
+    _ARG_0_.Rotate_90.icon1:Create(_ARG_0_.instance, "Rotate_90.icon1", "X360_control_005_3D", 51.45, 287, 128, 128, "center")
+    _ARG_0_.Config_Select.ConfigSet = UIText:New()
+    _ARG_0_.Config_Select:Insert(_ARG_0_.Config_Select.ConfigSet)
+    _ARG_0_.Config_Select.ConfigSet:Create(_ARG_0_.instance, "Config_Select.ConfigSet", "STR_DYN_CREDITS_1", "COMMONUI", "FE_GarageGothicBlack_3D", 999.7, 658.5, "center")
+    _ARG_0_.FE_Arrow_2_R.icon1 = UIIcon:New()
+    _ARG_0_.FE_Arrow_2_R:Insert(_ARG_0_.FE_Arrow_2_R.icon1)
+    _ARG_0_.FE_Arrow_2_R.icon1:Create(_ARG_0_.instance, "FE_Arrow_2_R.icon1", "fe_arrow_2_3D", 764.8, 756.4, 64, 128, "center")
+    _ARG_0_.FE_Arrow_2_L.icon1 = UIIcon:New()
+    _ARG_0_.FE_Arrow_2_L:Insert(_ARG_0_.FE_Arrow_2_L.icon1)
+    _ARG_0_.FE_Arrow_2_L.icon1:Create(_ARG_0_.instance, "FE_Arrow_2_L.icon1", "fe_arrow_2_3D", 243.2, 756.4, 64, 128, "center")
+    _ARG_0_.Shortcuts.FreeLook = _ARG_0_.Controls.FreeLook
+    _ARG_0_.Shortcuts.ConfigSet = _ARG_0_.Config_Select.ConfigSet
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+    _ARG_0_.originalConfigSet = GetControllerConfig(_ARG_0_.curPlayer)
+    _ARG_0_:SwitchConfigSet(_ARG_0_.originalConfigSet)
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  SwitchConfigSet = function(_ARG_0_, _ARG_1_)
+    StopMenuAnimation(_ARG_0_.instance, "ConfigSet" .. _ARG_0_.curConfigSet)
+    if _ARG_1_ <= 0 then
+      _ARG_1_ = 2
+    elseif _ARG_1_ > 2 then
+      _ARG_1_ = 1
     end
+    _ARG_0_.curConfigSet = _ARG_1_
+    BindControllerConfigStrings(_ARG_0_.curConfigSet)
+    _ARG_0_.Shortcuts.ConfigSet:SetValue(GetLocalizedString("COMMONUI", "STR_CONFIG_" .. _ARG_0_.curConfigSet))
+    LoopMenuAnimation(_ARG_0_.instance, "ConfigSet" .. _ARG_0_.curConfigSet)
+    if _ARG_1_ == 2 then
+      _ARG_0_.Shortcuts.FreeLook:SetValue("")
     else
-      L2_2 = GetPlatform
-      L2_2 = L2_2()
-      if L2_2 == "x360" then
-        L2_2 = A0_2.curConfigSet
-        if L2_2 == 1 then
-          L2_2 = IsWheelController
-          L3_2 = A0_2.curPlayer
-          L2_2 = L2_2(L3_2)
-          if L2_2 == true then
-            L2_2 = PlayUISound
-            L3_2 = UISoundEventBadInput
-            L2_2(L3_2)
-        end
-      end
+      _ARG_0_.Shortcuts.FreeLook:SetValue(GetLocalizedString("COMMONUI", "STR_FREE_LOOK"))
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == InputKey("OK") then
+      if GetPlatform() == "x360" and _ARG_0_.curConfigSet == 2 and IsWheelController(_ARG_0_.curPlayer) == false then
+        PlayUISound(UISoundEventBadInput)
+      elseif GetPlatform() == "x360" and _ARG_0_.curConfigSet == 1 and IsWheelController(_ARG_0_.curPlayer) == true then
+        PlayUISound(UISoundEventBadInput)
       else
-        L2_2 = SetControllerConfig
-        L3_2 = A0_2.curPlayer
-        L4_2 = A0_2.curConfigSet
-        L2_2(L3_2, L4_2)
-        L2_2 = PlayUISound
-        L3_2 = UISoundEventSelect_Continue
-        L2_2(L3_2)
-        L2_2 = PlayCameraAnimation
-        L3_2 = "FrontEndCamera"
-        L4_2 = "Anim\\FECam08R"
-        L2_2(L3_2, L4_2)
-        L2_2 = RaiseMenu
-        L3_2 = "FE_Options"
-        L2_2(L3_2)
-        L2_2 = EndMenu
-        L3_2 = A0_2.instance
-        L2_2(L3_2)
+        SetControllerConfig(_ARG_0_.curPlayer, _ARG_0_.curConfigSet)
+        PlayUISound(UISoundEventSelect_Continue)
+        PlayCameraAnimation("FrontEndCamera", "Anim\\FECam08R")
+        RaiseMenu("FE_Options")
+        EndMenu(_ARG_0_.instance)
       end
     end
-  end
-  L2_2 = InputKey
-  L3_2 = "CANCEL"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = SetControllerConfig
-    L3_2 = A0_2.curPlayer
-    L4_2 = A0_2.originalConfigSet
-    L2_2(L3_2, L4_2)
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventBack2
-    L2_2(L3_2)
-    L2_2 = PlayCameraAnimation
-    L3_2 = "FrontEndCamera"
-    L4_2 = "Anim\\FECam08R"
-    L2_2(L3_2, L4_2)
-    L2_2 = RaiseMenu
-    L3_2 = "FE_Options"
-    L2_2(L3_2)
-    L2_2 = EndMenu
-    L3_2 = A0_2.instance
-    L2_2(L3_2)
-  end
-  L2_2 = InputKey
-  L3_2 = "LEFT"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventLeft_Right
-    L2_2(L3_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.SwitchConfigSet
-    L4_2 = A0_2.curConfigSet
-    L4_2 = L4_2 - 1
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = InputKey
-    L3_2 = "RIGHT"
-    L2_2 = L2_2(L3_2)
-    if A1_2 == L2_2 then
-      L2_2 = PlayUISound
-      L3_2 = UISoundEventLeft_Right
-      L2_2(L3_2)
-      L3_2 = A0_2
-      L2_2 = A0_2.SwitchConfigSet
-      L4_2 = A0_2.curConfigSet
-      L4_2 = L4_2 + 1
-      L2_2(L3_2, L4_2)
+    if _ARG_1_ == InputKey("CANCEL") then
+      SetControllerConfig(_ARG_0_.curPlayer, _ARG_0_.originalConfigSet)
+      PlayUISound(UISoundEventBack2)
+      PlayCameraAnimation("FrontEndCamera", "Anim\\FECam08R")
+      RaiseMenu("FE_Options")
+      EndMenu(_ARG_0_.instance)
+    end
+    if _ARG_1_ == InputKey("LEFT") then
+      PlayUISound(UISoundEventLeft_Right)
+      _ARG_0_:SwitchConfigSet(_ARG_0_.curConfigSet - 1)
+    elseif _ARG_1_ == InputKey("RIGHT") then
+      PlayUISound(UISoundEventLeft_Right)
+      _ARG_0_:SwitchConfigSet(_ARG_0_.curConfigSet + 1)
     end
   end
-end
-L0_1.OnKeyDown = L1_1
-FE_ControlsMenu_x360 = L0_1
+}

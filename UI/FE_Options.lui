@@ -1,612 +1,137 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.curSelection = 0
-L0_1.menuState = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Icon_Credits = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Title = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Buttons = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.CursorOptions = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Cursor = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = UILayer
-  L1_2 = L1_2.Create
-  L2_2 = A0_2
-  L1_2(L2_2)
-  L1_2 = PlaceMenuInWorld
-  L2_2 = A0_2.instance
-  L3_2 = "Options"
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Icon_Credits
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Icon_Credits
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Icon_Credits
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Icon_Credits
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Icon_Credits.icon1"
-  L5_2 = "icon_credits_3D"
-  L6_2 = 824.9
-  L7_2 = 282
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Title
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Title
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Title
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Title.text1"
-  L5_2 = "STR_OPTIONS"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1055.8
-  L9_2 = 310.2
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text1"
-  L5_2 = "STR_BACK"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 858.15
-  L9_2 = 528.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text3"
-  L5_2 = "STR_SELECT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1131.3
-  L9_2 = 533.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CursorOptions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.CursorOptions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CursorOptions
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CursorOptions
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CursorOptions.text1"
-  L5_2 = "STR_BONUS_CONTENT"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 572.95
-  L9_2 = 285.85
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CursorOptions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.CursorOptions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CursorOptions
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CursorOptions
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CursorOptions.text3"
-  L5_2 = "STR_AUDIO"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 562.95
-  L9_2 = 321.75
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CursorOptions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text5 = L2_2
-  L1_2 = A0_2.CursorOptions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CursorOptions
-  L3_2 = L3_2.text5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CursorOptions
-  L1_2 = L1_2.text5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CursorOptions.text5"
-  L5_2 = "STR_CONTROLS"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 552.95
-  L9_2 = 357.75
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CursorOptions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text7 = L2_2
-  L1_2 = A0_2.CursorOptions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CursorOptions
-  L3_2 = L3_2.text7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CursorOptions
-  L1_2 = L1_2.text7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CursorOptions.text7"
-  L5_2 = "STR_SELECT_DEVICE_TITLE"
-  L6_2 = "TRC"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 542.95
-  L9_2 = 393.8
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CursorOptions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.changeprofile = L2_2
-  L1_2 = A0_2.CursorOptions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CursorOptions
-  L3_2 = L3_2.changeprofile
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CursorOptions
-  L1_2 = L1_2.changeprofile
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CursorOptions.changeprofile"
-  L5_2 = "STR_CHANGE_PROFILE"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 532.95
-  L9_2 = 429.75
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CursorOptions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.autosave = L2_2
-  L1_2 = A0_2.CursorOptions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CursorOptions
-  L3_2 = L3_2.autosave
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CursorOptions
-  L1_2 = L1_2.autosave
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CursorOptions.autosave"
-  L5_2 = "STR_CHEATS"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 522.95
-  L9_2 = 465.75
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.CursorOptions
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text13 = L2_2
-  L1_2 = A0_2.CursorOptions
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.CursorOptions
-  L3_2 = L3_2.text13
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.CursorOptions
-  L1_2 = L1_2.text13
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "CursorOptions.text13"
-  L5_2 = "STR_CREDITS"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 512.95
-  L9_2 = 501.75
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Cursor
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Cursor
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Cursor
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Cursor
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Cursor.icon1"
-  L5_2 = "cursor_3D"
-  L6_2 = 373.05
-  L7_2 = 1428
-  L8_2 = 64
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.CursorOptions
-  L2_2 = L2_2.changeprofile
-  L1_2.changeprofile = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.CursorOptions
-  L2_2 = L2_2.autosave
-  L1_2.autosave = L2_2
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2
-  L1_2 = UILayer
-  L1_2 = L1_2.StartUI
-  L2_2 = A0_2
-  L1_2(L2_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2
-  L1_2 = UILayer
-  L1_2 = L1_2.EndUI
-  L2_2 = A0_2
-  L1_2(L2_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = GetPlatform
-  L2_2 = L2_2()
-  if L2_2 == "ps3" then
-    L2_2 = EndMenu
-    L3_2 = A0_2.instance
-    L2_2(L3_2)
-    L2_2 = RaiseMenu
-    L3_2 = "FE_Options_ps3"
-    L2_2(L3_2)
-  else
-    L2_2 = GetPlatform
-    L2_2 = L2_2()
-    if L2_2 == "ps2" then
-      L2_2 = EndMenu
-      L3_2 = A0_2.instance
-      L2_2(L3_2)
-      L2_2 = RaiseMenu
-      L3_2 = "FE_Options_ps2"
-      L2_2(L3_2)
+FE_Options = {
+  instance = 0,
+  curSelection = 0,
+  menuState = 0,
+  Icon_Credits = UIContainer:New(),
+  Title = UIContainer:New(),
+  Buttons = UIContainer:New(),
+  CursorOptions = UIContainer:New(),
+  Cursor = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    UILayer.Create(_ARG_0_)
+    PlaceMenuInWorld(_ARG_0_.instance, "Options")
+    _ARG_0_.Icon_Credits.icon1 = UIIcon:New()
+    _ARG_0_.Icon_Credits:Insert(_ARG_0_.Icon_Credits.icon1)
+    _ARG_0_.Icon_Credits.icon1:Create(_ARG_0_.instance, "Icon_Credits.icon1", "icon_credits_3D", 824.9, 282, 128, 128, "center")
+    _ARG_0_.Title.text1 = UIText:New()
+    _ARG_0_.Title:Insert(_ARG_0_.Title.text1)
+    _ARG_0_.Title.text1:Create(_ARG_0_.instance, "Title.text1", "STR_OPTIONS", "COMMONUI", "FE_GarageGothicBlack_3D", 1055.8, 310.2, "left")
+    _ARG_0_.Buttons.text1 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text1)
+    _ARG_0_.Buttons.text1:Create(_ARG_0_.instance, "Buttons.text1", "STR_BACK", "COMMONUI", "FE_GarageGothicBlack_3D", 858.15, 528.75, "left")
+    _ARG_0_.Buttons.text3 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text3)
+    _ARG_0_.Buttons.text3:Create(_ARG_0_.instance, "Buttons.text3", "STR_SELECT", "COMMONUI", "FE_GarageGothicBlack_3D", 1131.3, 533.75, "left")
+    _ARG_0_.CursorOptions.text1 = UIText:New()
+    _ARG_0_.CursorOptions:Insert(_ARG_0_.CursorOptions.text1)
+    _ARG_0_.CursorOptions.text1:Create(_ARG_0_.instance, "CursorOptions.text1", "STR_BONUS_CONTENT", "COMMONUI", "FE_GarageGothicBlack_3D", 572.95, 285.85, "right")
+    _ARG_0_.CursorOptions.text3 = UIText:New()
+    _ARG_0_.CursorOptions:Insert(_ARG_0_.CursorOptions.text3)
+    _ARG_0_.CursorOptions.text3:Create(_ARG_0_.instance, "CursorOptions.text3", "STR_AUDIO", "COMMONUI", "FE_GarageGothicBlack_3D", 562.95, 321.75, "right")
+    _ARG_0_.CursorOptions.text5 = UIText:New()
+    _ARG_0_.CursorOptions:Insert(_ARG_0_.CursorOptions.text5)
+    _ARG_0_.CursorOptions.text5:Create(_ARG_0_.instance, "CursorOptions.text5", "STR_CONTROLS", "COMMONUI", "FE_GarageGothicBlack_3D", 552.95, 357.75, "right")
+    _ARG_0_.CursorOptions.text7 = UIText:New()
+    _ARG_0_.CursorOptions:Insert(_ARG_0_.CursorOptions.text7)
+    _ARG_0_.CursorOptions.text7:Create(_ARG_0_.instance, "CursorOptions.text7", "STR_SELECT_DEVICE_TITLE", "TRC", "FE_GarageGothicBlack_3D", 542.95, 393.8, "right")
+    _ARG_0_.CursorOptions.changeprofile = UIText:New()
+    _ARG_0_.CursorOptions:Insert(_ARG_0_.CursorOptions.changeprofile)
+    _ARG_0_.CursorOptions.changeprofile:Create(_ARG_0_.instance, "CursorOptions.changeprofile", "STR_CHANGE_PROFILE", "COMMONUI", "FE_GarageGothicBlack_3D", 532.95, 429.75, "right")
+    _ARG_0_.CursorOptions.autosave = UIText:New()
+    _ARG_0_.CursorOptions:Insert(_ARG_0_.CursorOptions.autosave)
+    _ARG_0_.CursorOptions.autosave:Create(_ARG_0_.instance, "CursorOptions.autosave", "STR_CHEATS", "COMMONUI", "FE_GarageGothicBlack_3D", 522.95, 465.75, "right")
+    _ARG_0_.CursorOptions.text13 = UIText:New()
+    _ARG_0_.CursorOptions:Insert(_ARG_0_.CursorOptions.text13)
+    _ARG_0_.CursorOptions.text13:Create(_ARG_0_.instance, "CursorOptions.text13", "STR_CREDITS", "COMMONUI", "FE_GarageGothicBlack_3D", 512.95, 501.75, "right")
+    _ARG_0_.Cursor.icon1 = UIIcon:New()
+    _ARG_0_.Cursor:Insert(_ARG_0_.Cursor.icon1)
+    _ARG_0_.Cursor.icon1:Create(_ARG_0_.instance, "Cursor.icon1", "cursor_3D", 373.05, 1428, 64, 32, "center")
+    _ARG_0_.Shortcuts.changeprofile = _ARG_0_.CursorOptions.changeprofile
+    _ARG_0_.Shortcuts.autosave = _ARG_0_.CursorOptions.autosave
+  end,
+  StartUI = function(_ARG_0_)
+    UILayer.StartUI(_ARG_0_)
+  end,
+  EndUI = function(_ARG_0_)
+    UILayer.EndUI(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    if GetPlatform() == "ps3" then
+      EndMenu(_ARG_0_.instance)
+      RaiseMenu("FE_Options_ps3")
+    elseif GetPlatform() == "ps2" then
+      EndMenu(_ARG_0_.instance)
+      RaiseMenu("FE_Options_ps2")
     else
-      L2_2 = UILayer
-      L2_2 = L2_2.Tick
-      L3_2 = A0_2
-      L4_2 = A1_2
-      L2_2(L3_2, L4_2)
+      UILayer.Tick(_ARG_0_, _ARG_1_)
     end
-  end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
-  L3_2 = UILayer
-  L3_2 = L3_2.MenuStates
-  L3_2 = L3_2.MS_Running
-  if A2_2 == L3_2 then
-    L4_2 = A0_2
-    L3_2 = A0_2.UpdateCursor
-    L5_2 = 0
-    L3_2(L4_2, L5_2)
-  end
-end
-L0_1.OnEnterState = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  if A1_2 < 0 then
-    L2_2 = A0_2.CursorOptions
-    L2_2 = L2_2.contents
-    L2_2 = #L2_2
-    A1_2 = L2_2 - 1
-  else
-    L2_2 = A0_2.CursorOptions
-    L2_2 = L2_2.contents
-    L2_2 = #L2_2
-    L2_2 = L2_2 - 1
-    if A1_2 > L2_2 then
-      A1_2 = 0
+  end,
+  OnEnterState = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    if _ARG_2_ == UILayer.MenuStates.MS_Running then
+      _ARG_0_:UpdateCursor(0)
     end
-  end
-  A0_2.curSelection = A1_2
-  L2_2 = A0_2.curSelection
-  L2_2 = L2_2 + 1
-  L3_2 = type
-  L4_2 = A0_2.CursorOptions
-  L4_2 = L4_2.contents
-  L4_2 = L4_2[L2_2]
-  L3_2 = L3_2(L4_2)
-  if L3_2 == "table" then
-    L3_2 = A0_2.CursorOptions
-    L3_2 = L3_2.contents
-    L3_2 = L3_2[L2_2]
-    L3_2 = L3_2.instance
-    if L3_2 ~= nil then
-      L3_2 = A0_2.Cursor
-      L4_2 = L3_2
-      L3_2 = L3_2.MoveTo
-      L5_2 = A0_2.CursorOptions
-      L5_2 = L5_2.contents
-      L5_2 = L5_2[L2_2]
-      L6_2 = 1
-      L7_2 = {}
-      L7_2.x = 15
-      L7_2.y = 0
-      L3_2(L4_2, L5_2, L6_2, L7_2)
+  end,
+  UpdateCursor = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ < 0 then
+      _ARG_1_ = #_ARG_0_.CursorOptions.contents - 1
+    elseif _ARG_1_ > #_ARG_0_.CursorOptions.contents - 1 then
+      _ARG_1_ = 0
     end
-  end
-end
-L0_1.UpdateCursor = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = InputKey
-  L3_2 = "DOWN"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventUP_DOWN
-    L2_2(L3_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.UpdateCursor
-    L4_2 = A0_2.curSelection
-    L4_2 = L4_2 + 1
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = InputKey
-  L3_2 = "UP"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventUP_DOWN
-    L2_2(L3_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.UpdateCursor
-    L4_2 = A0_2.curSelection
-    L4_2 = L4_2 - 1
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = InputKey
-  L3_2 = "CANCEL"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L3_2 = A0_2
-    L2_2 = A0_2.EndUI
-    L2_2(L3_2)
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventBack2
-    L2_2(L3_2)
-    L2_2 = DVDMenu_Play
-    L3_2 = "FrontEndCamera"
-    L4_2 = "Anim\\FECam06R"
-    L2_2(L3_2, L4_2)
-    L2_2 = RaiseMenu
-    L3_2 = "FE_MainMenu"
-    L2_2(L3_2)
-  end
-  L2_2 = InputKey
-  L3_2 = "OK"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventSelect_Continue
-    L2_2(L3_2)
-    L2_2 = A0_2.curSelection
-    if L2_2 == 0 then
-      L2_2 = DVDMenu_Play
-      L3_2 = "FrontEndCamera"
-      L4_2 = "Anim\\FECam07"
-      L2_2(L3_2, L4_2)
-      L2_2 = GetPlatform
-      L2_2 = L2_2()
-      if L2_2 == "ps2" then
-        L2_2 = RaiseMenu
-        L3_2 = "FE_BonusArtGallery"
-        L2_2(L3_2)
-      else
-        L2_2 = RaiseMenu
-        L3_2 = "FE_BonusMenu"
-        L2_2(L3_2)
-      end
-    else
-      L2_2 = A0_2.curSelection
-      if L2_2 == 5 then
-        L2_2 = DVDMenu_Play
-        L3_2 = "FrontEndCamera"
-        L4_2 = "Anim\\FECam13"
-        L2_2(L3_2, L4_2)
-        L2_2 = RaiseMenu
-        L3_2 = "FE_CheatsMenu"
-        L2_2(L3_2)
-      else
-        L2_2 = A0_2.curSelection
-        if L2_2 == 2 then
-          L2_2 = DVDMenu_Play
-          L3_2 = "FrontEndCamera"
-          L4_2 = "Anim\\FECam08"
-          L2_2(L3_2, L4_2)
-          L2_2 = RaiseMenu
-          L3_2 = "FE_ControlsMenu_"
-          L4_2 = GetPlatform
-          L4_2 = L4_2()
-          L3_2 = L3_2 .. L4_2
-          L2_2(L3_2)
+    _ARG_0_.curSelection = _ARG_1_
+    if type(_ARG_0_.CursorOptions.contents[_ARG_0_.curSelection + 1]) == "table" and _ARG_0_.CursorOptions.contents[_ARG_0_.curSelection + 1].instance ~= nil then
+      _ARG_0_.Cursor:MoveTo(_ARG_0_.CursorOptions.contents[_ARG_0_.curSelection + 1], 1, {x = 15, y = 0})
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == InputKey("DOWN") then
+      PlayUISound(UISoundEventUP_DOWN)
+      _ARG_0_:UpdateCursor(_ARG_0_.curSelection + 1)
+    end
+    if _ARG_1_ == InputKey("UP") then
+      PlayUISound(UISoundEventUP_DOWN)
+      _ARG_0_:UpdateCursor(_ARG_0_.curSelection - 1)
+    end
+    if _ARG_1_ == InputKey("CANCEL") then
+      _ARG_0_:EndUI()
+      PlayUISound(UISoundEventBack2)
+      DVDMenu_Play("FrontEndCamera", "Anim\\FECam06R")
+      RaiseMenu("FE_MainMenu")
+    end
+    if _ARG_1_ == InputKey("OK") then
+      PlayUISound(UISoundEventSelect_Continue)
+      if _ARG_0_.curSelection == 0 then
+        DVDMenu_Play("FrontEndCamera", "Anim\\FECam07")
+        if GetPlatform() == "ps2" then
+          RaiseMenu("FE_BonusArtGallery")
         else
-          L2_2 = A0_2.curSelection
-          if L2_2 == 1 then
-            L2_2 = DVDMenu_Play
-            L3_2 = "FrontEndCamera"
-            L4_2 = "Anim\\FECam08"
-            L2_2(L3_2, L4_2)
-            L2_2 = RaiseMenu
-            L3_2 = "FE_AudioOptions"
-            L2_2(L3_2)
-          else
-            L2_2 = A0_2.curSelection
-            if L2_2 == 4 then
-              L2_2 = setvar
-              L3_2 = "ProfilesDisabled"
-              L4_2 = 0
-              L2_2(L3_2, L4_2)
-              L2_2 = EnumerateProfiles
-              L2_2()
-              L2_2 = PlayCameraAnimation
-              L3_2 = "FrontEndCamera"
-              L4_2 = "Anim\\FECam05"
-              L2_2(L3_2, L4_2)
-              L2_2 = RaiseMenu
-              L3_2 = "FE_StoryModeMenu"
-              L2_2(L3_2)
-              L2_2 = FE_StoryModeMenu
-              L2_2.PreviousMenu = "FE_Options"
-            else
-              L2_2 = A0_2.curSelection
-              if L2_2 == 3 then
-                L2_2 = X360IsGamerProfileActive
-                L2_2 = L2_2()
-                if L2_2 then
-                  L2_2 = X360SelectDevice
-                  L2_2()
-                else
-                  L2_2 = PlayUISound
-                  L3_2 = UISoundEventBadInput
-                  L2_2(L3_2)
-                end
-              else
-                L2_2 = A0_2.curSelection
-                if L2_2 == 6 then
-                  L2_2 = DVDMenu_Play
-                  L3_2 = "FrontEndCamera"
-                  L4_2 = "Anim\\FECam07"
-                  L2_2(L3_2, L4_2)
-                  L2_2 = RaiseMenu
-                  L3_2 = "FE_Credits"
-                  L2_2(L3_2)
-                end
-              end
-            end
-          end
+          RaiseMenu("FE_BonusMenu")
         end
+      elseif _ARG_0_.curSelection == 5 then
+        DVDMenu_Play("FrontEndCamera", "Anim\\FECam13")
+        RaiseMenu("FE_CheatsMenu")
+      elseif _ARG_0_.curSelection == 2 then
+        DVDMenu_Play("FrontEndCamera", "Anim\\FECam08")
+        RaiseMenu("FE_ControlsMenu_" .. GetPlatform())
+      elseif _ARG_0_.curSelection == 1 then
+        DVDMenu_Play("FrontEndCamera", "Anim\\FECam08")
+        RaiseMenu("FE_AudioOptions")
+      elseif _ARG_0_.curSelection == 4 then
+        setvar("ProfilesDisabled", 0)
+        EnumerateProfiles()
+        PlayCameraAnimation("FrontEndCamera", "Anim\\FECam05")
+        RaiseMenu("FE_StoryModeMenu")
+        FE_StoryModeMenu.PreviousMenu = "FE_Options"
+      elseif _ARG_0_.curSelection == 3 then
+        if X360IsGamerProfileActive() then
+          X360SelectDevice()
+        else
+          PlayUISound(UISoundEventBadInput)
+        end
+      elseif _ARG_0_.curSelection == 6 then
+        DVDMenu_Play("FrontEndCamera", "Anim\\FECam07")
+        RaiseMenu("FE_Credits")
       end
     end
   end
-end
-L0_1.OnKeyDown = L1_1
-FE_Options = L0_1
+}

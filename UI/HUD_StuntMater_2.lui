@@ -1,568 +1,110 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.state = 1
-L0_1.LastGesturePrompt = ""
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Points = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_3 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_4 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_5 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_6 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_7 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Time_8 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.HUD_Ring = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Score = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Description = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.Points
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.points_round = L2_2
-  L1_2 = A0_2.Points
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Points
-  L3_2 = L3_2.points_round
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Points
-  L1_2 = L1_2.points_round
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Points.points_round"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1156.95
-  L9_2 = 237.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_1.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1758.95
-  L7_2 = 516.7
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_2
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_2
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_2.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1716.1
-  L7_2 = 559.5
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_3
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_3
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_3.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1716.1
-  L7_2 = 645.05
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_4
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_4
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_4
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_4
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_4.icon1"
-  L5_2 = "hud_timeslot_3"
-  L6_2 = 1758.95
-  L7_2 = 688
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_5
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_5
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_5
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_5
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_5.icon1"
-  L5_2 = "hud_timeslot"
-  L6_2 = 1844.55
-  L7_2 = 688
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_6
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_6
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_6
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_6
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_6.icon1"
-  L5_2 = "hud_timeslot"
-  L6_2 = 1887.4
-  L7_2 = 645.05
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_7
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_7
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_7
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_7
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_7.icon1"
-  L5_2 = "hud_timeslot_2"
-  L6_2 = 1887.4
-  L7_2 = 559.5
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Time_8
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Time_8
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Time_8
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Time_8
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Time_8.icon1"
-  L5_2 = "hud_timeslot_2"
-  L6_2 = 1844.55
-  L7_2 = 516.7
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Ring
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Ring
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Ring.icon1"
-  L5_2 = "hud_ring"
-  L6_2 = 1801.35
-  L7_2 = 666.05
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.HUD_Ring
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.HUD_Ring
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.HUD_Ring
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "HUD_Ring.icon2"
-  L5_2 = "hud_ring"
-  L6_2 = 1865.35
-  L7_2 = 666.05
-  L8_2 = 64
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.scorebar = L2_2
-  L1_2 = A0_2.Score
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.scorebar
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.scorebar
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.scorebar"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 408.35
-  L9_2 = 673.95
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Frame = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score
-  L3_2 = L3_2.Frame
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score
-  L1_2 = L1_2.Frame
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score.Frame.icon1"
-  L5_2 = "hud_component_6"
-  L6_2 = 477.075
-  L7_2 = 708
-  L8_2 = 255.95
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Description
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.description = L2_2
-  L1_2 = A0_2.Description
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Description
-  L3_2 = L3_2.description
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Description
-  L1_2 = L1_2.description
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Description.description"
-  L5_2 = "STR_DYN_MENU_LABEL1"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2169.8
-  L9_2 = 561.9
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Points
-  L2_2 = L2_2.points_round
-  L1_2.points_round = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Score
-  L2_2 = L2_2.scorebar
-  L1_2.scorebar = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Description
-  L2_2 = L2_2.description
-  L1_2.description = L2_2
-  L1_2 = SetTickFrequency
-  L2_2 = A0_2.instance
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-end
-L0_1.Create = L1_1
-function L1_1()
-  local L0_2, L1_2
-  L0_2 = GetPlatform
-  L0_2 = L0_2()
-  if L0_2 == "ps2" then
-    L1_2 = "PS2"
-    return L1_2
-  elseif L0_2 == "ps3" then
-    L1_2 = "PS3"
-    return L1_2
-  elseif L0_2 == "gcn" then
-    L1_2 = "Wii"
-    return L1_2
-  elseif L0_2 == "x360" then
-    L1_2 = "360"
-    return L1_2
-  end
-end
-L0_1.FixPlatformText = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  A0_2.state = 1
-  L1_2 = AttachSubmenu
-  L2_2 = A0_2.instance
-  L3_2 = GetGestureHUD
-  L4_2 = 1
-  L3_2, L4_2 = L3_2(L4_2)
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = FixGestureNames
-  L3_2 = GetCurrentGesturePrompt
-  L3_2 = L3_2()
-  L4_2 = GetCurrentGestureStick
-  L4_2, L5_2, L6_2, L7_2, L8_2 = L4_2()
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
-  L3_2 = A0_2.LastGesturePrompt
-  if L2_2 ~= L3_2 then
-    L3_2 = StopMenuAnimation
-    L4_2 = A0_2.instance
-    L5_2 = A0_2.LastGesturePrompt
-    L3_2(L4_2, L5_2)
-    L3_2 = LoopMenuAnimation
-    L4_2 = A0_2.instance
-    L5_2 = L2_2
-    L3_2(L4_2, L5_2)
-    A0_2.LastGesturePrompt = L2_2
-  end
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.scorebar
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = GetLocalizedString
-  L6_2 = "INGAMEUI"
-  L7_2 = "STR_SCORE_LABEL"
-  L5_2 = L5_2(L6_2, L7_2)
-  L6_2 = " : "
-  L7_2 = getvar
-  L8_2 = "CurrentScore"
-  L7_2 = L7_2(L8_2)
-  L7_2 = 0 + L7_2
-  L5_2 = L5_2 .. L6_2 .. L7_2
-  L3_2(L4_2, L5_2)
-  L3_2 = GetGestureTime
-  L3_2 = L3_2()
-  L4_2 = A0_2.state
-  L4_2 = 0.125 * L4_2
-  L4_2 = 1 - L4_2
-  if L3_2 < L4_2 then
-    L3_2 = A0_2.state
-    L3_2 = L3_2 + 1
-    A0_2.state = L3_2
-    L3_2 = A0_2.state
-    if 4 < L3_2 then
-      L3_2 = PlayUISound
-      L4_2 = UISoundEventGestureBeep2
-      L3_2(L4_2)
-    else
-      L3_2 = PlayUISound
-      L4_2 = UISoundEventGestureBeep1
-      L3_2(L4_2)
+HUD_StuntMater_2 = {
+  instance = 0,
+  state = 1,
+  LastGesturePrompt = "",
+  Points = UIContainer:New(),
+  Time_1 = UIContainer:New(),
+  Time_2 = UIContainer:New(),
+  Time_3 = UIContainer:New(),
+  Time_4 = UIContainer:New(),
+  Time_5 = UIContainer:New(),
+  Time_6 = UIContainer:New(),
+  Time_7 = UIContainer:New(),
+  Time_8 = UIContainer:New(),
+  HUD_Ring = UIContainer:New(),
+  Score = UIContainer:New(),
+  Description = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.Points.points_round = UIText:New()
+    _ARG_0_.Points:Insert(_ARG_0_.Points.points_round)
+    _ARG_0_.Points.points_round:Create(_ARG_0_.instance, "Points.points_round", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 1156.95, 237.9, "center")
+    _ARG_0_.Time_1.icon1 = UIIcon:New()
+    _ARG_0_.Time_1:Insert(_ARG_0_.Time_1.icon1)
+    _ARG_0_.Time_1.icon1:Create(_ARG_0_.instance, "Time_1.icon1", "hud_timeslot_3", 1758.95, 516.7, 64, 64, "center")
+    _ARG_0_.Time_2.icon1 = UIIcon:New()
+    _ARG_0_.Time_2:Insert(_ARG_0_.Time_2.icon1)
+    _ARG_0_.Time_2.icon1:Create(_ARG_0_.instance, "Time_2.icon1", "hud_timeslot_3", 1716.1, 559.5, 64, 64, "center")
+    _ARG_0_.Time_3.icon1 = UIIcon:New()
+    _ARG_0_.Time_3:Insert(_ARG_0_.Time_3.icon1)
+    _ARG_0_.Time_3.icon1:Create(_ARG_0_.instance, "Time_3.icon1", "hud_timeslot_3", 1716.1, 645.05, 64, 64, "center")
+    _ARG_0_.Time_4.icon1 = UIIcon:New()
+    _ARG_0_.Time_4:Insert(_ARG_0_.Time_4.icon1)
+    _ARG_0_.Time_4.icon1:Create(_ARG_0_.instance, "Time_4.icon1", "hud_timeslot_3", 1758.95, 688, 64, 64, "center")
+    _ARG_0_.Time_5.icon1 = UIIcon:New()
+    _ARG_0_.Time_5:Insert(_ARG_0_.Time_5.icon1)
+    _ARG_0_.Time_5.icon1:Create(_ARG_0_.instance, "Time_5.icon1", "hud_timeslot", 1844.55, 688, 64, 64, "center")
+    _ARG_0_.Time_6.icon1 = UIIcon:New()
+    _ARG_0_.Time_6:Insert(_ARG_0_.Time_6.icon1)
+    _ARG_0_.Time_6.icon1:Create(_ARG_0_.instance, "Time_6.icon1", "hud_timeslot", 1887.4, 645.05, 64, 64, "center")
+    _ARG_0_.Time_7.icon1 = UIIcon:New()
+    _ARG_0_.Time_7:Insert(_ARG_0_.Time_7.icon1)
+    _ARG_0_.Time_7.icon1:Create(_ARG_0_.instance, "Time_7.icon1", "hud_timeslot_2", 1887.4, 559.5, 64, 64, "center")
+    _ARG_0_.Time_8.icon1 = UIIcon:New()
+    _ARG_0_.Time_8:Insert(_ARG_0_.Time_8.icon1)
+    _ARG_0_.Time_8.icon1:Create(_ARG_0_.instance, "Time_8.icon1", "hud_timeslot_2", 1844.55, 516.7, 64, 64, "center")
+    _ARG_0_.HUD_Ring.icon1 = UIIcon:New()
+    _ARG_0_.HUD_Ring:Insert(_ARG_0_.HUD_Ring.icon1)
+    _ARG_0_.HUD_Ring.icon1:Create(_ARG_0_.instance, "HUD_Ring.icon1", "hud_ring", 1801.35, 666.05, 64, 128, "center")
+    _ARG_0_.HUD_Ring.icon2 = UIIcon:New()
+    _ARG_0_.HUD_Ring:Insert(_ARG_0_.HUD_Ring.icon2)
+    _ARG_0_.HUD_Ring.icon2:Create(_ARG_0_.instance, "HUD_Ring.icon2", "hud_ring", 1865.35, 666.05, 64, 128, "center")
+    _ARG_0_.Score.scorebar = UIText:New()
+    _ARG_0_.Score:Insert(_ARG_0_.Score.scorebar)
+    _ARG_0_.Score.scorebar:Create(_ARG_0_.instance, "Score.scorebar", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 408.35, 673.95, "left")
+    _ARG_0_.Score.Frame = UIContainer:New()
+    _ARG_0_.Score.Frame.icon1 = UIIcon:New()
+    _ARG_0_.Score.Frame:Insert(_ARG_0_.Score.Frame.icon1)
+    _ARG_0_.Score.Frame.icon1:Create(_ARG_0_.instance, "Score.Frame.icon1", "hud_component_6", 477.075, 708, 255.95, 32, "center")
+    _ARG_0_.Description.description = UIText:New()
+    _ARG_0_.Description:Insert(_ARG_0_.Description.description)
+    _ARG_0_.Description.description:Create(_ARG_0_.instance, "Description.description", "STR_DYN_MENU_LABEL1", "INGAMEUI", "18_BodegaSans-Medium", 2169.8, 561.9, "center")
+    _ARG_0_.Shortcuts.points_round = _ARG_0_.Points.points_round
+    _ARG_0_.Shortcuts.scorebar = _ARG_0_.Score.scorebar
+    _ARG_0_.Shortcuts.description = _ARG_0_.Description.description
+    SetTickFrequency(_ARG_0_.instance, 0)
+  end,
+  FixPlatformText = function()
+    if GetPlatform() == "ps2" then
+      return "PS2"
+    elseif GetPlatform() == "ps3" then
+      return "PS3"
+    elseif GetPlatform() == "gcn" then
+      return "Wii"
+    elseif GetPlatform() == "x360" then
+      return "360"
     end
+  end,
+  StartUI = function(_ARG_0_)
+    _ARG_0_.state = 1
+    AttachSubmenu(_ARG_0_.instance, GetGestureHUD(1))
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    if FixGestureNames(GetCurrentGesturePrompt(), GetCurrentGestureStick()) ~= _ARG_0_.LastGesturePrompt then
+      StopMenuAnimation(_ARG_0_.instance, _ARG_0_.LastGesturePrompt)
+      LoopMenuAnimation(_ARG_0_.instance, (FixGestureNames(GetCurrentGesturePrompt(), GetCurrentGestureStick())))
+      _ARG_0_.LastGesturePrompt = FixGestureNames(GetCurrentGesturePrompt(), GetCurrentGestureStick())
+    end
+    _ARG_0_.Shortcuts.scorebar:SetValue(GetLocalizedString("INGAMEUI", "STR_SCORE_LABEL") .. " : " .. 0 + getvar("CurrentScore"))
+    if GetGestureTime() < 1 - 0.125 * _ARG_0_.state then
+      _ARG_0_.state = _ARG_0_.state + 1
+      if _ARG_0_.state > 4 then
+        PlayUISound(UISoundEventGestureBeep2)
+      else
+        PlayUISound(UISoundEventGestureBeep1)
+      end
+    end
+    if GetGestureTime() ~= 0 then
+      SetMenuAnimationPos(_ARG_0_.instance, "Countdown", 1 - GetGestureTime())
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
   end
-  L3_2 = GetGestureTime
-  L3_2 = L3_2()
-  if L3_2 ~= 0 then
-    L3_2 = SetMenuAnimationPos
-    L4_2 = A0_2.instance
-    L5_2 = "Countdown"
-    L6_2 = GetGestureTime
-    L6_2 = L6_2()
-    L6_2 = 1 - L6_2
-    L3_2(L4_2, L5_2, L6_2)
-  end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-HUD_StuntMater_2 = L0_1
+}

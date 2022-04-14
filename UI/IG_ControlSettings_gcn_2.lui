@@ -1,1545 +1,206 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.state = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Buttons = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Controls = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Wiimote_Jump = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Wiimote_Steer = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Title = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Menu = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Checkers2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Checkers3 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Checkers1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.BankBar_Yellow = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.BankBar_Red = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Dim_Layer_BG = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text1"
-  L5_2 = "STR_CONFIRM"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2578
-  L9_2 = 673.7
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text1"
-  L5_2 = "STR_GAS"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1097.1
-  L9_2 = 383.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text3"
-  L5_2 = "STR_BRAKE"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1097.1
-  L9_2 = 433.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text5 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text5"
-  L5_2 = "STR_180_TURN"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1392.2
-  L9_2 = 433.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text7 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text7"
-  L5_2 = "STR_DRIFT"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1097.1
-  L9_2 = 483.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text9 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text9
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text9
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text9"
-  L5_2 = "STR_TURBO_BOOST"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1097.1
-  L9_2 = 533.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text11 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text11
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text11
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text11"
-  L5_2 = "STR_TILT"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1097.1
-  L9_2 = 583.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text13 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text13
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text13
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text13"
-  L5_2 = "STR_CHANGE_CAM"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1392.2
-  L9_2 = 483.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text15 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text15
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text15
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text15"
-  L5_2 = "STR_START"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1392.2
-  L9_2 = 533.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text17 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text17
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text17
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text17"
-  L5_2 = "STR_HAND_BRAKE"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1392.2
-  L9_2 = 383.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text19 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text19
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text19
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text19"
-  L5_2 = "STR_STEER"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1172.1
-  L9_2 = 323.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Controls
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text21 = L2_2
-  L1_2 = A0_2.Controls
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Controls
-  L3_2 = L3_2.text21
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Controls
-  L1_2 = L1_2.text21
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Controls.text21"
-  L5_2 = "STR_JUMP"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1457.1
-  L9_2 = 323.75
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Wiimote_Jump
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Wiimote_Jump
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Wiimote_Jump
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Wiimote_Jump
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Wiimote_Jump.icon1"
-  L5_2 = "wii_control_009"
-  L6_2 = 680.8
-  L7_2 = 220.2
-  L8_2 = 128
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Wiimote_Steer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Wiimote_Steer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Wiimote_Steer
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Wiimote_Steer
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Wiimote_Steer.icon1"
-  L5_2 = "wii_control_009"
-  L6_2 = 398.65
-  L7_2 = 224.4
-  L8_2 = 128
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Title
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Title
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Title
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Title.text1"
-  L5_2 = "STR_DRIVINGCONTROLS"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1466.1
-  L9_2 = 623.5
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameMenu = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon1"
-  L5_2 = "component_frame_01"
-  L6_2 = 1192.05
-  L7_2 = 589.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon2"
-  L5_2 = "component_frame_02"
-  L6_2 = 1128.05
-  L7_2 = 910.95
-  L8_2 = 64
-  L9_2 = 322
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon3"
-  L5_2 = "component_frame_03"
-  L6_2 = 1192.05
-  L7_2 = 974.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon4 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon4"
-  L5_2 = "component_frame_04"
-  L6_2 = 1833.5
-  L7_2 = 974.2
-  L8_2 = 641.9
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon5"
-  L5_2 = "component_frame_05"
-  L6_2 = 1833.525
-  L7_2 = 589.2
-  L8_2 = 641.95
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon6 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon6
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon6
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon6"
-  L5_2 = "component_frame_01"
-  L6_2 = 1962.05
-  L7_2 = 589.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon7 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon7"
-  L5_2 = "component_frame_02"
-  L6_2 = 1962.05
-  L7_2 = 910.95
-  L8_2 = 64
-  L9_2 = 322
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon8 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.FrameMenu
-  L3_2 = L3_2.icon8
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.FrameMenu
-  L1_2 = L1_2.icon8
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.FrameMenu.icon8"
-  L5_2 = "component_frame_03"
-  L6_2 = 1962.05
-  L7_2 = 974.2
-  L8_2 = 128
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Menu
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Dim_Layer = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Layer
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Layer
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Menu
-  L3_2 = L3_2.Dim_Layer
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Menu
-  L1_2 = L1_2.Dim_Layer
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Menu.Dim_Layer.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 1066.35
-  L7_2 = 530.55
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Checkers2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers2
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers2
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers2.icon1"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 127.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Checkers2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers2
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers2
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers2.icon2"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 127.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Checkers3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers3
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers3
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers3.icon1"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 511.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers3
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Checkers3
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers3
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers3
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers3.icon2"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 511.1
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon1"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 351.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon2"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 383.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon3"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 415.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon4 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon4
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon4
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon4"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 447.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon5"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 479.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon6 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon6
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon6
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon6"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 511.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon7 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon7
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon7
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon7"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 543.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon8 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon8
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon8
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon8"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 575.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon9 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon9
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon9
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon9"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 607.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon10 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon10
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon10
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon10"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 351.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon11 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon11
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon11
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon11"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 383.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon12 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon12
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon12
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon12"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 415.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon13 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon13
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon13
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon13"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 447.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon14 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon14
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon14
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon14"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 479.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon15 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon15
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon15
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon15"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 511.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon16 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon16
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon16
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon16"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 543.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon17 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon17
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon17
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon17"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 575.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon18 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon18
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon18
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon18"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 607.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon19 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon19
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon19
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon19"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 319.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon20 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon20
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon20
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon20"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 319.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon21 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon21
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon21
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon21"
-  L5_2 = "component_frame_checker"
-  L6_2 = 648
-  L7_2 = 639.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Checkers1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon22 = L2_2
-  L1_2 = A0_2.Checkers1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Checkers1
-  L3_2 = L3_2.icon22
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Checkers1
-  L1_2 = L1_2.icon22
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Checkers1.icon22"
-  L5_2 = "component_frame_checker"
-  L6_2 = 1468
-  L7_2 = 639.05
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Yellow
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.BankBar_Yellow
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.BankBar_Yellow
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.BankBar_Yellow
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Yellow.icon1"
-  L5_2 = "component_bankgradient"
-  L6_2 = 3640.5
-  L7_2 = 625
-  L8_2 = 1536
-  L9_2 = 4
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.YellowGradient = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2.YellowGradient
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2.YellowGradient
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.BankBar_Red
-  L3_2 = L3_2.YellowGradient
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2.YellowGradient
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red.YellowGradient.icon1"
-  L5_2 = "component_bankgradient"
-  L6_2 = 1470.1
-  L7_2 = 688.5
-  L8_2 = 64
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.BankBar_Red
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.BankBar_Red
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.BankBar_Red
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "BankBar_Red.icon1"
-  L5_2 = "component_bankbar"
-  L6_2 = 2174.1
-  L7_2 = 711
-  L8_2 = 1536
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Dim_Layer_BG
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Dim_Layer_BG
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Dim_Layer_BG
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Dim_Layer_BG
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Dim_Layer_BG.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 648
-  L7_2 = 378
-  L8_2 = 8
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-  L1_2 = PauseGame
-  L2_2 = 1
-  L1_2(L2_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-  L1_2 = PauseGame
-  L2_2 = 0
-  L1_2(L2_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A0_2.state
-  if L2_2 == 0 then
-    L2_2 = GetMenuAnimationState
-    L3_2 = A0_2.instance
-    L4_2 = "intro"
-    L2_2 = L2_2(L3_2, L4_2)
-    if L2_2 == 0 then
-      A0_2.state = 1
-      L2_2 = LoopMenuAnimation
-      L3_2 = A0_2.instance
-      L4_2 = "main"
-      L2_2(L3_2, L4_2)
+IG_ControlSettings_gcn_2 = {
+  instance = 0,
+  state = 0,
+  Buttons = UIContainer:New(),
+  Controls = UIContainer:New(),
+  Wiimote_Jump = UIContainer:New(),
+  Wiimote_Steer = UIContainer:New(),
+  Title = UIContainer:New(),
+  Menu = UIContainer:New(),
+  Checkers2 = UIContainer:New(),
+  Checkers3 = UIContainer:New(),
+  Checkers1 = UIContainer:New(),
+  BankBar_Yellow = UIContainer:New(),
+  BankBar_Red = UIContainer:New(),
+  Dim_Layer_BG = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.Buttons.text1 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text1)
+    _ARG_0_.Buttons.text1:Create(_ARG_0_.instance, "Buttons.text1", "STR_CONFIRM", "COMMONUI", "18_BodegaSans-Medium", 2578, 673.7, "right")
+    _ARG_0_.Controls.text1 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text1)
+    _ARG_0_.Controls.text1:Create(_ARG_0_.instance, "Controls.text1", "STR_GAS", "COMMONUI", "18_BodegaSans-Medium", 1097.1, 383.75, "left")
+    _ARG_0_.Controls.text3 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text3)
+    _ARG_0_.Controls.text3:Create(_ARG_0_.instance, "Controls.text3", "STR_BRAKE", "COMMONUI", "18_BodegaSans-Medium", 1097.1, 433.75, "left")
+    _ARG_0_.Controls.text5 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text5)
+    _ARG_0_.Controls.text5:Create(_ARG_0_.instance, "Controls.text5", "STR_180_TURN", "COMMONUI", "18_BodegaSans-Medium", 1392.2, 433.75, "left")
+    _ARG_0_.Controls.text7 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text7)
+    _ARG_0_.Controls.text7:Create(_ARG_0_.instance, "Controls.text7", "STR_DRIFT", "COMMONUI", "18_BodegaSans-Medium", 1097.1, 483.75, "left")
+    _ARG_0_.Controls.text9 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text9)
+    _ARG_0_.Controls.text9:Create(_ARG_0_.instance, "Controls.text9", "STR_TURBO_BOOST", "COMMONUI", "18_BodegaSans-Medium", 1097.1, 533.75, "left")
+    _ARG_0_.Controls.text11 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text11)
+    _ARG_0_.Controls.text11:Create(_ARG_0_.instance, "Controls.text11", "STR_TILT", "COMMONUI", "18_BodegaSans-Medium", 1097.1, 583.75, "left")
+    _ARG_0_.Controls.text13 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text13)
+    _ARG_0_.Controls.text13:Create(_ARG_0_.instance, "Controls.text13", "STR_CHANGE_CAM", "COMMONUI", "18_BodegaSans-Medium", 1392.2, 483.75, "left")
+    _ARG_0_.Controls.text15 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text15)
+    _ARG_0_.Controls.text15:Create(_ARG_0_.instance, "Controls.text15", "STR_START", "COMMONUI", "18_BodegaSans-Medium", 1392.2, 533.75, "left")
+    _ARG_0_.Controls.text17 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text17)
+    _ARG_0_.Controls.text17:Create(_ARG_0_.instance, "Controls.text17", "STR_HAND_BRAKE", "COMMONUI", "18_BodegaSans-Medium", 1392.2, 383.75, "left")
+    _ARG_0_.Controls.text19 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text19)
+    _ARG_0_.Controls.text19:Create(_ARG_0_.instance, "Controls.text19", "STR_STEER", "COMMONUI", "18_BodegaSans-Medium", 1172.1, 323.75, "left")
+    _ARG_0_.Controls.text21 = UIText:New()
+    _ARG_0_.Controls:Insert(_ARG_0_.Controls.text21)
+    _ARG_0_.Controls.text21:Create(_ARG_0_.instance, "Controls.text21", "STR_JUMP", "COMMONUI", "18_BodegaSans-Medium", 1457.1, 323.75, "left")
+    _ARG_0_.Wiimote_Jump.icon1 = UIIcon:New()
+    _ARG_0_.Wiimote_Jump:Insert(_ARG_0_.Wiimote_Jump.icon1)
+    _ARG_0_.Wiimote_Jump.icon1:Create(_ARG_0_.instance, "Wiimote_Jump.icon1", "wii_control_009", 680.8, 220.2, 128, 32, "center")
+    _ARG_0_.Wiimote_Steer.icon1 = UIIcon:New()
+    _ARG_0_.Wiimote_Steer:Insert(_ARG_0_.Wiimote_Steer.icon1)
+    _ARG_0_.Wiimote_Steer.icon1:Create(_ARG_0_.instance, "Wiimote_Steer.icon1", "wii_control_009", 398.65, 224.4, 128, 32, "center")
+    _ARG_0_.Title.text1 = UIText:New()
+    _ARG_0_.Title:Insert(_ARG_0_.Title.text1)
+    _ARG_0_.Title.text1:Create(_ARG_0_.instance, "Title.text1", "STR_DRIVINGCONTROLS", "COMMONUI", "18_BodegaSans-Medium", 1466.1, 623.5, "left")
+    _ARG_0_.Menu.FrameMenu = UIContainer:New()
+    _ARG_0_.Menu.FrameMenu.icon1 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon1)
+    _ARG_0_.Menu.FrameMenu.icon1:Create(_ARG_0_.instance, "Menu.FrameMenu.icon1", "component_frame_01", 1192.05, 589.2, 128, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon2 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon2)
+    _ARG_0_.Menu.FrameMenu.icon2:Create(_ARG_0_.instance, "Menu.FrameMenu.icon2", "component_frame_02", 1128.05, 910.95, 64, 322, "center")
+    _ARG_0_.Menu.FrameMenu.icon3 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon3)
+    _ARG_0_.Menu.FrameMenu.icon3:Create(_ARG_0_.instance, "Menu.FrameMenu.icon3", "component_frame_03", 1192.05, 974.2, 128, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon4 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon4)
+    _ARG_0_.Menu.FrameMenu.icon4:Create(_ARG_0_.instance, "Menu.FrameMenu.icon4", "component_frame_04", 1833.5, 974.2, 641.9, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon5 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon5)
+    _ARG_0_.Menu.FrameMenu.icon5:Create(_ARG_0_.instance, "Menu.FrameMenu.icon5", "component_frame_05", 1833.525, 589.2, 641.95, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon6 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon6)
+    _ARG_0_.Menu.FrameMenu.icon6:Create(_ARG_0_.instance, "Menu.FrameMenu.icon6", "component_frame_01", 1962.05, 589.2, 128, 64, "center")
+    _ARG_0_.Menu.FrameMenu.icon7 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon7)
+    _ARG_0_.Menu.FrameMenu.icon7:Create(_ARG_0_.instance, "Menu.FrameMenu.icon7", "component_frame_02", 1962.05, 910.95, 64, 322, "center")
+    _ARG_0_.Menu.FrameMenu.icon8 = UIIcon:New()
+    _ARG_0_.Menu.FrameMenu:Insert(_ARG_0_.Menu.FrameMenu.icon8)
+    _ARG_0_.Menu.FrameMenu.icon8:Create(_ARG_0_.instance, "Menu.FrameMenu.icon8", "component_frame_03", 1962.05, 974.2, 128, 64, "center")
+    _ARG_0_.Menu.Dim_Layer = UIContainer:New()
+    _ARG_0_.Menu.Dim_Layer.icon1 = UIIcon:New()
+    _ARG_0_.Menu.Dim_Layer:Insert(_ARG_0_.Menu.Dim_Layer.icon1)
+    _ARG_0_.Menu.Dim_Layer.icon1:Create(_ARG_0_.instance, "Menu.Dim_Layer.icon1", "component_frame_color", 1066.35, 530.55, 8, 8, "center")
+    _ARG_0_.Checkers2.icon1 = UIIcon:New()
+    _ARG_0_.Checkers2:Insert(_ARG_0_.Checkers2.icon1)
+    _ARG_0_.Checkers2.icon1:Create(_ARG_0_.instance, "Checkers2.icon1", "component_frame_checker", 648, 127.1, 32, 32, "center")
+    _ARG_0_.Checkers2.icon2 = UIIcon:New()
+    _ARG_0_.Checkers2:Insert(_ARG_0_.Checkers2.icon2)
+    _ARG_0_.Checkers2.icon2:Create(_ARG_0_.instance, "Checkers2.icon2", "component_frame_checker", 1468, 127.1, 32, 32, "center")
+    _ARG_0_.Checkers3.icon1 = UIIcon:New()
+    _ARG_0_.Checkers3:Insert(_ARG_0_.Checkers3.icon1)
+    _ARG_0_.Checkers3.icon1:Create(_ARG_0_.instance, "Checkers3.icon1", "component_frame_checker", 648, 511.1, 32, 32, "center")
+    _ARG_0_.Checkers3.icon2 = UIIcon:New()
+    _ARG_0_.Checkers3:Insert(_ARG_0_.Checkers3.icon2)
+    _ARG_0_.Checkers3.icon2:Create(_ARG_0_.instance, "Checkers3.icon2", "component_frame_checker", 1468, 511.1, 32, 32, "center")
+    _ARG_0_.Checkers1.icon1 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon1)
+    _ARG_0_.Checkers1.icon1:Create(_ARG_0_.instance, "Checkers1.icon1", "component_frame_checker", 648, 351.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon2 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon2)
+    _ARG_0_.Checkers1.icon2:Create(_ARG_0_.instance, "Checkers1.icon2", "component_frame_checker", 648, 383.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon3 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon3)
+    _ARG_0_.Checkers1.icon3:Create(_ARG_0_.instance, "Checkers1.icon3", "component_frame_checker", 648, 415.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon4 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon4)
+    _ARG_0_.Checkers1.icon4:Create(_ARG_0_.instance, "Checkers1.icon4", "component_frame_checker", 648, 447.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon5 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon5)
+    _ARG_0_.Checkers1.icon5:Create(_ARG_0_.instance, "Checkers1.icon5", "component_frame_checker", 648, 479.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon6 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon6)
+    _ARG_0_.Checkers1.icon6:Create(_ARG_0_.instance, "Checkers1.icon6", "component_frame_checker", 648, 511.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon7 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon7)
+    _ARG_0_.Checkers1.icon7:Create(_ARG_0_.instance, "Checkers1.icon7", "component_frame_checker", 648, 543.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon8 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon8)
+    _ARG_0_.Checkers1.icon8:Create(_ARG_0_.instance, "Checkers1.icon8", "component_frame_checker", 648, 575.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon9 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon9)
+    _ARG_0_.Checkers1.icon9:Create(_ARG_0_.instance, "Checkers1.icon9", "component_frame_checker", 648, 607.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon10 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon10)
+    _ARG_0_.Checkers1.icon10:Create(_ARG_0_.instance, "Checkers1.icon10", "component_frame_checker", 1468, 351.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon11 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon11)
+    _ARG_0_.Checkers1.icon11:Create(_ARG_0_.instance, "Checkers1.icon11", "component_frame_checker", 1468, 383.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon12 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon12)
+    _ARG_0_.Checkers1.icon12:Create(_ARG_0_.instance, "Checkers1.icon12", "component_frame_checker", 1468, 415.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon13 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon13)
+    _ARG_0_.Checkers1.icon13:Create(_ARG_0_.instance, "Checkers1.icon13", "component_frame_checker", 1468, 447.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon14 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon14)
+    _ARG_0_.Checkers1.icon14:Create(_ARG_0_.instance, "Checkers1.icon14", "component_frame_checker", 1468, 479.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon15 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon15)
+    _ARG_0_.Checkers1.icon15:Create(_ARG_0_.instance, "Checkers1.icon15", "component_frame_checker", 1468, 511.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon16 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon16)
+    _ARG_0_.Checkers1.icon16:Create(_ARG_0_.instance, "Checkers1.icon16", "component_frame_checker", 1468, 543.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon17 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon17)
+    _ARG_0_.Checkers1.icon17:Create(_ARG_0_.instance, "Checkers1.icon17", "component_frame_checker", 1468, 575.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon18 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon18)
+    _ARG_0_.Checkers1.icon18:Create(_ARG_0_.instance, "Checkers1.icon18", "component_frame_checker", 1468, 607.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon19 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon19)
+    _ARG_0_.Checkers1.icon19:Create(_ARG_0_.instance, "Checkers1.icon19", "component_frame_checker", 648, 319.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon20 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon20)
+    _ARG_0_.Checkers1.icon20:Create(_ARG_0_.instance, "Checkers1.icon20", "component_frame_checker", 1468, 319.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon21 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon21)
+    _ARG_0_.Checkers1.icon21:Create(_ARG_0_.instance, "Checkers1.icon21", "component_frame_checker", 648, 639.05, 32, 32, "center")
+    _ARG_0_.Checkers1.icon22 = UIIcon:New()
+    _ARG_0_.Checkers1:Insert(_ARG_0_.Checkers1.icon22)
+    _ARG_0_.Checkers1.icon22:Create(_ARG_0_.instance, "Checkers1.icon22", "component_frame_checker", 1468, 639.05, 32, 32, "center")
+    _ARG_0_.BankBar_Yellow.icon1 = UIIcon:New()
+    _ARG_0_.BankBar_Yellow:Insert(_ARG_0_.BankBar_Yellow.icon1)
+    _ARG_0_.BankBar_Yellow.icon1:Create(_ARG_0_.instance, "BankBar_Yellow.icon1", "component_bankgradient", 3640.5, 625, 1536, 4, "center")
+    _ARG_0_.BankBar_Red.YellowGradient = UIContainer:New()
+    _ARG_0_.BankBar_Red.YellowGradient.icon1 = UIIcon:New()
+    _ARG_0_.BankBar_Red.YellowGradient:Insert(_ARG_0_.BankBar_Red.YellowGradient.icon1)
+    _ARG_0_.BankBar_Red.YellowGradient.icon1:Create(_ARG_0_.instance, "BankBar_Red.YellowGradient.icon1", "component_bankgradient", 1470.1, 688.5, 64, 8, "center")
+    _ARG_0_.BankBar_Red.icon1 = UIIcon:New()
+    _ARG_0_.BankBar_Red:Insert(_ARG_0_.BankBar_Red.icon1)
+    _ARG_0_.BankBar_Red.icon1:Create(_ARG_0_.instance, "BankBar_Red.icon1", "component_bankbar", 2174.1, 711, 1536, 64, "center")
+    _ARG_0_.Dim_Layer_BG.icon1 = UIIcon:New()
+    _ARG_0_.Dim_Layer_BG:Insert(_ARG_0_.Dim_Layer_BG.icon1)
+    _ARG_0_.Dim_Layer_BG.icon1:Create(_ARG_0_.instance, "Dim_Layer_BG.icon1", "component_frame_color", 648, 378, 8, 8, "center")
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+    PauseGame(1)
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+    PauseGame(0)
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    if _ARG_0_.state == 0 and GetMenuAnimationState(_ARG_0_.instance, "intro") == 0 then
+      _ARG_0_.state = 1
+      LoopMenuAnimation(_ARG_0_.instance, "main")
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == InputKey("OK") or _ARG_1_ == InputKey("CANCEL") then
+      EndMenu(_ARG_0_.instance)
     end
   end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = InputKey
-  L3_2 = "OK"
-  L2_2 = L2_2(L3_2)
-  if A1_2 ~= L2_2 then
-    L2_2 = InputKey
-    L3_2 = "CANCEL"
-    L2_2 = L2_2(L3_2)
-    if A1_2 ~= L2_2 then
-      goto lbl_14
-    end
-  end
-  L2_2 = EndMenu
-  L3_2 = A0_2.instance
-  L2_2(L3_2)
-  ::lbl_14::
-end
-L0_1.OnKeyDown = L1_1
-IG_ControlSettings_gcn_2 = L0_1
+}

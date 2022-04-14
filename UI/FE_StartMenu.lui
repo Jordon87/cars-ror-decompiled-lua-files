@@ -1,329 +1,106 @@
-local L0_1, L1_1, L2_1
-L0_1 = IncludeScript
-L1_1 = "C\\Script\\StreamingHelpers"
-L0_1(L1_1)
-L0_1 = {}
-L0_1.instance = 0
-L0_1.AttractLoopTimer = 0
-L0_1.VideoFlag = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Buttons = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = PlaceMenuInWorld
-  L2_2 = A0_2.instance
-  L3_2 = "StartMenu"
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text1"
-  L5_2 = "STR_PRESS_START"
-  L6_2 = "TRC"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 751.3
-  L9_2 = 148.25
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = getvar
-  L2_2 = "ProfileAutoloaded"
-  L1_2 = L1_2(L2_2)
-  if L1_2 == 0 then
-    L1_2 = getvar
-    L2_2 = "ProfileLoaded"
-    L1_2 = L1_2(L2_2)
-    if L1_2 ~= 0 then
-      L1_2 = EndMenu
-      L2_2 = A0_2.instance
-      L1_2(L2_2)
-      L1_2 = FE_FrontEnd
-      L2_2 = L1_2
-      L1_2 = L1_2.EventHandler
-      L3_2 = "PressedStart"
-      L1_2(L2_2, L3_2)
-      L1_2 = DebugPrint
-      L2_2 = "(1)FE_StartMenu:StartUI:03 - FE_FrontEnd:EventHandler(PressedStart)"
-      L1_2(L2_2)
-      L1_2 = PlayCameraAnimation
-      L2_2 = "FrontEndCamera"
-      L3_2 = "Anim\\FECam01"
-      L1_2(L2_2, L3_2)
-      L1_2 = RaiseMenu
-      L2_2 = "FE_MainMenu"
-      L1_2(L2_2)
-  end
-  else
-    L1_2 = getvar
-    L2_2 = "ProfilesDisabled"
-    L1_2 = L1_2(L2_2)
-    if L1_2 == 1 then
-      L1_2 = EndMenu
-      L2_2 = A0_2.instance
-      L1_2(L2_2)
-      L1_2 = FE_FrontEnd
-      L2_2 = L1_2
-      L1_2 = L1_2.EventHandler
-      L3_2 = "PressedStart"
-      L1_2(L2_2, L3_2)
-      L1_2 = DebugPrint
-      L2_2 = "(2)FE_StartMenu:StartUI:12 - FE_FrontEnd:EventHandler(PressedStart)"
-      L1_2(L2_2)
-      L1_2 = PlayCameraAnimation
-      L2_2 = "FrontEndCamera"
-      L3_2 = "Anim\\FECam01"
-      L1_2(L2_2, L3_2)
-      L1_2 = RaiseMenu
-      L2_2 = "FE_MainMenu"
-      L1_2(L2_2)
+IncludeScript("C\\Script\\StreamingHelpers")
+FE_StartMenu = {
+  instance = 0,
+  AttractLoopTimer = 0,
+  VideoFlag = 0,
+  Buttons = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    PlaceMenuInWorld(_ARG_0_.instance, "StartMenu")
+    _ARG_0_.Buttons.text1 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text1)
+    _ARG_0_.Buttons.text1:Create(_ARG_0_.instance, "Buttons.text1", "STR_PRESS_START", "TRC", "FE_GarageGothicBlack_3D", 751.3, 148.25, "center")
+  end,
+  StartUI = function(_ARG_0_)
+    if getvar("ProfileAutoloaded") == 0 and getvar("ProfileLoaded") ~= 0 then
+      EndMenu(_ARG_0_.instance)
+      FE_FrontEnd:EventHandler("PressedStart")
+      DebugPrint("(1)FE_StartMenu:StartUI:03 - FE_FrontEnd:EventHandler(PressedStart)")
+      PlayCameraAnimation("FrontEndCamera", "Anim\\FECam01")
+      RaiseMenu("FE_MainMenu")
+    elseif getvar("ProfilesDisabled") == 1 then
+      EndMenu(_ARG_0_.instance)
+      FE_FrontEnd:EventHandler("PressedStart")
+      DebugPrint("(2)FE_StartMenu:StartUI:12 - FE_FrontEnd:EventHandler(PressedStart)")
+      PlayCameraAnimation("FrontEndCamera", "Anim\\FECam01")
+      RaiseMenu("FE_MainMenu")
     else
-      L1_2 = PlayMenuAnimation
-      L2_2 = A0_2.instance
-      L3_2 = "intro"
-      L1_2(L2_2, L3_2)
+      PlayMenuAnimation(_ARG_0_.instance, "intro")
     end
-  end
-  L1_2 = CharSelectHelpers
-  L2_2 = L1_2
-  L1_2 = L1_2.LoadProfileMenuVehicleStreamSections
-  L1_2(L2_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
-  L6_2 = DebugPrint
-  L7_2 = "FE_StartMenu:LuaEventHandler("
-  L8_2 = A1_2
-  L9_2 = ", "
-  L10_2 = A2_2
-  L11_2 = ","
-  L12_2 = getvar
-  L13_2 = "ProfilesDisabled"
-  L12_2 = L12_2(L13_2)
-  L13_2 = ")"
-  L7_2 = L7_2 .. L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2 .. L13_2
-  L6_2(L7_2)
-  L6_2 = LE_FINISHED_ENUMERATING
-  if A1_2 == L6_2 then
-    L6_2 = getvar
-    L7_2 = "ProfilesDisabled"
-    L6_2 = L6_2(L7_2)
-    if L6_2 == 1 then
-      L6_2 = DebugPrint
-      L7_2 = "Finished enumerating, result: Profiles are disabled"
-      L6_2(L7_2)
-      L6_2 = EndMenu
-      L7_2 = A0_2.instance
-      L6_2(L7_2)
-      L6_2 = FE_FrontEnd
-      L7_2 = L6_2
-      L6_2 = L6_2.EventHandler
-      L8_2 = "PressedStart"
-      L6_2(L7_2, L8_2)
-      L6_2 = DebugPrint
-      L7_2 = "(3)FE_StartMenu:LuaEventHandler:10 - FE_FrontEnd:EventHandler(PressedStart)"
-      L6_2(L7_2)
-      L6_2 = PlayCameraAnimation
-      L7_2 = "FrontEndCamera"
-      L8_2 = "Anim\\FECam01"
-      L6_2(L7_2, L8_2)
-      L6_2 = RaiseMenu
-      L7_2 = "FE_MainMenu"
-      L6_2(L7_2)
+    CharSelectHelpers:LoadProfileMenuVehicleStreamSections()
+  end,
+  LuaEventHandler = function(_ARG_0_, _ARG_1_, _ARG_2_, _ARG_3_, _ARG_4_, _ARG_5_)
+    DebugPrint("FE_StartMenu:LuaEventHandler(" .. _ARG_1_ .. ", " .. _ARG_2_ .. "," .. getvar("ProfilesDisabled") .. ")")
+    if _ARG_1_ == LE_FINISHED_ENUMERATING and getvar("ProfilesDisabled") == 1 then
+      DebugPrint("Finished enumerating, result: Profiles are disabled")
+      EndMenu(_ARG_0_.instance)
+      FE_FrontEnd:EventHandler("PressedStart")
+      DebugPrint("(3)FE_StartMenu:LuaEventHandler:10 - FE_FrontEnd:EventHandler(PressedStart)")
+      PlayCameraAnimation("FrontEndCamera", "Anim\\FECam01")
+      RaiseMenu("FE_MainMenu")
     end
-  end
-end
-L0_1.LuaEventHandler = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = IsVideoPlaying
-  L2_2 = L2_2()
-  if L2_2 == false then
-    L2_2 = A0_2.VideoFlag
-    if L2_2 == 0 then
-      L2_2 = A0_2.AttractLoopTimer
-      L2_2 = L2_2 + A1_2
-      A0_2.AttractLoopTimer = L2_2
-      L2_2 = A0_2.AttractLoopTimer
-      if 60 < L2_2 then
-        L2_2 = GetPlatform
-        L2_2 = L2_2()
-        if L2_2 == "x360" then
-          A0_2.srcMovieDir = "C\\Movies\\720\\"
-        else
-          L2_2 = GetPlatform
-          L2_2 = L2_2()
-          if L2_2 == "ps3" then
-            A0_2.srcMovieDir = "C\\Movies\\720\\"
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    if IsVideoPlaying() == false then
+      if _ARG_0_.VideoFlag == 0 then
+        _ARG_0_.AttractLoopTimer = _ARG_0_.AttractLoopTimer + _ARG_1_
+        if _ARG_0_.AttractLoopTimer > 60 then
+          if GetPlatform() == "x360" then
+            _ARG_0_.srcMovieDir = "C\\Movies\\720\\"
+          elseif GetPlatform() == "ps3" then
+            _ARG_0_.srcMovieDir = "C\\Movies\\720\\"
+          elseif IsDisplayModePAL() then
+            _ARG_0_.srcMovieDir = "C\\Movies\\2500\\"
           else
-            L2_2 = IsDisplayModePAL
-            L2_2 = L2_2()
-            if L2_2 then
-              A0_2.srcMovieDir = "C\\Movies\\2500\\"
-            else
-              A0_2.srcMovieDir = "C\\Movies\\2997\\"
-            end
+            _ARG_0_.srcMovieDir = "C\\Movies\\2997\\"
           end
-        end
-        L2_2 = IsLanguageFrench
-        L2_2 = L2_2()
-        if L2_2 then
-          L2_2 = QueueVideo
-          L3_2 = "attractF"
-          L4_2 = A0_2.srcMovieDir
-          L2_2(L3_2, L4_2)
-        else
-          L2_2 = IsLanguageItalian
-          L2_2 = L2_2()
-          if L2_2 then
-            L2_2 = QueueVideo
-            L3_2 = "attractI"
-            L4_2 = A0_2.srcMovieDir
-            L2_2(L3_2, L4_2)
+          if IsLanguageFrench() then
+            QueueVideo("attractF", _ARG_0_.srcMovieDir)
+          elseif IsLanguageItalian() then
+            QueueVideo("attractI", _ARG_0_.srcMovieDir)
           else
-            L2_2 = QueueVideo
-            L3_2 = "attract"
-            L4_2 = A0_2.srcMovieDir
-            L2_2(L3_2, L4_2)
+            QueueVideo("attract", _ARG_0_.srcMovieDir)
           end
+          setvar("gEnableControllerUnpluggedDetection", 0)
+          PauseGame(1)
+          PauseMusicGroup(1)
+          StartVideoQueue()
+          _ARG_0_.AttractLoopTimer = 0
+          _ARG_0_.VideoFlag = 1
         end
-        L2_2 = setvar
-        L3_2 = "gEnableControllerUnpluggedDetection"
-        L4_2 = 0
-        L2_2(L3_2, L4_2)
-        L2_2 = PauseGame
-        L3_2 = 1
-        L2_2(L3_2)
-        L2_2 = PauseMusicGroup
-        L3_2 = 1
-        L2_2(L3_2)
-        L2_2 = StartVideoQueue
-        L2_2()
-        A0_2.AttractLoopTimer = 0
-        A0_2.VideoFlag = 1
-      end
-    else
-      L2_2 = PauseGame
-      L3_2 = 0
-      L2_2(L3_2)
-      L2_2 = PauseMusicGroup
-      L3_2 = 0
-      L2_2(L3_2)
-      A0_2.VideoFlag = 0
-      L2_2 = setvar
-      L3_2 = "gEnableControllerUnpluggedDetection"
-      L4_2 = 1
-      L2_2(L3_2, L4_2)
-    end
-  end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.UpdateCursor = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = A0_2.VideoFlag
-  if L2_2 == 1 then
-    L2_2 = PlayNextVideoInQueue
-    L2_2()
-  else
-    L2_2 = StartInputKey
-    L3_2 = "START"
-    L2_2 = L2_2(L3_2)
-    if A1_2 == L2_2 then
-      L2_2 = DynamiclyAssignPlayerControllerIndex
-      L2_2()
-      L2_2 = PlayUISound
-      L3_2 = UISoundEventSelect_Continue
-      L2_2(L3_2)
-      L2_2 = FE_FrontEnd
-      L3_2 = L2_2
-      L2_2 = L2_2.EventHandler
-      L4_2 = "PressedStart"
-      L2_2(L3_2, L4_2)
-      L2_2 = getvar
-      L3_2 = "ProfileAutoloaded"
-      L2_2 = L2_2(L3_2)
-      if L2_2 ~= 0 then
-        L2_2 = PlayCameraAnimation
-        L3_2 = "FrontEndCamera"
-        L4_2 = "Anim\\FECam01"
-        L2_2(L3_2, L4_2)
-        L2_2 = RaiseMenu
-        L3_2 = "FE_MainMenu"
-        L2_2(L3_2)
-        L2_2 = RaiseMenu
-        L3_2 = "Popup"
-        L2_2(L3_2)
-        L2_2 = Popup
-        L3_2 = L2_2
-        L2_2 = L2_2.RaisePopup
-        L4_2 = GetLocalizedString
-        L5_2 = "TRC"
-        L6_2 = "STR_NEW_PROFILE_TITLE_LOAD_SUCCESSFUL"
-        L4_2 = L4_2(L5_2, L6_2)
-        L5_2 = GetLocalizedString
-        L6_2 = "TRC"
-        L7_2 = "STR_NEW_PROFILE_LOAD_SUCCESS"
-        L5_2 = L5_2(L6_2, L7_2)
-        L6_2 = nil
-        L7_2 = GetLocalizedString
-        L8_2 = "CommonUI"
-        L9_2 = "STR_SELECT"
-        L7_2, L8_2, L9_2 = L7_2(L8_2, L9_2)
-        L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
       else
-        L2_2 = PlayCameraAnimation
-        L3_2 = "FrontEndCamera"
-        L4_2 = "Anim\\FECam00"
-        L2_2(L3_2, L4_2)
-        L2_2 = RaiseMenu
-        L3_2 = "FE_StoryModeMenu"
-        L2_2(L3_2)
+        PauseGame(0)
+        PauseMusicGroup(0)
+        _ARG_0_.VideoFlag = 0
+        setvar("gEnableControllerUnpluggedDetection", 1)
       end
-      L2_2 = EndMenu
-      L3_2 = A0_2.instance
-      L2_2(L3_2)
+    end
+  end,
+  UpdateCursor = function(_ARG_0_, _ARG_1_)
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_0_.VideoFlag == 1 then
+      PlayNextVideoInQueue()
+    elseif _ARG_1_ == StartInputKey("START") then
+      DynamiclyAssignPlayerControllerIndex()
+      PlayUISound(UISoundEventSelect_Continue)
+      FE_FrontEnd:EventHandler("PressedStart")
+      if getvar("ProfileAutoloaded") ~= 0 then
+        PlayCameraAnimation("FrontEndCamera", "Anim\\FECam01")
+        RaiseMenu("FE_MainMenu")
+        RaiseMenu("Popup")
+        Popup:RaisePopup(GetLocalizedString("TRC", "STR_NEW_PROFILE_TITLE_LOAD_SUCCESSFUL"), GetLocalizedString("TRC", "STR_NEW_PROFILE_LOAD_SUCCESS"), nil, GetLocalizedString("CommonUI", "STR_SELECT"))
+      else
+        PlayCameraAnimation("FrontEndCamera", "Anim\\FECam00")
+        RaiseMenu("FE_StoryModeMenu")
+      end
+      EndMenu(_ARG_0_.instance)
     end
   end
-end
-L0_1.OnKeyDown = L1_1
-FE_StartMenu = L0_1
+}

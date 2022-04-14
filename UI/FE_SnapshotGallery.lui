@@ -1,161 +1,44 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L0_1.BonusImages = 0
-L0_1.BonusImageIndex = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Photos = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Title = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = PlaceMenuInWorld
-  L2_2 = A0_2.instance
-  L3_2 = "BonusMenu"
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Photos
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Image = L2_2
-  L1_2 = A0_2.Photos
-  L1_2 = L1_2.Image
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Photos
-  L1_2 = L1_2.Image
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Photos
-  L3_2 = L3_2.Image
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Photos
-  L1_2 = L1_2.Image
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Photos.Image.icon1"
-  L5_2 = "snapshotGallery"
-  L6_2 = 981.95
-  L7_2 = 895
-  L8_2 = 64
-  L9_2 = 64
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Title
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Title
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Title
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Title.text1"
-  L5_2 = "STR_BONUS_CONTENT"
-  L6_2 = "COMMONUI"
-  L7_2 = "18_BodegaSans-Medium_3D"
-  L8_2 = 1546.45
-  L9_2 = 38.35
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-  L1_2 = GetNumberOfSnapshotImages
-  L1_2 = L1_2()
-  A0_2.BonusImages = L1_2
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  A0_2.BonusImageIndex = A1_2
-  L2_2 = ApplySnapshotImageToIcon
-  L3_2 = A0_2.BonusImageIndex
-  L4_2 = "FE_BonusArtGallery"
-  L5_2 = "Photos.Image.icon1"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  A0_2.BonusImageIndex = L2_2
-end
-L0_1.UpdateSelection = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = InputKey
-  L3_2 = "CANCEL"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = EndMenu
-    L3_2 = A0_2.instance
-    L2_2(L3_2)
-    L2_2 = RaiseMenu
-    L3_2 = "FE_BonusMenu"
-    L2_2(L3_2)
-  else
-    L2_2 = InputKey
-    L3_2 = "LEFT"
-    L2_2 = L2_2(L3_2)
-    if A1_2 == L2_2 then
-      L3_2 = A0_2
-      L2_2 = A0_2.UpdateSelection
-      L4_2 = -1
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = InputKey
-      L3_2 = "RIGHT"
-      L2_2 = L2_2(L3_2)
-      if A1_2 == L2_2 then
-        L3_2 = A0_2
-        L2_2 = A0_2.UpdateSelection
-        L4_2 = 1
-        L2_2(L3_2, L4_2)
-      end
+FE_BonusArtGallery = {
+  instance = 0,
+  BonusImages = 0,
+  BonusImageIndex = 0,
+  Photos = UIContainer:New(),
+  Title = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    PlaceMenuInWorld(_ARG_0_.instance, "BonusMenu")
+    _ARG_0_.Photos.Image = UIContainer:New()
+    _ARG_0_.Photos.Image.icon1 = UIIcon:New()
+    _ARG_0_.Photos.Image:Insert(_ARG_0_.Photos.Image.icon1)
+    _ARG_0_.Photos.Image.icon1:Create(_ARG_0_.instance, "Photos.Image.icon1", "snapshotGallery", 981.95, 895, 64, 64, "center")
+    _ARG_0_.Title.text1 = UIText:New()
+    _ARG_0_.Title:Insert(_ARG_0_.Title.text1)
+    _ARG_0_.Title.text1:Create(_ARG_0_.instance, "Title.text1", "STR_BONUS_CONTENT", "COMMONUI", "18_BodegaSans-Medium_3D", 1546.45, 38.35, "center")
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+    _ARG_0_.BonusImages = GetNumberOfSnapshotImages()
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  UpdateSelection = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.BonusImageIndex = _ARG_1_
+    _ARG_0_.BonusImageIndex = ApplySnapshotImageToIcon(_ARG_0_.BonusImageIndex, "FE_BonusArtGallery", "Photos.Image.icon1")
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == InputKey("CANCEL") then
+      EndMenu(_ARG_0_.instance)
+      RaiseMenu("FE_BonusMenu")
+    elseif _ARG_1_ == InputKey("LEFT") then
+      _ARG_0_:UpdateSelection(-1)
+    elseif _ARG_1_ == InputKey("RIGHT") then
+      _ARG_0_:UpdateSelection(1)
     end
   end
-end
-L0_1.OnKeyDown = L1_1
-FE_BonusArtGallery = L0_1
+}

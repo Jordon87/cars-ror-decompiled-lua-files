@@ -1,315 +1,77 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = {}
-L0_1.BonusImages = L1_1
-L0_1.BonusImageIndex = 1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.FE_Arrow1_R = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.FE_Arrow1_L = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Art = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Title = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Buttons = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = PlaceMenuInWorld
-  L2_2 = A0_2.instance
-  L3_2 = "BonusMenu"
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.FE_Arrow1_R
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.FE_Arrow1_R
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.FE_Arrow1_R
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.FE_Arrow1_R
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "FE_Arrow1_R.icon1"
-  L5_2 = "fe_arrow_1_3D"
-  L6_2 = 1324
-  L7_2 = 721
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.FE_Arrow1_L
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.FE_Arrow1_L
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.FE_Arrow1_L
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.FE_Arrow1_L
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "FE_Arrow1_L.icon1"
-  L5_2 = "fe_arrow_1_3D"
-  L6_2 = 316
-  L7_2 = 721
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Art
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Art
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Art
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Art
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Art.icon1"
-  L5_2 = "cr_01_gk_event_preview"
-  L6_2 = 945.825
-  L7_2 = 758.9
-  L8_2 = 256.05
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Title
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Title
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Title
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Title
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Title.text1"
-  L5_2 = "STR_BONUSCONTENT_ART"
-  L6_2 = "CARSFRONTENDUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1854.45
-  L9_2 = 60.75
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text1"
-  L5_2 = "STR_SCROLL"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1232.75
-  L9_2 = 1004.2
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Buttons
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Buttons
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Buttons
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Buttons
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Buttons.text3"
-  L5_2 = "STR_BACK"
-  L6_2 = "COMMONUI"
-  L7_2 = "FE_GarageGothicBlack_3D"
-  L8_2 = 1565.85
-  L9_2 = 1004.1
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-  L1_2 = {}
-  L2_2 = GetBonusContentImageList
-  L2_2, L3_2 = L2_2()
-  L1_2[1] = L2_2
-  L1_2[2] = L3_2
-  A0_2.BonusImages = L1_2
-  L2_2 = A0_2
-  L1_2 = A0_2.UpdateSelection
-  L3_2 = 1
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A0_2.BonusImages
-  L2_2 = #L2_2
-  if A1_2 > L2_2 then
-    A1_2 = 1
-  elseif A1_2 < 1 then
-    L2_2 = A0_2.BonusImages
-    A1_2 = #L2_2
-  end
-  L2_2 = A0_2.BonusImages
-  L2_2 = #L2_2
-  if 0 < L2_2 then
-    A0_2.BonusImageIndex = A1_2
-    L2_2 = LoadBonusContentImageFromStream
-    L3_2 = A0_2.BonusImages
-    L4_2 = A0_2.BonusImageIndex
-    L3_2 = L3_2[L4_2]
-    L2_2(L3_2)
-    L2_2 = ApplyBonusContentImageToIcon
-    L3_2 = A0_2.BonusImages
-    L4_2 = A0_2.BonusImageIndex
-    L3_2 = L3_2[L4_2]
-    L4_2 = "FE_BonusArtGallery"
-    L5_2 = "Art.icon1"
-    L2_2(L3_2, L4_2, L5_2)
-  end
-end
-L0_1.UpdateSelection = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = InputKey
-  L3_2 = "CANCEL"
-  L2_2 = L2_2(L3_2)
-  if A1_2 == L2_2 then
-    L2_2 = PlayUISound
-    L3_2 = UISoundEventBack2
-    L2_2(L3_2)
-    L2_2 = EndMenu
-    L3_2 = A0_2.instance
-    L2_2(L3_2)
-    L2_2 = GetPlatform
-    L2_2 = L2_2()
-    if L2_2 == "ps2" then
-      L2_2 = DVDMenu_Play
-      L3_2 = "FrontEndCamera"
-      L4_2 = "Anim\\FECam07R"
-      L2_2(L3_2, L4_2)
-      L2_2 = RaiseMenu
-      L3_2 = "FE_Options"
-      L2_2(L3_2)
-    else
-      L2_2 = RaiseMenu
-      L3_2 = "FE_BonusMenu"
-      L2_2(L3_2)
+FE_BonusArtGallery = {
+  instance = 0,
+  BonusImages = {},
+  BonusImageIndex = 1,
+  FE_Arrow1_R = UIContainer:New(),
+  FE_Arrow1_L = UIContainer:New(),
+  Art = UIContainer:New(),
+  Title = UIContainer:New(),
+  Buttons = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    PlaceMenuInWorld(_ARG_0_.instance, "BonusMenu")
+    _ARG_0_.FE_Arrow1_R.icon1 = UIIcon:New()
+    _ARG_0_.FE_Arrow1_R:Insert(_ARG_0_.FE_Arrow1_R.icon1)
+    _ARG_0_.FE_Arrow1_R.icon1:Create(_ARG_0_.instance, "FE_Arrow1_R.icon1", "fe_arrow_1_3D", 1324, 721, 128, 128, "center")
+    _ARG_0_.FE_Arrow1_L.icon1 = UIIcon:New()
+    _ARG_0_.FE_Arrow1_L:Insert(_ARG_0_.FE_Arrow1_L.icon1)
+    _ARG_0_.FE_Arrow1_L.icon1:Create(_ARG_0_.instance, "FE_Arrow1_L.icon1", "fe_arrow_1_3D", 316, 721, 128, 128, "center")
+    _ARG_0_.Art.icon1 = UIIcon:New()
+    _ARG_0_.Art:Insert(_ARG_0_.Art.icon1)
+    _ARG_0_.Art.icon1:Create(_ARG_0_.instance, "Art.icon1", "cr_01_gk_event_preview", 945.825, 758.9, 256.05, 128, "center")
+    _ARG_0_.Title.text1 = UIText:New()
+    _ARG_0_.Title:Insert(_ARG_0_.Title.text1)
+    _ARG_0_.Title.text1:Create(_ARG_0_.instance, "Title.text1", "STR_BONUSCONTENT_ART", "CARSFRONTENDUI", "FE_GarageGothicBlack_3D", 1854.45, 60.75, "center")
+    _ARG_0_.Buttons.text1 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text1)
+    _ARG_0_.Buttons.text1:Create(_ARG_0_.instance, "Buttons.text1", "STR_SCROLL", "COMMONUI", "FE_GarageGothicBlack_3D", 1232.75, 1004.2, "left")
+    _ARG_0_.Buttons.text3 = UIText:New()
+    _ARG_0_.Buttons:Insert(_ARG_0_.Buttons.text3)
+    _ARG_0_.Buttons.text3:Create(_ARG_0_.instance, "Buttons.text3", "STR_BACK", "COMMONUI", "FE_GarageGothicBlack_3D", 1565.85, 1004.1, "right")
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+    _ARG_0_.BonusImages = {
+      GetBonusContentImageList()
+    }
+    _ARG_0_:UpdateSelection(1)
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  UpdateSelection = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ > #_ARG_0_.BonusImages then
+      _ARG_1_ = 1
+    elseif _ARG_1_ < 1 then
+      _ARG_1_ = #_ARG_0_.BonusImages
     end
-  else
-    L2_2 = InputKey
-    L3_2 = "LEFT"
-    L2_2 = L2_2(L3_2)
-    if A1_2 == L2_2 then
-      L2_2 = PlayUISound
-      L3_2 = UISoundEventLeft_Right
-      L2_2(L3_2)
-      L3_2 = A0_2
-      L2_2 = A0_2.UpdateSelection
-      L4_2 = A0_2.BonusImageIndex
-      L4_2 = L4_2 - 1
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = InputKey
-      L3_2 = "RIGHT"
-      L2_2 = L2_2(L3_2)
-      if A1_2 == L2_2 then
-        L2_2 = PlayUISound
-        L3_2 = UISoundEventLeft_Right
-        L2_2(L3_2)
-        L3_2 = A0_2
-        L2_2 = A0_2.UpdateSelection
-        L4_2 = A0_2.BonusImageIndex
-        L4_2 = L4_2 + 1
-        L2_2(L3_2, L4_2)
+    if #_ARG_0_.BonusImages > 0 then
+      _ARG_0_.BonusImageIndex = _ARG_1_
+      LoadBonusContentImageFromStream(_ARG_0_.BonusImages[_ARG_0_.BonusImageIndex])
+      ApplyBonusContentImageToIcon(_ARG_0_.BonusImages[_ARG_0_.BonusImageIndex], "FE_BonusArtGallery", "Art.icon1")
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == InputKey("CANCEL") then
+      PlayUISound(UISoundEventBack2)
+      EndMenu(_ARG_0_.instance)
+      if GetPlatform() == "ps2" then
+        DVDMenu_Play("FrontEndCamera", "Anim\\FECam07R")
+        RaiseMenu("FE_Options")
+      else
+        RaiseMenu("FE_BonusMenu")
       end
+    elseif _ARG_1_ == InputKey("LEFT") then
+      PlayUISound(UISoundEventLeft_Right)
+      _ARG_0_:UpdateSelection(_ARG_0_.BonusImageIndex - 1)
+    elseif _ARG_1_ == InputKey("RIGHT") then
+      PlayUISound(UISoundEventLeft_Right)
+      _ARG_0_:UpdateSelection(_ARG_0_.BonusImageIndex + 1)
     end
   end
-end
-L0_1.OnKeyDown = L1_1
-FE_BonusArtGallery = L0_1
+}

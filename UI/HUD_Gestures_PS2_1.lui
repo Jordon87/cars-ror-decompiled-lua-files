@@ -1,590 +1,96 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.AnalogL = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.AnalogR = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_Center = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_315 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_270 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_225 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_180 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_135 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_90 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_45 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Rotate_0 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.PS3_button_A = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.PS3_button_B = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.PS3_button_X = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.PS3_button_Y = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Arrow_Rotate = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Arrow_Direction_RL = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Arrow_Direction = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.AnalogL
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.AnalogL
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.AnalogL
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.AnalogL
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "AnalogL.text1"
-  L5_2 = "STR_LEFT_PS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2072.4
-  L9_2 = 605.95
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.AnalogR
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.AnalogR
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.AnalogR
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.AnalogR
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "AnalogR.text1"
-  L5_2 = "STR_RIGHT_PS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2072.4
-  L9_2 = 605.95
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_Center
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_Center
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_Center
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_Center
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_Center.icon1"
-  L5_2 = "ps2_control_002"
-  L6_2 = 1693.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_315
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_315
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_315
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_315
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_315.icon1"
-  L5_2 = "ps2_control_004"
-  L6_2 = 1693.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_270
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_270
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_270
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_270
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_270.icon1"
-  L5_2 = "ps2_control_005"
-  L6_2 = 1693.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_225
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_225
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_225
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_225
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_225.icon1"
-  L5_2 = "ps2_control_006"
-  L6_2 = 1693.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_180
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_180
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_180
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_180
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_180.icon1"
-  L5_2 = "ps2_control_007"
-  L6_2 = 1821.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_135
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_135
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_135
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_135
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_135.icon1"
-  L5_2 = "ps2_control_006"
-  L6_2 = 1821.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_90
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_90
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_90
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_90
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_90.icon1"
-  L5_2 = "ps2_control_005"
-  L6_2 = 1821.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_45
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_45
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_45
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_45
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_45.icon1"
-  L5_2 = "ps2_control_004"
-  L6_2 = 1821.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Rotate_0
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Rotate_0
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Rotate_0
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Rotate_0
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Rotate_0.icon1"
-  L5_2 = "ps2_control_003"
-  L6_2 = 1821.2
-  L7_2 = 667
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.PS3_button_A
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.PS3_button_A
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.PS3_button_A
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.PS3_button_A
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "PS3_button_A.icon1"
-  L5_2 = "ps2_x_button"
-  L6_2 = 1740.9
-  L7_2 = 641.1
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.PS3_button_B
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.PS3_button_B
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.PS3_button_B
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.PS3_button_B
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "PS3_button_B.icon1"
-  L5_2 = "ps2_circle_button"
-  L6_2 = 1795.95
-  L7_2 = 586.85
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.PS3_button_X
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.PS3_button_X
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.PS3_button_X
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.PS3_button_X
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "PS3_button_X.icon1"
-  L5_2 = "ps2_square_button"
-  L6_2 = 1683.2
-  L7_2 = 586.85
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.PS3_button_Y
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.PS3_button_Y
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.PS3_button_Y
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.PS3_button_Y
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "PS3_button_Y.icon1"
-  L5_2 = "ps2_triangle_button"
-  L6_2 = 1740.95
-  L7_2 = 532.05
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Arrow_Rotate
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Arrow_Rotate
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Arrow_Rotate
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Arrow_Rotate
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Arrow_Rotate.icon1"
-  L5_2 = "hud_gestures_arrow_05"
-  L6_2 = 1819.2
-  L7_2 = 665.85
-  L8_2 = 128
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Arrow_Direction_RL
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Arrow_Direction_RL
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Arrow_Direction_RL
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Arrow_Direction_RL
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Arrow_Direction_RL.icon1"
-  L5_2 = "hud_gestures_arrow_06"
-  L6_2 = 1819.1
-  L7_2 = 497.9
-  L8_2 = 128
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Arrow_Direction
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Arrow_Direction
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Arrow_Direction
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Arrow_Direction
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Arrow_Direction.icon1"
-  L5_2 = "hud_gestures_arrow_01"
-  L6_2 = 1724.2
-  L7_2 = 665.9
-  L8_2 = 32
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
-  L3_2 = PlayMenuAnimation
-  L4_2 = A0_2.instance
-  L5_2 = "GiveBonus"
-  L3_2(L4_2, L5_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.SetRacerPosition = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-HUD_Gestures_PS2_1 = L0_1
+HUD_Gestures_PS2_1 = {
+  instance = 0,
+  AnalogL = UIContainer:New(),
+  AnalogR = UIContainer:New(),
+  Rotate_Center = UIContainer:New(),
+  Rotate_315 = UIContainer:New(),
+  Rotate_270 = UIContainer:New(),
+  Rotate_225 = UIContainer:New(),
+  Rotate_180 = UIContainer:New(),
+  Rotate_135 = UIContainer:New(),
+  Rotate_90 = UIContainer:New(),
+  Rotate_45 = UIContainer:New(),
+  Rotate_0 = UIContainer:New(),
+  PS3_button_A = UIContainer:New(),
+  PS3_button_B = UIContainer:New(),
+  PS3_button_X = UIContainer:New(),
+  PS3_button_Y = UIContainer:New(),
+  Arrow_Rotate = UIContainer:New(),
+  Arrow_Direction_RL = UIContainer:New(),
+  Arrow_Direction = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.AnalogL.text1 = UIText:New()
+    _ARG_0_.AnalogL:Insert(_ARG_0_.AnalogL.text1)
+    _ARG_0_.AnalogL.text1:Create(_ARG_0_.instance, "AnalogL.text1", "STR_LEFT_PS", "INGAMEUI", "18_BodegaSans-Medium", 2072.4, 605.95, "center")
+    _ARG_0_.AnalogR.text1 = UIText:New()
+    _ARG_0_.AnalogR:Insert(_ARG_0_.AnalogR.text1)
+    _ARG_0_.AnalogR.text1:Create(_ARG_0_.instance, "AnalogR.text1", "STR_RIGHT_PS", "INGAMEUI", "18_BodegaSans-Medium", 2072.4, 605.95, "center")
+    _ARG_0_.Rotate_Center.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_Center:Insert(_ARG_0_.Rotate_Center.icon1)
+    _ARG_0_.Rotate_Center.icon1:Create(_ARG_0_.instance, "Rotate_Center.icon1", "ps2_control_002", 1693.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_315.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_315:Insert(_ARG_0_.Rotate_315.icon1)
+    _ARG_0_.Rotate_315.icon1:Create(_ARG_0_.instance, "Rotate_315.icon1", "ps2_control_004", 1693.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_270.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_270:Insert(_ARG_0_.Rotate_270.icon1)
+    _ARG_0_.Rotate_270.icon1:Create(_ARG_0_.instance, "Rotate_270.icon1", "ps2_control_005", 1693.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_225.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_225:Insert(_ARG_0_.Rotate_225.icon1)
+    _ARG_0_.Rotate_225.icon1:Create(_ARG_0_.instance, "Rotate_225.icon1", "ps2_control_006", 1693.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_180.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_180:Insert(_ARG_0_.Rotate_180.icon1)
+    _ARG_0_.Rotate_180.icon1:Create(_ARG_0_.instance, "Rotate_180.icon1", "ps2_control_007", 1821.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_135.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_135:Insert(_ARG_0_.Rotate_135.icon1)
+    _ARG_0_.Rotate_135.icon1:Create(_ARG_0_.instance, "Rotate_135.icon1", "ps2_control_006", 1821.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_90.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_90:Insert(_ARG_0_.Rotate_90.icon1)
+    _ARG_0_.Rotate_90.icon1:Create(_ARG_0_.instance, "Rotate_90.icon1", "ps2_control_005", 1821.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_45.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_45:Insert(_ARG_0_.Rotate_45.icon1)
+    _ARG_0_.Rotate_45.icon1:Create(_ARG_0_.instance, "Rotate_45.icon1", "ps2_control_004", 1821.2, 667, 128, 128, "center")
+    _ARG_0_.Rotate_0.icon1 = UIIcon:New()
+    _ARG_0_.Rotate_0:Insert(_ARG_0_.Rotate_0.icon1)
+    _ARG_0_.Rotate_0.icon1:Create(_ARG_0_.instance, "Rotate_0.icon1", "ps2_control_003", 1821.2, 667, 128, 128, "center")
+    _ARG_0_.PS3_button_A.icon1 = UIIcon:New()
+    _ARG_0_.PS3_button_A:Insert(_ARG_0_.PS3_button_A.icon1)
+    _ARG_0_.PS3_button_A.icon1:Create(_ARG_0_.instance, "PS3_button_A.icon1", "ps2_x_button", 1740.9, 641.1, 48, 48, "center")
+    _ARG_0_.PS3_button_B.icon1 = UIIcon:New()
+    _ARG_0_.PS3_button_B:Insert(_ARG_0_.PS3_button_B.icon1)
+    _ARG_0_.PS3_button_B.icon1:Create(_ARG_0_.instance, "PS3_button_B.icon1", "ps2_circle_button", 1795.95, 586.85, 48, 48, "center")
+    _ARG_0_.PS3_button_X.icon1 = UIIcon:New()
+    _ARG_0_.PS3_button_X:Insert(_ARG_0_.PS3_button_X.icon1)
+    _ARG_0_.PS3_button_X.icon1:Create(_ARG_0_.instance, "PS3_button_X.icon1", "ps2_square_button", 1683.2, 586.85, 48, 48, "center")
+    _ARG_0_.PS3_button_Y.icon1 = UIIcon:New()
+    _ARG_0_.PS3_button_Y:Insert(_ARG_0_.PS3_button_Y.icon1)
+    _ARG_0_.PS3_button_Y.icon1:Create(_ARG_0_.instance, "PS3_button_Y.icon1", "ps2_triangle_button", 1740.95, 532.05, 48, 48, "center")
+    _ARG_0_.Arrow_Rotate.icon1 = UIIcon:New()
+    _ARG_0_.Arrow_Rotate:Insert(_ARG_0_.Arrow_Rotate.icon1)
+    _ARG_0_.Arrow_Rotate.icon1:Create(_ARG_0_.instance, "Arrow_Rotate.icon1", "hud_gestures_arrow_05", 1819.2, 665.85, 128, 128, "center")
+    _ARG_0_.Arrow_Direction_RL.icon1 = UIIcon:New()
+    _ARG_0_.Arrow_Direction_RL:Insert(_ARG_0_.Arrow_Direction_RL.icon1)
+    _ARG_0_.Arrow_Direction_RL.icon1:Create(_ARG_0_.instance, "Arrow_Direction_RL.icon1", "hud_gestures_arrow_06", 1819.1, 497.9, 128, 32, "center")
+    _ARG_0_.Arrow_Direction.icon1 = UIIcon:New()
+    _ARG_0_.Arrow_Direction:Insert(_ARG_0_.Arrow_Direction.icon1)
+    _ARG_0_.Arrow_Direction.icon1:Create(_ARG_0_.instance, "Arrow_Direction.icon1", "hud_gestures_arrow_01", 1724.2, 665.9, 32, 128, "center")
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    PlayMenuAnimation(_ARG_0_.instance, "GiveBonus")
+  end,
+  SetRacerPosition = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
+  end
+}

@@ -1,1474 +1,203 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L0_1.instance = 0
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.WrongWay1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.WrongWay2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Boost1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Boost2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Speedometer2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Speedometer1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Position1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Score1 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Score2 = L1_1
-L1_1 = UIContainer
-L2_1 = L1_1
-L1_1 = L1_1.New
-L1_1 = L1_1(L2_1)
-L0_1.Position2 = L1_1
-L1_1 = {}
-L0_1.Shortcuts = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L1_2 = GetCurrentLayer
-  L1_2 = L1_2()
-  A0_2.instance = L1_2
-  L1_2 = A0_2.WrongWay1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.off_track1 = L2_2
-  L1_2 = A0_2.WrongWay1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.WrongWay1
-  L3_2 = L3_2.off_track1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.WrongWay1
-  L1_2 = L1_2.off_track1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "WrongWay1.off_track1"
-  L5_2 = "STR_DYN_MENU_64_11"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1101.05
-  L9_2 = 184.75
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.WrongWay2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.off_track2 = L2_2
-  L1_2 = A0_2.WrongWay2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.WrongWay2
-  L3_2 = L3_2.off_track2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.WrongWay2
-  L1_2 = L1_2.off_track2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "WrongWay2.off_track2"
-  L5_2 = "STR_DYN_MENU_64_12"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1101.05
-  L9_2 = 514.75
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = 1777.35
-  L7_2 = 359.1
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 1953.8
-  L7_2 = 362.825
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = 1890.2
-  L7_2 = 354.3
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1792.4
-  L7_2 = 378.4
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = 1980.4
-  L7_2 = 378.4
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost1
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost1
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost1.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = 1948.4
-  L7_2 = 378.4
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.GradientHighlight = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.GradientHighlight
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.GradientHighlight
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.GradientHighlight
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.GradientHighlight.icon1"
-  L5_2 = "hud_gradient_2"
-  L6_2 = 1777.4
-  L7_2 = 689.05
-  L8_2 = 16
-  L9_2 = 16
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Blackbar = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Blackbar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Blackbar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Blackbar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Blackbar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Blackbar.icon1"
-  L5_2 = "component_frame_color"
-  L6_2 = 1953.85
-  L7_2 = 692.775
-  L8_2 = 193.6
-  L9_2 = 16.55
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Background = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Background
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Background
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Background
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Background
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Background.icon1"
-  L5_2 = "hud_speedometer_2"
-  L6_2 = 1890.25
-  L7_2 = 684.25
-  L8_2 = 128
-  L9_2 = 8
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.Bar = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Bar.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1792.45
-  L7_2 = 708.35
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Bar.icon2"
-  L5_2 = "hud_component_5"
-  L6_2 = 1980.45
-  L7_2 = 708.35
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Boost2
-  L3_2 = L3_2.Bar
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Boost2
-  L1_2 = L1_2.Bar
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Boost2.Bar.icon3"
-  L5_2 = "hud_component_2"
-  L6_2 = 1948.45
-  L7_2 = 708.35
-  L8_2 = 156
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text_speed2 = L2_2
-  L1_2 = A0_2.Speedometer2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer2
-  L3_2 = L3_2.text_speed2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer2
-  L1_2 = L1_2.text_speed2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer2.text_speed2"
-  L5_2 = "STR_DYN_HUD_5"
-  L6_2 = "INGAMEUI"
-  L7_2 = "XX_SpeedometerFont"
-  L8_2 = 1866.9
-  L9_2 = 674.5
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Speedometer2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer2
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer2
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer2.text3"
-  L5_2 = "STR_SPEED_UNITS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2078.25
-  L9_2 = 689.6
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer2
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Speedometer2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer2
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer2
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer2.icon5"
-  L5_2 = "hud_speedometer_1"
-  L6_2 = 2061.15
-  L7_2 = 767.65
-  L8_2 = 215
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text_speed1 = L2_2
-  L1_2 = A0_2.Speedometer1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer1
-  L3_2 = L3_2.text_speed1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer1
-  L1_2 = L1_2.text_speed1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer1.text_speed1"
-  L5_2 = "STR_DYN_HUD_1"
-  L6_2 = "INGAMEUI"
-  L7_2 = "XX_SpeedometerFont"
-  L8_2 = 1866.9
-  L9_2 = 344.6
-  L10_2 = "right"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Speedometer1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer1
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer1
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer1.text3"
-  L5_2 = "STR_SPEED_UNITS"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 2078.25
-  L9_2 = 359.7
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Speedometer1
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon5 = L2_2
-  L1_2 = A0_2.Speedometer1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Speedometer1
-  L3_2 = L3_2.icon5
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Speedometer1
-  L1_2 = L1_2.icon5
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Speedometer1.icon5"
-  L5_2 = "hud_speedometer_1"
-  L6_2 = 2061.15
-  L7_2 = 437.75
-  L8_2 = 215
-  L9_2 = 128
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.player1_rank = L2_2
-  L1_2 = A0_2.Position1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position1
-  L3_2 = L3_2.player1_rank
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.player1_rank
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position1.player1_rank"
-  L5_2 = "STR_DYN_HUD_3"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 66.25
-  L9_2 = 86.95
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Position1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position1
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position1.text3"
-  L5_2 = "STR_RANK"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 112.3
-  L9_2 = 86.95
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameShortest = L2_2
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position1
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position1.FrameShortest.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 110.25
-  L7_2 = 136
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position1
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position1.FrameShortest.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 176.15
-  L7_2 = 136
-  L8_2 = 66
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position1
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position1
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position1.FrameShortest.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 224.25
-  L7_2 = 136
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Score1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score1
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score1.text1"
-  L5_2 = "STR_SCORE_LABEL"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1955.15
-  L9_2 = 228.2
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score1
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.points_total = L2_2
-  L1_2 = A0_2.Score1
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score1
-  L3_2 = L3_2.points_total
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.points_total
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score1.points_total"
-  L5_2 = "STR_DYN_HUD_2"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1955.2
-  L9_2 = 264.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score1
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameScore = L2_2
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score1
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score1.FrameScore.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1986
-  L7_2 = 295.65
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score1
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score1.FrameScore.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 2091
-  L7_2 = 295.65
-  L8_2 = 105
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score1
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score1
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score1.FrameScore.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 2123
-  L7_2 = 295.65
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text1 = L2_2
-  L1_2 = A0_2.Score2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score2
-  L3_2 = L3_2.text1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.text1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score2.text1"
-  L5_2 = "STR_SCORE_LABEL"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1955.2
-  L9_2 = 558.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.points_total = L2_2
-  L1_2 = A0_2.Score2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score2
-  L3_2 = L3_2.points_total
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.points_total
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score2.points_total"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 1955.2
-  L9_2 = 594.15
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameScore = L2_2
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score2
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score2.FrameScore.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 1991.45
-  L7_2 = 625.65
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score2
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score2.FrameScore.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 2096.45
-  L7_2 = 625.65
-  L8_2 = 105
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Score2
-  L3_2 = L3_2.FrameScore
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Score2
-  L1_2 = L1_2.FrameScore
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Score2.FrameScore.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 2128.45
-  L7_2 = 625.65
-  L8_2 = 32
-  L9_2 = 32
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.player2_rank = L2_2
-  L1_2 = A0_2.Position2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position2
-  L3_2 = L3_2.player2_rank
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.player2_rank
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position2.player2_rank"
-  L5_2 = "STR_DYN_HUD_4"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 66.25
-  L9_2 = 416.95
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position2
-  L2_2 = UIText
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.text3 = L2_2
-  L1_2 = A0_2.Position2
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position2
-  L3_2 = L3_2.text3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.text3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position2.text3"
-  L5_2 = "STR_RANK"
-  L6_2 = "INGAMEUI"
-  L7_2 = "18_BodegaSans-Medium"
-  L8_2 = 112.3
-  L9_2 = 416.95
-  L10_2 = "left"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position2
-  L2_2 = UIContainer
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.FrameShortest = L2_2
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon1 = L2_2
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position2
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon1
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon1
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position2.FrameShortest.icon1"
-  L5_2 = "hud_component_5"
-  L6_2 = 110.25
-  L7_2 = 466
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon2 = L2_2
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position2
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon2
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon2
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position2.FrameShortest.icon2"
-  L5_2 = "hud_component_2"
-  L6_2 = 176.15
-  L7_2 = 466
-  L8_2 = 66
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = UIIcon
-  L3_2 = L2_2
-  L2_2 = L2_2.New
-  L2_2 = L2_2(L3_2)
-  L1_2.icon3 = L2_2
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L2_2 = L1_2
-  L1_2 = L1_2.Insert
-  L3_2 = A0_2.Position2
-  L3_2 = L3_2.FrameShortest
-  L3_2 = L3_2.icon3
-  L1_2(L2_2, L3_2)
-  L1_2 = A0_2.Position2
-  L1_2 = L1_2.FrameShortest
-  L1_2 = L1_2.icon3
-  L2_2 = L1_2
-  L1_2 = L1_2.Create
-  L3_2 = A0_2.instance
-  L4_2 = "Position2.FrameShortest.icon3"
-  L5_2 = "hud_component_5"
-  L6_2 = 224.25
-  L7_2 = 466
-  L8_2 = 48
-  L9_2 = 48
-  L10_2 = "center"
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.WrongWay1
-  L2_2 = L2_2.off_track1
-  L1_2.off_track1 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.WrongWay2
-  L2_2 = L2_2.off_track2
-  L1_2.off_track2 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Speedometer2
-  L2_2 = L2_2.text_speed2
-  L1_2.text_speed2 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Speedometer1
-  L2_2 = L2_2.text_speed1
-  L1_2.text_speed1 = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Position1
-  L2_2 = L2_2.player1_rank
-  L1_2.player1_rank = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Score1
-  L2_2 = L2_2.points_total
-  L1_2.points_total = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Score2
-  L2_2 = L2_2.points_total
-  L1_2.points_total = L2_2
-  L1_2 = A0_2.Shortcuts
-  L2_2 = A0_2.Position2
-  L2_2 = L2_2.player2_rank
-  L1_2.player2_rank = L2_2
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.Boost1
-  L4_2 = "Boost1"
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = MakeUIBarGraph
-  L2_2 = A0_2
-  L3_2 = A0_2.Boost2
-  L4_2 = "Boost2"
-  L1_2(L2_2, L3_2, L4_2)
-end
-L0_1.Create = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.GiveBonus = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-end
-L0_1.SetRacerPosition = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "intro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.StartUI = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = PlayMenuAnimation
-  L2_2 = A0_2.instance
-  L3_2 = "outro"
-  L1_2(L2_2, L3_2)
-end
-L0_1.EndUI = L1_1
-function L1_1(A0_2)
-  local L1_2
-end
-L0_1.Destroy = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.player1_rank
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = ""
-  L5_2 = getvar
-  L6_2 = "RacePosition0"
-  L5_2 = L5_2(L6_2)
-  L6_2 = "/"
-  L7_2 = getvar
-  L8_2 = "NumRacers"
-  L7_2 = L7_2(L8_2)
-  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-  L2_2(L3_2, L4_2)
-  L2_2 = A0_2.Shortcuts
-  L2_2 = L2_2.text_speed1
-  L3_2 = L2_2
-  L2_2 = L2_2.SetValue
-  L4_2 = ""
-  L5_2 = ConvertSpeedUnits
-  L6_2 = math
-  L6_2 = L6_2.floor
-  L7_2 = getvar
-  L8_2 = "Player1Speed"
-  L7_2, L8_2, L9_2 = L7_2(L8_2)
-  L6_2, L7_2, L8_2, L9_2 = L6_2(L7_2, L8_2, L9_2)
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  L2_2 = getvar
-  L3_2 = "P1NOXTot"
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L3_2 = A0_2.Boost1
-    L4_2 = L3_2
-    L3_2 = L3_2.SetBarPercent
-    L5_2 = getvar
-    L6_2 = "Player1NOX"
-    L5_2 = L5_2(L6_2)
-    L5_2 = L5_2 / L2_2
-    L3_2(L4_2, L5_2)
-  else
-    L3_2 = A0_2.Boost1
-    L4_2 = L3_2
-    L3_2 = L3_2.SetBarPercent
-    L5_2 = 0
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = getvar
-  L4_2 = "OffTrack0"
-  L3_2 = L3_2(L4_2)
-  if L3_2 == 1 then
-    L3_2 = A0_2.Shortcuts
-    L3_2 = L3_2.off_track1
-    L4_2 = L3_2
-    L3_2 = L3_2.SetValue
-    L5_2 = GetLocalizedString
-    L6_2 = "INGAMEUI"
-    L7_2 = "STR_OFF_TRACK"
-    L5_2, L6_2, L7_2, L8_2, L9_2 = L5_2(L6_2, L7_2)
-    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  else
-    L3_2 = getvar
-    L4_2 = "WrongWay0"
-    L3_2 = L3_2(L4_2)
-    if L3_2 == 1 then
-      L3_2 = A0_2.Shortcuts
-      L3_2 = L3_2.off_track1
-      L4_2 = L3_2
-      L3_2 = L3_2.SetValue
-      L5_2 = GetLocalizedString
-      L6_2 = "INGAMEUI"
-      L7_2 = "STR_WRONG_WAY"
-      L5_2, L6_2, L7_2, L8_2, L9_2 = L5_2(L6_2, L7_2)
-      L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+HUD_TokyoMater_2P = {
+  instance = 0,
+  WrongWay1 = UIContainer:New(),
+  WrongWay2 = UIContainer:New(),
+  Boost1 = UIContainer:New(),
+  Boost2 = UIContainer:New(),
+  Speedometer2 = UIContainer:New(),
+  Speedometer1 = UIContainer:New(),
+  Position1 = UIContainer:New(),
+  Score1 = UIContainer:New(),
+  Score2 = UIContainer:New(),
+  Position2 = UIContainer:New(),
+  Shortcuts = {},
+  Create = function(_ARG_0_)
+    _ARG_0_.instance = GetCurrentLayer()
+    _ARG_0_.WrongWay1.off_track1 = UIText:New()
+    _ARG_0_.WrongWay1:Insert(_ARG_0_.WrongWay1.off_track1)
+    _ARG_0_.WrongWay1.off_track1:Create(_ARG_0_.instance, "WrongWay1.off_track1", "STR_DYN_MENU_64_11", "INGAMEUI", "18_BodegaSans-Medium", 1101.05, 184.75, "center")
+    _ARG_0_.WrongWay2.off_track2 = UIText:New()
+    _ARG_0_.WrongWay2:Insert(_ARG_0_.WrongWay2.off_track2)
+    _ARG_0_.WrongWay2.off_track2:Create(_ARG_0_.instance, "WrongWay2.off_track2", "STR_DYN_MENU_64_12", "INGAMEUI", "18_BodegaSans-Medium", 1101.05, 514.75, "center")
+    _ARG_0_.Boost1.GradientHighlight = UIContainer:New()
+    _ARG_0_.Boost1.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.GradientHighlight:Insert(_ARG_0_.Boost1.GradientHighlight.icon1)
+    _ARG_0_.Boost1.GradientHighlight.icon1:Create(_ARG_0_.instance, "Boost1.GradientHighlight.icon1", "hud_gradient_2", 1777.35, 359.1, 16, 16, "center")
+    _ARG_0_.Boost1.Blackbar = UIContainer:New()
+    _ARG_0_.Boost1.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.Blackbar:Insert(_ARG_0_.Boost1.Blackbar.icon1)
+    _ARG_0_.Boost1.Blackbar.icon1:Create(_ARG_0_.instance, "Boost1.Blackbar.icon1", "component_frame_color", 1953.8, 362.825, 193.6, 16.55, "center")
+    _ARG_0_.Boost1.Background = UIContainer:New()
+    _ARG_0_.Boost1.Background.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.Background:Insert(_ARG_0_.Boost1.Background.icon1)
+    _ARG_0_.Boost1.Background.icon1:Create(_ARG_0_.instance, "Boost1.Background.icon1", "hud_speedometer_2", 1890.2, 354.3, 128, 8, "center")
+    _ARG_0_.Boost1.Bar = UIContainer:New()
+    _ARG_0_.Boost1.Bar.icon1 = UIIcon:New()
+    _ARG_0_.Boost1.Bar:Insert(_ARG_0_.Boost1.Bar.icon1)
+    _ARG_0_.Boost1.Bar.icon1:Create(_ARG_0_.instance, "Boost1.Bar.icon1", "hud_component_5", 1792.4, 378.4, 32, 32, "center")
+    _ARG_0_.Boost1.Bar.icon2 = UIIcon:New()
+    _ARG_0_.Boost1.Bar:Insert(_ARG_0_.Boost1.Bar.icon2)
+    _ARG_0_.Boost1.Bar.icon2:Create(_ARG_0_.instance, "Boost1.Bar.icon2", "hud_component_5", 1980.4, 378.4, 32, 32, "center")
+    _ARG_0_.Boost1.Bar.icon3 = UIIcon:New()
+    _ARG_0_.Boost1.Bar:Insert(_ARG_0_.Boost1.Bar.icon3)
+    _ARG_0_.Boost1.Bar.icon3:Create(_ARG_0_.instance, "Boost1.Bar.icon3", "hud_component_2", 1948.4, 378.4, 156, 32, "center")
+    _ARG_0_.Boost2.GradientHighlight = UIContainer:New()
+    _ARG_0_.Boost2.GradientHighlight.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.GradientHighlight:Insert(_ARG_0_.Boost2.GradientHighlight.icon1)
+    _ARG_0_.Boost2.GradientHighlight.icon1:Create(_ARG_0_.instance, "Boost2.GradientHighlight.icon1", "hud_gradient_2", 1777.4, 689.05, 16, 16, "center")
+    _ARG_0_.Boost2.Blackbar = UIContainer:New()
+    _ARG_0_.Boost2.Blackbar.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.Blackbar:Insert(_ARG_0_.Boost2.Blackbar.icon1)
+    _ARG_0_.Boost2.Blackbar.icon1:Create(_ARG_0_.instance, "Boost2.Blackbar.icon1", "component_frame_color", 1953.85, 692.775, 193.6, 16.55, "center")
+    _ARG_0_.Boost2.Background = UIContainer:New()
+    _ARG_0_.Boost2.Background.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.Background:Insert(_ARG_0_.Boost2.Background.icon1)
+    _ARG_0_.Boost2.Background.icon1:Create(_ARG_0_.instance, "Boost2.Background.icon1", "hud_speedometer_2", 1890.25, 684.25, 128, 8, "center")
+    _ARG_0_.Boost2.Bar = UIContainer:New()
+    _ARG_0_.Boost2.Bar.icon1 = UIIcon:New()
+    _ARG_0_.Boost2.Bar:Insert(_ARG_0_.Boost2.Bar.icon1)
+    _ARG_0_.Boost2.Bar.icon1:Create(_ARG_0_.instance, "Boost2.Bar.icon1", "hud_component_5", 1792.45, 708.35, 32, 32, "center")
+    _ARG_0_.Boost2.Bar.icon2 = UIIcon:New()
+    _ARG_0_.Boost2.Bar:Insert(_ARG_0_.Boost2.Bar.icon2)
+    _ARG_0_.Boost2.Bar.icon2:Create(_ARG_0_.instance, "Boost2.Bar.icon2", "hud_component_5", 1980.45, 708.35, 32, 32, "center")
+    _ARG_0_.Boost2.Bar.icon3 = UIIcon:New()
+    _ARG_0_.Boost2.Bar:Insert(_ARG_0_.Boost2.Bar.icon3)
+    _ARG_0_.Boost2.Bar.icon3:Create(_ARG_0_.instance, "Boost2.Bar.icon3", "hud_component_2", 1948.45, 708.35, 156, 32, "center")
+    _ARG_0_.Speedometer2.text_speed2 = UIText:New()
+    _ARG_0_.Speedometer2:Insert(_ARG_0_.Speedometer2.text_speed2)
+    _ARG_0_.Speedometer2.text_speed2:Create(_ARG_0_.instance, "Speedometer2.text_speed2", "STR_DYN_HUD_5", "INGAMEUI", "XX_SpeedometerFont", 1866.9, 674.5, "right")
+    _ARG_0_.Speedometer2.text3 = UIText:New()
+    _ARG_0_.Speedometer2:Insert(_ARG_0_.Speedometer2.text3)
+    _ARG_0_.Speedometer2.text3:Create(_ARG_0_.instance, "Speedometer2.text3", "STR_SPEED_UNITS", "INGAMEUI", "18_BodegaSans-Medium", 2078.25, 689.6, "left")
+    _ARG_0_.Speedometer2.icon5 = UIIcon:New()
+    _ARG_0_.Speedometer2:Insert(_ARG_0_.Speedometer2.icon5)
+    _ARG_0_.Speedometer2.icon5:Create(_ARG_0_.instance, "Speedometer2.icon5", "hud_speedometer_1", 2061.15, 767.65, 215, 128, "center")
+    _ARG_0_.Speedometer1.text_speed1 = UIText:New()
+    _ARG_0_.Speedometer1:Insert(_ARG_0_.Speedometer1.text_speed1)
+    _ARG_0_.Speedometer1.text_speed1:Create(_ARG_0_.instance, "Speedometer1.text_speed1", "STR_DYN_HUD_1", "INGAMEUI", "XX_SpeedometerFont", 1866.9, 344.6, "right")
+    _ARG_0_.Speedometer1.text3 = UIText:New()
+    _ARG_0_.Speedometer1:Insert(_ARG_0_.Speedometer1.text3)
+    _ARG_0_.Speedometer1.text3:Create(_ARG_0_.instance, "Speedometer1.text3", "STR_SPEED_UNITS", "INGAMEUI", "18_BodegaSans-Medium", 2078.25, 359.7, "left")
+    _ARG_0_.Speedometer1.icon5 = UIIcon:New()
+    _ARG_0_.Speedometer1:Insert(_ARG_0_.Speedometer1.icon5)
+    _ARG_0_.Speedometer1.icon5:Create(_ARG_0_.instance, "Speedometer1.icon5", "hud_speedometer_1", 2061.15, 437.75, 215, 128, "center")
+    _ARG_0_.Position1.player1_rank = UIText:New()
+    _ARG_0_.Position1:Insert(_ARG_0_.Position1.player1_rank)
+    _ARG_0_.Position1.player1_rank:Create(_ARG_0_.instance, "Position1.player1_rank", "STR_DYN_HUD_3", "INGAMEUI", "18_BodegaSans-Medium", 66.25, 86.95, "center")
+    _ARG_0_.Position1.text3 = UIText:New()
+    _ARG_0_.Position1:Insert(_ARG_0_.Position1.text3)
+    _ARG_0_.Position1.text3:Create(_ARG_0_.instance, "Position1.text3", "STR_RANK", "INGAMEUI", "18_BodegaSans-Medium", 112.3, 86.95, "left")
+    _ARG_0_.Position1.FrameShortest = UIContainer:New()
+    _ARG_0_.Position1.FrameShortest.icon1 = UIIcon:New()
+    _ARG_0_.Position1.FrameShortest:Insert(_ARG_0_.Position1.FrameShortest.icon1)
+    _ARG_0_.Position1.FrameShortest.icon1:Create(_ARG_0_.instance, "Position1.FrameShortest.icon1", "hud_component_5", 110.25, 136, 48, 48, "center")
+    _ARG_0_.Position1.FrameShortest.icon2 = UIIcon:New()
+    _ARG_0_.Position1.FrameShortest:Insert(_ARG_0_.Position1.FrameShortest.icon2)
+    _ARG_0_.Position1.FrameShortest.icon2:Create(_ARG_0_.instance, "Position1.FrameShortest.icon2", "hud_component_2", 176.15, 136, 66, 48, "center")
+    _ARG_0_.Position1.FrameShortest.icon3 = UIIcon:New()
+    _ARG_0_.Position1.FrameShortest:Insert(_ARG_0_.Position1.FrameShortest.icon3)
+    _ARG_0_.Position1.FrameShortest.icon3:Create(_ARG_0_.instance, "Position1.FrameShortest.icon3", "hud_component_5", 224.25, 136, 48, 48, "center")
+    _ARG_0_.Score1.text1 = UIText:New()
+    _ARG_0_.Score1:Insert(_ARG_0_.Score1.text1)
+    _ARG_0_.Score1.text1:Create(_ARG_0_.instance, "Score1.text1", "STR_SCORE_LABEL", "INGAMEUI", "18_BodegaSans-Medium", 1955.15, 228.2, "center")
+    _ARG_0_.Score1.points_total = UIText:New()
+    _ARG_0_.Score1:Insert(_ARG_0_.Score1.points_total)
+    _ARG_0_.Score1.points_total:Create(_ARG_0_.instance, "Score1.points_total", "STR_DYN_HUD_2", "INGAMEUI", "18_BodegaSans-Medium", 1955.2, 264.15, "center")
+    _ARG_0_.Score1.FrameScore = UIContainer:New()
+    _ARG_0_.Score1.FrameScore.icon1 = UIIcon:New()
+    _ARG_0_.Score1.FrameScore:Insert(_ARG_0_.Score1.FrameScore.icon1)
+    _ARG_0_.Score1.FrameScore.icon1:Create(_ARG_0_.instance, "Score1.FrameScore.icon1", "hud_component_5", 1986, 295.65, 32, 32, "center")
+    _ARG_0_.Score1.FrameScore.icon2 = UIIcon:New()
+    _ARG_0_.Score1.FrameScore:Insert(_ARG_0_.Score1.FrameScore.icon2)
+    _ARG_0_.Score1.FrameScore.icon2:Create(_ARG_0_.instance, "Score1.FrameScore.icon2", "hud_component_2", 2091, 295.65, 105, 32, "center")
+    _ARG_0_.Score1.FrameScore.icon3 = UIIcon:New()
+    _ARG_0_.Score1.FrameScore:Insert(_ARG_0_.Score1.FrameScore.icon3)
+    _ARG_0_.Score1.FrameScore.icon3:Create(_ARG_0_.instance, "Score1.FrameScore.icon3", "hud_component_5", 2123, 295.65, 32, 32, "center")
+    _ARG_0_.Score2.text1 = UIText:New()
+    _ARG_0_.Score2:Insert(_ARG_0_.Score2.text1)
+    _ARG_0_.Score2.text1:Create(_ARG_0_.instance, "Score2.text1", "STR_SCORE_LABEL", "INGAMEUI", "18_BodegaSans-Medium", 1955.2, 558.15, "center")
+    _ARG_0_.Score2.points_total = UIText:New()
+    _ARG_0_.Score2:Insert(_ARG_0_.Score2.points_total)
+    _ARG_0_.Score2.points_total:Create(_ARG_0_.instance, "Score2.points_total", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 1955.2, 594.15, "center")
+    _ARG_0_.Score2.FrameScore = UIContainer:New()
+    _ARG_0_.Score2.FrameScore.icon1 = UIIcon:New()
+    _ARG_0_.Score2.FrameScore:Insert(_ARG_0_.Score2.FrameScore.icon1)
+    _ARG_0_.Score2.FrameScore.icon1:Create(_ARG_0_.instance, "Score2.FrameScore.icon1", "hud_component_5", 1991.45, 625.65, 32, 32, "center")
+    _ARG_0_.Score2.FrameScore.icon2 = UIIcon:New()
+    _ARG_0_.Score2.FrameScore:Insert(_ARG_0_.Score2.FrameScore.icon2)
+    _ARG_0_.Score2.FrameScore.icon2:Create(_ARG_0_.instance, "Score2.FrameScore.icon2", "hud_component_2", 2096.45, 625.65, 105, 32, "center")
+    _ARG_0_.Score2.FrameScore.icon3 = UIIcon:New()
+    _ARG_0_.Score2.FrameScore:Insert(_ARG_0_.Score2.FrameScore.icon3)
+    _ARG_0_.Score2.FrameScore.icon3:Create(_ARG_0_.instance, "Score2.FrameScore.icon3", "hud_component_5", 2128.45, 625.65, 32, 32, "center")
+    _ARG_0_.Position2.player2_rank = UIText:New()
+    _ARG_0_.Position2:Insert(_ARG_0_.Position2.player2_rank)
+    _ARG_0_.Position2.player2_rank:Create(_ARG_0_.instance, "Position2.player2_rank", "STR_DYN_HUD_4", "INGAMEUI", "18_BodegaSans-Medium", 66.25, 416.95, "center")
+    _ARG_0_.Position2.text3 = UIText:New()
+    _ARG_0_.Position2:Insert(_ARG_0_.Position2.text3)
+    _ARG_0_.Position2.text3:Create(_ARG_0_.instance, "Position2.text3", "STR_RANK", "INGAMEUI", "18_BodegaSans-Medium", 112.3, 416.95, "left")
+    _ARG_0_.Position2.FrameShortest = UIContainer:New()
+    _ARG_0_.Position2.FrameShortest.icon1 = UIIcon:New()
+    _ARG_0_.Position2.FrameShortest:Insert(_ARG_0_.Position2.FrameShortest.icon1)
+    _ARG_0_.Position2.FrameShortest.icon1:Create(_ARG_0_.instance, "Position2.FrameShortest.icon1", "hud_component_5", 110.25, 466, 48, 48, "center")
+    _ARG_0_.Position2.FrameShortest.icon2 = UIIcon:New()
+    _ARG_0_.Position2.FrameShortest:Insert(_ARG_0_.Position2.FrameShortest.icon2)
+    _ARG_0_.Position2.FrameShortest.icon2:Create(_ARG_0_.instance, "Position2.FrameShortest.icon2", "hud_component_2", 176.15, 466, 66, 48, "center")
+    _ARG_0_.Position2.FrameShortest.icon3 = UIIcon:New()
+    _ARG_0_.Position2.FrameShortest:Insert(_ARG_0_.Position2.FrameShortest.icon3)
+    _ARG_0_.Position2.FrameShortest.icon3:Create(_ARG_0_.instance, "Position2.FrameShortest.icon3", "hud_component_5", 224.25, 466, 48, 48, "center")
+    _ARG_0_.Shortcuts.off_track1 = _ARG_0_.WrongWay1.off_track1
+    _ARG_0_.Shortcuts.off_track2 = _ARG_0_.WrongWay2.off_track2
+    _ARG_0_.Shortcuts.text_speed2 = _ARG_0_.Speedometer2.text_speed2
+    _ARG_0_.Shortcuts.text_speed1 = _ARG_0_.Speedometer1.text_speed1
+    _ARG_0_.Shortcuts.player1_rank = _ARG_0_.Position1.player1_rank
+    _ARG_0_.Shortcuts.points_total = _ARG_0_.Score1.points_total
+    _ARG_0_.Shortcuts.points_total = _ARG_0_.Score2.points_total
+    _ARG_0_.Shortcuts.player2_rank = _ARG_0_.Position2.player2_rank
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.Boost1, "Boost1")
+    MakeUIBarGraph(_ARG_0_, _ARG_0_.Boost2, "Boost2")
+  end,
+  GiveBonus = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  SetRacerPosition = function(_ARG_0_, _ARG_1_, _ARG_2_)
+  end,
+  StartUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "intro")
+  end,
+  EndUI = function(_ARG_0_)
+    PlayMenuAnimation(_ARG_0_.instance, "outro")
+  end,
+  Destroy = function(_ARG_0_)
+  end,
+  Tick = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.Shortcuts.player1_rank:SetValue("" .. getvar("RacePosition0") .. "/" .. getvar("NumRacers"))
+    _ARG_0_.Shortcuts.text_speed1:SetValue("" .. ConvertSpeedUnits(math.floor(getvar("Player1Speed"))))
+    if getvar("P1NOXTot") ~= 0 then
+      _ARG_0_.Boost1:SetBarPercent(getvar("Player1NOX") / getvar("P1NOXTot"))
     else
-      L3_2 = A0_2.Shortcuts
-      L3_2 = L3_2.off_track1
-      L4_2 = L3_2
-      L3_2 = L3_2.SetValue
-      L5_2 = ""
-      L3_2(L4_2, L5_2)
+      _ARG_0_.Boost1:SetBarPercent(0)
     end
-  end
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.player2_rank
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = ""
-  L6_2 = getvar
-  L7_2 = "RacePosition1"
-  L6_2 = L6_2(L7_2)
-  L7_2 = "/"
-  L8_2 = getvar
-  L9_2 = "NumRacers"
-  L8_2 = L8_2(L9_2)
-  L5_2 = L5_2 .. L6_2 .. L7_2 .. L8_2
-  L3_2(L4_2, L5_2)
-  L3_2 = A0_2.Shortcuts
-  L3_2 = L3_2.text_speed2
-  L4_2 = L3_2
-  L3_2 = L3_2.SetValue
-  L5_2 = ""
-  L6_2 = ConvertSpeedUnits
-  L7_2 = math
-  L7_2 = L7_2.floor
-  L8_2 = getvar
-  L9_2 = "Player2Speed"
-  L8_2, L9_2 = L8_2(L9_2)
-  L7_2, L8_2, L9_2 = L7_2(L8_2, L9_2)
-  L6_2 = L6_2(L7_2, L8_2, L9_2)
-  L5_2 = L5_2 .. L6_2
-  L3_2(L4_2, L5_2)
-  L3_2 = getvar
-  L4_2 = "P2NOXTot"
-  L3_2 = L3_2(L4_2)
-  if L3_2 ~= 0 then
-    L4_2 = A0_2.Boost2
-    L5_2 = L4_2
-    L4_2 = L4_2.SetBarPercent
-    L6_2 = getvar
-    L7_2 = "Player2NOX"
-    L6_2 = L6_2(L7_2)
-    L6_2 = L6_2 / L3_2
-    L4_2(L5_2, L6_2)
-  else
-    L4_2 = A0_2.Boost2
-    L5_2 = L4_2
-    L4_2 = L4_2.SetBarPercent
-    L6_2 = 0
-    L4_2(L5_2, L6_2)
-  end
-  L4_2 = getvar
-  L5_2 = "OffTrack1"
-  L4_2 = L4_2(L5_2)
-  if L4_2 == 1 then
-    L4_2 = A0_2.Shortcuts
-    L4_2 = L4_2.off_track2
-    L5_2 = L4_2
-    L4_2 = L4_2.SetValue
-    L6_2 = GetLocalizedString
-    L7_2 = "INGAMEUI"
-    L8_2 = "STR_OFF_TRACK"
-    L6_2, L7_2, L8_2, L9_2 = L6_2(L7_2, L8_2)
-    L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  else
-    L4_2 = getvar
-    L5_2 = "WrongWay1"
-    L4_2 = L4_2(L5_2)
-    if L4_2 == 1 then
-      L4_2 = A0_2.Shortcuts
-      L4_2 = L4_2.off_track2
-      L5_2 = L4_2
-      L4_2 = L4_2.SetValue
-      L6_2 = GetLocalizedString
-      L7_2 = "INGAMEUI"
-      L8_2 = "STR_WRONG_WAY"
-      L6_2, L7_2, L8_2, L9_2 = L6_2(L7_2, L8_2)
-      L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
+    if getvar("OffTrack0") == 1 then
+      _ARG_0_.Shortcuts.off_track1:SetValue(GetLocalizedString("INGAMEUI", "STR_OFF_TRACK"))
+    elseif getvar("WrongWay0") == 1 then
+      _ARG_0_.Shortcuts.off_track1:SetValue(GetLocalizedString("INGAMEUI", "STR_WRONG_WAY"))
     else
-      L4_2 = A0_2.Shortcuts
-      L4_2 = L4_2.off_track2
-      L5_2 = L4_2
-      L4_2 = L4_2.SetValue
-      L6_2 = ""
-      L4_2(L5_2, L6_2)
+      _ARG_0_.Shortcuts.off_track1:SetValue("")
     end
+    _ARG_0_.Shortcuts.player2_rank:SetValue("" .. getvar("RacePosition1") .. "/" .. getvar("NumRacers"))
+    _ARG_0_.Shortcuts.text_speed2:SetValue("" .. ConvertSpeedUnits(math.floor(getvar("Player2Speed"))))
+    if getvar("P2NOXTot") ~= 0 then
+      _ARG_0_.Boost2:SetBarPercent(getvar("Player2NOX") / getvar("P2NOXTot"))
+    else
+      _ARG_0_.Boost2:SetBarPercent(0)
+    end
+    if getvar("OffTrack1") == 1 then
+      _ARG_0_.Shortcuts.off_track2:SetValue(GetLocalizedString("INGAMEUI", "STR_OFF_TRACK"))
+    elseif getvar("WrongWay1") == 1 then
+      _ARG_0_.Shortcuts.off_track2:SetValue(GetLocalizedString("INGAMEUI", "STR_WRONG_WAY"))
+    else
+      _ARG_0_.Shortcuts.off_track2:SetValue("")
+    end
+  end,
+  OnKeyDown = function(_ARG_0_, _ARG_1_)
   end
-end
-L0_1.Tick = L1_1
-function L1_1(A0_2, A1_2)
-end
-L0_1.OnKeyDown = L1_1
-HUD_TokyoMater_2P = L0_1
+}
