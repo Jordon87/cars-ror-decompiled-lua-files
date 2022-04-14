@@ -1,31 +1,16 @@
-local L0_1, L1_1
-L0_1 = {}
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onQuit = L1_1
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onContinue = L1_1
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onUnlocked = L1_1
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onFailed = L1_1
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onPlaced = L1_1
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onFirst = L1_1
-function L1_1()
-  local L0_2, L1_2
-end
-L0_1.onCutsceneFinished = L1_1
-StoryEvent_FE_FrontEnd = L0_1
+StoryEvent_FE_FrontEnd = {
+  onQuit = function()
+  end,
+  onContinue = function()
+  end,
+  onUnlocked = function()
+  end,
+  onFailed = function()
+  end,
+  onPlaced = function()
+  end,
+  onFirst = function()
+  end,
+  onCutsceneFinished = function()
+  end
+}
