@@ -1,1689 +1,490 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1
-L0_1 = IncludeScript
-L1_1 = "C\\Act\\GlobalSettings.lua"
-L0_1(L1_1)
-L0_1 = {}
-L0_1.CurrentWaitEvents = nil
-function L1_1(A0_2, A1_2)
-  A0_2.MaterdorSettings = A1_2
-end
-L0_1.ApplySettings = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = A0_2.PlayerResults
-  L2_2 = A0_2.CurrentPlayer
-  L1_2 = L1_2[L2_2]
-  L1_2 = L1_2.DodgeTime
-  L2_2 = A0_2.Round
-  L1_2 = L1_2[L2_2]
-  if L1_2 then
-    L1_2 = A0_2.GestureSet
-    if L1_2 == "x360_wheel" then
-      L1_2 = A0_2.PlayerResults
-      L2_2 = A0_2.CurrentPlayer
-      L1_2 = L1_2[L2_2]
-      L1_2 = L1_2.DodgeTime
-      L2_2 = A0_2.Round
-      L1_2 = L1_2[L2_2]
-      L2_2 = A0_2.MaterdorSettings
-      L3_2 = A0_2.Round
-      L2_2 = L2_2[L3_2]
-      L2_2 = L2_2.TractorChargeDuration
-      L3_2 = GlobalSettings
-      L3_2 = L3_2.WheelTimeExtend
-      L2_2 = L2_2 * L3_2
-      L1_2 = L1_2 / L2_2
-      L1_2 = L1_2 * 100
-      return L1_2
-    else
-      L1_2 = A0_2.PlayerResults
-      L2_2 = A0_2.CurrentPlayer
-      L1_2 = L1_2[L2_2]
-      L1_2 = L1_2.DodgeTime
-      L2_2 = A0_2.Round
-      L1_2 = L1_2[L2_2]
-      L2_2 = A0_2.MaterdorSettings
-      L3_2 = A0_2.Round
-      L2_2 = L2_2[L3_2]
-      L2_2 = L2_2.TractorChargeDuration
-      L1_2 = L1_2 / L2_2
-      L1_2 = L1_2 * 100
-      return L1_2
-    end
-  else
-    L1_2 = GetPercentTimeRemaining
-    L2_2 = "Gesture_Timer"
-    return L1_2(L2_2)
-  end
-end
-L0_1.GetDodgeTimerPercent = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = {}
-  L3_2 = A1_2
-  L2_2[1] = L3_2
-  A0_2.CurrentWaitEvents = L2_2
-  L2_2 = coroutine
-  L2_2 = L2_2.yield
-  L2_2()
-  A0_2.CurrentWaitEvents = nil
-end
-L0_1.WaitForEvent = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  A0_2.CurrentWaitEvents = A1_2
-  L2_2 = coroutine
-  L2_2 = L2_2.yield
-  L2_2 = L2_2()
-  A0_2.CurrentWaitEvents = nil
-  return L2_2
-end
-L0_1.WaitForMultipleEvents = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = SetEventTimer
-  L3_2 = "Wait"
-  L4_2 = A1_2
-  L3_2 = L3_2 .. L4_2
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.WaitForEvent
-  L4_2 = "Wait"
-  L5_2 = A1_2
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-end
-L0_1.Wait = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2
-  L3_2 = PlayCameraAnimationWithCallback
-  L4_2 = A1_2
-  L5_2 = A2_2
-  L6_2 = A2_2
-  L3_2(L4_2, L5_2, L6_2)
-  L4_2 = A0_2
-  L3_2 = A0_2.WaitForEvent
-  L5_2 = A2_2
-  L3_2(L4_2, L5_2)
-end
-L0_1.PlayCameraAnimationAndWait = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2
-  L4_2 = SetCharacterAnimation
-  L5_2 = A1_2
-  L6_2 = A2_2
-  L7_2 = A2_2
-  L8_2 = A3_2
-  L4_2(L5_2, L6_2, L7_2, L8_2)
-  L5_2 = A0_2
-  L4_2 = A0_2.WaitForEvent
-  L6_2 = A2_2
-  L4_2(L5_2, L6_2)
-end
-L0_1.PlayCharacterAnimationAndWait = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2
-  L3_2 = PlayToyDialogueMotion
-  L4_2 = characterName
-  L5_2 = A2_2
-  L6_2 = A2_2
-  L3_2(L4_2, L5_2, L6_2)
-  L4_2 = A0_2
-  L3_2 = A0_2.WaitForEvent
-  L5_2 = A2_2
-  L3_2(L4_2, L5_2)
-end
-L0_1.PlayToyDialogueMotionAndWait = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = PlayActivityCutscene
-  L3_2 = A1_2
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.WaitForEvent
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
-end
-L0_1.PlayCutsceneAndWait = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = FadeOutScreen
-  L3_2 = A1_2
-  L2_2(L3_2)
-  L2_2 = SetEventTimer
-  L3_2 = "FadeOutScreen"
-  L4_2 = A1_2
-  L3_2 = L3_2 .. L4_2
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.WaitForEvent
-  L4_2 = "FadeOutScreen"
-  L5_2 = A1_2
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-end
-L0_1.FadeOutScreenAndWait = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = FadeInScreen
-  L3_2 = A1_2
-  L2_2(L3_2)
-  L2_2 = SetEventTimer
-  L3_2 = "FadeInScreen"
-  L4_2 = A1_2
-  L3_2 = L3_2 .. L4_2
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.WaitForEvent
-  L4_2 = "FadeInScreen"
-  L5_2 = A1_2
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-end
-L0_1.FadeInScreenAndWait = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = A0_2.BullAnger
-  L2_2 = A0_2.MaterdorSettings
-  L3_2 = A0_2.Round
-  L2_2 = L2_2[L3_2]
-  L2_2 = L2_2.HardThreshold
-  if L1_2 > L2_2 then
-    L2_2 = A0_2
-    L1_2 = A0_2.PromptForGesture
-    L3_2 = "hard"
-    L1_2(L2_2, L3_2)
-  else
-    L1_2 = A0_2.BullAnger
-    L2_2 = A0_2.MaterdorSettings
-    L3_2 = A0_2.Round
-    L2_2 = L2_2[L3_2]
-    L2_2 = L2_2.MediumThreshold
-    if L1_2 > L2_2 then
-      L2_2 = A0_2
-      L1_2 = A0_2.PromptForGesture
-      L3_2 = "medium"
-      L1_2(L2_2, L3_2)
-    else
-      L2_2 = A0_2
-      L1_2 = A0_2.PromptForGesture
-      L3_2 = "easy"
-      L1_2(L2_2, L3_2)
-    end
-  end
-end
-L0_1.PromptForTauntGesture = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L2_2 = A0_2
-  L1_2 = A0_2.PromptForGesture
-  L3_2 = "dodge"
-  L1_2(L2_2, L3_2)
-end
-L0_1.PromptForDodgeGesture = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L2_2 = A0_2
-  L1_2 = A0_2.PromptForGesture
-  L3_2 = "jump"
-  L1_2(L2_2, L3_2)
-end
-L0_1.PromptForJumpGesture = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = GlobalSettings
-  L2_2 = L2_2.Gestures
-  L3_2 = A0_2.GestureSet
-  L2_2 = L2_2[L3_2]
-  L2_2 = L2_2[A1_2]
-  L3_2 = math
-  L3_2 = L3_2.random
-  L4_2 = #L2_2
-  L3_2 = L3_2(L4_2)
-  L3_2 = L2_2[L3_2]
-  L4_2 = type
-  L5_2 = L3_2
-  L4_2 = L4_2(L5_2)
-  if L4_2 == "table" then
-    L4_2 = DebugPrint
-    L5_2 = L3_2[1]
-    L4_2(L5_2)
-    L4_2 = DebugPrint
-    L5_2 = L3_2[2]
-    L4_2(L5_2)
-    L4_2 = L3_2[2]
-    if L4_2 == "LeftStick" then
-      L4_2 = PromptForGesture
-      L5_2 = L3_2[1]
-      L6_2 = 1
-      L4_2(L5_2, L6_2)
-    else
-      L4_2 = PromptForGesture
-      L5_2 = L3_2[1]
-      L6_2 = 2
-      L4_2(L5_2, L6_2)
-    end
-  else
-    L4_2 = PromptForGesture
-    L5_2 = L3_2
-    L6_2 = 0
-    L4_2(L5_2, L6_2)
-  end
-end
-L0_1.PromptForGesture = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  if A1_2 == "StateChange_Intro" then
-    L2_2 = coroutine
-    L2_2 = L2_2.create
-    L3_2 = A0_2.MaterdorScript
-    L2_2 = L2_2(L3_2)
-    A0_2.ActivityCoroutine = L2_2
-    L2_2 = coroutine
-    L2_2 = L2_2.resume
-    L3_2 = A0_2.ActivityCoroutine
-    L4_2 = A0_2
-    L2_2(L3_2, L4_2)
-  end
-  if A1_2 ~= "Tick" then
-    L2_2 = DebugPrint
-    L3_2 = A1_2
-    L2_2(L3_2)
-  end
-  L2_2 = A0_2.CurrentWaitEvents
-  if L2_2 ~= nil then
-    L2_2 = ipairs
-    L3_2 = A0_2.CurrentWaitEvents
-    L2_2, L3_2, L4_2 = L2_2(L3_2)
-    for L5_2, L6_2 in L2_2, L3_2, L4_2 do
-      L7_2 = A0_2.CurrentWaitEvents
-      L7_2 = L7_2[L5_2]
-      if L7_2 == A1_2 then
-        L7_2 = coroutine
-        L7_2 = L7_2.resume
-        L8_2 = A0_2.ActivityCoroutine
-        L9_2 = A1_2
-        L7_2(L8_2, L9_2)
-      end
-    end
-  end
-end
-L0_1.EventHandler = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.TotalPoints = 0
-L3_1 = {}
-L2_1.RoundPoints = L3_1
-L3_1 = {}
-L2_1.DodgeTime = L3_1
-L2_1.JumpedTime = 0
-L3_1 = {}
-L3_1.TotalPoints = 0
-L4_1 = {}
-L3_1.RoundPoints = L4_1
-L4_1 = {}
-L3_1.DodgeTime = L4_1
-L3_1.JumpTime = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L0_1.PlayerResults = L1_1
-L0_1.MaterdorSettings = nil
-L0_1.BullAnger = 0
-L0_1.Round = 1
-L1_1 = GetNumPlayers
-L1_1 = L1_1()
-L0_1.NumPlayers = L1_1
-L0_1.CurrentPlayer = 0
-L1_1 = GetPlatform
-L1_1 = L1_1()
-L0_1.GestureSet = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L1_2 = DebugPrint
-  L2_2 = "Materdor Activity Start!"
-  L1_2(L2_2)
-  L1_2 = PushInputStack
-  L1_2()
-  L1_2 = SetPlayerInputEnabled
-  L2_2 = 0
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = SetPlayerInputEnabled
-  L2_2 = 1
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = SetHUD
-  L2_2 = ""
-  L1_2(L2_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.FadeOutScreenAndWait
-  L3_2 = 0.001
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "MTD"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = ClearParticles
-  L1_2()
-  L1_2 = A0_2.GestureSet
-  if L1_2 == "ps3" then
-    L1_2 = SixAxisEnabled
-    L1_2 = L1_2()
-    if L1_2 then
-      A0_2.GestureSet = "sixaxis"
-    end
-  end
-  L1_2 = A0_2.GestureSet
-  if L1_2 ~= "x360" then
-    L1_2 = A0_2.GestureSet
-    if L1_2 ~= "x360_wheel" then
-      goto lbl_46
-    end
-  end
-  L1_2 = GetControllerConfig
-  L2_2 = 1
-  L1_2 = L1_2(L2_2)
-  if L1_2 == 2 then
-    A0_2.GestureSet = "x360_wheel"
-  end
-  ::lbl_46::
-  A0_2.Round = 1
-  A0_2.BullAnger = 0
-  L1_2 = {}
-  L2_2 = {}
-  L2_2.TotalPoints = 0
-  L3_2 = {}
-  L2_2.RoundPoints = L3_2
-  L3_2 = {}
-  L2_2.DodgeTime = L3_2
-  L2_2.JumpedTime = 0
-  L3_2 = {}
-  L3_2.TotalPoints = 0
-  L4_2 = {}
-  L3_2.RoundPoints = L4_2
-  L4_2 = {}
-  L3_2.DodgeTime = L4_2
-  L3_2.JumpTime = 0
-  L1_2[1] = L2_2
-  L1_2[2] = L3_2
-  A0_2.PlayerResults = L1_2
-  L2_2 = A0_2
-  L1_2 = A0_2.DisableAllToys
-  L1_2(L2_2)
-  L1_2 = SetToyPositionByMatrixToy
-  L2_2 = "wallSmashStandIn01"
-  L3_2 = "Bullseye01"
-  L1_2(L2_2, L3_2)
-  L1_2 = SetToyPositionByMatrixToy
-  L2_2 = "wallSmashStandIn02"
-  L3_2 = "Bullseye02"
-  L1_2(L2_2, L3_2)
-  L1_2 = SetToyPositionByMatrixToy
-  L2_2 = "wallSmashStandIn03"
-  L3_2 = "Bullseye03"
-  L1_2(L2_2, L3_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.PlayCameraAnimationAndWait
-  L3_2 = "TauntingCamera01"
-  L4_2 = "Anim\\OpeningCamera"
-  L1_2(L2_2, L3_2, L4_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.FadeInScreenAndWait
-  L3_2 = 0.5
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "MTD"
-  L3_2 = 1
-  L1_2(L2_2, L3_2)
-  L1_2 = PlayQueuedDialogue
-  L2_2 = "MTD"
-  L3_2 = "StartTheEvent"
-  L4_2 = "MG_CT_TD"
-  L5_2 = 10
-  L1_2(L2_2, L3_2, L4_2, L5_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.PlayCutsceneAndWait
-  L3_2 = "CS_TRANS_MTDINTRO"
-  L1_2(L2_2, L3_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.Wait
-  L3_2 = 0.5
-  L1_2(L2_2, L3_2)
-  L1_2 = PopInputStack
-  L1_2()
-  L1_2 = PushMenu
-  L2_2 = "PreEvent"
-  L1_2(L2_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.WaitForEvent
-  L3_2 = "LE_PREEVENT_FINISHED"
-  L1_2(L2_2, L3_2)
-  L1_2 = getvar
-  L2_2 = "NeedToDisplayTutorial"
-  L1_2 = L1_2(L2_2)
-  if L1_2 == 1 then
-    L1_2 = RaiseTutorial
-    L2_2 = "CT_MD01"
-    L1_2(L2_2)
-    L1_2 = setvar
-    L2_2 = "NeedToDisplayTutorial"
-    L3_2 = 0
-    L1_2(L2_2, L3_2)
-  end
-  L2_2 = A0_2
-  L1_2 = A0_2.Wait
-  L3_2 = 0.5
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "MTD"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "BUL1"
-  L3_2 = 1
-  L1_2(L2_2, L3_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.PlayCutsceneAndWait
-  L3_2 = "CS_TRANS_BULLINTRO"
-  L1_2(L2_2, L3_2)
-  while true do
-    L1_2 = A0_2.Round
-    L2_2 = A0_2.MaterdorSettings
-    L2_2 = #L2_2
-    if not (L1_2 <= L2_2) then
-      break
-    end
-    L1_2 = ClearParticles
-    L1_2()
-    L1_2 = getvar
-    L2_2 = "CurrentPlayerIndex"
-    L1_2 = L1_2(L2_2)
-    A0_2.CurrentPlayer = L1_2
-    L1_2 = A0_2.PlayerResults
-    L2_2 = A0_2.CurrentPlayer
-    L1_2 = L1_2[L2_2]
-    L1_2 = L1_2.RoundPoints
-    L2_2 = A0_2.Round
-    L1_2[L2_2] = 0
-    L1_2 = SetHUD
-    L2_2 = ""
-    L1_2(L2_2)
-    L1_2 = HUD_Gestures_Points
-    if L1_2 == nil then
-      L1_2 = AddOverlay
-      L2_2 = "HUD_Gestures_Points"
-      L1_2(L2_2)
-    end
-    L1_2 = PushInputStack
-    L1_2()
-    L1_2 = SetPlayerInputEnabled
-    L2_2 = 0
-    L3_2 = 0
-    L1_2(L2_2, L3_2)
-    L1_2 = SetPlayerInputEnabled
-    L2_2 = 1
-    L3_2 = 0
-    L1_2(L2_2, L3_2)
-    L2_2 = A0_2
-    L1_2 = A0_2.FadeOutScreenAndWait
-    L3_2 = 0.25
-    L1_2(L2_2, L3_2)
-    L2_2 = A0_2
-    L1_2 = A0_2.DisableAllToys
-    L1_2(L2_2)
-    L1_2 = ""
-    L2_2 = A0_2.CurrentPlayer
-    if L2_2 == 1 then
-      L1_2 = "MTD"
-    else
-      L1_2 = "McqD"
-    end
-    L2_2 = EnableToy
-    L3_2 = L1_2
-    L4_2 = 1
-    L2_2(L3_2, L4_2)
-    L2_2 = SetCharacterAnimation
-    L3_2 = L1_2
-    L4_2 = L1_2
-    L5_2 = "_BEFT_IDLE1"
-    L4_2 = L4_2 .. L5_2
-    L5_2 = ""
-    L6_2 = true
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = SetToyPositionByMatrixToy
-    L3_2 = L1_2
-    L4_2 = A0_2.MaterdorSettings
-    L5_2 = A0_2.Round
-    L4_2 = L4_2[L5_2]
-    L4_2 = L4_2.CharacterPositionToy
-    L2_2(L3_2, L4_2)
-    L2_2 = EnableToy
-    L3_2 = "wallSmashStandIn0"
-    L4_2 = A0_2.Round
-    L3_2 = L3_2 .. L4_2
-    L4_2 = 1
-    L2_2(L3_2, L4_2)
-    L2_2 = SetToyPositionByMatrixToy
-    L3_2 = "BUL1"
-    L4_2 = "TractorStartPosition"
-    L2_2(L3_2, L4_2)
-    L2_2 = SetToyLookAtByMatrixToy
-    L3_2 = "BUL1"
-    L4_2 = L1_2
-    L2_2(L3_2, L4_2)
-    L2_2 = PlayCameraAnimation
-    L3_2 = "TauntingCamera01"
-    L4_2 = "Anim\\TauntingCamera"
-    L5_2 = Make2DigitString
-    L6_2 = A0_2.Round
-    L6_2 = L6_2 + 8
-    L5_2 = L5_2(L6_2)
-    L4_2 = L4_2 .. L5_2
-    L2_2(L3_2, L4_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.FadeInScreenAndWait
-    L4_2 = 0.25
-    L2_2(L3_2, L4_2)
-    L2_2 = PopInputStack
-    L2_2()
-    L3_2 = A0_2
-    L2_2 = A0_2.SetGestureTimer
-    L4_2 = A0_2.MaterdorSettings
-    L5_2 = A0_2.Round
-    L4_2 = L4_2[L5_2]
-    L4_2 = L4_2.TauntInputTimeout
-    L2_2(L3_2, L4_2)
-    L2_2 = SetHUD
-    L3_2 = "HUD_Materdor_1"
-    L2_2(L3_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.PromptForTauntGesture
-    L2_2(L3_2)
-    while true do
-      L2_2 = A0_2.BullAnger
-      if not (L2_2 < 100) then
-        break
-      end
-      L2_2 = GetTimeRemaining
-      L3_2 = "Gesture_Timer"
-      L2_2 = L2_2(L3_2)
-      if not (0 < L2_2) then
-        break
-      end
-      L3_2 = A0_2
-      L2_2 = A0_2.WaitForMultipleEvents
-      L4_2 = {}
-      L5_2 = "Gesture_Timer"
-      L6_2 = "PerformedGesture"
-      L4_2[1] = L5_2
-      L4_2[2] = L6_2
-      L2_2 = L2_2(L3_2, L4_2)
-      if L2_2 ~= "PerformedGesture" then
-        break
-      end
-      L2_2 = DebugPrint
-      L3_2 = A0_2.BullAnger
-      L2_2(L3_2)
-      L2_2 = RemoveGesturePrompt
-      L2_2()
-      L2_2 = PlaySoundEffect
-      L3_2 = "SFX\\Activities\\GesturePass"
-      L2_2(L3_2)
-      L2_2 = A0_2.BullAnger
-      L3_2 = A0_2.MaterdorSettings
-      L4_2 = A0_2.Round
-      L3_2 = L3_2[L4_2]
-      L3_2 = L3_2.AngerBoostPerTaunt
-      L2_2 = L2_2 + L3_2
-      A0_2.BullAnger = L2_2
-      L3_2 = A0_2
-      L2_2 = A0_2.AwardPointsForTaunt
-      L4_2 = A0_2.CurrentPlayer
-      L2_2(L3_2, L4_2)
-      L2_2 = SetEventTimer
-      L3_2 = "TauntDelay"
-      L4_2 = 0.5
-      L2_2(L3_2, L4_2)
-      L3_2 = A0_2
-      L2_2 = A0_2.WaitForEvent
-      L4_2 = "TauntDelay"
-      L2_2(L3_2, L4_2)
-      L2_2 = A0_2.BullAnger
-      if L2_2 < 100 then
-        L3_2 = A0_2
-        L2_2 = A0_2.PromptForTauntGesture
-        L2_2(L3_2)
-      end
-    end
-    L2_2 = RemoveGesturePrompt
-    L2_2()
-    L2_2 = A0_2.BullAnger
-    if 100 <= L2_2 then
-      L2_2 = PlaySoundEffect
-      L3_2 = "SFX\\MG\\CT_MD_TauntPass"
-      L2_2(L3_2)
-      L3_2 = A0_2
-      L2_2 = A0_2.PlayCharacterAnimationAndWait
-      L4_2 = L1_2
-      L5_2 = L1_2
-      L6_2 = "_BEFT_TAUNT"
-      L7_2 = math
-      L7_2 = L7_2.random
-      L8_2 = 8
-      L7_2 = L7_2(L8_2)
-      L5_2 = L5_2 .. L6_2 .. L7_2
-      L6_2 = false
-      L2_2(L3_2, L4_2, L5_2, L6_2)
-    end
-    L2_2 = PlayCameraAnimation
-    L3_2 = "TauntingCamera01"
-    L4_2 = "Anim\\TauntingCamera"
-    L5_2 = Make2DigitString
-    L6_2 = A0_2.Round
-    L6_2 = L6_2 + 4
-    L5_2 = L5_2(L6_2)
-    L4_2 = L4_2 .. L5_2
-    L2_2(L3_2, L4_2)
-    L2_2 = PlayQueuedDialogue
-    L3_2 = L1_2
-    L4_2 = "Cool"
-    L5_2 = nil
-    L6_2 = 10
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.PlayCharacterAnimationAndWait
-    L4_2 = "BUL1"
-    L5_2 = "BUL_BEFT_ANGER"
-    L6_2 = math
-    L6_2 = L6_2.random
-    L7_2 = 8
-    L6_2 = L6_2(L7_2)
-    L5_2 = L5_2 .. L6_2
-    L6_2 = true
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = SetHUD
-    L3_2 = "HUD_Materdor_2"
-    L2_2(L3_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.SetGestureTimer
-    L4_2 = A0_2.MaterdorSettings
-    L5_2 = A0_2.Round
-    L4_2 = L4_2[L5_2]
-    L4_2 = L4_2.TractorChargeDuration
-    L2_2(L3_2, L4_2)
-    L3_2 = A0_2
-    L2_2 = A0_2.PlayCameraAnimationAndWait
-    L4_2 = "TauntingCamera01"
-    L5_2 = "Anim\\TauntingCamera"
-    L6_2 = Make2DigitString
-    L7_2 = A0_2.Round
-    L7_2 = L7_2 + 12
-    L6_2 = L6_2(L7_2)
-    L5_2 = L5_2 .. L6_2
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = SetCharacterAnimation
-    L3_2 = "BUL1"
-    L4_2 = "BUL_BEFT_CHARGE"
-    L5_2 = ""
-    L6_2 = false
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = PlaySoundEffect
-    L3_2 = "SFX\\MG\\CT_MD_Charge"
-    L2_2(L3_2)
-    L2_2 = EnableToy
-    L3_2 = "BUL1_TreadDirt_L"
-    L4_2 = 1
-    L2_2(L3_2, L4_2)
-    L2_2 = EnableToy
-    L3_2 = "BUL1_TreadDirt_R"
-    L4_2 = 1
-    L2_2(L3_2, L4_2)
-    L2_2 = EnableToy
-    L3_2 = "BUL1_TreadDust_L"
-    L4_2 = 1
-    L2_2(L3_2, L4_2)
-    L2_2 = EnableToy
-    L3_2 = "BUL1_TreadDust_R"
-    L4_2 = 1
-    L2_2(L3_2, L4_2)
-    L2_2 = A0_2.GestureSet
-    if L2_2 == "x360_wheel" then
-      L2_2 = MoveToyWithConstantAccel
-      L3_2 = "BUL1"
-      L4_2 = "CollidePoint0"
-      L5_2 = A0_2.Round
-      L4_2 = L4_2 .. L5_2
-      L5_2 = A0_2.MaterdorSettings
-      L6_2 = A0_2.Round
-      L5_2 = L5_2[L6_2]
-      L5_2 = L5_2.TractorChargeDuration
-      L6_2 = GlobalSettings
-      L6_2 = L6_2.WheelTimeExtend
-      L5_2 = L5_2 * L6_2
-      L2_2(L3_2, L4_2, L5_2)
-    else
-      L2_2 = MoveToyWithConstantAccel
-      L3_2 = "BUL1"
-      L4_2 = "CollidePoint0"
-      L5_2 = A0_2.Round
-      L4_2 = L4_2 .. L5_2
-      L5_2 = A0_2.MaterdorSettings
-      L6_2 = A0_2.Round
-      L5_2 = L5_2[L6_2]
-      L5_2 = L5_2.TractorChargeDuration
-      L2_2(L3_2, L4_2, L5_2)
-    end
-    L3_2 = A0_2
-    L2_2 = A0_2.PromptForDodgeGesture
-    L2_2(L3_2)
-    L2_2 = GetCurrentGesturePrompt
-    L2_2 = L2_2()
-    L4_2 = A0_2
-    L3_2 = A0_2.WaitForMultipleEvents
-    L5_2 = {}
-    L6_2 = "Gesture_Timer"
-    L7_2 = "PerformedGesture"
-    L5_2[1] = L6_2
-    L5_2[2] = L7_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if L3_2 == "PerformedGesture" then
-      L4_2 = RemoveGesturePrompt
-      L4_2()
-      L4_2 = PlaySoundEffect
-      L5_2 = "SFX\\MG\\CT_MD_DodgePass"
-      L4_2(L5_2)
-      L4_2 = PlayQueuedDialogue
-      L5_2 = L1_2
-      L6_2 = "Announcement"
-      L7_2 = "Dodge"
-      L8_2 = 10
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      if L2_2 == "FlickRight" or L2_2 == "FlickRightStick" then
-        L4_2 = SetCharacterAnimation
-        L5_2 = L1_2
-        L6_2 = L1_2
-        L7_2 = "_BEFT_SIDESTEPR"
-        L6_2 = L6_2 .. L7_2
-        L7_2 = ""
-        L8_2 = false
-        L4_2(L5_2, L6_2, L7_2, L8_2)
+IncludeScript("C\\Act\\GlobalSettings.lua")
+MaterdorMinigame = {
+  CurrentWaitEvents = nil,
+  ApplySettings = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.MaterdorSettings = _ARG_1_
+  end,
+  GetDodgeTimerPercent = function(_ARG_0_)
+    if _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].DodgeTime[_ARG_0_.Round] then
+      if _ARG_0_.GestureSet == "x360_wheel" then
+        return _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].DodgeTime[_ARG_0_.Round] / (_ARG_0_.MaterdorSettings[_ARG_0_.Round].TractorChargeDuration * GlobalSettings.WheelTimeExtend) * 100
       else
-        L4_2 = SetCharacterAnimation
-        L5_2 = L1_2
-        L6_2 = L1_2
-        L7_2 = "_BEFT_SIDESTEPL"
-        L6_2 = L6_2 .. L7_2
-        L7_2 = ""
-        L8_2 = false
-        L4_2(L5_2, L6_2, L7_2, L8_2)
-      end
-      L4_2 = A0_2.PlayerResults
-      L5_2 = A0_2.CurrentPlayer
-      L4_2 = L4_2[L5_2]
-      L4_2 = L4_2.DodgeTime
-      L5_2 = A0_2.Round
-      L6_2 = GetTimeRemaining
-      L7_2 = "Gesture_Timer"
-      L6_2 = L6_2(L7_2)
-      L4_2[L5_2] = L6_2
-      L5_2 = A0_2
-      L4_2 = A0_2.WaitForEvent
-      L6_2 = "Gesture_Timer"
-      L4_2(L5_2, L6_2)
-      L4_2 = StopSoundEffect
-      L5_2 = "SFX\\MG\\CT_MD_Charge"
-      L4_2(L5_2)
-      L4_2 = EnableToy
-      L5_2 = L1_2
-      L6_2 = 0
-      L4_2(L5_2, L6_2)
-      L4_2 = EnableToy
-      L5_2 = "wallSmashStandIn01"
-      L6_2 = 0
-      L4_2(L5_2, L6_2)
-      L4_2 = EnableToy
-      L5_2 = "wallSmashStandIn02"
-      L6_2 = 0
-      L4_2(L5_2, L6_2)
-      L4_2 = EnableToy
-      L5_2 = "wallSmashStandIn03"
-      L6_2 = 0
-      L4_2(L5_2, L6_2)
-      L4_2 = StopMovers
-      L4_2()
-      L4_2 = A0_2.BullAnger
-      L5_2 = A0_2.MaterdorSettings
-      L6_2 = A0_2.Round
-      L5_2 = L5_2[L6_2]
-      L5_2 = L5_2.TargetBreakAnger
-      if L4_2 > L5_2 then
-        L4_2 = EnableToyGroup
-        L5_2 = "CS_TRANS_WALLHIT"
-        L6_2 = true
-        L4_2(L5_2, L6_2)
-        L5_2 = A0_2
-        L4_2 = A0_2.PlayCutsceneAndWait
-        L6_2 = "CS_TRANS_WALLHIT"
-        L4_2(L5_2, L6_2)
-        L5_2 = A0_2
-        L4_2 = A0_2.AwardPointsForTargetBreak
-        L6_2 = A0_2.CurrentPlayer
-        L4_2(L5_2, L6_2)
-      else
-        L4_2 = EnableToyGroup
-        L5_2 = "CS_TRANS_WALLHIT2"
-        L6_2 = true
-        L4_2(L5_2, L6_2)
-        L5_2 = A0_2
-        L4_2 = A0_2.PlayCutsceneAndWait
-        L6_2 = "CS_TRANS_WALLHIT2"
-        L4_2(L5_2, L6_2)
-      end
-      L5_2 = A0_2
-      L4_2 = A0_2.AwardPointsForDodge
-      L6_2 = A0_2.CurrentPlayer
-      L4_2(L5_2, L6_2)
-      L4_2 = HideHUD
-      L4_2()
-      L5_2 = A0_2
-      L4_2 = A0_2.PlayCameraAnimationAndWait
-      L6_2 = "TauntingCamera01"
-      L7_2 = "Anim\\ReactionCamera"
-      L4_2(L5_2, L6_2, L7_2)
-      if L1_2 == "MTD" then
-        L4_2 = "MIA_A"
-        characterName = L4_2
-        L4_2 = "MIAM_BEFT_CTMDMAT"
-        L5_2 = math
-        L5_2 = L5_2.random
-        L6_2 = 4
-        L5_2 = L5_2(L6_2)
-        L4_2 = L4_2 .. L5_2
-        animName = L4_2
-        L5_2 = A0_2
-        L4_2 = A0_2.PlayToyDialogueMotionAndWait
-        L6_2 = characterName
-        L7_2 = animName
-        L8_2 = animName
-        L4_2(L5_2, L6_2, L7_2, L8_2)
-        L4_2 = "TIA_A"
-        characterName = L4_2
-        L4_2 = "TIAM_BEFT_CTMDMAT"
-        L5_2 = math
-        L5_2 = L5_2.random
-        L6_2 = 3
-        L5_2 = L5_2(L6_2)
-        L4_2 = L4_2 .. L5_2
-        animName = L4_2
-        L5_2 = A0_2
-        L4_2 = A0_2.PlayToyDialogueMotionAndWait
-        L6_2 = characterName
-        L7_2 = animName
-        L8_2 = animName
-        L4_2(L5_2, L6_2, L7_2, L8_2)
-        L5_2 = A0_2
-        L4_2 = A0_2.Wait
-        L6_2 = 1
-        L4_2(L5_2, L6_2)
-      else
-        L4_2 = "MIA_A"
-        characterName = L4_2
-        L4_2 = "MIAM_BEFT_CTMDMCQ"
-        L5_2 = math
-        L5_2 = L5_2.random
-        L6_2 = 4
-        L5_2 = L5_2(L6_2)
-        L4_2 = L4_2 .. L5_2
-        animName = L4_2
-        L5_2 = A0_2
-        L4_2 = A0_2.PlayToyDialogueMotionAndWait
-        L6_2 = characterName
-        L7_2 = animName
-        L8_2 = animName
-        L4_2(L5_2, L6_2, L7_2, L8_2)
-        L4_2 = "TIA_A"
-        characterName = L4_2
-        L4_2 = "TIAM_BEFT_CTMDMCQ"
-        L5_2 = math
-        L5_2 = L5_2.random
-        L6_2 = 3
-        L5_2 = L5_2(L6_2)
-        L4_2 = L4_2 .. L5_2
-        animName = L4_2
-        L5_2 = A0_2
-        L4_2 = A0_2.PlayToyDialogueMotionAndWait
-        L6_2 = characterName
-        L7_2 = animName
-        L8_2 = animName
-        L4_2(L5_2, L6_2, L7_2, L8_2)
-        L5_2 = A0_2
-        L4_2 = A0_2.Wait
-        L6_2 = 1
-        L4_2(L5_2, L6_2)
-      end
-      L4_2 = ShowHUD
-      L4_2()
-      L4_2 = A0_2.PlayerResults
-      L5_2 = A0_2.CurrentPlayer
-      L4_2 = L4_2[L5_2]
-      L4_2 = L4_2.DodgeTime
-      L5_2 = A0_2.Round
-      L4_2 = L4_2[L5_2]
-      if 0 < L4_2 then
-        L5_2 = A0_2
-        L4_2 = A0_2.AwardRoundPointsToTotal
-        L6_2 = A0_2.CurrentPlayer
-        L4_2(L5_2, L6_2)
+        return _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].DodgeTime[_ARG_0_.Round] / _ARG_0_.MaterdorSettings[_ARG_0_.Round].TractorChargeDuration * 100
       end
     else
-      L4_2 = RemoveGesturePrompt
-      L4_2()
-      L4_2 = StopSoundEffect
-      L5_2 = "sfx\\MG\\CT_MD_Charge"
-      L4_2(L5_2)
-      L4_2 = PlaySoundEffect
-      L5_2 = "SFX\\MG\\CT_MD_DodgeFail"
-      L4_2(L5_2)
-      if L1_2 == "MTD" then
-        L4_2 = PlayQueuedDialogue
-        L5_2 = "MTD"
-        L6_2 = "Hit"
-        L7_2 = nil
-        L8_2 = 10
-        L4_2(L5_2, L6_2, L7_2, L8_2)
-      else
-        L4_2 = PlayQueuedDialogue
-        L5_2 = "MCQD"
-        L6_2 = "Hit"
-        L7_2 = nil
-        L8_2 = 10
-        L4_2(L5_2, L6_2, L7_2, L8_2)
-      end
-      L5_2 = A0_2
-      L4_2 = A0_2.PlayCharacterAnimationAndWait
-      L6_2 = L1_2
-      L7_2 = L1_2
-      L8_2 = "_BEFT_HIT1"
-      L7_2 = L7_2 .. L8_2
-      L8_2 = false
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L5_2 = A0_2
-      L4_2 = A0_2.PlayCameraAnimationAndWait
-      L6_2 = "TauntingCamera01"
-      L7_2 = "Anim\\ReactionCamera"
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = "MIA_A"
-      characterName = L4_2
-      L4_2 = "MIAM_BEFT_CTMDBULL"
-      L5_2 = math
-      L5_2 = L5_2.random
-      L6_2 = 2
-      L5_2 = L5_2(L6_2)
-      L4_2 = L4_2 .. L5_2
-      animName = L4_2
-      L5_2 = A0_2
-      L4_2 = A0_2.PlayToyDialogueMotionAndWait
-      L6_2 = characterName
-      L7_2 = animName
-      L8_2 = animName
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L5_2 = A0_2
-      L4_2 = A0_2.Wait
-      L6_2 = 0.5
-      L4_2(L5_2, L6_2)
-      L4_2 = "TIA_A"
-      characterName = L4_2
-      L4_2 = "TIAM_BEFT_CTMDBULL"
-      L5_2 = math
-      L5_2 = L5_2.random
-      L6_2 = 2
-      L5_2 = L5_2(L6_2)
-      L4_2 = L4_2 .. L5_2
-      animName = L4_2
-      L5_2 = A0_2
-      L4_2 = A0_2.PlayToyDialogueMotionAndWait
-      L6_2 = characterName
-      L7_2 = animName
-      L8_2 = animName
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L5_2 = A0_2
-      L4_2 = A0_2.Wait
-      L6_2 = 1
-      L4_2(L5_2, L6_2)
+      return GetPercentTimeRemaining("Gesture_Timer")
     end
-    L4_2 = EnableToy
-    L5_2 = "BUL1_TreadDirt_L"
-    L6_2 = 0
-    L4_2(L5_2, L6_2)
-    L4_2 = EnableToy
-    L5_2 = "BUL1_TreadDirt_R"
-    L6_2 = 0
-    L4_2(L5_2, L6_2)
-    L4_2 = EnableToy
-    L5_2 = "BUL1_TreadDust_L"
-    L6_2 = 0
-    L4_2(L5_2, L6_2)
-    L4_2 = EnableToy
-    L5_2 = "BUL1_TreadDust_R"
-    L6_2 = 0
-    L4_2(L5_2, L6_2)
-    A0_2.BullAnger = 0
-    L4_2 = A0_2.Round
-    L5_2 = A0_2.MaterdorSettings
-    L5_2 = #L5_2
-    if L4_2 == L5_2 then
-      L4_2 = A0_2.PlayerResults
-      L5_2 = A0_2.CurrentPlayer
-      L4_2 = L4_2[L5_2]
-      L4_2 = L4_2.RoundPoints
-      L5_2 = A0_2.Round
-      L4_2[L5_2] = 0
-      L4_2 = EnableToyGroup
-      L5_2 = "CS_TRANS_WALLHIT"
-      L6_2 = false
-      L4_2(L5_2, L6_2)
-      L4_2 = EnableToyGroup
-      L5_2 = "CS_TRANS_WALLHIT2"
-      L6_2 = false
-      L4_2(L5_2, L6_2)
-      L4_2 = HideHUD
-      L4_2()
-      L5_2 = A0_2
-      L4_2 = A0_2.PlayCutsceneAndWait
-      L6_2 = "CS_TRANS_3BULLINTRO"
-      L4_2(L5_2, L6_2)
-      L4_2 = ClearParticles
-      L4_2()
-      L4_2 = SetHUD
-      L5_2 = "HUD_Materdor_3"
-      L4_2(L5_2)
-      L4_2 = EnableToy
-      L5_2 = "BUL1"
-      L6_2 = 1
-      L4_2(L5_2, L6_2)
-      L4_2 = EnableToy
-      L5_2 = "BUL2"
-      L6_2 = 1
-      L4_2(L5_2, L6_2)
-      L4_2 = EnableToy
-      L5_2 = "BUL3"
-      L6_2 = 1
-      L4_2(L5_2, L6_2)
-      L4_2 = SetToyPositionByMatrixToy
-      L5_2 = "BUL1"
-      L6_2 = "TripleChargeTractorPos01"
-      L4_2(L5_2, L6_2)
-      L4_2 = SetToyPositionByMatrixToy
-      L5_2 = "BUL2"
-      L6_2 = "TripleChargeTractorPos02"
-      L4_2(L5_2, L6_2)
-      L4_2 = SetToyPositionByMatrixToy
-      L5_2 = "BUL3"
-      L6_2 = "TripleChargeTractorPos03"
-      L4_2(L5_2, L6_2)
-      L5_2 = A0_2
-      L4_2 = A0_2.PlayCameraAnimationAndWait
-      L6_2 = "TauntingCamera01"
-      L7_2 = "Anim\\OpeningCamera"
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = SetCharacterAnimation
-      L5_2 = "BUL1"
-      L6_2 = "BUL_BEFT_CHARGE"
-      L7_2 = ""
-      L8_2 = true
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L4_2 = SetCharacterAnimation
-      L5_2 = "BUL2"
-      L6_2 = "BUL_BEFT_CHARGE"
-      L7_2 = ""
-      L8_2 = true
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L4_2 = SetCharacterAnimation
-      L5_2 = "BUL3"
-      L6_2 = "BUL_BEFT_CHARGE"
-      L7_2 = ""
-      L8_2 = true
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L4_2 = SetToyPositionByMatrixToy
-      L5_2 = L1_2
-      L6_2 = "PlayerOneTripleChargePosition"
-      L4_2(L5_2, L6_2)
-      L4_2 = SetCharacterAnimation
-      L5_2 = L1_2
-      L6_2 = L1_2
-      L7_2 = "_BEFT_IDLE1"
-      L6_2 = L6_2 .. L7_2
-      L7_2 = ""
-      L8_2 = true
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L4_2 = A0_2.GestureSet
-      if L4_2 == "x360_wheel" then
-        L4_2 = MoveToyWithConstantAccel
-        L5_2 = "BUL1"
-        L6_2 = "TripleChargeTractorDest01"
-        L7_2 = A0_2.MaterdorSettings
-        L7_2 = L7_2.TripleChargeDuration
-        L8_2 = GlobalSettings
-        L8_2 = L8_2.WheelTimeExtend
-        L7_2 = L7_2 * L8_2
-        L4_2(L5_2, L6_2, L7_2)
-        L4_2 = MoveToyWithConstantAccel
-        L5_2 = "BUL2"
-        L6_2 = "TripleChargeTractorDest02"
-        L7_2 = A0_2.MaterdorSettings
-        L7_2 = L7_2.TripleChargeDuration
-        L8_2 = GlobalSettings
-        L8_2 = L8_2.WheelTimeExtend
-        L7_2 = L7_2 * L8_2
-        L4_2(L5_2, L6_2, L7_2)
-        L4_2 = MoveToyWithConstantAccel
-        L5_2 = "BUL3"
-        L6_2 = "TripleChargeTractorDest03"
-        L7_2 = A0_2.MaterdorSettings
-        L7_2 = L7_2.TripleChargeDuration
-        L8_2 = GlobalSettings
-        L8_2 = L8_2.WheelTimeExtend
-        L7_2 = L7_2 * L8_2
-        L4_2(L5_2, L6_2, L7_2)
-      else
-        L4_2 = MoveToyWithConstantAccel
-        L5_2 = "BUL1"
-        L6_2 = "TripleChargeTractorDest01"
-        L7_2 = A0_2.MaterdorSettings
-        L7_2 = L7_2.TripleChargeDuration
-        L4_2(L5_2, L6_2, L7_2)
-        L4_2 = MoveToyWithConstantAccel
-        L5_2 = "BUL2"
-        L6_2 = "TripleChargeTractorDest02"
-        L7_2 = A0_2.MaterdorSettings
-        L7_2 = L7_2.TripleChargeDuration
-        L4_2(L5_2, L6_2, L7_2)
-        L4_2 = MoveToyWithConstantAccel
-        L5_2 = "BUL3"
-        L6_2 = "TripleChargeTractorDest03"
-        L7_2 = A0_2.MaterdorSettings
-        L7_2 = L7_2.TripleChargeDuration
-        L4_2(L5_2, L6_2, L7_2)
-      end
-      L5_2 = A0_2
-      L4_2 = A0_2.SetGestureTimer
-      L6_2 = A0_2.MaterdorSettings
-      L6_2 = L6_2.TripleChargeDuration
-      L4_2(L5_2, L6_2)
-      L4_2 = SetEventTimer
-      L5_2 = "TripleCharge_PromptStart"
-      L6_2 = A0_2.MaterdorSettings
-      L6_2 = L6_2.TripleChargeDodgeWindow
-      L6_2 = L6_2.Start
-      L4_2(L5_2, L6_2)
-      L5_2 = A0_2
-      L4_2 = A0_2.WaitForEvent
-      L6_2 = "TripleCharge_PromptStart"
-      L4_2(L5_2, L6_2)
-      L5_2 = A0_2
-      L4_2 = A0_2.PromptForJumpGesture
-      L4_2(L5_2)
-      L4_2 = SetEventTimer
-      L5_2 = "TripleCharge_PromptEnd"
-      L6_2 = A0_2.MaterdorSettings
-      L6_2 = L6_2.TripleChargeDodgeWindow
-      L6_2 = L6_2.End
-      L7_2 = A0_2.MaterdorSettings
-      L7_2 = L7_2.TripleChargeDodgeWindow
-      L7_2 = L7_2.Start
-      L6_2 = L6_2 - L7_2
-      L4_2(L5_2, L6_2)
-      L5_2 = A0_2
-      L4_2 = A0_2.WaitForMultipleEvents
-      L6_2 = {}
-      L7_2 = "TripleCharge_PromptEnd"
-      L8_2 = "PerformedGesture"
-      L6_2[1] = L7_2
-      L6_2[2] = L8_2
-      L4_2 = L4_2(L5_2, L6_2)
-      L5_2 = RemoveGesturePrompt
-      L5_2()
-      if L4_2 == "TripleCharge_PromptEnd" then
-        L6_2 = A0_2
-        L5_2 = A0_2.WaitForEvent
-        L7_2 = "Gesture_Timer"
-        L5_2(L6_2, L7_2)
-        L5_2 = StopMovers
-        L5_2()
-        L6_2 = A0_2
-        L5_2 = A0_2.PlayCutsceneAndWait
-        L7_2 = "CS_TRANS_"
-        L8_2 = L1_2
-        L9_2 = "FAIL"
-        L7_2 = L7_2 .. L8_2 .. L9_2
-        L5_2(L6_2, L7_2)
-      else
-        L5_2 = A0_2.PlayerResults
-        L6_2 = A0_2.CurrentPlayer
-        L5_2 = L5_2[L6_2]
-        L6_2 = A0_2.PlayerResults
-        L7_2 = A0_2.CurrentPlayer
-        L6_2 = L6_2[L7_2]
-        L6_2 = L6_2.TotalPoints
-        L6_2 = L6_2 + 1000
-        L5_2.TotalPoints = L6_2
-        L5_2 = A0_2.PlayerResults
-        L6_2 = A0_2.CurrentPlayer
-        L5_2 = L5_2[L6_2]
-        L6_2 = GetTimeRemaining
-        L7_2 = "Gesture_Timer"
-        L6_2 = L6_2(L7_2)
-        L5_2.JumpTime = L6_2
-        L5_2 = SetCharacterAnimation
-        L6_2 = L1_2
-        L7_2 = L1_2
-        L8_2 = "_BEFT_BULJUMP"
-        L7_2 = L7_2 .. L8_2
-        L8_2 = "BULJUMP"
-        L9_2 = false
-        L5_2(L6_2, L7_2, L8_2, L9_2)
-        L6_2 = A0_2
-        L5_2 = A0_2.WaitForMultipleEvents
-        L7_2 = {}
-        L8_2 = "BULJUMP"
-        L9_2 = "Gesture_Timer"
-        L7_2[1] = L8_2
-        L7_2[2] = L9_2
-        L5_2(L6_2, L7_2)
-        L5_2 = StopMovers
-        L5_2()
-        L5_2 = PlayQueuedDialogue
-        L6_2 = L1_2
-        L7_2 = "Complete"
-        L8_2 = "MG_CT_MD"
-        L9_2 = 10
-        L5_2(L6_2, L7_2, L8_2, L9_2)
-        L6_2 = A0_2
-        L5_2 = A0_2.PlayCutsceneAndWait
-        L7_2 = "CS_TRANS_"
-        L8_2 = L1_2
-        L9_2 = "WIN"
-        L7_2 = L7_2 .. L8_2 .. L9_2
-        L5_2(L6_2, L7_2)
-        L5_2 = SetPlayerScore
-        L6_2 = A0_2.CurrentPlayer
-        L6_2 = L6_2 - 1
-        L7_2 = A0_2.PlayerResults
-        L8_2 = A0_2.CurrentPlayer
-        L7_2 = L7_2[L8_2]
-        L7_2 = L7_2.TotalPoints
-        L5_2(L6_2, L7_2)
-      end
-    end
-    L4_2 = A0_2.CurrentPlayer
-    L5_2 = A0_2.NumPlayers
-    if L4_2 < L5_2 then
-      L4_2 = DebugPrint
-      L5_2 = "NumPlayers = "
-      L6_2 = A0_2.NumPlayers
-      L5_2 = L5_2 .. L6_2
-      L4_2(L5_2)
-      L4_2 = setvar
-      L5_2 = "CurrentPlayerIndex"
-      L6_2 = A0_2.CurrentPlayer
-      L6_2 = L6_2 + 1
-      L4_2(L5_2, L6_2)
+  end,
+  WaitForEvent = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.CurrentWaitEvents = {_ARG_1_}
+    coroutine.yield()
+    _ARG_0_.CurrentWaitEvents = nil
+  end,
+  WaitForMultipleEvents = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.CurrentWaitEvents = _ARG_1_
+    _ARG_0_.CurrentWaitEvents = nil
+    return (coroutine.yield())
+  end,
+  Wait = function(_ARG_0_, _ARG_1_)
+    SetEventTimer("Wait" .. _ARG_1_, _ARG_1_)
+    _ARG_0_:WaitForEvent("Wait" .. _ARG_1_)
+  end,
+  PlayCameraAnimationAndWait = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    PlayCameraAnimationWithCallback(_ARG_1_, _ARG_2_, _ARG_2_)
+    _ARG_0_:WaitForEvent(_ARG_2_)
+  end,
+  PlayCharacterAnimationAndWait = function(_ARG_0_, _ARG_1_, _ARG_2_, _ARG_3_)
+    SetCharacterAnimation(_ARG_1_, _ARG_2_, _ARG_2_, _ARG_3_)
+    _ARG_0_:WaitForEvent(_ARG_2_)
+  end,
+  PlayToyDialogueMotionAndWait = function(_ARG_0_, _ARG_1_, _ARG_2_)
+    PlayToyDialogueMotion(characterName, _ARG_2_, _ARG_2_)
+    _ARG_0_:WaitForEvent(_ARG_2_)
+  end,
+  PlayCutsceneAndWait = function(_ARG_0_, _ARG_1_)
+    PlayActivityCutscene(_ARG_1_, _ARG_1_)
+    _ARG_0_:WaitForEvent(_ARG_1_)
+  end,
+  FadeOutScreenAndWait = function(_ARG_0_, _ARG_1_)
+    FadeOutScreen(_ARG_1_)
+    SetEventTimer("FadeOutScreen" .. _ARG_1_, _ARG_1_)
+    _ARG_0_:WaitForEvent("FadeOutScreen" .. _ARG_1_)
+  end,
+  FadeInScreenAndWait = function(_ARG_0_, _ARG_1_)
+    FadeInScreen(_ARG_1_)
+    SetEventTimer("FadeInScreen" .. _ARG_1_, _ARG_1_)
+    _ARG_0_:WaitForEvent("FadeInScreen" .. _ARG_1_)
+  end,
+  PromptForTauntGesture = function(_ARG_0_)
+    if _ARG_0_.BullAnger > _ARG_0_.MaterdorSettings[_ARG_0_.Round].HardThreshold then
+      _ARG_0_:PromptForGesture("hard")
+    elseif _ARG_0_.BullAnger > _ARG_0_.MaterdorSettings[_ARG_0_.Round].MediumThreshold then
+      _ARG_0_:PromptForGesture("medium")
     else
-      L4_2 = setvar
-      L5_2 = "CurrentPlayerIndex"
-      L6_2 = 1
-      L4_2(L5_2, L6_2)
-      L4_2 = A0_2.Round
-      L4_2 = L4_2 + 1
-      A0_2.Round = L4_2
+      _ARG_0_:PromptForGesture("easy")
     end
-  end
-  L1_2 = AwardMaterdorBonusPoints
-  L2_2 = A0_2.PlayerResults
-  L2_2 = L2_2[1]
-  L2_2 = L2_2.TotalPoints
-  L1_2(L2_2)
-  L1_2 = EndActivity
-  L1_2()
-end
-L0_1.MaterdorScript = L1_1
-L0_1.ActivityCoroutine = nil
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = A0_2.BullAnger
-  L2_2 = A0_2.MaterdorSettings
-  L3_2 = A0_2.Round
-  L2_2 = L2_2[L3_2]
-  L2_2 = L2_2.HardThreshold
-  if L1_2 > L2_2 then
-    L1_2 = A0_2.MaterdorSettings
-    L2_2 = A0_2.Round
-    L1_2 = L1_2[L2_2]
-    L1_2 = L1_2.PointsPerHardTaunt
-    return L1_2
-  else
-    L1_2 = A0_2.BullAnger
-    L2_2 = A0_2.MaterdorSettings
-    L3_2 = A0_2.Round
-    L2_2 = L2_2[L3_2]
-    L2_2 = L2_2.MediumThreshold
-    if L1_2 > L2_2 then
-      L1_2 = A0_2.MaterdorSettings
-      L2_2 = A0_2.Round
-      L1_2 = L1_2[L2_2]
-      L1_2 = L1_2.PointsPerMediumTaunt
-      return L1_2
+  end,
+  PromptForDodgeGesture = function(_ARG_0_)
+    _ARG_0_:PromptForGesture("dodge")
+  end,
+  PromptForJumpGesture = function(_ARG_0_)
+    _ARG_0_:PromptForGesture("jump")
+  end,
+  PromptForGesture = function(_ARG_0_, _ARG_1_)
+    if type(GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_][math.random(#GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_])]) == "table" then
+      DebugPrint(GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_][math.random(#GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_])][1])
+      DebugPrint(GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_][math.random(#GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_])][2])
+      if GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_][math.random(#GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_])][2] == "LeftStick" then
+        PromptForGesture(GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_][math.random(#GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_])][1], 1)
+      else
+        PromptForGesture(GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_][math.random(#GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_])][1], 2)
+      end
     else
-      L1_2 = A0_2.MaterdorSettings
-      L2_2 = A0_2.Round
-      L1_2 = L1_2[L2_2]
-      L1_2 = L1_2.PointsPerEasyTaunt
-      return L1_2
+      PromptForGesture(GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_][math.random(#GlobalSettings.Gestures[_ARG_0_.GestureSet][_ARG_1_])], 0)
     end
+  end,
+  EventHandler = function(_ARG_0_, _ARG_1_)
+    if _ARG_1_ == "StateChange_Intro" then
+      _ARG_0_.ActivityCoroutine = coroutine.create(_ARG_0_.MaterdorScript)
+      coroutine.resume(_ARG_0_.ActivityCoroutine, _ARG_0_)
+    end
+    if _ARG_1_ ~= "Tick" then
+      DebugPrint(_ARG_1_)
+    end
+    if _ARG_0_.CurrentWaitEvents ~= nil then
+      for _FORV_5_, _FORV_6_ in ipairs(_ARG_0_.CurrentWaitEvents) do
+        if _ARG_0_.CurrentWaitEvents[_FORV_5_] == _ARG_1_ then
+          coroutine.resume(_ARG_0_.ActivityCoroutine, _ARG_1_)
+        end
+      end
+    end
+  end,
+  PlayerResults = {
+    {
+      TotalPoints = 0,
+      RoundPoints = {},
+      DodgeTime = {},
+      JumpedTime = 0
+    },
+    {
+      TotalPoints = 0,
+      RoundPoints = {},
+      DodgeTime = {},
+      JumpTime = 0
+    }
+  },
+  MaterdorSettings = nil,
+  BullAnger = 0,
+  Round = 1,
+  NumPlayers = GetNumPlayers(),
+  CurrentPlayer = 0,
+  GestureSet = GetPlatform(),
+  MaterdorScript = function(_ARG_0_)
+    DebugPrint("Materdor Activity Start!")
+    PushInputStack()
+    SetPlayerInputEnabled(0, 0)
+    SetPlayerInputEnabled(1, 0)
+    SetHUD("")
+    _ARG_0_:FadeOutScreenAndWait(0.001)
+    EnableToy("MTD", 0)
+    ClearParticles()
+    if _ARG_0_.GestureSet == "ps3" and SixAxisEnabled() then
+      _ARG_0_.GestureSet = "sixaxis"
+    end
+    if (_ARG_0_.GestureSet == "x360" or _ARG_0_.GestureSet == "x360_wheel") and GetControllerConfig(1) == 2 then
+      _ARG_0_.GestureSet = "x360_wheel"
+    end
+    _ARG_0_.Round = 1
+    _ARG_0_.BullAnger = 0
+    _ARG_0_.PlayerResults = {
+      {
+        TotalPoints = 0,
+        RoundPoints = {},
+        DodgeTime = {},
+        JumpedTime = 0
+      },
+      {
+        TotalPoints = 0,
+        RoundPoints = {},
+        DodgeTime = {},
+        JumpTime = 0
+      }
+    }
+    _ARG_0_:DisableAllToys()
+    SetToyPositionByMatrixToy("wallSmashStandIn01", "Bullseye01")
+    SetToyPositionByMatrixToy("wallSmashStandIn02", "Bullseye02")
+    SetToyPositionByMatrixToy("wallSmashStandIn03", "Bullseye03")
+    _ARG_0_:PlayCameraAnimationAndWait("TauntingCamera01", "Anim\\OpeningCamera")
+    _ARG_0_:FadeInScreenAndWait(0.5)
+    EnableToy("MTD", 1)
+    PlayQueuedDialogue("MTD", "StartTheEvent", "MG_CT_TD", 10)
+    _ARG_0_:PlayCutsceneAndWait("CS_TRANS_MTDINTRO")
+    _ARG_0_:Wait(0.5)
+    PopInputStack()
+    PushMenu("PreEvent")
+    _ARG_0_:WaitForEvent("LE_PREEVENT_FINISHED")
+    if getvar("NeedToDisplayTutorial") == 1 then
+      RaiseTutorial("CT_MD01")
+      setvar("NeedToDisplayTutorial", 0)
+    end
+    _ARG_0_:Wait(0.5)
+    EnableToy("MTD", 0)
+    EnableToy("BUL1", 1)
+    _ARG_0_:PlayCutsceneAndWait("CS_TRANS_BULLINTRO")
+    while _ARG_0_.Round <= #_ARG_0_.MaterdorSettings do
+      ClearParticles()
+      _ARG_0_.CurrentPlayer = getvar("CurrentPlayerIndex")
+      _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].RoundPoints[_ARG_0_.Round] = 0
+      SetHUD("")
+      if HUD_Gestures_Points == nil then
+        AddOverlay("HUD_Gestures_Points")
+      end
+      PushInputStack()
+      SetPlayerInputEnabled(0, 0)
+      SetPlayerInputEnabled(1, 0)
+      _ARG_0_:FadeOutScreenAndWait(0.25)
+      _ARG_0_:DisableAllToys()
+      if _ARG_0_.CurrentPlayer == 1 then
+      else
+      end
+      EnableToy("McqD", 1)
+      SetCharacterAnimation("McqD", "McqD" .. "_BEFT_IDLE1", "", true)
+      SetToyPositionByMatrixToy("McqD", _ARG_0_.MaterdorSettings[_ARG_0_.Round].CharacterPositionToy)
+      EnableToy("wallSmashStandIn0" .. _ARG_0_.Round, 1)
+      SetToyPositionByMatrixToy("BUL1", "TractorStartPosition")
+      SetToyLookAtByMatrixToy("BUL1", "McqD")
+      PlayCameraAnimation("TauntingCamera01", "Anim\\TauntingCamera" .. Make2DigitString(_ARG_0_.Round + 8))
+      _ARG_0_:FadeInScreenAndWait(0.25)
+      PopInputStack()
+      _ARG_0_:SetGestureTimer(_ARG_0_.MaterdorSettings[_ARG_0_.Round].TauntInputTimeout)
+      SetHUD("HUD_Materdor_1")
+      _ARG_0_:PromptForTauntGesture()
+      while _ARG_0_.BullAnger < 100 and 0 < GetTimeRemaining("Gesture_Timer") and _ARG_0_:WaitForMultipleEvents({
+        "Gesture_Timer",
+        "PerformedGesture"
+      }) == "PerformedGesture" do
+        DebugPrint(_ARG_0_.BullAnger)
+        RemoveGesturePrompt()
+        PlaySoundEffect("SFX\\Activities\\GesturePass")
+        _ARG_0_.BullAnger = _ARG_0_.BullAnger + _ARG_0_.MaterdorSettings[_ARG_0_.Round].AngerBoostPerTaunt
+        _ARG_0_:AwardPointsForTaunt(_ARG_0_.CurrentPlayer)
+        SetEventTimer("TauntDelay", 0.5)
+        _ARG_0_:WaitForEvent("TauntDelay")
+        if _ARG_0_.BullAnger < 100 then
+          _ARG_0_:PromptForTauntGesture()
+        end
+      end
+      RemoveGesturePrompt()
+      if _ARG_0_.BullAnger >= 100 then
+        PlaySoundEffect("SFX\\MG\\CT_MD_TauntPass")
+        _ARG_0_:PlayCharacterAnimationAndWait("McqD", "McqD" .. "_BEFT_TAUNT" .. math.random(8), false)
+      end
+      PlayCameraAnimation("TauntingCamera01", "Anim\\TauntingCamera" .. Make2DigitString(_ARG_0_.Round + 4))
+      PlayQueuedDialogue("McqD", "Cool", nil, 10)
+      _ARG_0_:PlayCharacterAnimationAndWait("BUL1", "BUL_BEFT_ANGER" .. math.random(8), true)
+      SetHUD("HUD_Materdor_2")
+      _ARG_0_:SetGestureTimer(_ARG_0_.MaterdorSettings[_ARG_0_.Round].TractorChargeDuration)
+      _ARG_0_:PlayCameraAnimationAndWait("TauntingCamera01", "Anim\\TauntingCamera" .. Make2DigitString(_ARG_0_.Round + 12))
+      SetCharacterAnimation("BUL1", "BUL_BEFT_CHARGE", "", false)
+      PlaySoundEffect("SFX\\MG\\CT_MD_Charge")
+      EnableToy("BUL1_TreadDirt_L", 1)
+      EnableToy("BUL1_TreadDirt_R", 1)
+      EnableToy("BUL1_TreadDust_L", 1)
+      EnableToy("BUL1_TreadDust_R", 1)
+      if _ARG_0_.GestureSet == "x360_wheel" then
+        MoveToyWithConstantAccel("BUL1", "CollidePoint0" .. _ARG_0_.Round, _ARG_0_.MaterdorSettings[_ARG_0_.Round].TractorChargeDuration * GlobalSettings.WheelTimeExtend)
+      else
+        MoveToyWithConstantAccel("BUL1", "CollidePoint0" .. _ARG_0_.Round, _ARG_0_.MaterdorSettings[_ARG_0_.Round].TractorChargeDuration)
+      end
+      _ARG_0_:PromptForDodgeGesture()
+      if _ARG_0_:WaitForMultipleEvents({
+        "Gesture_Timer",
+        "PerformedGesture"
+      }) == "PerformedGesture" then
+        RemoveGesturePrompt()
+        PlaySoundEffect("SFX\\MG\\CT_MD_DodgePass")
+        PlayQueuedDialogue("McqD", "Announcement", "Dodge", 10)
+        if GetCurrentGesturePrompt() == "FlickRight" or GetCurrentGesturePrompt() == "FlickRightStick" then
+          SetCharacterAnimation("McqD", "McqD" .. "_BEFT_SIDESTEPR", "", false)
+        else
+          SetCharacterAnimation("McqD", "McqD" .. "_BEFT_SIDESTEPL", "", false)
+        end
+        _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].DodgeTime[_ARG_0_.Round] = GetTimeRemaining("Gesture_Timer")
+        _ARG_0_:WaitForEvent("Gesture_Timer")
+        StopSoundEffect("SFX\\MG\\CT_MD_Charge")
+        EnableToy("McqD", 0)
+        EnableToy("wallSmashStandIn01", 0)
+        EnableToy("wallSmashStandIn02", 0)
+        EnableToy("wallSmashStandIn03", 0)
+        StopMovers()
+        if _ARG_0_.BullAnger > _ARG_0_.MaterdorSettings[_ARG_0_.Round].TargetBreakAnger then
+          EnableToyGroup("CS_TRANS_WALLHIT", true)
+          _ARG_0_:PlayCutsceneAndWait("CS_TRANS_WALLHIT")
+          _ARG_0_:AwardPointsForTargetBreak(_ARG_0_.CurrentPlayer)
+        else
+          EnableToyGroup("CS_TRANS_WALLHIT2", true)
+          _ARG_0_:PlayCutsceneAndWait("CS_TRANS_WALLHIT2")
+        end
+        _ARG_0_:AwardPointsForDodge(_ARG_0_.CurrentPlayer)
+        HideHUD()
+        _ARG_0_:PlayCameraAnimationAndWait("TauntingCamera01", "Anim\\ReactionCamera")
+        if "McqD" == "MTD" then
+          characterName = "MIA_A"
+          animName = "MIAM_BEFT_CTMDMAT" .. math.random(4)
+          _ARG_0_:PlayToyDialogueMotionAndWait(characterName, animName, animName)
+          characterName = "TIA_A"
+          animName = "TIAM_BEFT_CTMDMAT" .. math.random(3)
+          _ARG_0_:PlayToyDialogueMotionAndWait(characterName, animName, animName)
+          _ARG_0_:Wait(1)
+        else
+          characterName = "MIA_A"
+          animName = "MIAM_BEFT_CTMDMCQ" .. math.random(4)
+          _ARG_0_:PlayToyDialogueMotionAndWait(characterName, animName, animName)
+          characterName = "TIA_A"
+          animName = "TIAM_BEFT_CTMDMCQ" .. math.random(3)
+          _ARG_0_:PlayToyDialogueMotionAndWait(characterName, animName, animName)
+          _ARG_0_:Wait(1)
+        end
+        ShowHUD()
+        if 0 < _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].DodgeTime[_ARG_0_.Round] then
+          _ARG_0_:AwardRoundPointsToTotal(_ARG_0_.CurrentPlayer)
+        end
+      else
+        RemoveGesturePrompt()
+        StopSoundEffect("sfx\\MG\\CT_MD_Charge")
+        PlaySoundEffect("SFX\\MG\\CT_MD_DodgeFail")
+        if "McqD" == "MTD" then
+          PlayQueuedDialogue("MTD", "Hit", nil, 10)
+        else
+          PlayQueuedDialogue("MCQD", "Hit", nil, 10)
+        end
+        _ARG_0_:PlayCharacterAnimationAndWait("McqD", "McqD" .. "_BEFT_HIT1", false)
+        _ARG_0_:PlayCameraAnimationAndWait("TauntingCamera01", "Anim\\ReactionCamera")
+        characterName = "MIA_A"
+        animName = "MIAM_BEFT_CTMDBULL" .. math.random(2)
+        _ARG_0_:PlayToyDialogueMotionAndWait(characterName, animName, animName)
+        _ARG_0_:Wait(0.5)
+        characterName = "TIA_A"
+        animName = "TIAM_BEFT_CTMDBULL" .. math.random(2)
+        _ARG_0_:PlayToyDialogueMotionAndWait(characterName, animName, animName)
+        _ARG_0_:Wait(1)
+      end
+      EnableToy("BUL1_TreadDirt_L", 0)
+      EnableToy("BUL1_TreadDirt_R", 0)
+      EnableToy("BUL1_TreadDust_L", 0)
+      EnableToy("BUL1_TreadDust_R", 0)
+      _ARG_0_.BullAnger = 0
+      if _ARG_0_.Round == #_ARG_0_.MaterdorSettings then
+        _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].RoundPoints[_ARG_0_.Round] = 0
+        EnableToyGroup("CS_TRANS_WALLHIT", false)
+        EnableToyGroup("CS_TRANS_WALLHIT2", false)
+        HideHUD()
+        _ARG_0_:PlayCutsceneAndWait("CS_TRANS_3BULLINTRO")
+        ClearParticles()
+        SetHUD("HUD_Materdor_3")
+        EnableToy("BUL1", 1)
+        EnableToy("BUL2", 1)
+        EnableToy("BUL3", 1)
+        SetToyPositionByMatrixToy("BUL1", "TripleChargeTractorPos01")
+        SetToyPositionByMatrixToy("BUL2", "TripleChargeTractorPos02")
+        SetToyPositionByMatrixToy("BUL3", "TripleChargeTractorPos03")
+        _ARG_0_:PlayCameraAnimationAndWait("TauntingCamera01", "Anim\\OpeningCamera")
+        SetCharacterAnimation("BUL1", "BUL_BEFT_CHARGE", "", true)
+        SetCharacterAnimation("BUL2", "BUL_BEFT_CHARGE", "", true)
+        SetCharacterAnimation("BUL3", "BUL_BEFT_CHARGE", "", true)
+        SetToyPositionByMatrixToy("McqD", "PlayerOneTripleChargePosition")
+        SetCharacterAnimation("McqD", "McqD" .. "_BEFT_IDLE1", "", true)
+        if _ARG_0_.GestureSet == "x360_wheel" then
+          MoveToyWithConstantAccel("BUL1", "TripleChargeTractorDest01", _ARG_0_.MaterdorSettings.TripleChargeDuration * GlobalSettings.WheelTimeExtend)
+          MoveToyWithConstantAccel("BUL2", "TripleChargeTractorDest02", _ARG_0_.MaterdorSettings.TripleChargeDuration * GlobalSettings.WheelTimeExtend)
+          MoveToyWithConstantAccel("BUL3", "TripleChargeTractorDest03", _ARG_0_.MaterdorSettings.TripleChargeDuration * GlobalSettings.WheelTimeExtend)
+        else
+          MoveToyWithConstantAccel("BUL1", "TripleChargeTractorDest01", _ARG_0_.MaterdorSettings.TripleChargeDuration)
+          MoveToyWithConstantAccel("BUL2", "TripleChargeTractorDest02", _ARG_0_.MaterdorSettings.TripleChargeDuration)
+          MoveToyWithConstantAccel("BUL3", "TripleChargeTractorDest03", _ARG_0_.MaterdorSettings.TripleChargeDuration)
+        end
+        _ARG_0_:SetGestureTimer(_ARG_0_.MaterdorSettings.TripleChargeDuration)
+        SetEventTimer("TripleCharge_PromptStart", _ARG_0_.MaterdorSettings.TripleChargeDodgeWindow.Start)
+        _ARG_0_:WaitForEvent("TripleCharge_PromptStart")
+        _ARG_0_:PromptForJumpGesture()
+        SetEventTimer("TripleCharge_PromptEnd", _ARG_0_.MaterdorSettings.TripleChargeDodgeWindow.End - _ARG_0_.MaterdorSettings.TripleChargeDodgeWindow.Start)
+        RemoveGesturePrompt()
+        if _ARG_0_:WaitForMultipleEvents({
+          "TripleCharge_PromptEnd",
+          "PerformedGesture"
+        }) == "TripleCharge_PromptEnd" then
+          _ARG_0_:WaitForEvent("Gesture_Timer")
+          StopMovers()
+          _ARG_0_:PlayCutsceneAndWait("CS_TRANS_" .. "McqD" .. "FAIL")
+        else
+          _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].TotalPoints = _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].TotalPoints + 1000
+          _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].JumpTime = GetTimeRemaining("Gesture_Timer")
+          SetCharacterAnimation("McqD", "McqD" .. "_BEFT_BULJUMP", "BULJUMP", false)
+          _ARG_0_:WaitForMultipleEvents({
+            "BULJUMP",
+            "Gesture_Timer"
+          })
+          StopMovers()
+          PlayQueuedDialogue("McqD", "Complete", "MG_CT_MD", 10)
+          _ARG_0_:PlayCutsceneAndWait("CS_TRANS_" .. "McqD" .. "WIN")
+          SetPlayerScore(_ARG_0_.CurrentPlayer - 1, _ARG_0_.PlayerResults[_ARG_0_.CurrentPlayer].TotalPoints)
+        end
+      end
+      if _ARG_0_.CurrentPlayer < _ARG_0_.NumPlayers then
+        DebugPrint("NumPlayers = " .. _ARG_0_.NumPlayers)
+        setvar("CurrentPlayerIndex", _ARG_0_.CurrentPlayer + 1)
+      else
+        setvar("CurrentPlayerIndex", 1)
+        _ARG_0_.Round = _ARG_0_.Round + 1
+      end
+    end
+    AwardMaterdorBonusPoints(_ARG_0_.PlayerResults[1].TotalPoints)
+    EndActivity()
+  end,
+  ActivityCoroutine = nil,
+  GetPointsForTaunt = function(_ARG_0_)
+    if _ARG_0_.BullAnger > _ARG_0_.MaterdorSettings[_ARG_0_.Round].HardThreshold then
+      return _ARG_0_.MaterdorSettings[_ARG_0_.Round].PointsPerHardTaunt
+    elseif _ARG_0_.BullAnger > _ARG_0_.MaterdorSettings[_ARG_0_.Round].MediumThreshold then
+      return _ARG_0_.MaterdorSettings[_ARG_0_.Round].PointsPerMediumTaunt
+    else
+      return _ARG_0_.MaterdorSettings[_ARG_0_.Round].PointsPerEasyTaunt
+    end
+  end,
+  AwardPointsForTaunt = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] = _ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] + _ARG_0_:GetPointsForTaunt()
+    ShowPointsReceived((_ARG_0_:GetPointsForTaunt()))
+  end,
+  AwardPointsForDodge = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] = _ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] + _ARG_0_.MaterdorSettings[_ARG_0_.Round].DodgePoints
+    ShowPointsReceived(_ARG_0_.MaterdorSettings[_ARG_0_.Round].DodgePoints)
+  end,
+  AwardPointsForTargetBreak = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] = _ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] + _ARG_0_.MaterdorSettings[_ARG_0_.Round].TargetBreakPoints
+    ShowPointsReceived(_ARG_0_.MaterdorSettings[_ARG_0_.Round].TargetBreakPoints)
+  end,
+  AwardRoundPointsToTotal = function(_ARG_0_, _ARG_1_)
+    _ARG_0_.PlayerResults[_ARG_1_].TotalPoints = _ARG_0_.PlayerResults[_ARG_1_].TotalPoints + _ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] * GetDodgeMultiplier(_ARG_0_.PlayerResults[_ARG_1_].DodgeTime[_ARG_0_.Round] / _ARG_0_.MaterdorSettings[_ARG_0_.Round].TractorChargeDuration * 100)
+    ShowPointsReceived(_ARG_0_.PlayerResults[_ARG_1_].RoundPoints[_ARG_0_.Round] * GetDodgeMultiplier(_ARG_0_.PlayerResults[_ARG_1_].DodgeTime[_ARG_0_.Round] / _ARG_0_.MaterdorSettings[_ARG_0_.Round].TractorChargeDuration * 100))
+  end,
+  DisableAllToys = function(_ARG_0_)
+    EnableToy("BUL1", 0)
+    EnableToy("BUL2", 0)
+    EnableToy("BUL3", 0)
+    EnableToy("MTD", 0)
+    EnableToy("MCQD", 0)
+    EnableToy("wallSmash", 0)
+    EnableToy("wallSmash2", 0)
+    EnableToy("wallSmashStandIn01", 0)
+    EnableToy("wallSmashStandIn02", 0)
+    EnableToy("wallSmashStandIn03", 0)
+  end,
+  TotalGestureTime = 1,
+  SetGestureTimer = function(_ARG_0_, _ARG_1_)
+    if _ARG_0_.GestureSet == "x360_wheel" then
+      _ARG_1_ = _ARG_1_ * GlobalSettings.WheelTimeExtend
+    end
+    SetEventTimer("Gesture_Timer", _ARG_1_)
+    _ARG_0_.TotalGestureTime = _ARG_1_
   end
+}
+function GetTotalPointsForPlayer(_ARG_0_)
+  return MaterdorMinigame.PlayerResults[_ARG_0_].TotalPoints
 end
-L0_1.GetPointsForTaunt = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.GetPointsForTaunt
-  L2_2 = L2_2(L3_2)
-  L3_2 = A0_2.PlayerResults
-  L3_2 = L3_2[A1_2]
-  L3_2 = L3_2.RoundPoints
-  L4_2 = A0_2.Round
-  L5_2 = A0_2.PlayerResults
-  L5_2 = L5_2[A1_2]
-  L5_2 = L5_2.RoundPoints
-  L6_2 = A0_2.Round
-  L5_2 = L5_2[L6_2]
-  L5_2 = L5_2 + L2_2
-  L3_2[L4_2] = L5_2
-  L3_2 = ShowPointsReceived
-  L4_2 = L2_2
-  L3_2(L4_2)
-end
-L0_1.AwardPointsForTaunt = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A0_2.MaterdorSettings
-  L3_2 = A0_2.Round
-  L2_2 = L2_2[L3_2]
-  L2_2 = L2_2.DodgePoints
-  L3_2 = A0_2.PlayerResults
-  L3_2 = L3_2[A1_2]
-  L3_2 = L3_2.RoundPoints
-  L4_2 = A0_2.Round
-  L5_2 = A0_2.PlayerResults
-  L5_2 = L5_2[A1_2]
-  L5_2 = L5_2.RoundPoints
-  L6_2 = A0_2.Round
-  L5_2 = L5_2[L6_2]
-  L5_2 = L5_2 + L2_2
-  L3_2[L4_2] = L5_2
-  L3_2 = ShowPointsReceived
-  L4_2 = L2_2
-  L3_2(L4_2)
-end
-L0_1.AwardPointsForDodge = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A0_2.MaterdorSettings
-  L3_2 = A0_2.Round
-  L2_2 = L2_2[L3_2]
-  L2_2 = L2_2.TargetBreakPoints
-  L3_2 = A0_2.PlayerResults
-  L3_2 = L3_2[A1_2]
-  L3_2 = L3_2.RoundPoints
-  L4_2 = A0_2.Round
-  L5_2 = A0_2.PlayerResults
-  L5_2 = L5_2[A1_2]
-  L5_2 = L5_2.RoundPoints
-  L6_2 = A0_2.Round
-  L5_2 = L5_2[L6_2]
-  L5_2 = L5_2 + L2_2
-  L3_2[L4_2] = L5_2
-  L3_2 = ShowPointsReceived
-  L4_2 = L2_2
-  L3_2(L4_2)
-end
-L0_1.AwardPointsForTargetBreak = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A0_2.PlayerResults
-  L2_2 = L2_2[A1_2]
-  L2_2 = L2_2.DodgeTime
-  L3_2 = A0_2.Round
-  L2_2 = L2_2[L3_2]
-  L3_2 = A0_2.MaterdorSettings
-  L4_2 = A0_2.Round
-  L3_2 = L3_2[L4_2]
-  L3_2 = L3_2.TractorChargeDuration
-  L2_2 = L2_2 / L3_2
-  L2_2 = L2_2 * 100
-  L3_2 = A0_2.PlayerResults
-  L3_2 = L3_2[A1_2]
-  L3_2 = L3_2.RoundPoints
-  L4_2 = A0_2.Round
-  L3_2 = L3_2[L4_2]
-  L4_2 = GetDodgeMultiplier
-  L5_2 = L2_2
-  L4_2 = L4_2(L5_2)
-  L3_2 = L3_2 * L4_2
-  L4_2 = A0_2.PlayerResults
-  L4_2 = L4_2[A1_2]
-  L5_2 = A0_2.PlayerResults
-  L5_2 = L5_2[A1_2]
-  L5_2 = L5_2.TotalPoints
-  L5_2 = L5_2 + L3_2
-  L4_2.TotalPoints = L5_2
-  L4_2 = ShowPointsReceived
-  L5_2 = L3_2
-  L4_2(L5_2)
-end
-L0_1.AwardRoundPointsToTotal = L1_1
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = EnableToy
-  L2_2 = "BUL1"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "BUL2"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "BUL3"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "MTD"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "MCQD"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "wallSmash"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "wallSmash2"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "wallSmashStandIn01"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "wallSmashStandIn02"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-  L1_2 = EnableToy
-  L2_2 = "wallSmashStandIn03"
-  L3_2 = 0
-  L1_2(L2_2, L3_2)
-end
-L0_1.DisableAllToys = L1_1
-L0_1.TotalGestureTime = 1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A0_2.GestureSet
-  if L2_2 == "x360_wheel" then
-    L2_2 = GlobalSettings
-    L2_2 = L2_2.WheelTimeExtend
-    A1_2 = A1_2 * L2_2
-  end
-  L2_2 = SetEventTimer
-  L3_2 = "Gesture_Timer"
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
-  A0_2.TotalGestureTime = A1_2
-end
-L0_1.SetGestureTimer = L1_1
-MaterdorMinigame = L0_1
-function L0_1(A0_2)
-  local L1_2
-  L1_2 = MaterdorMinigame
-  L1_2 = L1_2.PlayerResults
-  L1_2 = L1_2[A0_2]
-  L1_2 = L1_2.TotalPoints
-  return L1_2
-end
-GetTotalPointsForPlayer = L0_1
-function L0_1(A0_2)
-  local L1_2, L2_2
-  L1_2 = MaterdorMinigame
-  L1_2 = L1_2.PlayerResults
-  L1_2 = L1_2[A0_2]
-  L1_2 = L1_2.RoundPoints
-  L2_2 = MaterdorMinigame
-  L2_2 = L2_2.Round
-  L1_2 = L1_2[L2_2]
-  if L1_2 then
-    L1_2 = MaterdorMinigame
-    L1_2 = L1_2.PlayerResults
-    L1_2 = L1_2[A0_2]
-    L1_2 = L1_2.RoundPoints
-    L2_2 = MaterdorMinigame
-    L2_2 = L2_2.Round
-    L1_2 = L1_2[L2_2]
-    return L1_2
+function GetRoundPointsForPlayer(_ARG_0_)
+  if MaterdorMinigame.PlayerResults[_ARG_0_].RoundPoints[MaterdorMinigame.Round] then
+    return MaterdorMinigame.PlayerResults[_ARG_0_].RoundPoints[MaterdorMinigame.Round]
   else
-    L1_2 = 0
-    return L1_2
+    return 0
   end
 end
-GetRoundPointsForPlayer = L0_1
-function L0_1(A0_2)
-  local L1_2
-  L1_2 = ""
-  if A0_2 == 1 then
-    L1_2 = "Mater"
+function GetPlayerName(_ARG_0_)
+  if _ARG_0_ == 1 then
   else
-    L1_2 = "McQueen"
   end
-  return L1_2
+  return "McQueen"
 end
-GetPlayerName = L0_1
-function L0_1()
-  local L0_2, L1_2
-  L0_2 = MaterdorMinigame
-  L1_2 = L0_2
-  L0_2 = L0_2.GetDodgeTimerPercent
-  return L0_2(L1_2)
+function GetDodgeTimerPercent()
+  return MaterdorMinigame:GetDodgeTimerPercent()
 end
-GetDodgeTimerPercent = L0_1
-function L0_1(A0_2)
-  local L1_2
-  if A0_2 < 20 then
-    L1_2 = 8
-    return L1_2
-  elseif A0_2 < 40 then
-    L1_2 = 6
-    return L1_2
-  elseif A0_2 < 60 then
-    L1_2 = 4
-    return L1_2
-  elseif A0_2 < 80 then
-    L1_2 = 2
-    return L1_2
+function GetDodgeMultiplier(_ARG_0_)
+  if _ARG_0_ < 20 then
+    return 8
+  elseif _ARG_0_ < 40 then
+    return 6
+  elseif _ARG_0_ < 60 then
+    return 4
+  elseif _ARG_0_ < 80 then
+    return 2
   else
-    L1_2 = 1
-    return L1_2
+    return 1
   end
 end
-GetDodgeMultiplier = L0_1
-function L0_1()
-  local L0_2, L1_2
-  L0_2 = MaterdorMinigame
-  L1_2 = L0_2
-  L0_2 = L0_2.GetPointsForTaunt
-  return L0_2(L1_2)
+function GetCurrentTauntValue()
+  return MaterdorMinigame:GetPointsForTaunt()
 end
-GetCurrentTauntValue = L0_1
-function L0_1()
-  local L0_2, L1_2
-  L0_2 = MaterdorMinigame
-  L0_2 = L0_2.BullAnger
-  return L0_2
+function GetAngerPercent()
+  return MaterdorMinigame.BullAnger
 end
-GetAngerPercent = L0_1
-function L0_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = HUD_Gestures_Points
-  if L1_2 ~= nil then
-    L1_2 = HUD_Gestures_Points
-    L2_2 = L1_2
-    L1_2 = L1_2.GiveBonus
-    L3_2 = 0
-    L4_2 = A0_2
-    L1_2(L2_2, L3_2, L4_2)
+function ShowPointsReceived(_ARG_0_)
+  if HUD_Gestures_Points ~= nil then
+    HUD_Gestures_Points:GiveBonus(0, _ARG_0_)
   end
 end
-ShowPointsReceived = L0_1
-function L0_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = math
-  L2_2 = L2_2.floor
-  L3_2 = A0_2 / A1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L2_2 * A1_2
-  L3_2 = L2_2 + A1_2
-  L4_2 = A0_2 - L2_2
-  L5_2 = L3_2 - A0_2
-  if L4_2 > L5_2 then
-    return L3_2
+function RoundToNearest(_ARG_0_, _ARG_1_)
+  if _ARG_0_ - math.floor(_ARG_0_ / _ARG_1_) * _ARG_1_ > math.floor(_ARG_0_ / _ARG_1_) * _ARG_1_ + _ARG_1_ - _ARG_0_ then
+    return math.floor(_ARG_0_ / _ARG_1_) * _ARG_1_ + _ARG_1_
   else
-    return L2_2
+    return math.floor(_ARG_0_ / _ARG_1_) * _ARG_1_
   end
 end
-RoundToNearest = L0_1
-function L0_1(A0_2)
-  local L1_2, L2_2
-  if A0_2 < 10 then
-    L1_2 = 0
-    L2_2 = A0_2
-    L1_2 = L1_2 .. L2_2
-    return L1_2
+function Make2DigitString(_ARG_0_)
+  if _ARG_0_ < 10 then
+    return 0 .. _ARG_0_
   else
-    return A0_2
+    return _ARG_0_
   end
 end
-Make2DigitString = L0_1
-function L0_1()
-  local L0_2, L1_2
-  L0_2 = GetTimeRemaining
-  L1_2 = "Gesture_Timer"
-  L0_2 = L0_2(L1_2)
-  L1_2 = MaterdorMinigame
-  L1_2 = L1_2.TotalGestureTime
-  L0_2 = L0_2 / L1_2
-  return L0_2
+function GetGestureTime()
+  return GetTimeRemaining("Gesture_Timer") / MaterdorMinigame.TotalGestureTime
 end
-GetGestureTime = L0_1
